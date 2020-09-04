@@ -1,8 +1,8 @@
 module.exports = {
   title: "Glasswall SDK",
   tagline: "",
-  url: "https://filetrust.github.io/glasswall-sdk-site",
-  baseUrl: "/",
+  url: "https://filetrust.github.io",
+  baseUrl: "/glasswall-sdk-site/",
   favicon: "img/favicon.ico",
   organizationName: "filetrust", // Usually your GitHub org/user name.
   projectName: "glasswall-sdk-site", // Usually your repo name.
