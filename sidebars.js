@@ -4,38 +4,25 @@ module.exports = {
 			[
 				{
 					"Rebuild API": [
-						"product-descriptions/product-overview",
-						"guides/file-rebuild-how-it-works",
-						"products/cloud-sdk/authentication/authentication-base",
-						"products/cloud-sdk/secure-url/using-secure-urls",
-						"products/cloud-sdk/cloud-sdk-supported-types",
+						"products/rebuild-api/product-overview",
+						"products/rebuild-api/cloud-sdk-supported-types",
 						{
 							"Rebuild": [
 								{
 									"AWS": [
-										"products/cloud-sdk/rebuild/rebuild-quickstart",
-										"products/cloud-sdk/architecture/rebuild-architecture",
-										"products/cloud-sdk/rebuild/rebuild-api",
-										"products/cloud-sdk/rebuild/rebuild-content-management",
-										"products/cloud-sdk/rebuild/rebuild-errors",
-										"products/cloud-sdk/security/cloud-sdk-security",
+										"products/rebuild-api/rebuild/rebuild-quickstart",
 										{
 											"Code Samples": [
-												"products/cloud-sdk/rebuild/code-samples/python-example",
-												"products/cloud-sdk/rebuild/code-samples/nodejs-example",
-												"products/cloud-sdk/rebuild/code-samples/csharp-example",
+												"products/rebuild-api/rebuild/code-samples/python-example",
+												"products/rebuild-api/rebuild/code-samples/nodejs-example",
+												"products/rebuild-api/rebuild/code-samples/csharp-example"
 											]
 										}
 									],
-								},
-								{
-									"Azure (Coming Soon)": [
-									]
 								}
 							]
 						},
-						"products/cloud-sdk/sample-files",
-						"products/cloud-sdk/cloud-sdk-faq"
+						"products/rebuild-api/cloud-sdk-faq"
 					]
 				}
 			],
@@ -43,10 +30,7 @@ module.exports = {
 			[
 				{
 					"CI/CD": [
-						"guides/ci-cd-pipeline"
-					],
-					"ICAP": [
-						"guides/aws-fargate-container-deployment"
+						"how-tos/ci-cd-pipeline"
 					]
 				}
 			]
