@@ -28,7 +28,7 @@ const features = [
     ),
   },
   {
-    title: <>Use Cases</>,
+    title: <>Use Buckets</>,
     imageUrl: "img/use-cases-illustration-03.png",
     imageLinkTo: "docs/use-cases/overview",
     description: (
