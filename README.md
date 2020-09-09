@@ -1,4 +1,6 @@
 # Glasswall SDK Documentation Site
+![CI](https://github.com/filetrust/glasswall-sdk-site/workflows/CI/badge.svg)
+![CD](https://github.com/filetrust/glasswall-sdk-site/workflows/CD/badge.svg)
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
