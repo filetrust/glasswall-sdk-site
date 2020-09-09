@@ -8,7 +8,7 @@ import styles from "./styles.module.css";
 
 const features = [
   {
-    title: <>Things</>,
+    title: <>Subsystems</>,
     imageUrl: "img/product-illustration-01.png",
     imageLinkTo: "docs/product-descriptions/product-overview",
     description: (
