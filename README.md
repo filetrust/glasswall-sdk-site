@@ -7,6 +7,7 @@ This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern 
 ### Prerequisites
 [Node.js](https://nodejs.org/en/)
 
+#### Make sure you're in the Root directory of the project.
   
 ### Yarn
 ```
