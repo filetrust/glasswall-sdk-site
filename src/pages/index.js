@@ -8,22 +8,22 @@ import styles from "./styles.module.css";
 
 const features = [
   {
-    title: <>Subsystems</>,
+    title: <>Introduction</>,
     imageUrl: "img/product-illustration-01.png",
     imageLinkTo: "docs/product-descriptions/product-overview",
     description: (
       <>
-        Product descriptions with detailed information on features and benefits.
+        Pending
       </>
     ),
   },
   {
-    title: <>Documentation</>,
+    title: <>Glasswall Core</>,
     imageUrl: "img/documentation-illustration-02.png",
     imageLinkTo: "docs/product-descriptions/product-overview",
     description: (
       <>
-        Provides developers all information required to use Glasswall with example code in a variety of languages and step-by-step guides.
+        Pending
       </>
     ),
   },
