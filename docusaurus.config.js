@@ -16,9 +16,9 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/products/rebuild-api/product-overview",
+          to: "docs/introduction",
           activeBasePath: "docs",
-          label: "Introduction",
+          label: "Documents",
           position: "left",
         },
 /*         {

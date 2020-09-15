@@ -1,3 +1,4 @@
 ---
-sidebar_label: 2.4 Glasswall Web API
+title: 2.5 Glasswall Web API
+sidebar_label: 2.5 Glasswall Web API
 ---
