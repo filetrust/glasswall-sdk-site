@@ -12,15 +12,34 @@ module.exports = {
 							"glasswall_core/glasswall_tools",     // sidebar_label: 2.4 Tools
 							"glasswall_core/glasswall_licencing"  // sidebar_label: 2.5 Licencing
 						]
+				},
+				{
+					"3. Glasswall Core Builds":
+					[
+						"glasswall_core_builds/build_agents", // 3.1
+						"glasswall_core_builds/versioning",
+						"glasswall_core_builds/build_definitions"
+					]
+				},
+				"guides",
+				{
+					"5. Testing":
+					[
+						"testing/core_test_strategy",
+						"testing/automated_testing",
+						"testing/manual_testing",
+						"testing/testing_guidelines"
+					]
 				}
 			],
-		"How-To's":
+			
+/* 		"How-To's":
 			[
 				{
 					"CI/CD": [
 						"how-tos/ci-cd-pipeline"
 					]
 				}
-			]
+			] */
 	},
 };
