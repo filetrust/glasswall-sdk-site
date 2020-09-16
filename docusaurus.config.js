@@ -9,24 +9,24 @@ module.exports = {
   onBrokenLinks: 'log',
   themeConfig: {
     navbar: {
-      title: "Glasswall SDK",
+      title: "Glasswall Documentation",
       logo: {
         alt: "Glasswall Logo",
         src: "img/glasswall_logo_blue.png"
       },
       items: [
         {
-          to: "docs/products/rebuild-api/product-overview",
+          to: "docs/introduction",
           activeBasePath: "docs",
-          label: "Documentation",
+          label: "Documents",
           position: "left",
         },
-        {
+/*         {
           href: "https://medium.com/glasswall-engineering",
           label: "Blog",
           position: "left",
         },
-        {
+  */       {
           href: "https://github.com/filetrust",
           label: "GitHub",
           position: "right",

@@ -7,33 +7,33 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
 const features = [
-  {
-    title: <>Introduction</>,
-    imageUrl: "img/product-illustration-01.png",
-    imageLinkTo: "docs/product-descriptions/product-overview",
-    description: (
-      <>
-        Pending
-      </>
-    ),
-  },
-  {
+  // {
+  //   title: <>Introduction</>,
+  //   imageUrl: "img/product-illustration-01.png",
+  //   imageLinkTo: "docs/product-descriptions/product-overview",
+  //   description: (
+  //     <>
+  //       An introduction to the Glasswall documentation site.
+  //     </>
+  //   ),
+  // },
+  /* {
     title: <>Glasswall Core</>,
     imageUrl: "img/documentation-illustration-02.png",
     imageLinkTo: "docs/product-descriptions/product-overview",
     description: (
       <>
-        Pending
+        Documents pertaining to Rebuild, Editor and other core applications.
       </>
     ),
-  },
+  }, */
   {
-    title: <>Use Buckets</>,
+    title: <>Glasswall Core Builds</>,
     imageUrl: "img/use-cases-illustration-03.png",
     imageLinkTo: "docs/use-cases/overview",
     description: (
       <>
-        How can Glasswall help you? We've provided use cases that cover common scenarios.
+        This section documents the build processes.
       </>
     ),
   },
