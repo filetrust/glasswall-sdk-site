@@ -78,6 +78,13 @@ module.exports = {
       trackingID: 'UA-165717322-1'
     }
   },
+  scripts: [
+    {
+      src: `/glasswall-sdk-site/js/fix-location.js`,
+      async: false,
+      defer: false
+    }
+  ],
   presets: [
     [
       "@docusaurus/preset-classic",
