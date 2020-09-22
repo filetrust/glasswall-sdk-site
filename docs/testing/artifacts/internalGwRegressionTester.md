@@ -328,7 +328,7 @@ This test is used to check for the presence or absence of an Issue Item with the
 
 `Value: <string>` (Required) This specifies the Technical Description that we are looking for.
 
-`ExactMatch: <bool> (optional, default false)` When true this sets the search to exactly match the Issue Item Description, when left as false it does a partial match.
+`ExactMatch: <bool>` (optional, default false)` When true this sets the search to exactly match the Issue Item Description, when left as false it does a partial match.
 
 ### !IssueItemId {#internalGwRegressionTesterIssueItemId}
 
