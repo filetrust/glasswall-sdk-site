@@ -14,4 +14,4 @@ This page provides links to the coding guidelines used by Glasswall developers.
 [Index of Python Enhancement Proposals (PEPs)](https://www.python.org/dev/peps/
  "Index of Python Enhancement Proposals") <img alt="External Link" src={useBaseUrl('img/external_link.png')} />
 
-[Perl Best Practices Summary](artifacts/Perl_Best_Practices_Summary.docx) <img alt="External Link" src={useBaseUrl('img/download.png')} />
+[Perl Best Practices Summary](artifacts/Perl_Best_Practices_Summary.docx) <img alt="Download" src={useBaseUrl('img/download.png')} />

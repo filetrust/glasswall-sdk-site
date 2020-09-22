@@ -3,36 +3,44 @@ title: cfbGeneology
 ---
 
 ### NAME
-*cfbGeneology* - provide textual analysis of red-black tree in a Compound File Binary (CFB) file
+&emsp;&emsp;&emsp;&emsp;*cfbGeneology* - provide textual analysis of red-black tree in a Compound File Binary (CFB) file
 
 ### SYNOPSIS
-cfbGeneology --in[=]*inputfile* --out[=]*outputfile*  
-cfbGeneology (--man | --help | --version | --usage)
+&emsp;&emsp;&emsp;&emsp;cfbGeneology --in[=]*inputfile* --out[=]*outputfile*  
+&emsp;&emsp;&emsp;&emsp;cfbGeneology (--man | --help | --version | --usage)
 
 ### DESCRIPTION
-cfbGeneology analyses CFB format files and produces tabular reports for each file showing the class ID, Directory Entry name, Left Sibling ID, Right Sibling ID and Child ID. This allows analysis of the CFB red-black tree within each file.
+&emsp;&emsp;&emsp;&emsp;cfbGeneology analyses CFB format files and produces tabular reports for each file showing the class ID, Directory Entry name, Left Sibling ID, Right Sibling ID and Child ID. This allows analysis of the CFB red-black tree within each file.
 
 **--in**  
-The name of the CFB file to be analysed.
+&emsp;&emsp;&emsp;&emsp;The name of the CFB file to be analysed.
 
 **--out**  
-The name of the file where the analysis is to be placed.
+&emsp;&emsp;&emsp;&emsp;The name of the file where the analysis is to be placed.
 
 **--man**  
-Display comprehensive help and exit.
+&emsp;&emsp;&emsp;&emsp;Display comprehensive help and exit.
 
 **--help**  
-Display usage and description of each option and exit.
+&emsp;&emsp;&emsp;&emsp;Display usage and description of each option and exit.
 
 **--version**  
-Output version information and exit.
+&emsp;&emsp;&emsp;&emsp;Output version information and exit.
 
 **--usage**  
-Display usage and exit.
+&emsp;&emsp;&emsp;&emsp;Display usage and exit.
 
 ### **EXIT STATUS**  
-0          success  
-non-zero   error
+&emsp;&emsp;&emsp;&emsp;0          success  
+&emsp;&emsp;&emsp;&emsp;non-zero   error
+
+### **EXAMPLE**
+**cfbGeneology --in=c:\docs\doc_01.doc  --out=c:\output_directory\doc_01-GENEOLOGY.txt**  
+&emsp;&emsp;&emsp;&emsp;Analyse file doc_01.doc in directory c:\docs and place the output in file doc_01-GENEOLOGY.txt in directory c:\output_directory.  
+**cfbGeneology --in c:\docs\doc_01.doc --out c:\output_directory\doc_01-GENEOLOGY.txt**  
+&emsp;&emsp;&emsp;&emsp;As above, but shows that `=` is optional.   
+**cfbGeneology --in="c:\docs directory\doc_01.doc" --out="c:\output directory\doc_01-GENEOLOGY.txt"**  
+&emsp;&emsp;&emsp;&emsp;As above, but shows use of `"` when paths contain spaces.
 
 ### AUTHOR
 Martin O'Brien mobrien@glasswallsolutions.com
