@@ -10,11 +10,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 [GIF - Bits and Bytes](<artifacts/GIF/GIF - Bits and Bytes.pdf>)
 
-[GIF format](<artifacts/GIF/GIF - format.pdf>)
+[GIF format](<artifacts/gif/GIF - format.pdf>)
 
-[GIF 87 Specification](<artifacts/GIF/GIF_spec-gif87.pdf>)
+[GIF 87 Specification](<artifacts/gif/GIF_spec-gif87.pdf>)
 
-[GIF 89a Specification](<artifacts/GIF/www.w3.org_Graphics_GIF_spec-gif89a.pdf>)
+[GIF 89a Specification](<artifacts/gif/www.w3.org_Graphics_GIF_spec-gif89a.pdf>)
 
 ## JPEG
 
