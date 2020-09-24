@@ -28,12 +28,12 @@ const features = [
     ),
   }, */
   {
-    title: <>Glasswall Core Builds</>,
+    title: <>Glasswall Documentation</>,
     imageUrl: "img/use-cases-illustration-03.png",
     imageLinkTo: "docs/use-cases/overview",
     description: (
       <>
-        This section documents the build processes.
+        A resource for Glasswall documentation.
       </>
     ),
   },
@@ -70,7 +70,7 @@ function Home() {
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
+          {/* <div className={styles.buttons}>
             <Link
               className={classnames(
                 "button button--outline button--secondary button--lg",
@@ -80,7 +80,7 @@ function Home() {
             >
               Get Started
             </Link>
-          </div>
+          </div> */}
         </div>
       </header>
       <main>

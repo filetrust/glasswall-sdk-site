@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Glasswall SDK",
+  title: "Glasswall Documentation",
   tagline: "",
   url: "https://filetrust.github.io",
   baseUrl: "/glasswall-sdk-site/",
