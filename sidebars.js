@@ -2,81 +2,218 @@ module.exports = {
 	someSidebar: {
 		Documents:
 			[
-				"introduction",                                   // 1. Introduction
-				{
-					"2. Glasswall Core":
-						[
-							"glasswall_core/glasswall_rebuild",   // 2.1
-							"glasswall_core/glasswall_editor",    // 2.2
-							"glasswall_core/glasswall_web_api",   // 2.3
-							"glasswall_core/glasswall_tools",     // 2.4
-							"glasswall_core/glasswall_licencing"  // 2.5
-						]
-				},
-				{
-					"3. Glasswall Core Builds":
-					[
-						"glasswall_core_builds/build_agents",      // 3.1
-						"glasswall_core_builds/versioning",        // 3.2
-						"glasswall_core_builds/build_definitions"  // 3.3
-					]
-				},
-				"guides",                                          // 4. Guides
-				{
-					"5. Testing":
-					[
-						"testing/core_test_strategy",
-						"testing/automated_testing",
-						"testing/manual_testing",
-						"testing/testing_guidelines"
-					]
-				},
-				{
-					"6. Development":
-					[
-						"development/development_process",
-						"development/coding_guidelines",
-						"development/branching_strategy",
-						"development/unit_testing",
-						{
-							"6.5 Code Reviews":
-							[
-								"development/code_reviews/code_review_overview",
-								"development/code_reviews/code_collaborator"
-							]
-						}
-					]
-				},
-				{
-					"7. Deployment":
-					[
-						{
-							"7.1 Release Process":
-							[
-								"deployment/release_process/release_process_overview",
-								"deployment/release_process/release_notes"
-							]
-						},
-						{
-							"7.2 Glasswall SDK Documentation":
-							[
-								"deployment/glasswall_sdk_documentation/glasswall_rebuild_sdk_documentation",
-								"deployment/glasswall_sdk_documentation/glasswall_editor_sdk_documentation"
-							]
-						}
-
-					]
-				},
-				"other_related_links"
-			],
-			
-/* 		"How-To's":
-			[
-				{
-					"CI/CD": [
-						"how-tos/ci-cd-pipeline"
-					]
-				}
-			] */
-	},
+"1. Introduction",
+{
+"2. Glasswall Core":
+    [
+    {
+    "2.1. Glasswall Rebuild":
+        [
+        "2.1.1 Product Description",
+        {
+        "2.1.2. Architecture":
+            [
+            "2.1.2.1. Overview",
+            "2.1.2.2. Auto Generated Cameras",
+            "2.1.2.3. Legacy Cameras",
+            "2.1.2.4. Analysis Repository",
+            "2.1.2.5. Memory Buffers",
+            "2.1.2.6. Configuration Management"
+            ]
+        },
+        "2.1.3. Licensing",
+        "2.1.4. Dependencies",
+        {
+        "2.1.5. Build":
+            [
+            "2.1.5.1. Building Project",
+            "2.1.5.2. Versioning"
+            ]
+        },
+        {
+        "2.1.6. SDK":
+            [
+            "2.1.6.1 API",
+            {
+            "2.1.6.2 SDK Wrappers":
+                [
+                "2.1.6.2.1. Python",
+                "2.1.6.2.2. JavaScript",
+                "2.1.6.2.3. C#",
+                "2.1.6.2.4. Java"
+                ]
+            }
+            ]
+        },
+        "2.1.7. Rebuild CLI"
+        ]
+    },
+    {
+    "2.2. Glasswall Editor":
+        [
+        "2.2.1 Product Description",
+        {
+        "2.2.2. Architecture":
+            [
+            "2.2.2.1. Overview",
+            "2.2.2.2. Auto Generated Cameras",
+            "2.2.2.3. Analysis Repository",
+            "2.2.2.4. Memory Buffers",
+            "2.2.2.5. Configuration Management"
+            ]
+        },
+        "2.2.3. Licensing",
+        "2.2.4. Dependencies",
+        {
+        "2.2.5. Build":
+            [
+            "2.2.5.1. Building Project",
+            "2.2.5.2. Versioning",
+            ]
+        },
+        {
+        "2.2.6. SDK":
+            [
+            "2.2.6.1. API",
+            {
+            "2.2.6.2. SDK Wrappers":
+                [
+                "2.2.6.2.1. Python",
+                "2.2.6.2.2. JavaScript",
+                "2.2.6.2.3. C#",
+                "2.2.6.2.4. Java"
+                ]
+            }
+            ]
+        },
+        "2.2.7. Editor CLI"
+        ]
+    },
+    {
+    "2.3. Glasswall Word Search":
+        [
+        "2.3.1 Product Description",
+        {
+        "2.3.2. Architecture":
+            [
+            "2.3.2.1. Overview",
+            "2.3.2.2. Configuration Management"
+            ]
+        },
+        "2.3.3. Licensing",
+        "2.3.4. Dependencies",
+        {
+        "2.3.5. Build":
+            [
+            "2.3.5.1. Building Project",
+            "2.3.5.2. Versioning"
+            ]
+        },
+        {
+        "2.3.6. SDK":
+            [
+            "2.3.6.1 API",
+            {
+            "2.3.6.2. SDK Wrappers":
+                [
+                "2.3.6.2.1 Python",
+                "2.3.6.2.2 JavaScript",
+                "2.3.6.2.3 C#",
+                "2.3.6.2.4 Java"
+                ]
+            }
+            ]
+        }
+        ]
+    },
+    {
+    "2.4. Glasswall Archive Manager":
+        [
+        "2.4.1 Product Description",
+        {
+        "2.4.2. Architecture":
+            [
+            "2.4.2.1. Overview",
+            "2.4.2.2. Configuration Management"
+            ]
+        },
+        "2.4.3. Licensing",
+        "2.4.4. Dependencies",
+        {
+        "2.4.5. Build":
+            [
+            "2.4.5.1. Building Project",
+            "2.4.5.2. Versioning"
+            ]
+        },
+        "2.4.6. SDK API",
+        {
+        "2.4.7. SDK Wrappers":
+            [
+            "2.4.7.1. Python",
+            "2.4.7.2. JavaScript",
+            "2.4.7.3. C#",
+            "2.4.7.4. Java",
+            ]
+        }
+        ]
+    }
+    ]
+},
+"3. Guides",
+{
+"4. Testing":
+    [
+    "4.1. Core Test Strategy",
+    "4.2. Automated Testing",
+    "4.3. Manual Testing",
+    "4.4. Testing Guidelines"
+    ]
+},
+{
+"5. Development":
+    [
+    "5.1. Development Process",
+    "5.2. Coding Guidelines",
+    "5.3. Branching Strategy",
+    "5.4. Unit Testing"
+    ]
+},
+{
+"6. Deployment":
+    [
+    {
+    "6.1. Release Process":
+        [
+        "6.1.1. Overview",
+        "6.1.2. Release Notes"
+        ]
+    }
+    ]
+},
+"7. Tools",
+{
+"8-related":
+    [
+    {
+    "8.1. Specifications":
+        [
+        {
+        "8.1.1. MS Office":
+            [
+            "8.1.1.1. Office Open XML",
+            "8.1.1.2. Office Binary"
+            ]
+        },
+        "8.1.2. PDF",
+        "8.1.3. JPEG",
+        "8.1.4. PNG",
+        "8.1.5. GIF",
+        "8.1.6. TIFF"
+        ]
+    }
+    ]
+}
+]
+},
 };
