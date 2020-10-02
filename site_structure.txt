@@ -18,8 +18,8 @@
             2.1.6.1 API
             2.1.6.2 SDK Wrappers
                 2.1.6.2.1. Python
-                2.1.6.2.2. Javascript
-                2.1.6.2.3. C Sharp
+                2.1.6.2.2. JavaScript
+                2.1.6.2.3. C#
                 2.1.6.2.4. Java
         2.1.7. Rebuild CLI
     2.2. Glasswall Editor
@@ -39,8 +39,8 @@
             2.2.6.1. API
             2.2.6.2. SDK Wrappers
                 2.2.6.2.1. Python
-                2.2.6.2.2. Javascript
-                2.2.6.2.3. C Sharp
+                2.2.6.2.2. JavaScript
+                2.2.6.2.3. C#
                 2.2.6.2.4. Java
         2.2.7. Editor CLI  
     2.3. Glasswall Word Search
@@ -57,8 +57,8 @@
             2.3.6.1 API
             2.3.6.2. SDK Wrappers
                 2.3.6.2.1 Python
-                2.3.6.2.2 Javascript
-                2.3.6.2.3 C Sharp
+                2.3.6.2.2 JavaScript
+                2.3.6.2.3 C#
                 2.3.6.2.4 Java
     2.4. Glasswall Archive Manager
         2.4.1 Product Description
@@ -73,8 +73,8 @@
         2.4.6. SDK API
         2.4.7. SDK Wrappers
             2.4.7.1. Python
-            2.4.7.2. Javascript
-            2.4.7.3. C Sharp
+            2.4.7.2. JavaScript
+            2.4.7.3. C#
             2.4.7.4. Java
 3. Guides
 4. Testing
