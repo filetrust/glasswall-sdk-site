@@ -35,7 +35,7 @@ module.exports = {
             [
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_6-sdk/2_1_6_1-api",
             {
-            "2.1.6.2 SDK_Wrappers":
+            "2.1.6.2 SDK Wrappers":
                 [
                 "2-glasswall_core/2_1-glasswall_rebuild/2_1_6-sdk/2_1_6_2-sdk_wrappers/2_1_6_2_1-python",
                 "2-glasswall_core/2_1-glasswall_rebuild/2_1_6-sdk/2_1_6_2-sdk_wrappers/2_1_6_2_2-javascript",
