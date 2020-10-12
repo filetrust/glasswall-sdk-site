@@ -1,3 +1,7 @@
+---
+title: Graphics Interchange Format (GIF) Camera
+---
+
 Glasswall DLL GIF Camera {#internalGlasswallDllCameraGIF}
 =======================
 

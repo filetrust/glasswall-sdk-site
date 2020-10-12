@@ -1,3 +1,7 @@
+---
+title: Equation Native Camera
+---
+
 Equation Native Camera {#internalGlasswallDllCameraEquationNative}
 ===============
 

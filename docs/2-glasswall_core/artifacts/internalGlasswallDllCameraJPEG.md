@@ -1,3 +1,7 @@
+---
+title: JPEG Camera
+---
+
 Glasswall DLL JPEG Camera {#internalGlasswallDllCameraJPEG}
 =======================
 
