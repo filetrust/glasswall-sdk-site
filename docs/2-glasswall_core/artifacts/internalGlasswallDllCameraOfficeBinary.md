@@ -1,3 +1,7 @@
+---
+title: Office Binary Camera
+---
+
 Office (Binary) {#internalGlasswallDllCameraOfficeBinary}
 ===============
 

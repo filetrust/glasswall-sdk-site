@@ -1,3 +1,7 @@
+---
+title: Portable Network Graphics (PNG) Camera
+---
+
 Glasswall DLL PNG Camera {#internalGlasswallDllCameraPNG}
 =======================
 

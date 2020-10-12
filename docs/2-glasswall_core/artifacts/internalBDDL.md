@@ -1,3 +1,7 @@
+---
+title: Binary Data Definition Language (BDDL)
+---
+
 Binary Data Definition Language (BDDL) {#internalBDDL}
 ===========================================
 

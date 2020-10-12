@@ -1,3 +1,7 @@
+---
+title: Data Validation Language (DVL)
+---
+
 Data Validation Language (DVL) {#internalDVL}
 ===========================================
 
