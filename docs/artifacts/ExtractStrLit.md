@@ -1,5 +1,6 @@
-Extract Str Lit {#internalExtractStrLit}
-===========================================
+---
+Extract String Literals
+---
 
 \section Author
 Martin O'Brien

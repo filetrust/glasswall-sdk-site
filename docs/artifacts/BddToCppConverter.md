@@ -1,5 +1,7 @@
-BDD to CPP Converter  {#internalBddToCppConverter}
-===========================================
+---
+title: BDDL to C++ Converter
+---
+======================
 
 # Authors
 Steven Warner & Stuart Squibb 

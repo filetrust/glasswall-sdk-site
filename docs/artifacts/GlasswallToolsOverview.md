@@ -1,5 +1,6 @@
-Glasswall Core Test Tools {#InternalGlasswallDllTestTools}
-=======================
+---
+title: Glasswall Core Test Tools
+---
 
 \tableofcontents
 
@@ -18,7 +19,7 @@ Click on the test tool in the table below to open a page which will provide you 
 
 [//]: # (Glasswall CLI)
 <TR>
-<TD>@subpage internalGlasswallCli</TD><TD>Command Line Tool that allows the user to process files with the Glasswall engine and any API configuration.</TD>
+<TD>@subpage GlasswallCli</TD><TD>Command Line Tool that allows the user to process files with the Glasswall engine and any API configuration.</TD>
 </TR>
  
 [//]: # (GW Demonstrator)
@@ -38,7 +39,7 @@ Click on the test tool in the table below to open a page which will provide you 
 
 <!-- Bin directory reader -->
 <TR>
-<TD>@subpage internalBinDirectoryReader</TD><TD>Parse a directory full of files against a BDD definition.</TD>
+<TD>@subpage BinDirectoryReader</TD><TD>Parse a directory full of files against a BDD definition.</TD>
 </TR>
 
 <!-- BDD to CPP Converter -->
@@ -53,17 +54,17 @@ Click on the test tool in the table below to open a page which will provide you 
 
 <!-- CFB Geneology -->
 <TR>
-<TD>@subpage internalCFBGeneology</TD><TD>Analyses CFB format files (e.g doc, ppt etc.) and produces tabular reports for each file showing the class ID, Directory Entry name, Left Sibling ID, Right Sibling ID and Child ID.</TD>
+<TD>@subpage CFBGeneology</TD><TD>Analyses CFB format files (e.g doc, ppt etc.) and produces tabular reports for each file showing the class ID, Directory Entry name, Left Sibling ID, Right Sibling ID and Child ID.</TD>
 </TR>
 
 <!-- Check CFB Signature -->
 <TR>
-<TD>@subpage internalCheckCFBSignature</TD><TD>Allows the user to copy or move files that do not contain a CFB signature from the specifed directory.</TD>
+<TD>@subpage CheckCFBSignature</TD><TD>Allows the user to copy or move files that do not contain a CFB signature from the specifed directory.</TD>
 </TR>
 
 <!-- Check Zip Signature -->
 <TR>
-<TD>@subpage internalCheckZipSignature</TD><TD>Allows the user to copy or move files that do not contain a Zip signature from the specifed directory.</TD>
+<TD>@subpage CheckZipSignature</TD><TD>Allows the user to copy or move files that do not contain a Zip signature from the specifed directory.</TD>
 </TR>
 
 <!-- RTF Control Word Struct Generator -->
@@ -79,32 +80,32 @@ Click on the test tool in the table below to open a page which will provide you 
 
 <!-- DVL Checker -->
 <TR>
-<TD>@subpage internalDvlChecker</TD><TD>Checks DVL files for syntax errors.</TD>
+<TD>@subpage DvlChecker</TD><TD>Checks DVL files for syntax errors.</TD>
 </TR>
 
 <!-- Extract Str Lit-->
 <TR>
-<TD>@subpage internalExtractStrLit</TD><TD>Reads a set of files and reports the Group ID and string literal passed in to each use of GW_ISSUE.</TD>
+<TD>@subpage ExtractStrLit</TD><TD>Reads a set of files and reports the Group ID and string literal passed in to each use of GW_ISSUE.</TD>
 </TR>
 
 <!-- Find DIFAT-->
 <TR>
-<TD>@subpage internalFindDIFAT</TD><TD>The program will read in each file in a directory and each file will be processed and interrogated for a DIFAT sector. A list of files processed will be produced, grouped into those with DIFAT sectors and those without.</TD>
+<TD>@subpage FindDIFAT</TD><TD>The program will read in each file in a directory and each file will be processed and interrogated for a DIFAT sector. A list of files processed will be produced, grouped into those with DIFAT sectors and those without.</TD>
 </TR>
 
 <!-- Get Excel Version-->
 <TR>
-<TD>@subpage internalGetExcelVersion</TD><TD>Identifies the Excel versions of binary Excel files and produces a list of each file name with its version number and also provides options to sort the files based on the versions.</TD>
+<TD>@subpage GetExcelVersion</TD><TD>Identifies the Excel versions of binary Excel files and produces a list of each file name with its version number and also provides options to sort the files based on the versions.</TD>
 </TR>
 
 <!-- Get PowerPoint Version-->
 <TR>
-<TD>@subpage internalGetPowerPointVersion</TD><TD>Identifies the PowerPoint versions of binary PowerPoint files and produces a list of each file name with its version number and also provides options to sort the files based on the versions.</TD>
+<TD>@subpage GetPowerPointVersion</TD><TD>Identifies the PowerPoint versions of binary PowerPoint files and produces a list of each file name with its version number and also provides options to sort the files based on the versions.</TD>
 </TR>
 
 <!-- Get Word Version-->
 <TR>
-<TD>@subpage internalGetWordVersion</TD><TD>Identifies the Word versions
+<TD>@subpage GetWordVersion</TD><TD>Identifies the Word versions
 of binary Word files and produces a list of each file name with its 
 version number and also provides options to sort the files based on the versions.</TD>
 </TR>
@@ -136,32 +137,32 @@ version number and also provides options to sort the files based on the versions
 
 <!-- PDF Inflate Flate Decode-->
 <TR>
-<TD>@subpage internalPdfInflateFlateDecode</TD><TD>Looks for all occurrences of FlateDecoded streams in the given PDF file and inflates them. The data for each inflated stream are placed in a file named in the form 'object_nnn.bin' where 'nnn' represents the object number of the FlateDecoded stream.</TD>
+<TD>@subpage PdfInflateFlateDecode</TD><TD>Looks for all occurrences of FlateDecoded streams in the given PDF file and inflates them. The data for each inflated stream are placed in a file named in the form 'object_nnn.bin' where 'nnn' represents the object number of the FlateDecoded stream.</TD>
 </TR>
 
 <!-- Test MS Office Open-->
 <TR>
-<TD>@subpage internalTestMSOfficeOpen</TD><TD>Automatically opens office files in the background and as a result produces a report with information on which files successfully opened, which did not and for what reason.</TD>
+<TD>@subpage TestMSOfficeOpen</TD><TD>Automatically opens office files in the background and as a result produces a report with information on which files successfully opened, which did not and for what reason.</TD>
 </TR>
 
 <!-- Walk CFB-->
 <TR>
-<TD>@subpage internalWalkCfb</TD><TD>Shows a textual description of the hierarchical relationships between storages and streams in CFB format files. It also provides statistics on all the streams and storages found in the set of files, and can extract the streams and store them as files.</TD>
+<TD>@subpage WalkCfb</TD><TD>Shows a textual description of the hierarchical relationships between storages and streams in CFB format files. It also provides statistics on all the streams and storages found in the set of files, and can extract the streams and store them as files.</TD>
 </TR>
 
 <!-- Walk WMF-->
 <TR>
-<TD>@subpage internalWalkWmf</TD><TD>Walk WMF shows a textual description of the record structure of Windows Metafile (WMF) files.</TD>
+<TD>@subpage WalkWmf</TD><TD>Walk WMF shows a textual description of the record structure of Windows Metafile (WMF) files.</TD>
 </TR>
 
 <!-- Walk ZIP-->
 <TR>
-<TD>@subpage internalWalkZip</TD><TD>Analyses a set of files and for each ZIP archive (Package) produces a textual description of its parts.</TD>
+<TD>@subpage WalkZip</TD><TD>Analyses a set of files and for each ZIP archive (Package) produces a textual description of its parts.</TD>
 </TR>
 
 <!-- Word Dissection-->
 <TR>
-<TD>@subpage internalWordDissection</TD><TD>Extracts structure and stream components from a word binary file and stores them as separate binary files, data which can then be used to test/validate BDD structure definitions.</TD>
+<TD>@subpage WordDissection</TD><TD>Extracts structure and stream components from a word binary file and stores them as separate binary files, data which can then be used to test/validate BDD structure definitions.</TD>
 </TR>
 
 <!-- GW Scraper-->
@@ -191,7 +192,7 @@ version number and also provides options to sort the files based on the versions
 
 <!-- GwRegressionTester -->
 <TR>
-<TD>@subpage internalGwRegressionTester</TD><TD>A tool used for executing different tests on the Glasswall library to make sure that regression issues are not reintroduced into the code base. Runs on Windows and Linux</TD>
+<TD>@subpage GwRegressionTester</TD><TD>A tool used for executing different tests on the Glasswall library to make sure that regression issues are not reintroduced into the code base. Runs on Windows and Linux</TD>
 </TR>
 
 <!-- Test Launcher -->

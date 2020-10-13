@@ -1,50 +1,59 @@
-Word Dissection {#internalWordDissection}
-===========================================
+---
+title: Word Dissection
+---
 
-\section Author
 
-Steve Warner 
+###  DESCRIPTION
+Extracts structure and stream components from a word binary file and
+stores them as separate binary files, data which can then be used to
+test/validate BDD structure definitions.
 
-\section Description
-
-Extracts structure and stream components from a word binary file and stores them as separate binary files, data which can then be used to test/validate BDD structure definitions.
-
-\section Location
+### LOCATION
 Can be found at the following location in TFS:
-
 - inhouse.tools\GWBinaryAnalysisTools\MSOfficeAnalysis\MSWordAnalysis\WordDocumentStreamWalker\WordDissection\bin\Release\WordDissection.exe
 
 
-\section Usage
+### USAGE
 
 WordDissection 
 
 Version: 1.8.3
 
-Usage:
-
 WordDissection *directoryToProcess* *command*
-where *directoryToProcess* is processed and all its subdirectories. These directories need to have had *walkCFB* run on them already and contain WordDocument.bin and 1Table.bin and/or 0Table.bin and optionally data.bin.
+where *directoryToProcess* is processed and all its subdirectories.
+These directories need to have had *walkCFB* run on them already and
+contain WordDocument.bin and 1Table.bin and/or 0Table.bin and optionally
+data.bin.
 
 where *command* is one or more of these
     
-h - get headings
+**h**  
+Get headings
 
-d - get blob info
+**d**  
+Get BLOB info
     
-t - split table into substreams
+**t**  
+Split table into substreams
     
-c - create core file from wds/table/data streams
+**c**  
+Create core file from WordDocument Stream, Table Stream, Data stream
     
-o - overwrite - write files even if they already exist
+**o**  
+Overwrite; write files even if they exist
     
-v - verbose messages during execution
+**v**  
+Verbosely describe the processing
 
-e.g.: 
 
-WordDissection c:/testfiles tc
+### EXAMPLES
 
-will create TableStream subdirectory and its contents and the core stream binary for every *.doc directory in c:/testfiles
+The command
+
+&emsp;&emsp;`WordDissection c:\testfiles tc`  
+
+will create a TableStream subdirectory and its contents and the core
+stream binary for every *.doc directory in c:\testfiles.
 
 
 
@@ -115,3 +124,7 @@ Using the rule defined in MS-DOC 1.3.5 Pictures, determine the offset into the D
 PlcSpa (MS-DOC 2.9.253 Spa) also references a shape via the OfficeArtDggContainer. This should resolve to further ODraw data that could be extracted to a separate binary files.
 
 When these objects are found, they should be written to a subdirectory called 'DataStream' in the form 'Odraw_*data stream offset*.bin
+
+
+### AUTHOR
+Steven Warner

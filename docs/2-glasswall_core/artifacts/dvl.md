@@ -2,9 +2,6 @@
 title: Data Validation Language (DVL)
 ---
 
-Data Validation Language (DVL) {#internalDVL}
-===========================================
-
 # Overview
 
 Glasswall developed a Domain Specific Language (DSL) named Data Validation Language (DVL) which adds a secondary layer of validation to the process and is used after Syntax checking has been performed using code generated from the Binary Data Definition Language (BDDL). DVL defines the valid values (discrete and range) of variables in the file structures and the items that can be controlled by content management policy settings. The diagram below shows the various stages involved in the code generation process and where DVL fits in.
@@ -89,12 +86,14 @@ DVL.
 
 # DVL Syntax Checker
 
-A tool that was developed with purpose of performing syntax checking on the DVL files and highlighting any incorrect syntax. More information on the DVL Checker can be found [here](internalDvlChecker.md). 
+A tool that was developed with purpose of performing syntax checking on
+the DVL files and highlighting any incorrect syntax. More information
+on the DVL Checker can be found in the [DVL Checker](DvlChecker.md) page.
 
 # Related Links
 
-- @ref internalDvlChecker
-- [DVL Guide](DVLGuide.pdf "DVLGuide.pdf")
-- @ref internalBDDL
+- @ref DvlChecker
+- [DVL Guide](../../artifacts/DVLGuide.docx)
+- @ref bddl
 - Glasswall Code Generators
-	- @ref internalBddToCppConverter
+	- @ref BddToCppConverter

@@ -1,4 +1,4 @@
 ---
-title: 2.4.6 Sdk Api 
-sidebar_label: 2.4.6 Sdk Api 
+title: 2.4.6 SDK API
+sidebar_label: 2.4.6 SDK API
 ---

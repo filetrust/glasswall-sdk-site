@@ -1,5 +1,6 @@
-Bin directory reader  {#internalBinDirectoryReader}
-===========================================
+---
+title: Bin directory reader
+---
 
 \section Author
 Steven Warner,

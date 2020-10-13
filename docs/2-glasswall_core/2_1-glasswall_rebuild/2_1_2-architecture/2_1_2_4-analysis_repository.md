@@ -5,7 +5,7 @@ sidebar_label: 2.1.2.4 Analysis Repository
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-[Internal Analysis Repository](../../artifacts/internalAnalysisRepository)  
+[Analysis Repository](../../artifacts/analysisRepository)  
 [Glasswall XSD](../../artifacts/glasswall_xsd)  
 [Analysis Report](../../artifacts/analysis_report)  
 [Analysis Report EMF](../../artifacts/analysis_report_EMF)  

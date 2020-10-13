@@ -5,9 +5,9 @@ sidebar_label: 4.2 Automated Testing
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-[GWRegressionTester](artifacts/internalGwRegressionTester)  
+[Glasswall Regression Tester](artifacts/GwRegressionTester)  
 
-[Analysis Repository and Reporting System](<artifacts/Analysis Repository and Reporting System.docx>) <img alt="Download" src={useBaseUrl('img/download.png')} />
+[Analysis Repository and Reporting System](<artifacts/Analysis Repository and Reporting System.docx>) <img alt="Download" src={useBaseUrl('img/download.png')} />  
 
-[GWRegressionTester](artifacts/internalGwRegressionTester)[TestResultXsd](<artifacts/TestResultXsd.xsd>) 
+[TestResultXsd](<artifacts/TestResultXsd.xsd>) 
 

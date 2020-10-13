@@ -1,5 +1,6 @@
-BFF Validator  {#internalBffValidator}
-===========================================
+---
+title: BFF Validator
+---
 
 \section Author
 Microsoft

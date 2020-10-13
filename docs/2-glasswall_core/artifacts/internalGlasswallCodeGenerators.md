@@ -50,7 +50,7 @@ At present, some cameras are using the older Perl generator and others the newer
 
 Converts BDD to C++ Code Produces Template Heavy Code
 
-See  @ref internalBddToCppConverter
+See  @ref BddToCppConverter
 
 
 
@@ -61,7 +61,7 @@ See  @ref internalBddToCppConverter
 
 Checks DVL files for syntax errors and produces validation methods in C++ to link with code produced by either version of BDDL to C++ convertor.
 
-See @ref internalDvlChecker
+See @ref DvlChecker
 
 
 

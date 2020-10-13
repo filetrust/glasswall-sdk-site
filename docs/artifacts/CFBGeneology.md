@@ -1,13 +1,13 @@
 ---
-title: cfbGeneology
+title: CFB Geneology
 ---
 
 ### NAME
 &emsp;&emsp;&emsp;&emsp;*cfbGeneology* - provide textual analysis of red-black tree in a Compound File Binary (CFB) file
 
 ### SYNOPSIS
-&emsp;&emsp;&emsp;&emsp;cfbGeneology --in[=]*inputfile* --out[=]*outputfile*  
-&emsp;&emsp;&emsp;&emsp;cfbGeneology (--man | --help | --version | --usage)
+&emsp;&emsp;&emsp;&emsp;cfbGeneology --in(=| )*inputfile* --out(=| )*outputfile*  
+&emsp;&emsp;&emsp;&emsp;&emsp;cfbGeneology (--man | --help | --version | --usage)
 
 ### DESCRIPTION
 &emsp;&emsp;&emsp;&emsp;cfbGeneology analyses CFB format files and produces tabular reports for each file showing the class ID, Directory Entry name, Left Sibling ID, Right Sibling ID and Child ID. This allows analysis of the CFB red-black tree within each file.
@@ -32,7 +32,7 @@ title: cfbGeneology
 
 ### **EXIT STATUS**  
 &emsp;&emsp;&emsp;&emsp;0          success  
-&emsp;&emsp;&emsp;&emsp;non-zero   error
+&emsp;&emsp;&emsp;&emsp;&emsp;non-zero   error
 
 ### **EXAMPLE**
 **cfbGeneology --in=c:\docs\doc_01.doc  --out=c:\output_directory\doc_01-GENEOLOGY.txt**  
@@ -41,6 +41,9 @@ title: cfbGeneology
 &emsp;&emsp;&emsp;&emsp;As above, but shows that `=` is optional.   
 **cfbGeneology --in="c:\docs directory\doc_01.doc" --out="c:\output directory\doc_01-GENEOLOGY.txt"**  
 &emsp;&emsp;&emsp;&emsp;As above, but shows use of `"` when paths contain spaces.
+
+### **SEE ALSO**
+[checkCFBSignature](CheckCFBSignature), [walkCFB](WalkCFB)
 
 ### AUTHOR
 Martin O'Brien mobrien@glasswallsolutions.com

@@ -1,11 +1,12 @@
-GwRegressionTester {#internalGwRegressionTester}
-===========================================
+---
+title: GwRegressionTester
+---
 
-## Authors {#internalGwRegressionTesterAuthors}
+## Authors
 
 Roman Danilov
 
-# Description {#internalGwRegressionTesterDescription}
+# Description
 
 This is a tool that is used for executing different tests on the Glasswall library to ensure regression issues are not reintroduced into the codebase. The user specifies the library to test and a configuration file specifying the files and their corresponding tests. The files are run with the specified library and the tests are executed on the results. A report is generated with details on the tests that were run and whether they passed or failed. The regression tool is useful for automating repetitive tests that can be done easily by the computer.
 
@@ -13,7 +14,7 @@ The regression tester consists of two applications: `GwRegressionTester.exe` and
 
 If the tool is working on Windows, but not on Linux, or vice versa, then please raise a bug as ideally it should be running identically on both platforms.
 
-# Locations {#internalGwRegressionTesterLocations}
+# Locations
 
 The source code is stored on TFS in the location:
 
@@ -32,13 +33,12 @@ Both of the applications are written in C# and to be run require version 4.5 of 
 
 TODO  - add more details about the architecture
 
-# Usage {#internalGwRegressionTesterUsage}
+# Usage
 
 The GwRegressionTester.exe is executed through the commandline with the appropriate parameters specified. When running on Linux on Mono, you will need to prepend `mono` to the executable like so `mono GwRegressionTester.exe ...`. The GwRegressionTester.exe accepts the following arguments:
 
 <table>
 <caption >Commandline Arguments</caption>
-
 <tr>
 <th>Short form</th>
 <th>Long form</th>
@@ -96,23 +96,21 @@ The GwRegressionTester.exe is executed through the commandline with the appropri
 
 </table>
 
-# Configuration for Test Cases {#internalGwRegressionTesterConfiguration}
+# Configuration for Test Cases
 
-The configuration file are stored in the YAML format (YAML Ain't Markup Language). YAML is a human readable and writeable language designed for data serialisation. The whitespace in YAML is syntactically significant so please use newlines and indentations correctly, and avoid tabs as they break the configuration files. The fields in the configuration files are case sensitive so please bear that in mind when editing them. For a quick how to guide on YAML have a look at the following document:
+The configuration file are stored in the YAML format (YAML Ain't Markup Language). YAML is a human readable and writeable language designed for data serialisation. The whitespace in YAML is syntactically significant so please use newlines and indentations correctly, and avoid tabs as they break the configuration files. The fields in the configuration files are case sensitive so please bear that in mind when editing them. For a quick how to guide on YAML have a look at [Learn YAML in Y Minutes](internalLearnYAMLInYMinutes).
 
-@subpage internalLearnYAMLInYMinutes
-
-Example configuration files can be found at the end of this documentation or you can access them directly by clicking [here](#internalGwRegressionTesterConfigExample), [here](#internalGwRegressionTesterGetIssueIdExample), or [here](#internalGwRegressionTesterExportTestsExample). It's a good idea to refer to the examples as they will give you a better understanding of how the configuration file fits together.
+Example configuration files can be found at the end of this documentation or you can access them directly by clicking [Example test case](#GwRegressionTesterConfigExample), [Issue ID example test case](#internalGwRegressionTesterGetIssueIdExample), or [Exports example test case](#internalGwRegressionTesterExportTestsExample). It's a good idea to refer to the examples as they will give you a better understanding of how the configuration file fits together.
 
 The `#` character is used to denote comments and the `:` character is used to denote key-value relationships; therefore, these characters need to be escaped when used within the configuration file. For example, <code>\\\\STORAGE-SERVER\\Test-Input-Files\\TestResources\\Z-GeneratedSets\\Bug # 4840</code> will need to be converted to <code>"\\\\STORAGE-SERVER\\Test-Input-Files\\TestResources\\Z-GeneratedSets\\Bug # 4840"</code>, and <code>PDF: files failing with 'Attempted write access beyond end of buffer'</code> will need to be turned into <code>"PDF: files failing with 'Attempted write access beyond end of buffer'"</code>.
 
-## Overall structure of the configuration file {#internalGwRegressionTesterOverallConfiguration}
+## Overall structure of the configuration file
 
 The "root" element of the configuration file is `Bugs:`, which is defined as follows:
 
-`Bugs: List<TestCase>` (Required) This contains a list of [Test Case](#internalGwRegressionTesterTestCase) elements that will be processed.
+`Bugs: List<TestCase>` (Required) This contains a list of [Test Case elements](#internalGwRegressionTesterTestCase) that will be processed.
 
-## Test Case element {#internalGwRegressionTesterTestCase}
+## <a name="internalGwRegressionTesterTestCase"></a> Test Case element
 
 This is used to specify the details of each test case that needs to be processed. Each test case element has the following fields:
 
@@ -130,7 +128,7 @@ This is used to specify the details of each test case that needs to be processed
 
 `Tests: List<TestMode>` (Required) This specifies a list of [Test Mode](#internalGwRegressionTesterTestMode) elements, which specify different ways that tests are executed.
 
-## File Location {#internalGwRegressionTesterFileLocation}
+## File Location <a name="internalGwRegressionTesterFileLocation"></a>
 
 This is used for specifying the files that need to be tested. Each File Location has the following fields:
 
@@ -138,7 +136,7 @@ This is used for specifying the files that need to be tested. Each File Location
 
 `Recurse: <bool>` (Optional) This specifies whether to go through sub directories when searching for files to test. `true` enables sub-directory processing while `false` disables it. By default this field is set to `true`. This field is optional so it can be left out and the default option will apply. This field is ignored when a file is specified.
 
-## Content Management {#internalGwRegressionTesterContentManagementSwitch}
+## Content Management <a name="internalGwRegressionTesterContentManagementSwitch"></a>
 Content Management for each particular file type is specified in a **Content Management Policy**. The Policy contains a set of **Content Management Switches**, each one paired with a **Content Management Switch Setting**. In the Regression Tester, the Content Management Profile is specified using `ConfigSwitch`. The Switches and Switch Settings are specified using a key-value dictionary or map, within `ContentManagementFlags`.
 
 <table>
@@ -157,14 +155,14 @@ Content Management for each particular file type is specified in a **Content Man
 <td>Content Management Switch</td>
 <td>Key in <code>ContentManagementFlags</code> dictionary</td>
 </tr> 
- 
+
 <tr>
 <td>Content Management Switch Setting</td>
 <td>Value in <code>ContentManagementFlags</code> dictionary</td>
 </tr> 
 
 </table>
-  
+
 ## Content Management Policy
 
 A Content Management Policy defines the set of Content Management Switches for a specific file format. It is used to specify the content management flags that will be used to configure the Glasswall library. In the Regression Tester it is referred to as a Content Management Switch.
@@ -173,7 +171,7 @@ A Content Management Policy defines the set of Content Management Switches for a
 
 `ContentManagementFlags: <Dictionary<string, ContentManagementFlag>>` (Required) This is a mapping of Content Management Switch and Content Management Switch Settings where the key is the former and the value the latter. The value is a Content Management Switch Setting which can be either `allow`, `sanitise`, `disallow`, or a string value in the case of the `watermark` switch. For example, `acroform: sanitise` or `internal_hyperlinks: allow`.
 
-## Test Mode {#internalGwRegressionTesterTestMode}
+## Test Mode <a name="internalGwRegressionTesterTestMode"></a>
 
 This is used to specify the different test modes where each test mode interacts differently with the output from the Glasswall library. For example, one test mode uses the output and executes tests on it while another test mode writes the output to a directory. When writing the test modes, please make sure that you include the `!` before the test mode otherwise the configuration file is invalid. For example, `!IndependentTestMode` is valid while `IndependentTestMode` is not. The exclamation mark is required for the deserialization process where the configuration file is translated into concrete objects within the program. The following test modes are available:
 
@@ -187,7 +185,7 @@ This is used to specify the different test modes where each test mode interacts 
 
 
 
-### !IndependentTestMode {#internalGwRegressionTesterIndependentTestMode}
+### !IndependentTestMode <a name="internalGwRegressionTesterIndependentTestMode"></a>
 
 This test mode is used for executing independent tests on the files where each file is run through Glasswall, and the output is used for the tests. This test mode has the following fields:
 
@@ -203,7 +201,7 @@ This test mode is used for executing independent tests on the files where each f
 `Managed: <bool>` (Optional) This specifies whether the files should be managed or non-conforming. If this field is not specified then only issues such as timeouts or crashes will be treated as test failures.
 
 
-### !ConsecutiveTestMode {#internalGwRegressionTesterConsecutiveTestMode}
+### !ConsecutiveTestMode <a name="internalGwRegressionTesterConsecutiveTestMode"></a>
 
 This test mode is similar to the Independent test mode where independent tests are carried out on the files, but the difference is that the tests are carried out on the managed managed files. In Consecutive test mode the program runs the files through Manage and Protect, writes the results to temporary files, runs the temporary files through Manage and Protect, and then executes the tests on the resulting files. This is very useful for finding issues such as remedy items being reported in files that have already been managed. This test mode has the following fields:
 
@@ -215,11 +213,11 @@ This test mode is similar to the Independent test mode where independent tests a
 
 `ManageAndProtectTests: <List<ManageAndProtectTest>>` (Optional) This is a list of [Manage and Protect Tests](#internalGwRegressionTesterManageAndProtectTests) that will be performed on the managed file.
 
-`Managed: <bool>` (Optional) This specifies whether the files should be managed or non-conforming. If this field is not specified then only issues such as timeouts or crashes will be treated as test failures. This field is only applied to the managed managed files. 
+`Managed: <bool>` (Optional) This specifies whether the files should be managed or non-conforming. If this field is not specified then only issues such as timeouts or crashes will be treated as test failures. This field is applied only to the managed files.
 
 `NonConformingFileAction: <NonConformingFileActions>` This specifies how the initial non-conforming files should be treated. Non-conforming files are always empty so there is not much that we can do with them. Possible options are `SkipTests` or `FailTests`. The `SkipTests` options will skip executing tests on files that are non-conforming, while `FailTests` will treat the initial non-conforming files are test failures.
 
-### !OneAgainstAnotherTestMode {#internalGwRegressionTesterOneAgainstAnotherTestMode}
+### !OneAgainstAnotherTestMode <a name="internalGwRegressionTesterOneAgainstAnotherTestMode"></a>
 
 This test mode is used for comparing one Glasswall mode against another. Each of the fields in this mode specifies a test to be carried out. Setting the field to `true` will execute the test, while setting it to `false` or leaving it out of the configuration file, will disable the test. These are the fields:
 
@@ -236,7 +234,7 @@ This test mode is used for comparing one Glasswall mode against another. Each of
 `SpecifiedFileTypeAgainstDetermined: <bool>` (Optional) This is used to specify whether to compare the specified filetype against the one returned by Determine Filetype API. The specified filetype is determined by the `FileType` parameter. If `FileType` is null then the file extension will be used for comparison.
 
 
-### !WriteOutputMode {#internalGwRegressionTesterWriteOutputMode}
+### !WriteOutputMode <a name="internalGwRegressionTesterWriteOutputMode"></a>
 
 This test mode is used for writing the output from the library to a location. This is similar to the functionality provided by the CLI. This test mode has the following fields:
 
@@ -249,25 +247,25 @@ This test mode is used for writing the output from the library to a location. Th
 `OutputLocation: <string>` (Optional) This specifies the directory where output will be written to. If this option is left out then the current directory will be used for the output.
 
 
-### !SimpleTestMode {#internalGwRegressionTesterSimpleTestMode}
+### !SimpleTestMode <a name="internalGwRegressionTesterSimpleTestMode"></a>
 
 `Managed: <bool>` (Optional) This specifies whether the files should be managed or non-conforming. If this field is not specified then only issues such as timeouts or crashes will be treated as test failures.
 
 `Mode: <GlasswallMode>` (Required) This specifies the Glasswall mode that should be used to process the files. 
 
-### !GetIssueIDTestMode {#internalGwRegressionTesterGetIssueIDTestMode}
+### !GetIssueIDTestMode <a name="internalGwRegressionTesterGetIssueIDTestMode"></a>
 This mode is used to return information for a given Issue Id or a list of Issue Ids and matches them against the values returned from the Glasswall
 
 `IssueIDTests: <List<IssueIDTests>>` (Optional) This is a list of [Issue ID Tests] (#internalGwRegressionTesterIssueIDTests) that will be performed.
 
-### !ExportImportTestMode {#internalGwRegressionTesterExportImportTestMode}
+### !ExportImportTestMode <a name="internalGwRegressionTesterExportImportTestMode"></a>
 Mode used to test the export and import APIs. It performs the various export and import tests.
 
 `APIsToTest: <Set<TestableAPI>>` (Optional) This is a set of [TestableAPI](#internalGwRegressionTesterTestableAPI) elements that specify whether "File to File" or "File to Memory" test modes are used. If not specified `FileToMemory` test mode is set.  `MemoryToMemory` is not supported.
 
 `ExportTests: <List<ExportTests>>` (Optional) A list of tests carried out on the export APIs as listed in  [Export Tests](#internalGwRegressionTesterExportTests)
 
-### TestableAPI {#internalGwRegressionTesterTestableAPI}
+### TestableAPI <a name="internalGwRegressionTesterTestableAPI"></a>
 
 This specifies the API that will be used when executing files. This can be one of the following fields:
 
@@ -276,7 +274,7 @@ This specifies the API that will be used when executing files. This can be one o
 - `FileToMemoryCombined` - This specifies that the file to memory API that produces an analysis report and an output file will be used when processing files. Currently this is not supported for API calls to Export mode. 
 - `MemoryToMemory` - This specifies that the memory to memory API functions will be used when processing files.
 
-### GlasswallMode {#internalGwRegressionTesterGlasswallMode}
+### GlasswallMode
 
 This specifies the Glasswall mode that will be used for executing. This can be one of the following values:
 
@@ -290,7 +288,7 @@ This specifies the Glasswall mode that will be used for executing. This can be o
 - `ManageAndProtect` - This specifies that the Manage and Protect mode should be used.
 - `ManageAndProtectLite` - This specifies that the Manage and Protect Lite mode should be used.
 
-## Analysis Tests {#internalGwRegressionTesterAnalysisTests}
+## Analysis Tests <a name="internalGwRegressionTesterAnalysisTests"></a>
 
 This is used to specify the different tests that can be carried out on the Analysis report. The following tests are available:
 
@@ -306,164 +304,164 @@ This is used to specify the different tests that can be carried out on the Analy
 - [!AnalysisStringSearch](#internalGwRegressionTesterAnalysisStringSearch)
 - [!ValidateXmlAgainstXsd](#internalGwRegressionTesterValidateXmlAgainstXsd)
 
-### !ContentItemDescription {#internalGwRegressionTesterContentItemDescription}
+### !ContentItemDescription <a name="internalGwRegressionTesterContentItemDescription"></a>
 
 This test is used to check for the presence or absence of a Content Item with the specified Technical Description. This test can be limited to look within a specific Content Group. It has the following fields:
 
 `ContentGroup: <string>` (Optional) This specifies the content group that the Content Item should belong to. This can be left out in which case all the content groups will be checked for the presence or absence of the item.
 
-`Presence: bool` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
+`Presence: <bool>` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
 
 `Value: <string>` (Required) This specifies the Technical Description that we are looking for.
 
-`ExactMatch: bool (optional, default false) When true this sets the search to exactly match the Content Item Description, when left as false it does a partial match.
+`ExactMatch: <bool>` (optional, default false) When true this sets the search to exactly match the Content Item Description, when left as false it does a partial match.
 
-### !IssueItemDescription {#internalGwRegressionTesterIssueItemDescription}
+### !IssueItemDescription <a name="internalGwRegressionTesterIssueItemDescription"></a>
 
 This test is used to check for the presence or absence of an Issue Item with the specified Technical Description. This test can be limited to look within a specific Content Group. It has the following fields:
 
 `ContentGroup: <string>` (Optional) This specifies the content group that the Issue Item should belong to. This can be left out in which case all the content groups will be checked for the presence or absence of the item.
 
-`Presence: bool` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
+`Presence: <bool>` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
 
 `Value: <string>` (Required) This specifies the Technical Description that we are looking for.
 
-`ExactMatch: bool (optional, default false) When true this sets the search to exactly match the Issue Item Description, when left as false it does a partial match.
+`ExactMatch: <bool>` (optional, default false)` When true this sets the search to exactly match the Issue Item Description, when left as false it does a partial match.
 
-### !IssueItemId {#internalGwRegressionTesterIssueItemId}
+### !IssueItemId <a name="internalGwRegressionTesterIssueItemId"></a>
 
 This test is used to check for the presence or absence of an Issue Item with the specified Issue ID. This test can be limited to look within a specific Content Group. It has the following fields:
 
 `ContentGroup: <string>` (Optional) This specifies the content group that the Issue Item should belong to. This can be left out in which case all the content groups will be checked for the presence or absence of the item.
 
-`Presence: bool` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
+`Presence: <bool>` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
 
 `Value: <string>` (Required) This specifies the Issue ID that we are looking for.
 
-`ExactMatch: bool (optional, default false) When true this sets the search to exactly match the provided issue ID, when left as false it does a partial match.
+`ExactMatch: <bool>` (optional, default false) When true this sets the search to exactly match the provided issue ID, when left as false it does a partial match.
 
-### !IssueItem {#internalGwRegressionTesterIssueItem}
+### !IssueItem <a name="internalGwRegressionTesterIssueItem"></a>
 
 This test is used to check for the presence or absence of an Issue Item. This test can be limited to look within a specific Content Group. It has the following fields:
 
 `ContentGroup: <string>` (Optional) This specifies the content group that the Issue Item should belong to. This can be left out in which case all the content groups will be checked for the presence or absence of the item.
 
-`Presence: bool` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
+`Presence: <bool>` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
 
-### !RemedyItemDescription {#internalGwRegressionTesterRemedyItemDescription}
+### !RemedyItemDescription <a name="internalGwRegressionTesterRemedyItemDescription"></a>
 
 This test is used to check for the presence or absence of a Remedy Item with the specified Technical Description. This test can be limited to look within a specific Content Group. It has the following fields:
 
 `ContentGroup: <string>` (Optional) This specifies the content group that the Remedy Item should belong to. This can be left out in which case all the content groups will be checked for the presence or absence of the item.
 
-`Presence: bool` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
+`Presence: <bool>` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
 
 `Value: <string>` (Required) This specifies the Technical Description that we are looking for.
 
-`ExactMatch: bool (optional, default false) When true this sets the search to exactly match the Remedy Item Description, when left as false it does a partial match.
+`ExactMatch: <bool>` (optional, default false) When true this sets the search to exactly match the Remedy Item Description, when left as false it does a partial match.
 
-### !RemedyItem {#internalGwRegressionTesterRemedyItem}
+### !RemedyItem <a name="internalGwRegressionTesterRemedyItem"></a>
 
 This test is used to check for the presence or absence of a Remedy Item. This test can be limited to look within a specific Content Group. It has the following fields:
 
 `ContentGroup: <string>` (Optional) This specifies the content group that the Remedy Item should belong to. This can be left out in which case all the content groups will be checked for the presence or absence of the item.
 
-`Presence: bool` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
+`Presence: <bool>` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
 
-### !SanitisationItemDescription {#internalGwRegressionTesterSanitisationItemDescription}
+### !SanitisationItemDescription <a name="internalGwRegressionTesterSanitisationItemDescription"></a>
 
 This test is used to check for the presence or absence of a Sanitisation Item with the specified Technical Description. This test can be limited to look within a specific Content Group. It has the following fields:
 
 `ContentGroup: <string>` (Optional) This specifies the content group that the Sanitisation Item should belong to. This can be left out in which case all the content groups will be checked for the presence or absence of the item.
 
-`Presence: bool` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
+`Presence: <bool>` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
 
 `Value: <string>` (Required) This specifies the Technical Description that we are looking for.
 
-`ExactMatch: bool (optional, default false) When true this sets the search to exactly match the Sanitisation Item Description, when left as false it does a partial match.
+`ExactMatch: <bool>` (optional, default false) When true this sets the search to exactly match the Sanitisation Item Description, when left as false it does a partial match.
 
-### !SanitisationItemId {#internalGwRegressionTesterSanitisationItemId}
+### !SanitisationItemId <a name="internalGwRegressionTesterSanitisationItemId"></a>
 
 This test is used to check for the presence or absence of a Sanitisation Item with the specified Issue ID. This test can be limited to look within a specific Content Group. It has the following fields:
 
 `ContentGroup: <string>` (Optional) This specifies the content group that the Sanitisation Item should belong to. This can be left out in which case all the content groups will be checked for the presence or absence of the item.
 
-`Presence: bool` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
+`Presence: <bool>` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
 
 `Value: <string>` (Required) This specifies the Sanitisation ID that we are looking for.
 
-`ExactMatch: bool (optional, default false) When true this sets the search to exactly match the provided sanitisation ID, when left as false it does a partial match.
+`ExactMatch: <bool>` (optional, default false) When true this sets the search to exactly match the provided sanitisation ID, when left as false it does a partial match.
 
-### !SanitisationItem {#internalGwRegressionTesterSanitisationItem}
+### !SanitisationItem <a name="internalGwRegressionTesterSanitisationItem"></a>
 
 This test is used to check for the presence or absence of a Sanitisation Item. This test can be limited to look within a specific Content Group. It has the following fields:
 
 `ContentGroup: <string>` (Optional) This specifies the content group that the Sanitisation Item should belong to. This can be left out in which case all the content groups will be checked for the presence or absence of the item.
 
-`Presence: bool` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
+`Presence: <bool>` (Optional) This specifies whether the item should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
 
-### !AnalysisStringSearch {#internalGwRegressionTesterAnalysisStringSearch}
+### !AnalysisStringSearch <a name="internalGwRegressionTesterAnalysisStringSearch"></a>
 
 This test is used to check for the presence or absence of a string. It has the following fields:
 
 `Value: <string>` (Required) This specifies the string that we are looking for.
 
-`Presence: bool` (Optional) This specifies whether the string should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
+`Presence: <bool>` (Optional) This specifies whether the string should be present in or absent from the analysis report. If this value is not specified then the default value of `false` will be used.
 
-### !ValidateXmlAgainstXsd {#internalGwRegressionTesterValidateXmlAgainstXsd}
+### !ValidateXmlAgainstXsd <a name="internalGwRegressionTesterValidateXmlAgainstXsd"></a>
 
 This test is used to validate the Analysis report against the specified XSD. It has the following field:
 
 `XsdPath: <string>` (Required) This specifies the path to the XSD that will be used for validation. This path can be absolute or relative. If a relative path is specified then the path will be relative to the configuration file. 
 
-## Issue ID Tests {#internalGwRegressionTesterGetIssueIDTestMode}
+## Issue ID Tests <a name="internalGwRegressionTesterGetIssueIDTestMode"></a>
 
 This is used to test the GetIssueID and GetAllIssueID API's. The following tests are available:
 
 - [!GetIssueID](#internalGwRegressionTesterGetIssueID)
 - [!GetAllIssueIDs](#internalGwRegressionTesterGetAllIssueID)
 
-### !GetIssueID {#internalGwRegressionTesterGetIssueID}
+### !GetIssueID <a name="internalGwRegressionTesterGetIssueID"></a>
 
 This test is to find out if the given group description matches the one returned from the library, depending on the value of the `Match` field. It has the following fields:
 
 `IssueID: <long>` (Optional) The Issue ID for which the group description should be fetched. Default value is 0.
 
-`Match: bool` (Optional) This specifies whether the given group description matches the one returned from library. If this value is not specified then the default value of `false` will be used.
+`Match: <bool>` (Optional) This specifies whether the given group description matches the one returned from library. If this value is not specified then the default value of `false` will be used.
 
 `ValueToMatch: <string>` (Optional) This specifies the group description that we are looking for.
 
-### !GetAllIssueIDs {#internalGwRegressionTesterGetAllIssueID}
+### !GetAllIssueIDs <a name="internalGwRegressionTesterGetAllIssueID"></a>
 
 This test is used to validate the Issue IDs XML against the specified XSD. It has the following field:
 
 `XsdPath: <string>` (Required) This specifies the path to the XSD that will be used for validation. This path can be absolute or relative. If a relative path is specified then the path will be relative to the configuration file. 
 
-## Manage and Protect Tests {#internalGwRegressionTesterManageAndProtectTests}
+## Manage and Protect Tests <a name="internalGwRegressionTesterManageAndProtectTests"></a>
 
 This is used to specify the different tests that can be carried out on the managed document. The following tests are available:
 
 - [!ManagedBinarySearch](#internalGwRegressionTesterManagedBinarySearch)
 
-### !ManagedBinarySearch {#internalGwRegressionTesterManagedBinarySearch}
+### !ManagedBinarySearch <a name="internalGwRegressionTesterManagedBinarySearch"></a>
 
 This test is used to check for the presence or absence of a binary value. It has the following fields:
 
-`Presence: bool` (Optional) This specifies whether the binary value should be present in or absent from the managed file. If this value is not specified then the default value of `false` will be used.
+`Presence: <bool>` (Optional) This specifies whether the binary value should be present in or absent from the managed file. If this value is not specified then the default value of `false` will be used.
 
 `Value: <string>` (Required) This specifies the binary value that we are looking for. The binary value has to be encoded as a base 64 string.
 
-## Export Tests {#internalGwRegressionTesterExportTests}
+## Export Tests <a name="internalGwRegressionTesterExportTests"></a>
 
 This is used to specify the different tests that can be carried out on the output from export mode. The following tests are available:
 
-`TestExportedImagesMatch: bool` (Optional) Test to check if the images from Export mode match the images from Manage and Protect mode.
+`TestExportedImagesMatch: <bool>` (Optional) Test to check if the images from Export mode match the images from Manage and Protect mode.
 
-`TestExportedTextMatch: bool` (Optional) Test to check if the text from Export mode match the text from Manage and Protect mode.
+`TestExportedTextMatch: <bool>` (Optional) Test to check if the text from Export mode match the text from Manage and Protect mode.
 
-`ValidateZipArchive: bool` (Optional) Test to check if the export mode produces a valid zip archive.
+`ValidateZipArchive: <bool>` (Optional) Test to check if the export mode produces a valid zip archive.
 
-# Example test case {#internalGwRegressionTesterConfigExample}
+# Example test case <a name="internalGwRegressionTesterConfigExample"></a>
 
 	Bugs:
 	    - BugNumber: 2875
@@ -486,7 +484,7 @@ This is used to specify the different tests that can be carried out on the outpu
 	        - !OneAgainstAnotherTestMode
 	          AnalysisAgainstProtect: true
 	        - !IndependentTestMode
-              APIsToTest:
+	          APIsToTest:
 	            - FileToFile
 	          AnalysisTests:
 	            - !IssueItemDescription
@@ -516,7 +514,7 @@ This is used to specify the different tests that can be carried out on the outpu
 	          Mode: ManageAndProtect
 	          Managed: true
 
-# Issue ID example test case {#internalGwRegressionTesterGetIssueIdExample}
+# Issue ID example test case <a name="internalGwRegressionTesterGetIssueIdExample"></a>
 
 	Bugs:
 	    - BugNumber: 2876
@@ -531,7 +529,7 @@ This is used to specify the different tests that can be carried out on the outpu
 	            - !GetAllIssueIDs
 	               XsdPath: C:\Glasswall\inhouse.tools\Features\Task_39728_ExtdRegTestForNewAPIs\GwRegressionTester\bin\Debug\Library\Elvin_allissue\gwAnalysisReport.xsd
 
-# Exports example test case {#internalGwRegressionTesterExportTestsExample}
+# Exports example test case <a name="internalGwRegressionTesterExportTestsExample"></a>
 
 	Bugs:
 	    - BugNumber: 1

@@ -1,5 +1,6 @@
-DVL Checker  {#internalDvlChecker}
-===========================================
+---
+title: DVL Checker
+---
 
 # Author
 Steven Warner
