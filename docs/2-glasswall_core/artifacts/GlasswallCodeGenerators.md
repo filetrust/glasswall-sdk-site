@@ -1,6 +1,6 @@
-Glasswall C++ Code Generators {#internalGlasswallCodeGenerators}
-=======================
-
+---
+title: Glasswall C++ Code Generators
+---
 
 # Introduction – the requirement and architecture
 

@@ -2,9 +2,6 @@
 title: Office Binary Camera
 ---
 
-Office (Binary) {#internalGlasswallDllCameraOfficeBinary}
-===============
-
 # Overview
 
 ## Compound File Binary (CFB)

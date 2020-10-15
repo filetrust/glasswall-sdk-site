@@ -98,7 +98,14 @@ The GwRegressionTester.exe is executed through the commandline with the appropri
 
 # Configuration for Test Cases
 
-The configuration file are stored in the YAML format (YAML Ain't Markup Language). YAML is a human readable and writeable language designed for data serialisation. The whitespace in YAML is syntactically significant so please use newlines and indentations correctly, and avoid tabs as they break the configuration files. The fields in the configuration files are case sensitive so please bear that in mind when editing them. For a quick how to guide on YAML have a look at [Learn YAML in Y Minutes](internalLearnYAMLInYMinutes).
+The configuration file are stored in the YAML format (YAML Ain't Markup
+Language). YAML is a human readable and writeable language designed for
+data serialisation. The whitespace in YAML is syntactically significant
+so please use newlines and indentations correctly, and avoid tabs as
+they break the configuration files. The fields in the configuration
+files are case sensitive so please bear that in mind when editing them.
+For a quick How To guide on YAML have a look at
+[Learn YAML in Y Minutes](LearnYAMLInYMinutes).
 
 Example configuration files can be found at the end of this documentation or you can access them directly by clicking [Example test case](#GwRegressionTesterConfigExample), [Issue ID example test case](#internalGwRegressionTesterGetIssueIdExample), or [Exports example test case](#internalGwRegressionTesterExportTestsExample). It's a good idea to refer to the examples as they will give you a better understanding of how the configuration file fits together.
 

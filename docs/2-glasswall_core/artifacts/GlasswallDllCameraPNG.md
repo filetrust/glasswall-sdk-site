@@ -2,9 +2,6 @@
 title: Portable Network Graphics (PNG) Camera
 ---
 
-Glasswall DLL PNG Camera {#internalGlasswallDllCameraPNG}
-=======================
-
 \section Specifications
 - [PNG Specification (Second Edition)] (png-Second Edition.pdf "png-Second Edition.pdf")
 

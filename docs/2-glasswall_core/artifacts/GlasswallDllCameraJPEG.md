@@ -2,9 +2,6 @@
 title: JPEG Camera
 ---
 
-Glasswall DLL JPEG Camera {#internalGlasswallDllCameraJPEG}
-=======================
-
 The specifications included here have been useful for dealing with Glasswall's JPEG camera. The external link provides a vast amount of information in relation to the JPEG format including more specifications.
 
 \section Specifications

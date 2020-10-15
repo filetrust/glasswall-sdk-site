@@ -1,5 +1,6 @@
-Glasswall DLL Licence {#InternalGlasswallDLLLicence}
-=======================
+---
+title: Glasswall DLL Licence
+---
 
 There is an ability to deploy our Glasswall DLL so that there is a 90 day validity from the date of release after which it ceases processing of documents and indicates that there is a licensing issue.
 

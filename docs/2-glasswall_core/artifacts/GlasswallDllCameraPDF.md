@@ -2,10 +2,6 @@
 title: Internal Glasswall DLL Camera PDF
 ---
 
-
-Glasswall DLL PDF Camera {#internalGlasswallDllCameraPDF}
-=======================
-
 # Overview # 
 
 The diagram below provides an overview of the PDF camera architecture.
@@ -34,7 +30,7 @@ To see the PDF camera data elements, view the document [PDF Camera - data elemen
 	- [DCT Filter](5116.DCT_Filter.pdf "5116.DCT_Filter.pdf")
 	- [JBIG2 Filter](JBIG2.pdf "JBIG2.pdf")
 	- [JPEG2000 Filter](JPEG2000CompressionFilter.pdf "JPEG2000CompressionFilter.pdf").
-    Refer to @ref internalGlasswallDllCameraJPEG for further information on JPEG2000.   
+    Refer to @ref GlasswallDllCameraJPEG for further information on JPEG2000.   
 
 
 # Tools #
