@@ -11,4 +11,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 [JPEG 2000 image coding system: Extensions](../artifacts/15444-2annexm.pdf) <img alt="PDF" src={useBaseUrl('img/pdf_icon.png')} />
 
-[Digital Compression and Coding of Continuous-tone Still Images – Requirements and Guidelines](../artifacts/JPEG.pdf) <img alt="PDF" src={useBaseUrl('img/pdf_icon.png')} />
+[Digital Compression and Coding of Continuous-tone Still Images – Requirements and Guidelines](../artifacts/JPEG.pdf) <img alt="PDF" src={useBaseUrl('img/pdf_icon.png')} />  
+
+[Information Technology – Digital Compression and Coding of Continuous-Tone Still Images – Requirements and Guidelines](https://www.w3.org/Graphics/JPEG/itu-t81.pdf) <img alt="External Link" src={useBaseUrl('img/external_link.png')} /> 
