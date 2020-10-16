@@ -5,16 +5,18 @@ sidebar_label: 7 Tools
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+[Glasswall Developed Tools](artifacts/glasswall_developed_tools.doc) <img alt="OOXML Document" src={useBaseUrl('img/docx_icon.png')} />
+
 [CFB Geneology](artifacts/CFBGeneology)  
 [Check CFB Signature](artifacts/CheckCFBSignature)  
 [Check ZIP Signature](artifacts/CheckZIPSignature)  
 [BinDirectoryReader](artifacts/BinDirectoryReader.doc)
  
-[Glasswall Command Line Test Tool](<artifacts/Glasswall Command Line Test Tool.docx>) <img alt="Download" src={useBaseUrl('img/download.png')} />
+[Glasswall Command Line Test Tool](<artifacts/Glasswall Command Line Test Tool.docx>) <img alt="OOXML Document" src={useBaseUrl('img/docx_icon.png')} /> 
 
-[GWDemonstrator Test Tool](<artifacts/GWDemonstrator Test Tool.docx>) <img alt="Download" src={useBaseUrl('img/download.png')} />
+[GWDemonstrator Test Tool](<artifacts/GWDemonstrator Test Tool.docx>) <img alt="OOXML DOcument" src={useBaseUrl('img/docx_icon.png')} />  
 
-[GwFileProcessStatusValidator Test Tool](<artifacts/GwFileProcessStatusValidator Test Tool.docx>) <img alt="Download" src={useBaseUrl('img/download.png')} />
+[GwFileProcessStatusValidator Test Tool](<artifacts/GwFileProcessStatusValidator Test Tool.docx>) <img alt="OOXML Document" src={useBaseUrl('img/docx_icon.png')} />
 
 [Test Microsoft Office Open](artifacts/TestMSOfficeOpen)  
 

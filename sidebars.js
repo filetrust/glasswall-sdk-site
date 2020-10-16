@@ -40,7 +40,8 @@ module.exports = {
                 "2-glasswall_core/2_1-glasswall_rebuild/2_1_6-sdk/2_1_6_2-sdk_wrappers/2_1_6_2_1-python",
                 "2-glasswall_core/2_1-glasswall_rebuild/2_1_6-sdk/2_1_6_2-sdk_wrappers/2_1_6_2_2-javascript",
                 "2-glasswall_core/2_1-glasswall_rebuild/2_1_6-sdk/2_1_6_2-sdk_wrappers/2_1_6_2_3-c_sharp",
-                "2-glasswall_core/2_1-glasswall_rebuild/2_1_6-sdk/2_1_6_2-sdk_wrappers/2_1_6_2_4-java"
+                "2-glasswall_core/2_1-glasswall_rebuild/2_1_6-sdk/2_1_6_2-sdk_wrappers/2_1_6_2_4-java",
+                "2-glasswall_core/2_1-glasswall_rebuild/2_1_6-sdk/2_1_6_2-sdk_wrappers/2_1_6_2_5-web_api"
                 ]
             }
             ]
