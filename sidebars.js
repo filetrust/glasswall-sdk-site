@@ -210,7 +210,8 @@ module.exports = {
         "8-related/8_1-specifications/8_1_3-jpeg",
         "8-related/8_1-specifications/8_1_4-png",
         "8-related/8_1-specifications/8_1_5-gif",
-        "8-related/8_1-specifications/8_1_6-tiff"
+        "8-related/8_1-specifications/8_1_6-tiff",
+        "8-related/8_1-specifications/8_1_7-jbig2"
         ]
     }
     ]
