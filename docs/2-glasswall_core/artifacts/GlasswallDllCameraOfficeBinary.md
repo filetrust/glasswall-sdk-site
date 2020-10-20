@@ -18,11 +18,7 @@ This scheme is called *structure storage*. The purpose of the structured storage
 
 The following figure shows a simplified file system with multiple directories and files nested in a hierarchy.
 
-
-
 ![Compound File Binary Overview](../img/CFB_Overview.png)
-
-
 
 ## CFB File Processing
 
@@ -33,11 +29,15 @@ The diagrams below give an overview of how Glasswall processes a CFB file.
 
 ### Top Level Diagram
 
-\diafile "00_TopLevel_CBF_File_Processing.dia"
+[Top Level CFB File Processing](00_TopLevel_CBF_File_Processing.dia)
+
+![Top Level CFB File Processing](00_TopLevel_CBF_File_Processing.png)
 
 ### CFB File Processing Diagram
 
-\diafile "01_CFB_FILE_PROCESSING.dia"
+[CFB File Processing](01_CFB_FILE_PROCESSING.dia)
+
+![CFB File Processing](01_CFB_FILE_PROCESSING.png)
 
 
 # CFB Architecture

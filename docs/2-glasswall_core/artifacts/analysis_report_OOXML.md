@@ -1,7 +1,8 @@
-File Specific Analysis - Office Open XML {#analysis_report_OOXML}
-===========================================
+---
+title: File Specific Analysis - Office Open XML
+---
 
-\section msOOXMLGwDocumentSummary gw:DocumentSummary
+## msOOXMLGwDocumentSummary gw:DocumentSummary
 
 <TABLE>
 <TR><TH>Node Name</TH><TH>Description</TH></TR>
@@ -10,7 +11,7 @@ File Specific Analysis - Office Open XML {#analysis_report_OOXML}
 <TR><TD>gw:Version</TD><TD>Read from the document’s appropriate stream</TD></TR>
 </TABLE>
 
-\section msOfficeOOXMLGwContentGroups gw:ContentGroups
+## msOfficeOOXMLGwContentGroups gw:ContentGroups
 
 The table below describes the groups across each of the Office Open XML products Word, Excel & PowerPoint.
 The majority of the descriptions can be found in [http://officeopenxml.com/anatomyofOOXML.php](http://officeopenxml.com/anatomyofOOXML.php "Anatomy of Office Open XML")

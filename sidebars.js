@@ -16,9 +16,15 @@ module.exports = {
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_2-architecture/2_1_2_1-overview",
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_2-architecture/2_1_2_2-auto_generated_cameras",
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_2-architecture/2_1_2_3-legacy_cameras",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_2-architecture/2_1_2_4-analysis_repository",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_2-architecture/2_1_2_5-memory_buffers",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_2-architecture/2_1_2_6-configuration_management"
+            {
+            "2.1.2.4 Internal API":
+            [
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_2-architecture/2_1_2_4-internal_api/2_1_2_4_1-analysis_repository",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_2-architecture/2_1_2_4-internal_api/2_1_2_4_2-memory_buffers",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_2-architecture/2_1_2_4-internal_api/2_1_2_4_3-configuration_management",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_2-architecture/2_1_2_4-internal_api/2_1_2_4_4-structured_storage_api_specification"
+            ]
+            }
             ]
         },
         "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-licencing",
@@ -147,7 +153,16 @@ module.exports = {
             "2-glasswall_core/2_4-glasswall_archive_manager/2_4_5-build/2_4_5_2-versioning"
             ]
         },
-        "2-glasswall_core/2_4-glasswall_archive_manager/2_4_6-sdk_api",
+        {
+        "2.4.6 SDK API":
+            [
+                "2-glasswall_core/2_4-glasswall_archive_manager/2_4_6-sdk_api/2_4_6_1-analysis",
+                "2-glasswall_core/2_4-glasswall_archive_manager/2_4_6-sdk_api/2_4_6_2-api"
+
+            ]
+
+        },
+
         {
         "2.4.7 SDK Wrappers":
             [
