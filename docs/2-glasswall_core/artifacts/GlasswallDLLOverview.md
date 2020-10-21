@@ -1,4 +1,6 @@
-# Glasswall API Overview {#glasswallAPIOverview}
+---
+title: Glasswall API Overview
+---
 
 This documents the Application Programming Interface (API) within the Windows Dynamic Link Library `glasswall.classic.dll` and the Linux shared object `libglasswall.classic.so`.
 

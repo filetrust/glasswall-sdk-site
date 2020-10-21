@@ -2,11 +2,13 @@
 title: Portable Network Graphics (PNG) Camera
 ---
 
-\section Specifications
-- [PNG Specification (Second Edition)] (png-Second Edition.pdf "png-Second Edition.pdf")
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-\section External References
-- [W3C: Portable Network Graphics (PNG) Specification (Second Edition)](http://www.w3.org/TR/PNG/)
+## Specifications
+- See section 8.1.4.
 
-\section Tools Tools
-TweakPNG ("\\STORAGE-SERVER\Development Drive\Professional Development\Tools and Methods\Development Tools\Tweak PNG")
+## External References
+- [W3C: Portable Network Graphics (PNG) Specification (Second Edition)](http://www.w3.org/TR/PNG/) <img alt="External Link" src={useBaseUrl('img/external_link.png')} />
+
+## Tools
+- [TweakPNG](http://entropymine.com/jason/tweakpng/)) <img alt="External Link" src={useBaseUrl('img/external_link.png')} />
