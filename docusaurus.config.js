@@ -83,6 +83,11 @@ module.exports = {
       src: `/glasswall-sdk-site/js/fix-location.js`,
       async: false,
       defer: false
+    },
+    {
+      src: `/glasswall-sdk-site/js/hide-artifacts.js`,
+      async: false,
+      defer: false
     }
   ],
   presets: [
