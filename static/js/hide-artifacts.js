@@ -6,14 +6,15 @@ window.onload = () => {
     for (let i = 0; i < aTags.length; i++) {
         if (aTags[i].textContent == "artifacts") {
             found.push(aTags[i]);
-            break;
         }
     }
 
     found.forEach(aTag => {
-        const location = aTag.parentElement.children[1].
-            getElementsByTagName("a")[0].href.split("artifacts")[0] + "artifacts/*";
-        aTag.parentElement.remove();
-        console.log("Removed Sidebar Element: " + location);
+        if (aTag !== undefined) {
+            const location = aTag.parentElement.children[1].
+                getElementsByTagName("a")[0].href.split("artifacts")[0] + "artifacts/*";
+            aTag.parentElement.remove();
+            console.log("Removed Sidebar Element: " + location);
+        }
     })
 }
