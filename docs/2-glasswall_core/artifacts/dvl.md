@@ -82,13 +82,13 @@ The diagram below contains an example of a set of data validation rules applied 
 The DVL guide is intended to provide advice on writing DVL and its intent is to produce DVL in a consistent format, and to provide the syntax of
 DVL. 
 
-[Click on this link to open the DVL Guide.](DVLGuide.pdf "DVLGuide.pdf")
+[View the DVL Guide](DVLGuide.pdf "DVLGuide.pdf").
 
 # DVL Syntax Checker
 
 A tool that was developed with purpose of performing syntax checking on
 the DVL files and highlighting any incorrect syntax. More information
-on the DVL Checker can be found in the [DVL Checker](DvlChecker.md) page.
+on the DVL Checker can be found in the [DVL Checker](DvlChecker) page.
 
 # Related Links
 

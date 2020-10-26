@@ -25,7 +25,8 @@ Can be found at the following location:
 
 #  Architecture
 
-![Alt BuildValidationCppFiles](../img/BuildValidationCppFiles.jpg) width=10cm
+![Alt BuildValidationCppFiles](../2-glasswall_core/artifacts/BuildValidationCppFiles.jpg) width=10cm
+
 
 #  Modules
 
@@ -42,16 +43,15 @@ Can be found at the following location:
 * ucpUtility.dll
 
 
-
 #  Usage
 
+DVL_Checker Version  2.1.1.1  
+Copyright (C) 2013 Glasswall  
+Usage: dvl_checker -d *dvlfile\|directory of dvl files* \[-o *output directory* -x -r \[-s *schema file* -c \] -i *list of ignored rules*\]  
 
-DVL_Checker Version  2.1.1.1
-Copyright (C) 2013 Glasswall
-Usage: dvl_checker -d *dvlfile\|directory of dvl files* \[-o *output directory* -x -r \[-s *schema file* -c \] -i *list of ignored rules*\]
-Examples:
-
+Examples:<br />
 Test Single File
+
 dvl_checker -d singleFile.dvl
 (e.g.,
  dvl_checker -d sttbfassoc.dvl)
@@ -72,8 +72,6 @@ dvl_checker -d dvl_files_directory -r -o validation_cpp_directory -s schema_file
 (e.g.,
  dvl_checker -d c:\\tfs\\...\\MS-DOC\\validation -r -o c:\\temp\\myoutput -s
 c:\\tfs\\...\\MS-DOC\\WordCoreStreams.bdd -c)
-
-
 
   -d, --dvl                  Required. The name of a dvl file to be parsed. If this is the only parameter, then this does a syntax check and reports to the commandline the result of the parse.
                              If recurse option used, then *filepath* is used as the start of a search down through directories from that point, processing every *.dvl file found.
@@ -104,3 +102,5 @@ c:\\tfs\\...\\MS-DOC\\WordCoreStreams.bdd -c)
   --validclasses             File containing names of valid classes - puts #if#def around validation methods not on this list
 
   --help                     Display this help screen.
+
+
