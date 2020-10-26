@@ -1,5 +1,6 @@
 // Hides all nav items with the text 'artifacts'
-window.onload = () => {
+const hideArtifacts = () => {
+    
     const aTags = document.getElementsByTagName("a");
     let found = [];
 
@@ -18,3 +19,19 @@ window.onload = () => {
         }
     })
 }
+
+MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+
+var observer = new MutationObserver(function(mutations, observer) {
+    // fired when a mutation occurs
+    hideArtifacts();
+});
+
+// define what element should be observed by the observer
+// and what types of mutations trigger the callback
+observer.observe(document, {
+  subtree: true,
+  attributes: true
+});
+
+window.onload = hideArtifacts;
