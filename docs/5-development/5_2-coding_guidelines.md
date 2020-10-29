@@ -17,3 +17,5 @@ This page provides links to the coding guidelines used by Glasswall developers.
 [Perl Best Practices Summary](artifacts/Perl_Best_Practices_Summary.docx) <img alt="Download" src={useBaseUrl('img/download.png')} />
 
 [Learn YAML in Y Minutes](artifacts/LearnYAMLInYMinutes)
+
+[Kernighan & Ritchie: The C Programming Language](artifacts/Prentice_Hall-Kernighan_Ritchie-The_C_Programming_Language.pdf) <img alt="PDF" src={useBaseUrl('img/pdf_icon.png')} />
