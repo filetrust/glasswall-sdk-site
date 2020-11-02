@@ -6,11 +6,11 @@ title: CFB Geneology
 &emsp;&emsp;&emsp;&emsp;*cfbGeneology* - provide textual analysis of red-black tree in a Compound File Binary (CFB) file
 
 ### **SYNOPSIS**
-&emsp;&emsp;&emsp;&emsp;cfbGeneology --in(=| )*inputfile* --out(=| )*outputfile*  
-&emsp;&emsp;&emsp;&emsp;&emsp;cfbGeneology (--man | --help | --version | --usage)
+&emsp;&emsp;&emsp;&emsp;**cfbGeneology --in**(=| )*inputfile* **--out**(=| )*outputfile*  
+&emsp;&emsp;&emsp;&emsp;&emsp;**cfbGeneology** (**--man** | **--help** | **--version** | **--usage**)
 
 ### **DESCRIPTION**
-&emsp;&emsp;&emsp;&emsp;cfbGeneology analyses CFB format files and produces tabular reports for each file showing the class ID, Directory Entry name, Left Sibling ID, Right Sibling ID and Child ID. This allows analysis of the CFB red-black tree within each file.
+Analyse CFB format files and produces tabular reports for each file showing the class ID, Directory Entry name, Left Sibling ID, Right Sibling ID and Child ID. This allows analysis of the CFB red-black tree within each file.
 
 ### **OPTIONS**
 
@@ -44,7 +44,7 @@ The **--man**, **--help**, -**-version**, and **--usage** options provide inform
 
 ### **EXAMPLE**
 **cfbGeneology --in=c:\docs\doc_01.doc  --out=c:\output_directory\doc_01-GENEOLOGY.txt**  
-&emsp;&emsp;&emsp;&emsp;Analyse file **doc_01.doc** in directory **c:\docs** and place the output in file **doc_01-GENEOLOGY.txt** in directory **c:\output_directory**.  
+&emsp;&emsp;&emsp;&emsp;Analyse file *doc_01.doc* in directory *c:\docs* and place the output in file *doc_01-GENEOLOGY.txt* in directory *c:\output_directory*.  
 
 **cfbGeneology --in c:\docs\doc_01.doc --out c:\output_directory\doc_01-GENEOLOGY.txt**  
 &emsp;&emsp;&emsp;&emsp;As above, but shows that `=` is optional.   
@@ -59,4 +59,4 @@ The **--man**, **--help**, -**-version**, and **--usage** options provide inform
 &nbsp;&nbsp;&nbsp;&nbsp;Martin O'Brien mobrien@glasswallsolutions.com
 
 ### **COPYRIGHT**
-&nbsp;&nbsp;&nbsp;&nbsp;Glasswall Solutions Limited.
+&nbsp;&nbsp;&nbsp;&nbsp;&copy; Glasswall Solutions Limited.
