@@ -12,7 +12,7 @@ title: Find DIFAT
 **findDIFAT** (**--usage** | **--help** | **--version** | **--man**)
 
 ### **DESCRIPTION**
-Read in each file whose extension matches the file glob *.doc*, *.dot*, *.xls*, *.xlt*, *.pot*, or *.ppt in *input_directory* and all subdirectories. For each matched file, detect the existence of a DIFAT sector. A list of files processed
+Read in each file whose extension matches the file glob *\*.doc*, *\*.dot*, *\*.xls*, *\*.xlt*, *\*.pot*, or *\*.ppt* in *input_directory* and all subdirectories. For each matched file, detect the existence of a DIFAT sector. A list of files processed
 will be produced, grouped into those with DIFAT sectors and those without.
 
 ### ****OPTIONS****
