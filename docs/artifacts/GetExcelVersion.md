@@ -14,7 +14,7 @@ title: Get Excel Version
 ### **DESCRIPTION**
 Read in each file whose extension matches the file glob *\*.xls* in *input_directory* and all subdirectories. Report the version of each matched file.
 
-### ****OPTIONS****
+### **OPTIONS**
 **--in**  
 The name of the directory containing the files to be analysed. getExcelVersion will recurse downward through all sub-directories and
 process all files with extension .xls.
@@ -91,6 +91,18 @@ Here is the content of *getExcelVersion.txt*.
 
 
 The following command will recurse downward through the *c:\TestData\OFFICE\XLS* directory and report in file *c:\getExcelVersion_OUTPUT.txt* version-related statistics for all files with file extension .xls. It will create subdirectories in directory *c:\getExcelVersion* named after the versions and copy files of those version into them.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**getExcelVersion --in c:\TestData\OFFICE\XLS --out c:\getExcelVersion_OUTPUT.txt --copy --target_dir c:\getExcelVersion**  
+&nbsp;&nbsp;&nbsp;&nbsp;Running findDIFAT.exe version 1.0.0  
+&nbsp;&nbsp;&nbsp;&nbsp;Start time:  Tue Nov  3 15:11:14 2020  
+&nbsp;&nbsp;&nbsp;&nbsp;Copying files  
+&nbsp;&nbsp;&nbsp;&nbsp;...Done  
+&nbsp;&nbsp;&nbsp;&nbsp;End time: Tue Nov  3 15:11:14 2020  
+
+&nbsp;&nbsp;&nbsp;&nbsp;This exe file was created with the evaluation version of Perl2Exe.  
+&nbsp;&nbsp;&nbsp;&nbsp;For more information visit http://www.indigostar.com  
+&nbsp;&nbsp;&nbsp;&nbsp;(The full version does not display this message with a 2 second delay.)  
+&nbsp;&nbsp;&nbsp;&nbsp;...  
 
 Below is part of the content of *c:\getExcelVersion.txt*. Each ellipsis (...) indicates a section of text has been removed for brevity in this document. Note also that any errors are reported in the file.
 
@@ -199,83 +211,6 @@ Below is part of the content of *c:\getExcelVersion.txt*. Each ellipsis (...) in
     FILE C:\getExcelVersion.txt closed at 2020-11-04 09:16:04Z
     Copyright © 2020 Glasswall Solutions Limited
     ------------------------------------------------------------------------
-
-
-
-&nbsp;&nbsp;&nbsp;&nbsp;**getExcelVersion --in c:\TestData\OFFICE\XLS --out c:\getExcelVersion_OUTPUT.txt --copy --target_dir c:\getExcelVersion**  
-&nbsp;&nbsp;&nbsp;&nbsp;Running findDIFAT.exe version 1.0.0  
-&nbsp;&nbsp;&nbsp;&nbsp;Start time:  Tue Nov  3 15:11:14 2020  
-&nbsp;&nbsp;&nbsp;&nbsp;Copying files  
-&nbsp;&nbsp;&nbsp;&nbsp;...Done  
-&nbsp;&nbsp;&nbsp;&nbsp;End time: Tue Nov  3 15:11:14 2020  
-
-&nbsp;&nbsp;&nbsp;&nbsp;This exe file was created with the evaluation version of Perl2Exe.  
-&nbsp;&nbsp;&nbsp;&nbsp;For more information visit http://www.indigostar.com  
-&nbsp;&nbsp;&nbsp;&nbsp;(The full version does not display this message with a 2 second delay.)  
-&nbsp;&nbsp;&nbsp;&nbsp;...  
-
-This is the content of *findDIFAT.txt*:
-
-    FILE: c:/findDIFAT.txt
-    DATE: Tue Nov  3 15:11:14 2020
-    COPYRIGHT GLASSWALL SOLUTIONS LIMITED
-    START DIRECTORY: c:/Test_Files
-    ------------------------------------------------------------------------
-    Number of CFB files found: 16
-    Number of non-CFB files found: 0
-    Total files found: 16
-    ------------------------------------------------------------------------
-    cfbFiles: c:/Test_Files/DOC_010/01_Word2000_20000004.doc
-    cfbFiles: c:/Test_Files/DOC_010/01_Word2000_20000005.doc
-    cfbFiles: c:/Test_Files/DOC_010/01_Word2000_20000006.doc
-    cfbFiles: c:/Test_Files/DOC_010/01_Word2000_20000007.doc
-    cfbFiles: c:/Test_Files/DOC_010/01_Word2000_20000008.doc
-    cfbFiles: c:/Test_Files/DOC_010/01_Word2000_20000009.doc
-    cfbFiles: c:/Test_Files/DOC_010/01_Word2000_20000010.doc
-    cfbFiles: c:/Test_Files/DOC_010/01_Word2000_20000012.doc
-    cfbFiles: c:/Test_Files/DOC_010/01_Word2000_20000013.doc
-    cfbFiles: c:/Test_Files/DOC_010/01_Word2000_20000014.doc
-    cfbFiles: c:/Test_Files/With_DIFAT_0006/Word 0002 Word_Test_Set_1A_DIFAT_Sectors/01_Word1997_10002220.doc
-    cfbFiles: c:/Test_Files/With_DIFAT_0006/Word 0002 Word_Test_Set_1A_DIFAT_Sectors/01_Word2000_20002295.doc
-    cfbFiles: c:/Test_Files/With_DIFAT_0006/Word 0014 Fails/ALL_0109.doc
-    cfbFiles: c:/Test_Files/With_DIFAT_0006/WORD_2003/ALL_0030.doc
-    cfbFiles: c:/Test_Files/With_DIFAT_0006/WORD_2003/ALL_0052.doc
-    cfbFiles: c:/Test_Files/With_DIFAT_0006/WORD_2007/ALL_0054.doc
-    cfbFiles total: 16
-    ------------------------------------------------------------------------
-    noDIFAT: c:/Test_Files/DOC_010/01_Word2000_20000004.doc
-    noDIFAT: c:/Test_Files/DOC_010/01_Word2000_20000005.doc
-    noDIFAT: c:/Test_Files/DOC_010/01_Word2000_20000006.doc
-    noDIFAT: c:/Test_Files/DOC_010/01_Word2000_20000007.doc
-    noDIFAT: c:/Test_Files/DOC_010/01_Word2000_20000008.doc
-    noDIFAT: c:/Test_Files/DOC_010/01_Word2000_20000009.doc
-    noDIFAT: c:/Test_Files/DOC_010/01_Word2000_20000010.doc
-    noDIFAT: c:/Test_Files/DOC_010/01_Word2000_20000012.doc
-    noDIFAT: c:/Test_Files/DOC_010/01_Word2000_20000013.doc
-    noDIFAT: c:/Test_Files/DOC_010/01_Word2000_20000014.doc
-    noDIFAT total: 10
-    ------------------------------------------------------------------------
-    List of files with DIFAT sectors, prefixed by the number of DIFAT sectors.
-    ------------------------------------------------------------------------
-    1: c:/Test_Files/With_DIFAT_0006/Word 0002 Word_Test_Set_1A_DIFAT_Sectors/01_Word1997_10002220.doc
-    1: c:/Test_Files/With_DIFAT_0006/Word 0002 Word_Test_Set_1A_DIFAT_Sectors/01_Word2000_20002295.doc
-    1: c:/Test_Files/With_DIFAT_0006/WORD_2003/ALL_0030.doc
-    1: c:/Test_Files/With_DIFAT_0006/WORD_2003/ALL_0052.doc
-    1: c:/Test_Files/With_DIFAT_0006/WORD_2007/ALL_0054.doc
-    1 total: 5
-    ------------------------------------------------------------------------
-    2: c:/Test_Files/With_DIFAT_0006/Word 0014 Fails/ALL_0109.doc
-    2 total: 1
-    ------------------------------------------------------------------------
-        Copied c:/Test_Files/With_DIFAT_0006/Word 0002 Word_Test_Set_1A_DIFAT_Sectors/01_Word1997_10002220.doc to c:/Tasks/110257-Document_Migration/findDIFAT_OUTPUT/Word 0002 Word_Test_Set_1A_DIFAT_Sectors (01).
-        Copied c:/Test_Files/With_DIFAT_0006/Word 0002 Word_Test_Set_1A_DIFAT_Sectors/01_Word2000_20002295.doc to c:/Tasks/110257-Document_Migration/findDIFAT_OUTPUT/Word 0002 Word_Test_Set_1A_DIFAT_Sectors (01).
-        Copied c:/Test_Files/With_DIFAT_0006/WORD_2003/ALL_0030.doc to c:/Tasks/110257-Document_Migration/findDIFAT_OUTPUT/WORD_2003 (01).
-        Copied c:/Test_Files/With_DIFAT_0006/WORD_2003/ALL_0052.doc to c:/Tasks/110257-Document_Migration/findDIFAT_OUTPUT/WORD_2003 (01).
-        Copied c:/Test_Files/With_DIFAT_0006/WORD_2007/ALL_0054.doc to c:/Tasks/110257-Document_Migration/findDIFAT_OUTPUT/WORD_2007 (01).
-        Copied c:/Test_Files/With_DIFAT_0006/Word 0014 Fails/ALL_0109.doc to c:/Tasks/110257-Document_Migration/findDIFAT_OUTPUT/Word 0014 Fails (02).
-    6 files copied.
-    End time: Tue Nov  3 15:11:14 2020
-    -----------------------  End of file c:/findDIFAT.txt  ------------------------
 
 ### **AUTHOR**
 Martin O'Brien <mobrien@glasswallsolutions.com>
