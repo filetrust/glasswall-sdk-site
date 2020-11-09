@@ -54,7 +54,7 @@ Here is checking the sec_label currently running processes as:
 As you are mostly going to be logged in as admin then the following
 command will provide enough privileges to do most things:
 
-&nbsp;&nbsp;&nbsp;&nbsp;sec_label pl admin,all_exempt
+&nbsp;&nbsp;&nbsp;&nbsp;sec_label -pl admin,all_exempt
 
 This will need to be issued for each terminal session.
 
