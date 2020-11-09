@@ -54,7 +54,7 @@ Here is checking the sec_label currently running processes as:
 As you are mostly going to be logged in as admin then the following
 command will provide enough privileges to do most things:
 
-&nbsp;&nbsp;&nbsp;&nbsp;sec_label --pl admin,all_exempt
+&nbsp;&nbsp;&nbsp;&nbsp;sec_label pl admin,all_exempt
 
 This will need to be issued for each terminal session.
 
@@ -62,13 +62,13 @@ This will need to be issued for each terminal session.
 
 If you need to change the labels on a file
 
-&nbsp;&nbsp;&nbsp;&nbsp;sec_label --l *filename* *label*
+&nbsp;&nbsp;&nbsp;&nbsp;sec_label -l *filename* *label*
 
 ## **Changing the label for processes**
 
 If you need to change the labels on a file
 
-&nbsp;&nbsp;&nbsp;&nbsp;sec_label --p --l *label*
+&nbsp;&nbsp;&nbsp;&nbsp;sec_label -p -l *label*
 
 ## It's like Linux but...
 
@@ -86,7 +86,7 @@ The IP address used by the VM is located in file */xts/etc/startup.d/11-eth0*.
 Edit the file to use an IP address on the domain that is not in use. Use
 **ping** to find an IP not in use.
 
-To make the change take effect use *shutdown&nbsp;--r* command to restart
+To make the change take effect use *shutdown&nbsp;-r* command to restart
 the operating system.
 
 **Transferring files to/from host**
@@ -95,7 +95,7 @@ As SSH (Secure Shell) is configured using the default port, *scp* (secure copy) 
 
 &nbsp;&nbsp;&nbsp;&nbsp;scp \[-r\] *source destination*
 
-Use the **--r** option to recursively copy a directory. To specify a location on the STOP VM it needs to be in the format **userid\@ip_address:/*location***, for example, 
+Use the **-r** option to recursively copy a directory. To specify a location on the STOP VM it needs to be in the format **userid\@ip_address:/*location***, for example, 
 
     <admin@10.10.106.1:/home/admin/myfiles>
     
@@ -191,7 +191,7 @@ specific calls that have been replaces with their STOP equivalent.
 To recompile all the Qt libraries without running a **configure**
 
 &nbsp;&nbsp;&nbsp;&nbsp;**cd /home/admin/qt-5.9.6**
-&nbsp;&nbsp;&nbsp;&nbsp;**make --j***x*
+&nbsp;&nbsp;&nbsp;&nbsp;**make -j***x*
 
 where *x* is number of processors.
 
@@ -208,7 +208,7 @@ File location: */home/admin/quazip*
 
 Steps to create new compilation of QuaZIP
 
-&nbsp;&nbsp;&nbsp;&nbsp;**/xts/qt-6.9.6/bin/qmake --o Makefile quazip.pro**
+&nbsp;&nbsp;&nbsp;&nbsp;**/xts/qt-6.9.6/bin/qmake -o Makefile quazip.pro**
 &nbsp;&nbsp;&nbsp;&nbsp;**make**
 
 
@@ -216,11 +216,11 @@ Steps to create new compilation of QuaZIP
 
 Release build
 
-&nbsp;&nbsp;&nbsp;&nbsp;/xts/qt-6.9.6/bin/qmake --r --o Makefile core2.pro -spec linux-g++
+&nbsp;&nbsp;&nbsp;&nbsp;/xts/qt-6.9.6/bin/qmake -r -o Makefile core2.pro -spec linux-g++
 
 Debug build
 
-&nbsp;&nbsp;&nbsp;&nbsp;/xts/qt-6.9.6/bin/qmake --r --o Makefile core2.pro -spec linux-g++
+&nbsp;&nbsp;&nbsp;&nbsp;/xts/qt-6.9.6/bin/qmake -r -o Makefile core2.pro -spec linux-g++
 CONFIG+=debug CONFIG+=qml_debug
 
 ### AUTHOR
