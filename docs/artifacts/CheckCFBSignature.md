@@ -55,15 +55,14 @@ Display usage and description of each option and exit.
 **checkCFBSignature** **--in**=*c:\TestFiles\CFB* **--out**=*cfb_files.txt* **--move** **--target_dir** *non_cfb_files*  
 &nbsp;&nbsp;&nbsp;&nbsp;Read recursively from directory *c:\TestFiles\CFB* and log in file *cfb_files.txt* a list of the files that have a CFB signature, and copy all files that do not have a CFB signature into directory *non_cfb_files*, creating that directory if it does not exist.
 
-
-
-
-
 ### **SEE ALSO**
 [cfbGeneology](cfbGeneology), [walkCFB](WalkCFB)
 
-### AUTHOR
+### **AUTHOR**
 Martin O'Brien mobrien@glasswallsolutions.com
 
-### COPYRIGHT
+### **COPYRIGHT**
 &copy; Glasswall Solutions Limited.
+
+### **SEE ALSO**
+[cfbGeneology](cfbGeneology), [walkCFB](walkCFB), [WordDissection](WordDissection)
