@@ -5,6 +5,6 @@ sidebar_label: 2.1.2.1 Overview
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-[Glasswall DLL Overview](../../artifacts/GlasswallDLLOverview)  
+[Glasswall API wchar_t Conversion Example](../../artifacts/GlasswallAPIWchar_tConversion)  
 
 [Glasswall Code Generators](../../artifacts/GlasswallCodeGenerators)

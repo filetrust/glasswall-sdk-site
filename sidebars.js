@@ -34,7 +34,7 @@ module.exports = {
                 "2-glasswall_core/artifacts/GlasswallDllCameraRTF",
                 "2-glasswall_core/artifacts/GlasswallDllCameraWmf",
                 "2-glasswall_core/artifacts/GlasswallDLLLicence",
-                "2-glasswall_core/artifacts/GlasswallDLLOverview",
+                "2-glasswall_core/artifacts/GlasswallAPIWchar_tConversion",
                 "2-glasswall_core/artifacts/GlasswallDLLThirdPartyLibs",
                 "2-glasswall_core/artifacts/import_export_process",
                 "2-glasswall_core/artifacts/internalGlasswallDLLOverview",

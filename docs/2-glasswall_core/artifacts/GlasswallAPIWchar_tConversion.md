@@ -2,17 +2,19 @@
 title: Glasswall API Overview
 ---
 
-This documents the Application Programming Interface (API) within the Windows Dynamic Link Library `glasswall.classic.dll` and the Linux shared object `libglasswall.classic.so`.
+### **INTRODUCTION** 
 
-The API provides the following functionality:
+The Windows Dynamic Link Library `glasswall.classic.dll` and the Linux shared object `libglasswall.classic.so` provide the following functionality:
 
 - The production of reports detailing deep analysis of documents
 - The management of documents against a configurable content management policy
-- The force regeneration of documents against a configurable content management policy
+- The regeneration of documents against a configurable content management policy
 - The production of detailed process reporting
 - The modification of the content management policy
 
-Where an API argument type is `wchar_t`, the argument must be converted to a wide character type before passing in to the API function.
+Where an API argument type is `wchar_t`, the argument must be converted to that type before passing in to the API function.
+
+### **EXAMPLE**
 
 The code snippet below provides a framework showing how this might be done on a GNU/Linux system, where the default encoding of the file system is UTF-8 (which can be verified by using the `locale(1P)` command: `locale charmap` in a terminal window). For the purpose of the example below, a string literal in UTF-8 encoding has been used.
 
@@ -88,3 +90,10 @@ The code snippet below provides a framework showing how this might be done on a 
 		exit(EXIT_SUCCESS);
 
 	} /* end of function main */
+
+### **AUTHOR**
+Martin O'Brien <mobrien@glasswallsolutions.com>
+
+### **COPYRIGHT**
+    
+&copy; 2016 Glasswall Solutions Limited
