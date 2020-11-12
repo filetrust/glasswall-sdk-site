@@ -6,13 +6,13 @@ title: Walk ZIP
 walkZIP - show textual description of parts in a ZIP archive (Package)
 
 ### **SYNOPSIS**
-**walkWMF --in**(=| )*inputdir* **--out**(=| )*outputfile*<br />
-**walkWMF** (**--man** | **--usage** | **--help** | **--version**)
+**walkZIP --in**(=| )*inputdir* **--out**(=| )*outputfile*<br />
+**walkZIP** (**--man** | **--usage** | **--help** | **--version**)
 
 ### **DESCRIPTION**
 Read in each file and directory in *inputdir* , recursing downwards. Each
 file that has a file extension indicating an Office Open XML file
-will be processed, and if it is a ZIP archive the hierarchy of its document parts will be output to *outputfile*.
+will be processed, and if it is a ZIP archive the part names will be placed in *outputfile*, indented to show their hiearchy.
 
 ### **OPTIONS**
 **--in**<br />
@@ -40,11 +40,39 @@ Display usage and exit.
 Non-zero|Failure
 
 ### **EXAMPLES**
-**walkZIP** **--in**=*c:\TestFiles\CFB* **--out**=*cfb_files.txt*  
-&nbsp;&nbsp;&nbsp;&nbsp;Read recursively from directory *c:\TestFiles\CFB* and log in file *cfb_files.txt* the structure of each Office Open XML file.
 
-### AUTHOR
+&nbsp;&nbsp;&nbsp;&nbsp;The following Windows 10 terminal session reads recursively from directory *c:\TestData\OFFICE\OOXML* and logs in file *%TEMP%\walkZIP_OUT.txt* the structure of each Office Open XML file.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**walkZIP --in c:\TestData\OFFICE\OOXML --out %TEMP%\walkZIP_OUT.txt**  
+
+Here is an extract from file *walkZIP_OUT.txt* showing how the program indents part names to show the hierarchy of the file:
+
+    ------------------------------------------------------------------------
+    FILE NAME: c:/TestData/OFFICE/OOXML/OOXML/DOCX/DOCX_010/01_Word1997_10000177.docx
+    [Content_Types].xml
+    _rels
+        .rels
+    docProps
+        app.xml
+        core.xml
+    word
+        _rels
+            document.xml.rels
+        document.xml
+        embeddings
+            oleObject1.bin
+        fontTable.xml
+        media
+            image1.wmf
+        settings.xml
+        styles.xml
+        theme
+            theme1.xml
+        webSettings.xml
+    ------------------------------------------------------------------------
+
+### **AUTHOR**
 Martin O'Brien <mobrien@glasswallsolutions.com>
 
-### COPYRIGHT
-&copy; Glasswall Solutions Limited
+### **COPYRIGHT**
+&copy; 2014 Glasswall Solutions Limited

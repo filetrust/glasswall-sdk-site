@@ -165,4 +165,4 @@ reformat the output into a more familiar format, [JSON](https://www.json.org/jso
 Martin O'Brien mobrien@glasswallsolutions.com
 
 ### **COPYRIGHT**
-Glasswall Solutions Limited.
+&copy; 2014 Glasswall Solutions Limited

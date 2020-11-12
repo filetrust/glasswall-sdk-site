@@ -62,7 +62,7 @@ Display usage and description of each option and exit.
 Martin O'Brien mobrien@glasswallsolutions.com
 
 ### **COPYRIGHT**
-&copy; Glasswall Solutions Limited.
+&copy; 2014 Glasswall Solutions Limited
 
 ### **SEE ALSO**
 [cfbGeneology](cfbGeneology), [walkCFB](walkCFB), [WordDissection](WordDissection)
