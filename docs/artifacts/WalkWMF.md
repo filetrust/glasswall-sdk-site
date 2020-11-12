@@ -6,8 +6,8 @@ title: Walk WMF
 walkWMF - show textual description of Windows Metafile (WMF) files
 
 ### **SYNOPSIS**
-**walkWMF.exe --in**(=| )*inputdir* **--out**(=| )*outputfile*<br />
-**walkCFB** (**--man** | **--usage** | **--help** | **--version**)
+**walkWMF --in**(=| )*inputdir* **--out**(=| )*outputfile*<br />
+**walkWMF** (**--man** | **--usage** | **--help** | **--version**)
 
 ### **DESCRIPTION**
 Recurse downwards through *inputdir*, processing each file with extension 
@@ -62,7 +62,7 @@ File *walkWMF_output.txt* contains this:
     Copyright © 2020 Glasswall Solutions Limited
     ------------------------------------------------------------------------
 
-Note that there were no nono-WMF files encountered, and all files encountered were opened successfully.
+Note that there were no non-WMF files encountered, and all files encountered were opened successfully.
 
 The structure of each of the files will be in a text file named after the file with '.txt' suffixed to the filename; it will be in the same director as the file analysed. Below is the directory structure after *walkCFB* has been run. All the files with extension .txt were created by *walkCFB*:
 
