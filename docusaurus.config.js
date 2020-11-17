@@ -9,19 +9,27 @@ module.exports = {
   onBrokenLinks: 'log',
   themeConfig: {
     navbar: {
-      title: "Glasswall Documentation",
-      logo: {
+      
+      logo: { 
         alt: "Glasswall Logo",
         src: "img/glasswall_logo_blue.png",
         href: "https://glasswallsolutions.com/",
       },
       items: [
         {
+          to: "/Home",
+          label: "Glasswall Documentation",
+          position: "left",
+        },
+
+        {
           to: "docs/1-introduction",
           activeBasePath: "docs",
           label: "Documents",
           position: "left",
         },
+
+        
 /*         {
           href: "https://medium.com/glasswall-engineering",
           label: "Blog",
