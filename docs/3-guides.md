@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 [BDDL Hints and Tips](artifacts/BddlHintsAndTips)  
 
-[DVL Developer Guidelines](artifacts/DVLGuide.docx) <img alt="docx" src={useBaseUrl('img/docx_icon.png')} />
+[DVL Developer Guidelines](artifacts/DVLGuide)
 
 [PDF Image Conversion](artifacts/PDFImageConversion.docx) <img alt="docx" src={useBaseUrl('img/docx_icon.png')} />  
 
