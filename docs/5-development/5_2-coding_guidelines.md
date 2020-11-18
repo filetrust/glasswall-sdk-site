@@ -14,7 +14,7 @@ This page provides links to the coding guidelines used by Glasswall developers.
 
 [Glasswall C Coding Guidelines](<artifacts/Glasswall C Coding Guidelines.doc>)
 
-[Perl Best Practices Summary](artifacts/Perl_Best_Practices_Summary.docx) <img alt="Download" src={useBaseUrl('img/download.png')} />
+[Perl Best Practices Summary](artifacts/Perl_Best_Practices_Summary)
 
 [Learn YAML in Y Minutes](artifacts/LearnYAMLInYMinutes)
 
