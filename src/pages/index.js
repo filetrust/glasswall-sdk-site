@@ -11,6 +11,7 @@ import {Container, Row} from 'react-bootstrap'
 function HomePage() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
+  const imgUrl = useBaseUrl('img/use-cases-illustration-03.png')
   return (
     
     <Layout
@@ -29,7 +30,7 @@ function HomePage() {
           <Container>
             <div className={classnames('row', styles.responsiveCentered)}>
               <div className="col col--6 col--offset-3">
-                <img className="homeImage" src="/static/img/use-cases-illustration-03.png"/>
+                <img className="homeImage" src={imgUrl}/>
                 <h3 className="">Glasswall Documentation</h3>
                 <p>A resource for Glasswall documentation</p>
               </div>
