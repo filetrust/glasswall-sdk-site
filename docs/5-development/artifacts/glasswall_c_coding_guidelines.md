@@ -3,20 +3,17 @@ title: Glasswall C Coding Guidelines
 ---
 
 ## 1. THE C PROGRAMMING LANGUAGE
-Dennis Ritchie developed the original version of the programming language C at AT&T Bell Laboratories
-in the early 1970s.
+Dennis Ritchie developed the original version of the programming language C at AT&T Bell Laboratories in the early 1970s.
 
 The American National Standards Institute, or ANSI, standardises computer programming languages
-in the United States. X3J11 is the name of the ANSI-authorised committee that developed the standard
-for C, starting in 1983.
+in the United States. X3J11 is the name of the ANSI-authorised committee that developed the standard for C, starting in 1983.
 
 The International Standards Organisation, or ISO, C has a similar responsibility in the
 international arena. ISO formed the technical committee JTC1/SC22/WG14 to review and augment
 the work of X3J11.
 
 By 1992, ISO had adopted a standard for C that was essentially identical to X3.159. It
-is called ISO 9899:1990. The C standards differ only in format and in the numbering of sections.
-The wording differs in a few small places but makes no substantive difference to the language definition.
+is called ISO 9899:1990. The C standards differ only in format and in the numbering of sections. The wording differs in a few small places but makes no substantive difference to the language definition.
 
 These Guidelines pertain to C, as defined by ISO 9899:1990.
 
@@ -350,7 +347,7 @@ the following bracket:
     for(i=0; i < NELEMENTS(name_array); ++i)
         ...
 
-### 6.3 Subroutines and Variables
+### 6.4 Subroutines and Variables
 Guideline: Don't separate subroutine or variable names from the following opening bracket.
 
 Function or variable names shall be followed by an opening parenthesis
@@ -528,7 +525,7 @@ accomplish this isn't always available. A reasonable compromise is to
 prescribe a standard code-formatting tool that must be applied to all
 code before it's committed, reviewed, or otherwise displayed in public.
 
-## C IMPLEMENTATION
+## 7 C IMPLEMENTATION
 
 ### 7.1 Header Files
 Guideline: Ensure header files are idempotent.
@@ -2269,298 +2266,293 @@ This appendix lists the complete set of guidelines presented in this
 document. A hyperlink to the section heading under which each guideline
 appears is provided in square brackets.
 
-Element Header
+**Element Header**
 
--   Prefix each source file with a template header. \[Source File
-    Element Header\]
+-   Prefix each source file with a template header. \[[Source File
+    Element Header](#51-element-header)\]
 
--   Prefix each header file with a template header. \[Header File
-    Element Header\]
+-   Prefix each header file with a template header. \[[Source File
+    Element Header](#51-element-header)\]
 
--   Prefix each unit with a template header. \[Unit Header\]
+-   Prefix each unit with a template header. \[[Unit Header](#52-unit-header)\]
 
-Code Layout
+**Code Layout**
 
 -   Where present, sections of code should be laid out in the following
-    order, prefixed by the comment shown. \[Module Layout\]
+    order, prefixed by the comment shown. \[[Module Layout](#61-module-layout)\]
 
--   Brace and parenthesize using BSD and GNU style. \[Bracketing\]
+-   Brace and parenthesize using BSD and GNU style. \[[Bracketing](#62-bracketing)\]
 
--   Separate your control keywords from the following opening bracket. \[Keywords\]
+-   Separate your control keywords from the following opening bracket. \[[Keywords](#63-keywords)\]
 
 -   Don't separate subroutine or variable names from the following
-    opening bracket. \[Subroutines and Variables\]
+    opening bracket. \[[Subroutines and Variables](#64-subroutines-and-variables)\]
 
--   Use 78-column lines. \[Line Lengths\]
+-   Use 78-column lines. \[[Line Lengths](#65-line-lengths)\]
 
--   Use four-column indentation levels. \[Indentation\]
+-   Use four-column indentation levels. \[[Indentation](#66-indentation)\]
 
--   Indent with spaces, not tabs. \[Tabs\]
+-   Indent with spaces, not tabs. \[[Tabs](#67-tabs)\]
 
--   Never place two statements on one line. \[Blocks\]
+-   Never place two statements on one line. \[[Blocks](#68-blocks)\]
 
--   Code in paragraphs. \[Chunking\]
+-   Code in paragraphs. \[[Chunking](#69-chunking)\]
 
--   Corresponding items shall be aligned vertically. \[Vertical Alignment\]
+-   Corresponding items shall be aligned vertically. \[[Vertical Alignment](#610-vertical-alignment)\]
 
--   Break long expressions before an operator. \[Breaking Long Lines\]
+-   Break long expressions before an operator. \[[Breaking Long Lines](#611-breaking-long-lines)\]
 
 -   Always break a long expression at the operator of the lowest
-    possible precedence. \[Breaking by Precedence\]
+    possible precedence. \[[Breaking by Precedence](#612-breaking-by-precedence)\]
 
--   Break long assignments before the assignment operator. \[Assignments\]
+-   Break long assignments before the assignment operator. \[[Assignments](#613-assignments)\]
 
--   Enforce your chosen layout style automatically. \[Automated Layout\]
+-   Enforce your chosen layout style automatically. \[[Automated Layout](#614-automated-layout)\]
 
-C Implementation
+**C Implementation**
 
--   Ensure header files are idempotent. \[Header Files\]
+-   Ensure header files are idempotent. \[[Header Files](#71-header-files)\]
 
--   Do not define functions or objects in header files. \[Header File Content\]
+-   Do not define functions or objects in header files. \[[Header File Content](#72-header-file-content)\]
 
--   Do not use the `goto` statement. \[Goto\]
+-   Do not use the `goto` statement. \[[Goto](#73-goto)\]
 
-Functions
+**Functions**
 
--   Functions should be as short as practicable. \[Functions\]
+-   Functions should be as short as practicable. \[[Functions](#74-functions)\]
 
 -   Use the type-qualifier `const` for non-scalar function parameters.
-    \[Functions\]
+     \[[Functions](#74-functions)\]
 
--   Comment the terminating brace of a function with its name. \[Functions\]
+-   Comment the terminating brace of a function with its name. \[[Functions](#74-functions)\]
 
--   Prefix function names in a separately compiled group of elements with
--   a mnemonic. \[Functions\]
+-   Prefix function names in a separately compiled group of elements with a mnemonic. \[[Functions](#74-functions)\]
 
-Null Pointers
+**Null Pointers**
 
--   Use the `NULL` macro instead of 0 in pointer contexts. \[The NULL
-    Macro\]
+-   Use the `NULL` macro instead of 0 in pointer contexts. \[[The NULL Macro](#75-null-pointers)\]
 
 -   A null pointer shall be cast to its correct type when used as an
-    argument to a function call. \[Pointer Arguments\]
+    argument to a function call. \[[Pointer Arguments](#752-pointer-arguments)
 
 -   A function pointer shall not be converted to type `void *`.
-    \[Function Pointers\]
+    \[[Function Pointers](#753-function-pointers)
 
-Preprocessor
+**Preprocessor**
 
 -   In the definition of a function-like macro each instance of a
     parameter shall be enclosed in parentheses unless it is used as the
-    operand of `#` or `##`.
+    operand of `#` or `##`. \[[Preprocessor](#76-preprocessor)\]
 
 -   C macros shall expand only to a braced initialiser, a constant, a
     parenthesised expression, a type qualifier, a storage class
-    specifier, or a do-while-zero construct.
+    specifier, or a do-while-zero construct. \[[Preprocessor](#76-preprocessor)\]
 
-Booleans
+**Booleans**
 
 -   Define pre-processor macros or enumeration constants for true and
-    false values, which evaluate to 1 and 0. \[Defining TRUE and FALSE\]
+    false values, which evaluate to 1 and 0. \[[Defining TRUE and FALSE](#772-use-of-true-and-false)\]
 
 -   Only assign TRUE and FALSE to a Boolean variable, never use them in
-    comparisons. \[Use of TRUE and FALSE\]
+    comparisons. \[[Defining TRUE and FALSE](#772-use-of-true-and-false)\]
 
-Pointer Declarations
+**Pointer Declarations**
 
 -   When declaring or defining a pointer variable, always ensure there
-    is no whitespace between the `*` and the identifier.
+    is no whitespace between the `*` and the identifier. \[[Pointer Declarations](#78-pointer-declarations)\]
 
-Naming Conventions
+**Naming Conventions**
 
 -   Name all objects.
 
--   No identifier shall begin with an underscore. \[Identifiers\]
+-   No identifier shall begin with an underscore. \[[Identifiers](#81-identifiers)\]
 
 -   Identifiers (internal and external) and pre-processor macro names
     shall not rely on the significance of more than 31 characters.
-    \[Identifiers\]
+    \[[Identifiers](#81-identifiers)\]
 
 -   Use grammatical templates when forming identifiers and function
-    names. \[Identifiers\]
+    names. \[[Identifiers](#81-identifiers)\]
 
--   Name Booleans after their associated test. \[Booleans\]
+-   Name Booleans after their associated test. \[[Booleans](#82-booleans)\]
 
--   Mark variables that store pointers. \[Pointer Variables\]
+-   Mark variables that store pointers. \[[Pointer Variables](#83-pointer-variables)\]
 
--   Name arrays in the plural. \[Arrays\]
+-   Name arrays in the plural. \[[Arrays](#84-arrays)\]
 
 -   Maintain consistency in the use of multiword identifiers.
-    \[Multiword Identifiers\]
+    \[[Multiword Identifiers](#85-multiword-identifiers)\]
 
--   Abbr idents by prefx. \[Abbreviations\]
+-   Abbr idents by prefx. \[[Abbreviations](#86-abbreviations)\]
 
--   Abbreviate only when the meaning remains unambiguous. \[Ambiguous
-    Abbreviations\]
+-   Abbreviate only when the meaning remains unambiguous. \[[Ambiguous Abbreviations](#87-ambiguous-abbreviations)\]
 
--   Avoid using inherently ambiguous words in names. \[Ambiguous Names\]
+-   Avoid using inherently ambiguous words in names. \[[Ambiguous Names](#88-ambiguous-names)\]
 
--   Use K&R2 style use of case. \[General Naming Conventions\]
+-   Use K&R2 style use of case. \[[General Naming Conventions](#89-general-naming-conventions)\]
 
-Documentation
+**Documentation**
 
--   Use full-line comments to explain the algorithm. \[Algorithmic
-    Documentation\]
+-   Use full-line comments to explain the algorithm. \[[Algorithmic Documentation](#91-algorithmic-documentation)\]
 
--   Use end-of-line comments to point out subtleties and oddities.
-    \[Elucidating Comments\]
+-   Use end-of-line comments to point out subtleties and oddities. \[[Elucidating Comments](#92-elucidating-comments)\]
 
--   Comment anything that has puzzled or tricked you. \[Defensive
-    Documentation\]
+-   Comment anything that has puzzled or tricked you. \[[Defensive Documentation](#93-defensive-documentation)\]
 
--   Consider whether it's better to rewrite than to comment.
-    \[Indicative Documentation\]
+-   Consider whether it's better to rewrite than to comment. \[[Indicative Documentation](#94-indicative-documentation)\]
 
--   Check the spelling, syntax, and sanity of your documentation.
-    \[Proofreading\]
+-   Check the spelling, syntax, and sanity of your documentation. \[[Proofreading](#95-proofreading)\]
 
-Library Functions
+**Library Functions**
 
 -   Use C's Standard Library functions wherever possible.
 
--   Use `assert` only in development code. \[\<assert.h\>\]
+-   Use `assert` only in development code. \[[<assert.h\>](#101-asserth)\]
 
 -   Use the functions declared in `<ctype.h>` to test or alter
     characters that you read in with `fgetc()`, `getc()`, `getchar()`.
-    \[\<ctype.h\>\]
+    \[[<ctype.h\>](#102-ctypeh)\]
 
--   Do not assume letter codes are adjacent. \[Letter Codes\]
+-   Do not assume letter codes are adjacent. \[[Letter Codes](#1022-letter-codes)\]
 
--   Do not use `errno`. \[\<errno.h\>\]
+-   Do not use `errno`. \[[<errno.h\>](#h3-id103-errnoh-3812103-errnohh3)\]
 
 -   To avoid overflow, make sure that no value ever exceeds `DBL_MAX` in
-    magnitude. \[\<float.h\>\]
+    magnitude. \[[<float.h\>](#h3-id104-floath-3780104-floathh3)\]
 
 -   To avoid underflow, make sure that no value ever goes below `DBL_MIN`
-    in magnitude. \[Underflow\]
+    in magnitude. \[[Underflow](#1042-underflow)\]
 
 -   Where possible, perform a check when adding a small magnitude to a
-    large one. \[Significance Loss\]
+    large one. \[[Significance Loss](#1043-significance-loss)\]
 
 -   Wherever possible, use the macros provided in `<limits.h>` to test
     the execution environment. Do not do experiments on the
-    pre-processor. \[\<limits.h\>\]
+    pre-processor. \[[<limits.h\>](#105-limitsh)\]
 
 -   Be aware of where library behaviour changes with locale.
-    \[\<locale.h\>\]
+    \[[<locale.h\>](#106-localeh)\]
 
--   Do not use `setjmp` or `longjmp`. \[\<setjmp.h\>\]
+-   Do not use `setjmp` or `longjmp`. \[[<setjmp.h\>](#108-setjmph)\]
 
 -   When using the macros in `<stdarg.h>` be aware of the caveats listed
     in this Guideline. \[You must declare a function explicitly as
     having a variable argument list, (call it f). Its argument list must
     end in ellipsis (, ...), both in its definition and any
-    declarations. \[\<stdarg.h\>\]
+    declarations. \[<stdarg.h\>](#1010-stdargh)\]
 
 -   Use `size_t` *anywhere* your program performs array subscripting or
-    address arithmetic. \[\<stddef.h\>\]
+    address arithmetic. \[[<stddef.h\>](#1011-stddefh)\]
 
--   Function `gets` shall not be used. \[gets\]
+-   Function `gets` shall not be used. \[[gets](#10121-gets)\]
 
--   Use `getc` instead of `fgetc`. \[getc\]
+-   Use `getc` instead of `fgetc`. \[[getc](#10121-gets)\]
 
--   Use `putc` instead of `fputc`. \[putc\]
+-   Use `putc` instead of `fputc`. \[[putc](#10123-putc)\]
 
 -   Call `fread` in a way such that it can report how many additional
-    characters it read (if any). \[fread\]
+    characters it read (if any). \[[fread](#10124-fread)\]
 
 -   Always use `remove` to remove any files you created with `tmpnam`.
-    \[remove\]
+    \[remove](#10125-remove)\]
 
 -   Always check the return value of `rename `to see if the operation
-    succeeded. \[rename\]
+    succeeded. \[[rename](#10126-rename)\]
 
--   Do not use `rewind`. \[rewind\]
+-   Do not use `rewind`. \[[rewind](#10127-rewind)\]
 
--   Use `setvbuf` instead of `setbuf`. \[setbuf\]
+-   Use `setvbuf` instead of `setbuf`. \[[setbuf](#10128-setbuf)\]
 
--   Use `tmpfile` instead of `tmpnam` wherever possible. \[tmpfile\]
+-   Use `tmpfile` instead of `tmpnam` wherever possible. \[[tmpfile](#10129-tmpfile)\]
 
 -   Gather related data into a structure and allocate it all at once. Do
     *not* gather unrelated data just to save heap overhead.
-    \[\<stdlib.h\>\]
+    \[[<stdlib.h\>](#h3-id1013-stdlibh-33051013-stdlibhh3)\]
 
 -   Allocate data objects with similar lifetimes all at once, then free
     them at about the same time. Do *not* advance or defer unrelated
-    heap operations just to minimize fragmentation. \[\<stdlib.h\>\]
+    heap operations just to minimize fragmentation. \[[<stdlib.h\>](#h3-id1013-stdlibh-33141013-stdlibhh3)\]
 
 -   Use `EXIT_FAILURE` and `EXIT SUCCESS` as the argument to exit or the
     return value from main to report unsuccessful and successful program
-    termination. \[EXIT_FAILURE and EXIT SUCCESS\]
+    termination. \[[EXIT_FAILURE and EXIT SUCCESS](#10132-exit_failure-and-exit-success)\]
 
 -   Wherever possible, call `exit(EXIT_FAILURE)` instead of `abort`.
-    \[abort\]
+    \[[abort](#10133-abort)\]
 
--   Call `abs(x)` instead of writing the idiom `x < 0 ? --x : x`. \[abs\]v     
+-   Call `abs(x)` instead of writing the idiom `x < 0 ? --x : x`. \[[abs](#10134-abs)\]    
 
--   Use `strtod` instead of `atof`. \[atof\]
+-   Use `strtod` instead of `atof`. \[[atof](#10135-atof)\]
 
 -   Do not use `calloc` to initialise floating-point values to zeros, or
-    pointers to null pointers. \[calloc\]
+    pointers to null pointers. \[[calloc](#10136-calloc)\]
 
 -   Do not assume the product of `calloc`'s arguments is all that matters.
-    \[calloc\]
+    \[[calloc](#10136-calloc)\]
 
 -   If a string can contain null characters, specify its length and use
-    functions whose names begin with `mem`. \[\<string.h\>\]
+    functions whose names begin with `mem`. \[<string.h\>](#1014-stringh)\]
 
 -   Use `memmove` to copy a string if the source and destination strings
-    might overlap. \[\<string.h\>\]
+    might overlap. \[[<string.h\>](#1014-stringh)\]
 
 -   If a string may or may not have a terminating null character,
     specify its maximum length and use the functions beginning with
-    `strn`. \[\<string.h\>\]
+    `strn`. \[[<string.h\>](#1014-stringh)\]
+
 
 -   If a string definitely has a terminating null character, specify
     only the string and use the remaining functions whose names begin
-    with `str`. \[\<string.h\>\]
+    with `str`. \[[<string.h\>](#1014-stringh)\]
+
 
 -   Use `strcat` if you have only two strings to concatenate, or just a
-    few short strings. Otherwise use strcpy. \[\<string.h\>\]
+    few short strings. Otherwise use strcpy. \[[<string.h\>](#1014-stringh)\]
+
 
 -   Always copy the value returned by a call to another (or the same)
     function if you need the value beyond a conflicting function call.
-    \[\<time.h\>\]
+    \[[<time.h\>](#1015-timeh)\]
 
-SUPPORT LIBRARIES
+**SUPPORT LIBRARIES**
 
 -   If Glasswall Solutions Limited has a library of support routines
     that have been reviewed, debugged and tested, and released for use,
     then those routines should be used rather than a developer writing
-    his her own routines to achieve the same functionality.
+    his or her own routines to achieve the same functionality. \[[Support Libraries](#11-support-libraries)\]
 
-Error Handling
+**Error Handling**
 
 -   If a function returns error information, then that error information
-    shall be tested. \[Function\]
+    shall be tested. \[[Function](#121-function)\]
 
-Values and Expressions
+**Values and Expressions**
 
 -   Don't use octal constants (except zero) and octal escape sequences.
-    \[Leading Zeros\]
+    \[[Leading Zeros](#131-leading-zeros)\]
 
--   Lay out multiline strings over multiple lines. \[Multiline Strings\]
+-   Lay out multiline strings over multiple lines. \[[Multiline Strings](#132-multiline-strings)\]
 
--   Don't use commas to sequence statements. \[Comma Operator\]
+-   Don't use commas to sequence statements. \[[Comma Operator](#133-comma-operator)
 
 -   Use symbolic constants to give numbers meaningful names.
-    \[Constants\]
+    \[[Constants](#134-constants)
 
-Variables
+**Variables**
 
--   Avoid using global variables. \[Global Variables\]
+-   Avoid using global variables. \[[Global Variables](#141-global-variables)\]
 
--   Initialise all automatic variables. \[Initialisation\]
+-   Initialise all automatic variables. \[[Initialisation](#142-initialisation)\]
 
 -   Declare data objects within functions at the innermost possible
-    nesting level. \[Scope\]
+    nesting level. \[[Scope](#143-scope)\]
 
-Control Structures
+**Control Structures**
 
 -   Reject as many iterations as possible, as early as possible.
-    \[Linear Coding\]
+    \[[Linear Coding](#151-linear-coding)\]
 
-Undefined Behaviours
+**Undefined Behaviours**
 
 The Undefined Behaviours section lists many guidelines in the form of
-explicatory paragraphs; therefore, they are not reproduced here.
+explicatory paragraphs; therefore, they are not reproduced here. \[[Undefined Behaviours](#16-undefined-behaviours)\]
