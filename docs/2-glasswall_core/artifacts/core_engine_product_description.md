@@ -25,7 +25,7 @@ Table 1: Document Change History
 |04/02/2015|       0.2|              John Hartwell|         Initial review comments
 |12/02/2015|       0.3|              John Hartwell|         SH review comments
 |20/02/2015|       0.4|              John Hartwell|         Add reference to non-conforming database
-|02/07/|2015       0.5|              John Hartwell|         Changed file size limit, took out reference to Linux, added ref to GIF 87 and interlace images
+|02/07/2015|       0.5|              John Hartwell|         Changed file size limit, took out reference to Linux, added ref to GIF 87 and interlace images
 |02/07/2015|       0.6|              John Hartwell|         VT Review comments
 |10/08/2015|       0.7|              John Hartwell|         Coorect PDF switch setting
 |25/08/2015|       0.8|              John Hartwell|         Remove Launch action type
@@ -43,7 +43,7 @@ Table 1: Document Change History
 
 ## **Copyright and Contact Details**
 
-The copyright in this work is vested in Glasswall Solutions Ltd, and the
+The copyright in this work is vested in Glasswall Solutions Limited, and the
 document is issued in confidence for the purpose for which it is
 supplied. It must not be reproduced in whole or in part or used for
 tendering or manufacturing purposes except under agreement or with the
@@ -55,154 +55,76 @@ orally or in writing or communicated in any manner whatsoever to any
 third part being an individual firm or company or any employee thereof
 without the prior consent in writing of Glasswall Solutions Limited.
 
-© Glasswall Solutions Limited 2019
+© 2019 Glasswall Solutions Limited
 
 If there are any questions related to this document, these should be
-addressed to:
-
-Glasswall Support
-
-Glasswall Solutions Limited
-
-e-mail: <support@glasswallsolutions.com>
+addressed to [Glasswall Support](mailto:support@glasswallsolutions.com).
 
 **Contents**
-
-[1. Introduction 6](#introduction)
-
-[1.1 Supported Operating Systems 6](#supported-operating-systems)
-
-[1.2 Key File Processing Modes 6](#key-file-processing-modes)
-
-[1.2.1 Analysis Mode 6](#analysis-mode)
-
-[1.2.2 Protect Mode 7](#protect-mode)
-
-[1.3 Content Management 7](#content-management)
-
-[2. Analysis Mode 8](#analysis-mode-1)
-
-[2.1 Overview 8](#overview)
-
-[2.2 Analysis Process 8](#analysis-process)
-
-[2.3 Sample Analysis Reports 9](#sample-analysis-reports)
-
-[3. Protect Mode 11](#protect-mode-1)
-
-[3.1 Overview 11](#overview-1)
-
-[3.2 Protect Process 11](#protect-process)
-
-[3.3 Protected Files 11](#protected-files)
-
-[4. Automatic Corrections 12](#automatic-corrections)
-
-[4.1 Overview 12](#overview-2)
-
-[4.2 Remediation 12](#remediation)
-
-[5. Configuration Management 13](#configuration-management)
-
-[5.1 Overview 13](#overview-3)
-
-[5.2 XML Reports with different Content Management Policies
-13](#xml-reports-with-different-content-management-policies)
-
-[5.2.1 Allow 13](#allow)
-
-[5.2.2 Disallow 14](#disallow)
-
-[5.2.3 Sanitise 14](#sanitise)
-
-[5.3 PDF 15](#pdf)
-
-[5.4 Images 15](#images)
-
-[5.5 Binary and XML Office 16](#binary-and-xml-office)
-
-[6. File Types Supported 17](#file-types-supported)
-
-[6.1 Overview 17](#overview-4)
-
-[6.1.1 Supported File Sizes 17](#supported-file-sizes)
-
-[6.2 PDF 17](#pdf-1)
-
-[6.2.1 Processing Specific to PDF in Protect Mode
-17](#processing-specific-to-pdf-in-protect-mode)
-
-[6.2.2 Specification Validated Against
-17](#specification-validated-against)
-
-[6.3 Images 18](#images-1)
-
-[6.3.1 JPG 18](#jpg)
-
-[6.3.1.1 Specification Validated Against
-18](#specification-validated-against-1)
-
-[6.3.2 GIF 18](#gif)
-
-[6.3.2.1 Specification Validated Against
-18](#specification-validated-against-2)
-
-[6.3.3 PNG 18](#png)
-
-[6.3.3.1 Specification Validated Against
-18](#specification-validated-against-3)
-
-[6.4 Binary Office 18](#binary-office)
-
-[6.4.1 Processing Specific to Binary Office in Protect Mode
-18](#processing-specific-to-binary-office-in-protect-mode)
-
-[6.4.2 DOC 18](#doc)
-
-[6.4.2.1 Specifications Validated Against
-18](#specifications-validated-against)
-
-[6.4.2.2 Non Supported Specifications 19](#non-supported-specifications)
-
-[6.4.3 XLS 19](#xls)
-
-[6.4.3.1 Specifications Validated Against
-19](#specifications-validated-against-1)
-
-[6.4.3.2 Non Supported Specifications
-19](#non-supported-specifications-1)
-
-[6.4.4 PPT 19](#ppt)
-
-[6.4.4.1 Specifications Validated Against
-19](#specifications-validated-against-2)
-
-[6.4.4.2 Non Supported Specifications
-19](#non-supported-specifications-2)
-
-[6.5 XML Office 20](#xml-office)
-
-[6.5.1 Processing Specific to XML Office in Protect Mode
-20](#processing-specific-to-xml-office-in-protect-mode)
-
-[6.5.2 Specifications Validated Against
-20](#specifications-validated-against-3)
-
-[6.5.2.1 Office 2010 20](#office-2010)
-
-[6.5.2.2 Office 2013 20](#office-2013)
-
-[6.5.3 Non Supported Specifications 20](#non-supported-specifications-3)
-
-[7. Determine File Type 21](#determine-file-type)
-
-[8. Issue ID Information Retrieval 22](#issue-id-information-retrieval)
-
-[9. Content Export And Import 23](#content-export-and-import)
-
-[9.1 Exportable Content 23](#exportable-content)
-
-[9.2 Importable Content 23](#importable-content)
+- [**Document History**](#document-history)
+- [**Copyright and Contact Details**](#copyright-and-contact-details)
+- [**1 Introduction**](#1-introduction)
+  - [**1.1 Supported Operating Systems**](#11-supported-operating-systems)
+  - [**1.1.2 Linux**](#112-linux)
+  - [**1.2 Key File Processing Modes**](#12-key-file-processing-modes)
+    - [**1.2.1 Analysis Mode**](#121-analysis-mode)
+    - [**1.2.2 Protect Mode**](#122-protect-mode)
+  - [**1.3 Content Management**](#13-content-management)
+- [**2 Analysis Mode**](#2-analysis-mode)
+  - [**2.1 Overview**](#21-overview)
+  - [**2.2 Analysis Process**](#22-analysis-process)
+  - [**2.3 Sample Analysis Reports**](#23-sample-analysis-reports)
+- [**3 Protect Mode**](#3-protect-mode)
+  - [**3.1 Overview**](#31-overview)
+  - [**3.3 Protect Process**](#33-protect-process)
+  - [**3.3 Protected Files**](#33-protected-files)
+- [**4 Automatic Corrections**](#4-automatic-corrections)
+  - [**4.1 Overview**](#41-overview)
+  - [**4.2 Remediation**](#42-remediation)
+- [**5 Configuration Management**](#5-configuration-management)
+  - [**5.1 Overview**](#51-overview)
+  - [**5.2 XML Reports with different Content Management Policies**](#52-xml-reports-with-different-content-management-policies)
+    - [**5.2.1 Allow**](#521-allow)
+    - [**5.2.2 Disallow**](#522-disallow)
+    - [**5.2.3 Sanitise**](#523-sanitise)
+  - [**5.3 Portable Document Format**](#53-portable-document-format)
+  - [**5.4 Images**](#54-images)
+  - [**5.5 Binary and Office Open XML**](#55-binary-and-office-open-xml)
+- [**6 File Types Supported**](#6-file-types-supported)
+  - [**6.1 Overview**](#61-overview)
+    - [**6.1.1 Supported File Sizes**](#611-supported-file-sizes)
+  - [**6.2 Portable Document Format**](#62-portable-document-format)
+    - [**6.2.1 Processing Specific to PDF in Protect Mode**](#621-processing-specific-to-pdf-in-protect-mode)
+    - [**6.2.3 Specification Validated Against**](#623-specification-validated-against)
+- [**6.3 Images**](#63-images)
+    - [**6.3.1 JPEG**](#631-jpeg)
+    - [**6.3.2 Specification Validated Against**](#632-specification-validated-against)
+    - [**6.3.2 GIF**](#632-gif)
+      - [**6.3.2.1 Specification Validated Against**](#6321-specification-validated-against)
+    - [**6.3.3 PNG**](#633-png)
+      - [**6.3.2.1 Specification Validated Against**](#6321-specification-validated-against-1)
+  - [**6.4 Binary Office**](#64-binary-office)
+    - [**6.4.1 Processing Specific to Binary Office in Protect Mode**](#641-processing-specific-to-binary-office-in-protect-mode)
+    - [**6.4.2 Word (.doc) Binary**](#642-word-doc-binary)
+    - [**6.4.2.1 Specifications Validated Against**](#6421-specifications-validated-against)
+      - [**6.4.2.2 Non Supported Specifications**](#6422-non-supported-specifications)
+    - [**Excel (.xls) Binary**](#excel-xls-binary)
+      - [**6.4.3.1 Specifications Validated Against**](#6431-specifications-validated-against)
+      - [**6.4.3.2 Non Supported Specifications**](#6432-non-supported-specifications)
+    - [**6.4.4 PowerPoint (.ppt) Binary**](#644-powerpoint-ppt-binary)
+      - [**6.4.4.1 Specifications Validated Against**](#6441-specifications-validated-against)
+      - [**6.4.4.2 Non Supported Specifications**](#6442-non-supported-specifications)
+  - [**6.5 Office Open XML**](#65-office-open-xml)
+    - [**6.5.1 Processing Specific to Office Open XML in Protect Mode**](#651-processing-specific-to-office-open-xml-in-protect-mode)
+    - [**6.5.2 Specifications Validated Against**](#652-specifications-validated-against)
+      - [**6.5.2.1 Office 2010**](#6521-office-2010)
+      - [**6.5.2.2 Office 2013**](#6522-office-2013)
+    - [**6.5.3 Non Supported Specifications**](#653-non-supported-specifications)
+- [**7 Determine File Type**](#7-determine-file-type)
+- [**8 Issue ID Information Retrieval**](#8-issue-id-information-retrieval)
+- [**9 Content Export and Import**](#9-content-export-and-import)
+  - [**9.1 Exportable Content**](#91-exportable-content)
+  - [**9.2 Importable Content**](#92-importable-content)
 
 ## **1 Introduction**
 
@@ -426,18 +348,18 @@ Some of the PDF content management switch settings are shown below:
 The number of different content groups found in the file (16) along with
 an example of content item from the first group is shown below:
 
-<gw:ContentGroups groupCount="16">
-<gw:ContentGroup>
-<gw:BriefDescription>PDF document has Basic File Section structure instances</gw:BriefDescription>
-<gw:ContentItems itemCount="5">
-    <gw:ContentItem>
-        <gw:TechnicalDescription>PDF Header Instances</gw:TechnicalDescription>
-        <gw:InstanceCount>1</gw:InstanceCount>
-        <gw:TotalSizeInBytes>15</gw:TotalSizeInBytes>
-        <gw:AverageSizeInBytes>15</gw:AverageSizeInBytes>
-        <gw:MinSizeInBytes>15</gw:MinSizeInBytes>
-        <gw:MaxSizeInBytes>15</gw:MaxSizeInBytes>
-    </gw:ContentItem>
+    <gw:ContentGroups groupCount="16">
+    <gw:ContentGroup>
+    <gw:BriefDescription>PDF document has Basic File Section structure instances</gw:BriefDescription>
+    <gw:ContentItems itemCount="5">
+        <gw:ContentItem>
+            <gw:TechnicalDescription>PDF Header Instances</gw:TechnicalDescription>
+            <gw:InstanceCount>1</gw:InstanceCount>
+            <gw:TotalSizeInBytes>15</gw:TotalSizeInBytes>
+            <gw:AverageSizeInBytes>15</gw:AverageSizeInBytes>
+            <gw:MinSizeInBytes>15</gw:MinSizeInBytes>
+            <gw:MaxSizeInBytes>15</gw:MaxSizeInBytes>
+        </gw:ContentItem>
 
 As the `GWFILE_MANAGE_REMOVE_EMBEDDED_FILES` switch has been set to
 Sanitise a dictionary is shown as tagged for removal. See Section 4
@@ -470,8 +392,7 @@ non-conformant with the file specification but Glasswall has been unable
 to Remedy the issue back to the specification. In Protect Mode a file
 with an issue can not be regenerated.
 
-gw:IssueItems itemCount="1"> -
-
+    gw:IssueItems itemCount="1">
     <gw:IssueItem>
         <gw:TechnicalDescription>
             /Info dictionary contained an unexpected key (/GTS_PDFXConformance).
@@ -676,7 +597,7 @@ The Portable Document Format (PDF) content management switches are shown in the 
 | Content Management Flag | XML Report Issue Technical Descriptions
 |---|---
 | javascript              | Action of type /JavaScript<br />
-|                         |Javascript content                        
+|                         |JavaScript content                        
 | acroform                | Interactive form (Acroform) content
 |                         | Widget annotation
 |                         | Action of type /SubmitForm
@@ -758,14 +679,14 @@ The table below list the document types supported by Glasswall
 
 #### **6.1.1 Supported File Sizes**
 
-Glasswall provides a 64-bit version of a Dynamic-link Library (.DLL) for
-windows and/or a Shared Object (.SO) for Linux operating systems that
+Glasswall provides a 64-bit version of a Dynamic-link Library (.dll) for
+windows and/or a Shared Object (.so) for Linux operating systems that
 can analyse and protect files **up to the size of 2GB** provided that
 other internal limits (such as recursion depth) are satisfied.
 
  ### **6.2 Portable Document Format**
 
-#### 6.2.1 Processing Specific to PDF in Protect Mode
+#### **6.2.1 Processing Specific to PDF in Protect Mode**
 
 PDF is the only file type that allows for an optional watermark to be
 added to the regenerated file. The watermark is a maximum of 20 (ASCII)
@@ -784,7 +705,7 @@ specification would result in the original document being quarantined.
 
 #### **6.3.1 JPEG**
 
-#### Specification Validated Against
+#### **6.3.2 Specification Validated Against**
 
 -   JPEG File Interchange Format, Version 1.02 September 1, 1992
 
@@ -809,7 +730,7 @@ See [JPEG section](../../8-related/8_1-specifications/8_1_3-jpeg) under *Specifi
 
 ### **6.4 Binary Office**
 
-#### 6.4.1 **Processing Specific to Binary Office in Protect Mode**
+#### **6.4.1 Processing Specific to Binary Office in Protect Mode**
 
 The content management switch `GWFILE_MANAGE_REMOVE_MACROS` when set to
 sanitise in Protect mode removes the VBA script from the regenerated
@@ -850,7 +771,7 @@ The following specifications are used to validate a doc file type:
 
 The following files extensions are supported: .doc, .dotm and .dot.
 
-##### **6.4.2.2 Non Supported Specifications **
+##### **6.4.2.2 Non Supported Specifications**
 
 Word 95 and earlier versions (Word 1 to Word 6) are not supported and if
 these file types are processed they will cause an Issue to be reported
@@ -877,7 +798,7 @@ The following specifications are used to validate a file of format Excel Binary:
 
 The following files extensions are supported .xls, .xla, .xlt and .xlsb.
 
-##### **6.4.3.2 Non Supported Specifications **
+##### **6.4.3.2 Non Supported Specifications**
 
 Excel 95 and earlier versions are not supported and these file types are
 processed cause an Issue to be reported in the XML report in Analysis
@@ -899,7 +820,7 @@ against:
 
 The following files extensions are supported: .ppt, .ppa, .pps, and .pot.
 
-##### **6.4.4.2 Non Supported Specifications **
+##### **6.4.4.2 Non Supported Specifications**
 
 PowerPoint 95 and earlier versions are not supported and if these file
 types are processed it will cause an Issue to be reported in the XML
@@ -909,7 +830,7 @@ mode.
 PowerPoint files containing Apple Mac or LibreOffice specific file
 features will be marked as non conformant.
 
-### 6.5 Office Open XML
+### **6.5 Office Open XML**
 
 #### **6.5.1 Processing Specific to Office Open XML in Protect Mode**
 
@@ -926,7 +847,7 @@ using the 64-bit DLL, streams of up to 50&nbsp;MB are processed.
 
 #### **6.5.2 Specifications Validated Against**
 
-##### **Office 2010**
+##### **6.5.2.1 Office 2010**
 
 The following specifications are used to validate docx/xlsx/pptx file
 types:
@@ -943,7 +864,7 @@ types:
 -   [ECMA-376 4th edition Part
     4](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-376,%20Fourth%20Edition,%20Part%204%20-%20Transitional%20Migration%20Features.zip)
 
-#### Office 2013 
+##### **6.5.2.2 Office 2013** 
 
 The following specifications are used to validate docx/xlsx/pptx file
 types:
@@ -959,13 +880,13 @@ The following files extensions are supported:
 -   .xlsx, .xlsm, .xltm, .xltx
 -   .pptx, .pptm, .ppsm, .ppam, .ppsx
 
-#### **6.5.3 Non Supported Specifications **
+#### **6.5.3 Non Supported Specifications**
 
 Office 2010 or Office 2013 files containing Apple Mac or LibreOffice
 specific file features may be marked as non conformant or the components
 may be removed from the file.
 
-## 7 Determine File Type
+## **7 Determine File Type**
 
 Glasswall has the ability to determine the file type for a given file
 provided that the file format is supported by the Glasswall engine. This
@@ -988,7 +909,7 @@ Descriptions of the API functions are as follows:
     descriptions for all issue ID ranges. The output XML file lists the
     ranges and the descriptions for each range.
 
-## **9 Content Export and Import **
+## **9 Content Export and Import**
 
 Glasswall provides the ability to export and import certain content
 items from **PDF** and **Microsoft Office documents**.
@@ -1022,8 +943,7 @@ The following bullet points list the exportable content supported in Export Mode
 
 -   Text - This covers all text stored in a document.
 
-Importable Content
-------------------
+### **9.2 Importable Content**
 
 The following bullet points list the importable content supported in
 Import Mode.
