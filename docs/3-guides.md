@@ -5,7 +5,7 @@ sidebar_label: 3 Guides
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-[Adding OOXML Support to Beyond Compare](artifacts/adding_ooxml_support_to_beyond_compare.docx) <img alt="docx" src={useBaseUrl('img/docx_icon.png')} />
+[Adding OOXML Support to Beyond Compare](artifacts/adding_ooxml_support_to_beyond_compare)
 
 [BDDL Developer Guidelines](artifacts/BddlDeveloperGuidelines)
 
