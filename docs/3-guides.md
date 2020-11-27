@@ -13,11 +13,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 [DVL Developer Guidelines](artifacts/DVLGuide)
 
-[PDF Image Conversion](artifacts/PDFImageConversion.docx) <img alt="docx" src={useBaseUrl('img/docx_icon.png')} />  
-
-<!--
-[Using STOP VM Image](artifacts/using_stop.docx) <img alt="docx" src=
-{useBaseUrl('img/docx_icon.png')} />  
--->
+[PDF Image Conversion](artifacts/pdf_image_conversion)  
 
 [Using STOP VM Image](artifacts/using_stop)
