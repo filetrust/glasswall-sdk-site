@@ -11,15 +11,15 @@
 <script src="/glasswall-sdk-site/js/fix-location.js"></script>
 <script src="/glasswall-sdk-site/js/hide-artifacts.js"></script><title data-react-helmet="true">BDDL Guidelines | Glasswall Documentation</title><meta data-react-helmet="true" name="docsearch:version" content="current,latest"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="BDDL Guidelines | Glasswall Documentation"><meta data-react-helmet="true" name="description" content="- 1. Introduction"><meta data-react-helmet="true" property="og:description" content="- 1. Introduction"><meta data-react-helmet="true" property="og:url" content="https://filetrust.github.io/glasswall-sdk-site/docs/artifacts/BddlDeveloperGuidelines"><link data-react-helmet="true" rel="shortcut icon" href="/glasswall-sdk-site/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://filetrust.github.io/glasswall-sdk-site/docs/artifacts/BddlDeveloperGuidelines"><link rel="stylesheet" href="/glasswall-sdk-site/styles.7aeea284.css">
 <link rel="preload" href="/glasswall-sdk-site/styles.304ed4ed.js" as="script">
-<link rel="preload" href="/glasswall-sdk-site/runtime~main.cd410457.js" as="script">
-<link rel="preload" href="/glasswall-sdk-site/main.cb821781.js" as="script">
-<link rel="preload" href="/glasswall-sdk-site/1.199117c2.js" as="script">
-<link rel="preload" href="/glasswall-sdk-site/2.09635d0a.js" as="script">
-<link rel="preload" href="/glasswall-sdk-site/168.3e3324d0.js" as="script">
-<link rel="preload" href="/glasswall-sdk-site/169.ac90c5d5.js" as="script">
+<link rel="preload" href="/glasswall-sdk-site/runtime~main.c878cdfc.js" as="script">
+<link rel="preload" href="/glasswall-sdk-site/main.c524fff3.js" as="script">
+<link rel="preload" href="/glasswall-sdk-site/1.cc842260.js" as="script">
+<link rel="preload" href="/glasswall-sdk-site/2.11d5649a.js" as="script">
+<link rel="preload" href="/glasswall-sdk-site/169.d81cfa62.js" as="script">
+<link rel="preload" href="/glasswall-sdk-site/170.e31b6d54.js" as="script">
 <link rel="preload" href="/glasswall-sdk-site/935f2afb.d50e9dd3.js" as="script">
-<link rel="preload" href="/glasswall-sdk-site/17896441.a71b9913.js" as="script">
-<link rel="preload" href="/glasswall-sdk-site/d7d2572f.0a5b63c7.js" as="script">
+<link rel="preload" href="/glasswall-sdk-site/17896441.69c387e1.js" as="script">
+<link rel="preload" href="/glasswall-sdk-site/d7d2572f.208d6ce8.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -134,14 +134,14 @@ containing the dataheap dynamically from the <code>PointerRule</code> offset,
 which would be very messy, a slow a mechanism to replicate, and run in the
 DLL.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_2cZh" id="copyright"></a>COPYRIGHT<a aria-hidden="true" tabindex="-1" class="hash-link" href="#copyright" title="Direct link to heading">#</a></h2><p>© 2013 Glasswall Solutions Limited</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/glasswall-sdk-site/docs/2-glasswall_core/artifacts/structured_storage_api_specification"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« Structured Storage API Specification</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/glasswall-sdk-site/docs/artifacts/BddlhintsAndTips"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">BDDL hints and Tips »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_3SO_"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-introduction" class="table-of-contents__link">1. Introduction</a></li><li><a href="#2-combining-fields" class="table-of-contents__link">2. Combining Fields</a></li><li><a href="#3-include-statements" class="table-of-contents__link">3. Include Statements</a></li><li><a href="#4-naming-bit-fields" class="table-of-contents__link">4. Naming Bit Fields</a></li><li><a href="#5-acceptrule" class="table-of-contents__link">5. AcceptRule</a><ul><li><a href="#51-placement" class="table-of-contents__link">5.1 Placement</a></li><li><a href="#52-enumerations" class="table-of-contents__link">5.2 Enumerations</a></li><li><a href="#53-arrays-of-structures" class="table-of-contents__link">5.3 Arrays of Structures</a></li><li><a href="#53-file-validation" class="table-of-contents__link">5.3 File Validation</a></li></ul></li><li><a href="#6-pointer-metadata" class="table-of-contents__link">6. Pointer Metadata</a></li><li><a href="#7-version-control" class="table-of-contents__link">7. Version Control</a></li><li><a href="#8-optional-restrictions" class="table-of-contents__link">8. Optional restrictions</a></li><li><a href="#9-char-and-wchar" class="table-of-contents__link">9. char and wchar</a></li><li><a href="#10-allowempty" class="table-of-contents__link">10. Allowempty</a></li><li><a href="#11-structure-names" class="table-of-contents__link">11. Structure Names</a><ul><li><a href="#111-bddl-file-names" class="table-of-contents__link">11.1 BDDL File Names</a></li><li><a href="#112-mime-type" class="table-of-contents__link">11.2 MIME Type</a></li></ul></li><li><a href="#12-precedence-and-associativity" class="table-of-contents__link">12. Precedence and Associativity</a></li><li><a href="#13-glasswall-additions" class="table-of-contents__link">13. Glasswall Additions</a><ul><li><a href="#131-calling-legacy-or-external-cameras" class="table-of-contents__link">13.1 Calling legacy or external cameras</a></li><li><a href="#132-validating-text-fields-as-integers" class="table-of-contents__link">13.2 Validating Text fields as integers</a></li><li><a href="#133-guiding-code-generator" class="table-of-contents__link">13.3 Guiding code generator</a></li></ul></li><li><a href="#14-recommendations" class="table-of-contents__link">14. Recommendations</a><ul><li><a href="#141-extra-annotations" class="table-of-contents__link">14.1 Extra Annotations</a></li></ul></li><li><a href="#copyright" class="table-of-contents__link">COPYRIGHT</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/glasswall-sdk-site/docs/products/cloud-sdk/rebuild/rebuild-quickstart">Getting Started</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/glasswall" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Social</h4><ul class="footer__items"><li class="footer__item"><a href="https://github.com/filetrust" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub</a></li><li class="footer__item"><a href="https://twitter.com/glasswallglobal" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter</a></li><li class="footer__item"><a href="https://www.linkedin.com/company/glasswall-solutions-limited/" target="_blank" rel="noopener noreferrer" class="footer__link-item">LinkedIn</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 Glasswall Solutions Ltd. Built with Docusaurus.</div></div></div></footer></div>
 <script src="/glasswall-sdk-site/styles.304ed4ed.js"></script>
-<script src="/glasswall-sdk-site/runtime~main.cd410457.js"></script>
-<script src="/glasswall-sdk-site/main.cb821781.js"></script>
-<script src="/glasswall-sdk-site/1.199117c2.js"></script>
-<script src="/glasswall-sdk-site/2.09635d0a.js"></script>
-<script src="/glasswall-sdk-site/168.3e3324d0.js"></script>
-<script src="/glasswall-sdk-site/169.ac90c5d5.js"></script>
+<script src="/glasswall-sdk-site/runtime~main.c878cdfc.js"></script>
+<script src="/glasswall-sdk-site/main.c524fff3.js"></script>
+<script src="/glasswall-sdk-site/1.cc842260.js"></script>
+<script src="/glasswall-sdk-site/2.11d5649a.js"></script>
+<script src="/glasswall-sdk-site/169.d81cfa62.js"></script>
+<script src="/glasswall-sdk-site/170.e31b6d54.js"></script>
 <script src="/glasswall-sdk-site/935f2afb.d50e9dd3.js"></script>
-<script src="/glasswall-sdk-site/17896441.a71b9913.js"></script>
-<script src="/glasswall-sdk-site/d7d2572f.0a5b63c7.js"></script>
+<script src="/glasswall-sdk-site/17896441.69c387e1.js"></script>
+<script src="/glasswall-sdk-site/d7d2572f.208d6ce8.js"></script>
 </body>
 </html>
