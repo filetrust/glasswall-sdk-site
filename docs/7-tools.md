@@ -16,7 +16,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 [GWDemonstrator Test Tool](artifacts/gwdemonstrator_test_tool)
 
-[GwFileProcessStatusValidator Test Tool](<artifacts/GwFileProcessStatusValidator Test Tool.docx>) <img alt="OOXML Document" src={useBaseUrl('img/docx_icon.png')} />
+[GwFile Process Status Validator Test Tool](artifacts/gwfile_process_status_validator)
 
 [Test Microsoft Office Open](artifacts/TestMSOfficeOpen)  
 
