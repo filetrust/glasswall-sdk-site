@@ -14,7 +14,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
  
 [Glasswall Command Line Test Tool](<artifacts/Glasswall Command Line Test Tool.docx>) <img alt="OOXML Document" src={useBaseUrl('img/docx_icon.png')} /> 
 
-[GWDemonstrator Test Tool](<artifacts/GWDemonstrator Test Tool.docx>) <img alt="OOXML DOcument" src={useBaseUrl('img/docx_icon.png')} />  
+[GWDemonstrator Test Tool](artifacts/gwdemonstrator_test_tool)
 
 [GwFileProcessStatusValidator Test Tool](<artifacts/GwFileProcessStatusValidator Test Tool.docx>) <img alt="OOXML Document" src={useBaseUrl('img/docx_icon.png')} />
 
