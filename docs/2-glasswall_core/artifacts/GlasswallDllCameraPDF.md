@@ -19,7 +19,8 @@ View the [PDF Module Architecture Design Document](<PDF Module - Architecture De
 
 # PDF Camera - data elements
 
-To see the PDF camera data elements, view the document [PDF Camera - data elements of the PDF Camera](<PDF Camera - data elements of the PDF Camera.pdf> "PDF Camera - data elements of the PDF Camera.pdf").
+To see the PDF camera data elements, view the document [PDF Camera: data elements of the PDF Camera](data_elements_of_the_pdf_camera.md).
+
 
 # Related Documents and Specifications #
 
