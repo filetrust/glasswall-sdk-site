@@ -53,7 +53,7 @@ without the prior consent in writing of Glasswall Solutions Limited.
 If there are any questions related to this report, these should be
 addressed to: [Roman Danilov](mailto:rdanilov@glasswallsolutions.com).
 
-## **INTRODUCTION**
+## **1 INTRODUCTION**
 
 In this document we will look at how raw PDF image data can be converted
 into actual images, modified, and then converted back into raw image
@@ -202,149 +202,18 @@ Glasswall. Some metadata is optional since it is dependent upon the
 content within the document and so it does not exist in all cases, while
 some metadata will always exist.
 
-+----------------+----------------+----------------+----------------+
-| **Key**        | **Type**       | **Comment**    | **Optional?**  |
-+================+================+================+================+
-| Width          | Integer        | The width of   | Required       |
-|                |                | the image in   |                |
-|                |                | pixels         |                |
-+----------------+----------------+----------------+----------------+
-| Height         | Integer        | The height of  | Required       |
-|                |                | the image in   |                |
-|                |                | pixels         |                |
-+----------------+----------------+----------------+----------------+
-| Co             | String         | The colour     | Optional for   |
-| lorSpaceFamily |                | space of the   | image masks    |
-|                |                | image. A full  | and images     |
-|                |                | list of the    | with JPXDecode |
-|                |                | colour spaces  | filter         |
-|                |                | can be found   |                |
-|                |                | in section     |                |
-|                |                | "**4.5.2 Color |                |
-|                |                | Space          |                |
-|                |                | Families**" on |                |
-|                |                | page **237**.  |                |
-|                |                | Special        |                |
-|                |                | considerations |                |
-|                |                | have to be     |                |
-|                |                | taken into     |                |
-|                |                | account when   |                |
-|                |                | the image is   |                |
-|                |                | encoded with   |                |
-|                |                | the JPXDecode  |                |
-|                |                | filter, which  |                |
-|                |                | can be found   |                |
-|                |                | in section     |                |
-|                |                | "**4.8.4 Image |                |
-|                |                | D              |                |
-|                |                | ictionaries**" |                |
-|                |                | on pages       |                |
-|                |                | **340-349**    |                |
-+----------------+----------------+----------------+----------------+
-| Bi             | Integer        | The number of  | Optional for   |
-| tsPerComponent |                | bits per pixel | image masks    |
-|                |                | component      | and images     |
-|                |                |                | with JPXDecode |
-|                |                |                | filter. This   |
-|                |                |                | value must be  |
-|                |                |                | 1 when the     |
-|                |                |                | image is an    |
-|                |                |                | image mask.    |
-|                |                |                | This value is  |
-|                |                |                | ignored for    |
-|                |                |                | JPXDecode      |
-|                |                |                | images         |
-+----------------+----------------+----------------+----------------+
-| ImageMask      | Boolean        | Indicates      | Optional       |
-|                |                | whether this   |                |
-|                |                | image is an    |                |
-|                |                | image mask.    |                |
-|                |                | Default is     |                |
-|                |                | **false**      |                |
-+----------------+----------------+----------------+----------------+
-| ColorS         | String         | This is the    | Optional, but  |
-| paceBaseFamily |                | base colour    | exists when    |
-|                |                | space that is  | the            |
-|                |                | used when the  | Co             |
-|                |                | Col            | lorSpaceFamily |
-|                |                | ourSpaceFamily | is Indexed     |
-|                |                | is an Indexed  |                |
-|                |                | colour space   |                |
-+----------------+----------------+----------------+----------------+
-| ColorSpace     | Integer        | The number of  | Optional, but  |
-| BaseComponents |                | components     | exists when    |
-|                |                | used to        | the            |
-|                |                | represent each | Co             |
-|                |                | pixel value    | lorSpaceFamily |
-|                |                | within an      | is Indexed     |
-|                |                | Indexed        |                |
-|                |                | Co             |                |
-|                |                | lorSpaceFamily |                |
-+----------------+----------------+----------------+----------------+
-| Filter         | Array of       | The filters    | Optional       |
-|                | Strings        | that the image |                |
-|                |                | is encoded or  |                |
-|                |                | compressed     |                |
-|                |                | with.          |                |
-+----------------+----------------+----------------+----------------+
-| DecodeParams   | Array of       | Each           | Optional       |
-|                | Dictionaries   | dictionary     |                |
-|                |                | stores the     |                |
-|                |                | parameters of  |                |
-|                |                | the filter     |                |
-|                |                | that is being  |                |
-|                |                | applied to an  |                |
-|                |                | image, and the |                |
-|                |                | content of the |                |
-|                |                | each           |                |
-|                |                | dictionary     |                |
-|                |                | will be        |                |
-|                |                | different      |                |
-|                |                | depending on   |                |
-|                |                | the filter     |                |
-|                |                | used. The      |                |
-|                |                | order of the   |                |
-|                |                | DecodeParams   |                |
-|                |                | will match the |                |
-|                |                | order of the   |                |
-|                |                | filters. If a  |                |
-|                |                | filter does    |                |
-|                |                | not take any   |                |
-|                |                | parameters     |                |
-|                |                | then "null"    |                |
-|                |                | will be        |                |
-|                |                | written out    |                |
-|                |                | instead. For   |                |
-|                |                | example, if we |                |
-|                |                | have the       |                |
-|                |                | following      |                |
-|                |                | filters        |                |
-|                |                |                |                |
-|                |                | \[             |                |
-|                |                | "A             |                |
-|                |                | SCII85Decode", |                |
-|                |                | "C             |                |
-|                |                | CITTFaxDecode" |                |
-|                |                | \]             |                |
-|                |                |                |                |
-|                |                | Then our       |                |
-|                |                | DecodeParams   |                |
-|                |                | might look     |                |
-|                |                | something like |                |
-|                |                | this           |                |
-|                |                |                |                |
-|                |                | \[ "null", {   |                |
-|                |                | \... } \]      |                |
-|                |                |                |                |
-|                |                | where          |                |
-|                |                | ASCII85Decode  |                |
-|                |                | does not take  |                |
-|                |                | any            |                |
-|                |                | parameters,    |                |
-|                |                | but the        |                |
-|                |                | CCITTFaxDecode |                |
-|                |                | filter does.   |                |
-+----------------+----------------+----------------+----------------+
+ | **Key** | **Type** | **Comment** | **Optional?** |
+| --- | --- | --- | --- |
+| Width | Integer | The width of the image in pixels | Required |
+| --- | --- | --- | --- |
+| Height | Integer | The height of the image in pixels | Required |
+| ColorSpaceFamily | String | The colour space of the image. A full list of the colour spaces can be found in section &quot; **4.5.2 Color Space Families**&quot; on page **237**. Special considerations have to be taken into account when the image is encoded with the JPXDecode filter, which can be found in section &quot; **4.8.4 Image Dictionaries**&quot; on pages **340-349** | Optional for image masks and images with JPXDecode filter |
+| BitsPerComponent | Integer | The number of bits per pixel component | Optional for image masks and images with JPXDecode filter. This value must be 1 when the image is an image mask. This value is ignored for JPXDecode images |
+| ImageMask | Boolean | Indicates whether this image is an image mask. Default is **false** | Optional |
+| ColorSpaceBaseFamily | String | This is the base colour space that is used when the ColourSpaceFamily is an Indexed colour space | Optional, but exists when the ColorSpaceFamily is Indexed |
+| ColorSpaceBaseComponents | Integer | The number of components used to represent each pixel value within an Indexed ColorSpaceFamily | Optional, but exists when the ColorSpaceFamily is Indexed |
+| Filter | Array of Strings | The filters that the image is encoded or compressed with. | Optional |
+| DecodeParams | Array of Dictionaries | Each dictionary stores the parameters of the filter that is being applied to an image, and the content of the each dictionary will be different depending on the filter used. The order of the DecodeParams will match the order of the filters. If a filter does not take any parameters then &quot;null&quot; will be written out instead. For example, if we have the following filters:<br /><br />[&quot;ASCII85Decode&quot;, &quot;CCITTFaxDecode&quot;]<br /><br />Then our DecodeParams might look something like this:<br /><br />[&quot;null&quot;, { ... }]<br /><br />where ASCII85Decode does not take any parameters, but the CCITTFaxDecode filter does. | Optional |
 
 The filter parameters have been left out from this guide since they can
 easily be looked up, but they can be found in section "**3.3 Filters**"
