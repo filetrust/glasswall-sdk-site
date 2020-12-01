@@ -5,7 +5,7 @@ sidebar_label: 7 Tools
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-[Glasswall Developed Tools](artifacts/glasswall_developed_tools.doc) <img alt="OOXML Document" src={useBaseUrl('img/docx_icon.png')} />
+[Glasswall Developed Tools](artifacts/glasswall_developed_tools)
 
 [CFB Geneology](artifacts/CFBGeneology)  
 [Check CFB Signature](artifacts/CheckCFBSignature)  
