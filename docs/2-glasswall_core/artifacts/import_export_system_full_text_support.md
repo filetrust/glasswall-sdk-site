@@ -616,7 +616,7 @@ to 'Import' Retain pointer to Import buffer which contains the import ZIP file
 
 Export / Import Sequence Diagrams - TBD
 
-### <br>Test Requirements
+### <Test Requirements
 
 To enable automated testing of the Import and Export API functions the GW
 Regression Test Application must be modified to include the modes illustrated in
