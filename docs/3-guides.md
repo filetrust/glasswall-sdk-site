@@ -13,6 +13,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 [DVL Developer Guidelines](artifacts/DVLGuide)
 
+[How to Use Azure DevOps on Linux Virtual Machine](artifacts/how_to_use_azure_devops_on_linux_vm)
+
 [PDF Image Conversion](artifacts/pdf_image_conversion)  
 
 [Using STOP VM Image](artifacts/using_stop)
