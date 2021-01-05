@@ -2,7 +2,7 @@
 title: STOP VM Image User Guide
 ---
 
-VM Image is stored within an Azure container at : https://portal.azure.com/#blade/Microsoft_Azure_Storage/ContainerMenuBlade/overview/storageAccountId/%2Fsubscriptions%2F483ed0a5-0513-43a8-8d2a-065353085b9a%2FresourceGroups%2FCore_Test_Sandbox%2Fproviders%2FMicrosoft.Storage%2FstorageAccounts%2Fglasswallcore/path/coreteamvmimages/etag/%220x8D88FA015468939%22/defaultEncryptionScope/%24account-encryption-key/denyEncryptionScopeOverride//defaultId//publicAccessVal/None
+The VM image is stored within an [Azure container](https://portal.azure.com/#blade/Microsoft_Azure_Storage/ContainerMenuBlade/overview/storageAccountId/%2Fsubscriptions%2F483ed0a5-0513-43a8-8d2a-065353085b9a%2FresourceGroups%2FCore_Test_Sandbox%2Fproviders%2FMicrosoft.Storage%2FstorageAccounts%2Fglasswallcore/path/coreteamvmimages/etag/%220x8D88FA015468939%22/defaultEncryptionScope/%24account-encryption-key/denyEncryptionScopeOverride//defaultId//publicAccessVal/None).
 
 The STOP image is *stop_moved.7z*. 
 
