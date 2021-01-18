@@ -23,7 +23,7 @@ The Glasswall Configuration Management API provides 3 principle operations
 - Retrieve the current configuration(GWFileConfigGet())
 - Reset the the current configuration to default settings (GWFileConfigRevertToDefaults())
 
-A Glasswall API function GWFileConfigXML() is provided to enable the Glasswall library to be configured with a greater degree of flexibility. The API takes the required configuration as an XML null terminated string, as defined by the [Configuration Management XSD](gwConfigurationManagement.xsd). 
+A Glasswall API function GWFileConfigXML() is provided to enable the Glasswall library to be configured with a greater degree of flexibility. The API takes the required configuration as an XML null terminated string, as defined by the [Configuration Management XSD](gwConfigurationManagement-editor.xsd). 
 
 GWFileConfigGet() can be called at any time to retrieve the current configuration in use by the Glasswall library. A call to GWFileConfigGet() after the Glasswall library has been loaded gives access to the available configuration items and their default values. If these default values are suitable, this XML string can be used to configure the library by passing it into the GWFileConfigXML() function.
 
@@ -61,7 +61,7 @@ In the [example below](#configurationManagementExample), for content management 
 The XML below is an example of a Glasswall Configuration string:
 
 	<?xml version="1.0" encoding="utf-8" ?> 
-    <config>
+	<config>
 		<pdfConfig>
 			<watermark>Glasswall Approved</watermark>
 			<javascript>allow</javascript> 
