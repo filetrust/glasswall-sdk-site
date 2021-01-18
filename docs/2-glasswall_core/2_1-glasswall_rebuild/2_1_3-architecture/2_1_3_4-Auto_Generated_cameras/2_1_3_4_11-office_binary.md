@@ -1,0 +1,62 @@
+---
+title: 2.1.3.4.11 Office Binary
+sidebar_label: 2.1.3.4.11 Office Binary
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+# Overview
+
+## Compound File Binary (CFB)
+
+Office binary document streams and objects are packaged in structure called the Microsoft Compound File Binary (CFB) file format, also known as the Object Linking and Embedding (OLE) or Compound Object Model (COM) structured storage compound file implementation. 
+
+
+Traditional file systems encounter challenges when they attempt to efficiently store multiple kinds of objects in one document. A compound file provides a solution by implementing a simplified file system within a file. Structured storage defines how to treat a single file as a hierarchical collection of two objects, *storage objects* and *stream objects*.
+
+	Storage Objects - Behave as directories.
+	Stream Objects  - Behave as files.
+
+This scheme is called *structure storage*. The purpose of the structured storage is to reduce the performance penalties and overhead associated with storing separate objects in a flat file.
+
+The following figure shows a simplified file system with multiple directories and files nested in a hierarchy.
+
+![Compound File Binary Overview](../img/CFB_Overview.png)
+
+## CFB File Processing
+
+Each office binary file type (.doc, .xls, .ppt) contain streams specific to the file type, stored within the CFB structure. The CFB structure must first be processed by Glasswall before individual streams are handed of to their related cameras (doc camera, xls camera etc.). 
+
+The diagrams below give an overview of how Glasswall processes a CFB file.
+
+
+### Top Level Diagram
+
+[Top Level CFB File Processing](00_TopLevel_CBF_File_Processing.dia)
+
+![Top Level CFB File Processing](../img/00_TopLevel_CBF_File_Processing.png)
+
+### CFB File Processing Diagram
+
+[CFB File Processing](01_CFB_FILE_PROCESSING.dia)
+
+![CFB File Processing](../img/01_CFB_FILE_PROCESSING.png)
+
+
+# CFB Architecture
+
+**UNDER CONSTRUCTION**
+
+# Office Binary Cameras
+
+## Office Binary Camera Prototype
+
+- [Prototype Office Binary Camera](Prototype Office Binary Camera.pdf "Prototype Office Binary Camera")
+
+**UNDER CONSTRUCTION**
+
+# Related Links
+
+- [Specifications](@ref internalFileFormatSpecifications)
+
+[CFB Management](02_CFBManagement.dia)  <img alt="Dia" src={useBaseUrl('img/dia_icon.png')} />
