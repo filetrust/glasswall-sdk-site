@@ -22,10 +22,6 @@ module.exports = {
                 "5-development/artifacts/core_definition_of_done",
                 "5-development/artifacts/LearnYAMLInYMinutes",
                 "5-development/artifacts/perl_best_practices_summary",
-
-
-
-
             ]
         },
     {
