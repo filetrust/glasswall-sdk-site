@@ -1,6 +1,6 @@
 ---
-title: 7.17 DVL Checker
-sidebar_label: 7.17 DVL Checker
+title: 7.17 Glasswall Regression Tester
+sidebar_label: 7.17 Glasswall Regression Tester
 ---
 
 coming soon

@@ -1,6 +1,6 @@
 ---
-title: 2.1.2 glasswall features
-sidebar_label: 2.1.2 glasswall features
+title: 2.1.2 Glasswall Features
+sidebar_label: 2.1.2 Glasswall Features
 ---
 
 ### GlasswallDLLDetermineFileTypeOverview Overview

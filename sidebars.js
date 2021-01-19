@@ -83,7 +83,7 @@ module.exports = {
             }
             ]
         },
-        {"2.1.4 licencing":
+        {"2.1.4 Licencing":
           [
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_4-licencing/2_1_4_1-GlasswallDLLLicence",
           ]
@@ -318,7 +318,7 @@ module.exports = {
     ]
 },
 {
-    "7 tools":
+    "7 Tools":
     [
         "7-tools/7_1-BddToCppConverter",
         "7-tools/7_2-BffValidator",
