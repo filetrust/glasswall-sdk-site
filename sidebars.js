@@ -318,7 +318,7 @@ module.exports = {
     ]
 },
 {
-    "7 tools":
+    "7 Tools":
     [
         "7-tools/7_1-BddToCppConverter",
         "7-tools/7_2-BffValidator",
