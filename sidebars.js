@@ -6,24 +6,6 @@ module.exports = {
 {
 "2 Glasswall Core":
     [
-        {
-            "artifacts": [
-                "2-glasswall_core/artifacts/analysis_report_EMF",
-                "2-glasswall_core/artifacts/analysis_report_GIF",
-                "2-glasswall_core/artifacts/analysis_report_JPEG",
-                "2-glasswall_core/artifacts/analysis_report_officeBinary",
-                "2-glasswall_core/artifacts/analysis_report_OOXML",
-                "2-glasswall_core/artifacts/analysis_report_PDF",
-                "2-glasswall_core/artifacts/analysis_report_PNG",
-                "2-glasswall_core/artifacts/analysis_report_WMF",
-                "2-glasswall_core/artifacts/analysis_report",
-                "2-glasswall_core/artifacts/glasswall_xsd",
-                "2-glasswall_core/artifacts/internalGlasswallDLLOverview",
-                "5-development/artifacts/core_definition_of_done",
-                "5-development/artifacts/LearnYAMLInYMinutes",
-                "5-development/artifacts/perl_best_practices_summary",
-            ]
-        },
     {
     "2 1 Glasswall Rebuild":
         [
@@ -38,7 +20,6 @@ module.exports = {
                 "2.1.3.3 Related tools":
                 [
                     "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-related_test_tools/2_1_3_3_1-BindirectoryReaderTestTool",
-
                 ]
             },
             {
@@ -57,7 +38,7 @@ module.exports = {
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_11-office_binary",
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_12-ooxml",
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_13-GlasswallDllCameraRTF",
- ]
+            ]
             },
             {
             "2.1.3.5 Legacy Cameras":
@@ -146,9 +127,7 @@ module.exports = {
                 "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1-editorAPIspecification",
                 "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_2-securitytagging",
             ]
-
-            },
-            
+            },     
             {
             "2.2.6.2 SDK Wrappers":
                 [
@@ -225,11 +204,8 @@ module.exports = {
             [
                 "2-glasswall_core/2_4-glasswall_archive_manager/2_4_6-sdk_api/2_4_6_1-analysis",
                 "2-glasswall_core/2_4-glasswall_archive_manager/2_4_6-sdk_api/2_4_6_2-expected_results"
-
             ]
-
         },
-
         {
         "2.4.7 SDK Wrappers":
             [
@@ -253,8 +229,6 @@ module.exports = {
     "3-guides/3_6-pdf_image_conversion",
     "3-guides/3_7-using_stop",
 ]
-
-
 },
 {
 "4 Testing":
@@ -265,10 +239,7 @@ module.exports = {
         "4-testing/4_2-automated testing/4_2_1-GWRegressionTester",
         "4-testing/4_2-automated testing/4_2_2-AnalysisRepositoryandReportingSystem",
         "4-testing/4_2-automated testing/4_2_3-TestResultsXSD",
-
     ]
-
-
     },
     "4-testing/4_3-manual_testing",
     "4-testing/4_4-testing_guidelines"
@@ -286,7 +257,6 @@ module.exports = {
                 "5-development/5_1-development_process/5_1_4-glasswall_jpeg_2000_compress_filer",
                 "5-development/5_1-development_process/5_1_5-pdf-an-introduction-for-programmers",
                 "5-development/5_1-development_process/5_1_6-core_definiton_of_done",
-
             ]
         },
         {
@@ -320,32 +290,92 @@ module.exports = {
 {
     "7 Tools":
     [
-        "7-tools/7_1-BddToCppConverter",
-        "7-tools/7_2-BffValidator",
-        "7-tools/7_3-BinDirectoryReader",
-        "7-tools/7_4-CFBGeneology",
-        "7-tools/7_5-CheckCFBSignature",
-        "7-tools/7_6-CheckZipSignature",
-        "7-tools/7_7-DVLChecker",
-        "7-tools/7_8-ExtractStrLit",
-        "7-tools/7_9-FindDIFAT",
-        "7-tools/7_10-GetExcelVersion",
-        "7-tools/7_11-GetPowerPointVersion",
-        "7-tools/7_12-GetWordVersion",
-        "7-tools/7_13-GlasswallCommandLineTestTool",
-        "7-tools/7_14-glasswall_developed_tools",
-        "7-tools/7_15-GlasswallCLI",
-        "7-tools/7_16-GlasswallDLLDoxygenTool",
-        "7-tools/7_17-glasswallregressiontester",
-        "7-tools/7_18-GlasswallToolsOverview",
-        "7-tools/7_19-gwdemonstrator_test_tool",
-        "7-tools/7_20-gwfile_process_status_validator",
-        "7-tools/7_21-PdfInflateFlateDecode",
-        "7-tools/7_22-TestMSOfficeOpen",
-        "7-tools/7_23-WalkCFB",
-        "7-tools/7_24-WalkWMF",
-        "7-tools/7_25-WalkZIP",
-        "7-tools/7_26-WordDissection",
+        {
+            "7.1 BDDL":
+            [
+                "7-tools/7_1-bddl/7_1_1-BddToCppConverter",
+            ]
+        },
+        {
+            "7.2 CFB":
+            [
+                "7-tools/7_2-cfb/7_2_1-CFBGeneology",
+                "7-tools/7_2-cfb/7_2_2-CheckCFBSignature",
+                "7-tools/7_2-cfb/7_2_3-FindDIFAT",
+                "7-tools/7_2-cfb/7_2_4-WalkCFB",
+            ]
+        },
+        {
+            "7.3 Doxygen":
+            [
+                "7-tools/7_3-doxygen/7_3_1-GlasswallDLLDoxygenTool",
+            ]
+        },
+        {
+            "7.4 DVL":
+            [
+                "7-tools/7_4-dvl/7_4_1-DVLChecker",
+            ]
+        },
+        {
+            "7.5 Developer Tools":
+            [
+                "7-tools/7_5-developer_tools/7_5_1-ExtractStrLit",
+                "7-tools/7_5-developer_tools/7_5_2-glasswall_developed_tools",
+                "7-tools/7_5-developer_tools/7_5_3-GlasswallToolsOverview",
+            ]
+        },
+        {
+            "7.6 Engine":
+            [
+                "7-tools/7_6-engine/7_6_1-GlasswallCLI",
+            ]
+        },
+        {
+            "7.7 Office Binary":
+            [
+                "7-tools/7_7-office_binary/7_7_1-GetExcelVersion",
+                "7-tools/7_7-office_binary/7_7_2-GetPowerPointVersion",
+                "7-tools/7_7-office_binary/7_7_3-GetWordVersion",
+                "7-tools/7_7-office_binary/7_7_4-TestMSOfficeOpen",
+                "7-tools/7_7-office_binary/7_7_5-WordDissection",
+            ]
+        },
+        {
+            "7.8 PDF":
+            [
+                "7-tools/7_8-pdf/7_8_1-PdfInflateFlateDecode"
+            ]
+        },
+        {
+            "7.9 Testing":
+            [
+                "7-tools/7_9-testing/7_9_1-BinDirectoryReader",
+                "7-tools/7_9-testing/7_9_2-GlasswallCommandLineTestTool",
+                "7-tools/7_9-testing/7_9_3-glasswallregressiontester",
+                "7-tools/7_9-testing/7_9_4-gwdemonstrator_test_tool",
+                "7-tools/7_9-testing/7_9_5-gwfile_process_status_validator",
+            ]
+        },
+        {
+            "7.10 Validators":
+            [
+                "7-tools/7_10-validators/7_10_1-BffValidator",
+            ]
+        },
+        {
+            "7.11 WMF":
+            [
+                "7-tools/7_11-wmf/7_11_1-WalkWMF",
+            ]
+        },
+        {
+            "7.12 Zip Archive":
+            [
+                "7-tools/7_12-zip_archive/7_12_1-CheckZipSignature",
+                "7-tools/7_12-zip_archive/7_12_2-WalkZIP",
+            ]
+        }, 
     ]
 },
 {
