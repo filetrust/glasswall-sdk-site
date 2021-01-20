@@ -44,7 +44,7 @@ module.exports = {
     },
     algolia: {
       apiKey: 'd68224917eeebafbbb539a279d55682c',
-      indexName: 'd0c_Site',
+      indexName: 'doc_Site',
       appId: 'TQS8GSA771',
     },
     footer: {
