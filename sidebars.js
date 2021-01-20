@@ -320,32 +320,94 @@ module.exports = {
 {
     "7 Tools":
     [
-        "7-tools/7_1-BddToCppConverter",
-        "7-tools/7_2-BffValidator",
-        "7-tools/7_3-BinDirectoryReader",
-        "7-tools/7_4-CFBGeneology",
-        "7-tools/7_5-CheckCFBSignature",
-        "7-tools/7_6-CheckZipSignature",
-        "7-tools/7_7-DVLChecker",
-        "7-tools/7_8-ExtractStrLit",
-        "7-tools/7_9-FindDIFAT",
-        "7-tools/7_10-GetExcelVersion",
-        "7-tools/7_11-GetPowerPointVersion",
-        "7-tools/7_12-GetWordVersion",
-        "7-tools/7_13-GlasswallCommandLineTestTool",
-        "7-tools/7_14-glasswall_developed_tools",
-        "7-tools/7_15-GlasswallCLI",
-        "7-tools/7_16-GlasswallDLLDoxygenTool",
-        "7-tools/7_17-glasswallregressiontester",
-        "7-tools/7_18-GlasswallToolsOverview",
-        "7-tools/7_19-gwdemonstrator_test_tool",
-        "7-tools/7_20-gwfile_process_status_validator",
-        "7-tools/7_21-PdfInflateFlateDecode",
-        "7-tools/7_22-TestMSOfficeOpen",
-        "7-tools/7_23-WalkCFB",
-        "7-tools/7_24-WalkWMF",
-        "7-tools/7_25-WalkZIP",
-        "7-tools/7_26-WordDissection",
+        {
+            "7.1 BDDL":
+            [
+                "7-tools/7_1-bddl/7_1_1-BddToCppConverter",
+            ]
+        },
+        {
+            "7.2 CFB":
+            [
+                "7-tools/7_2-cfb/7_2_1-CFBGeneology",
+                "7-tools/7_2-cfb/7_2_2-CheckCFBSignature",
+                "7-tools/7_2-cfb/7_2_3-FindDIFAT",
+                "7-tools/7_2-cfb/7_2_4-WalkCFB",
+            ]
+        },
+        {
+            "7.3 Doxygen":
+            [
+                "7-tools/7_3-doxygen/7_3_1-GlasswallDLLDoxygenTool",
+            ]
+        },
+        {
+            "7.4 DVL":
+            [
+                "7-tools/7_4-dvl/7_4_1-DVLChecker",
+            ]
+        },
+        {
+            "7.5 Developer Tools":
+            [
+                "7-tools/7_5-developer_tools/7_5_1-ExtractStrLit",
+                "7-tools/7_5-developer_tools/7_5_2-glasswall_developed_tools",
+                "7-tools/7_5-developer_tools/7_5_3-GlasswallToolsOverview",
+            ]
+        },
+        {
+            "7.6 Engine":
+            [
+                "7-tools/7_6-engine/7_6_1-GlasswallCLI",
+            ]
+        },
+        {
+            "7.7 Office Binary":
+            [
+                "7-tools/7_7-office_binary/7_7_1-GetExcelVersion",
+                "7-tools/7_7-office_binary/7_7_2-GetPowerPointVersion",
+                "7-tools/7_7-office_binary/7_7_3-GetWordVersion",
+                "7-tools/7_7-office_binary/7_7_4-TestMSOfficeOpen",
+                "7-tools/7_7-office_binary/7_7_5-WordDissection",
+
+            ]
+        },
+        {
+            "7.8 PDF":
+            [
+                "7-tools/7_8-pdf/7_8_1-PdfInflateFlateDecode"
+            ]
+        },
+        {
+            "7.9 Testing":
+            [
+                "7-tools/7_9-testing/7_9_1-BinDirectoryReader",
+                "7-tools/7_9-testing/7_9_2-GlasswallCommandLineTestTool",
+                "7-tools/7_9-testing/7_9_3-glasswallregressiontester",
+                "7-tools/7_9-testing/7_9_4-gwdemonstrator_test_tool",
+                "7-tools/7_9-testing/7_9_5-gwfile_process_status_validator",
+
+            ]
+        },
+        {
+            "7.10 Validators":
+            [
+                "7-tools/7_10-validators/7_10_1-BffValidator",
+            ]
+        },
+        {
+            "7.11 WMF":
+            [
+                "7-tools/7_11-wmf/7_11_1-WalkWMF",
+            ]
+        },
+        {
+            "7.12 Zip Archive":
+            [
+                "7-tools/7_12-zip_archive/7_12_1-CheckZipSignature",
+                "7-tools/7_12-zip_archive/7_12_2-WalkZIP",
+            ]
+        }, 
     ]
 },
 {
