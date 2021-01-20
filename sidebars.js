@@ -6,24 +6,6 @@ module.exports = {
 {
 "2 Glasswall Core":
     [
-        {
-            "artifacts": [
-                "2-glasswall_core/artifacts/analysis_report_EMF",
-                "2-glasswall_core/artifacts/analysis_report_GIF",
-                "2-glasswall_core/artifacts/analysis_report_JPEG",
-                "2-glasswall_core/artifacts/analysis_report_officeBinary",
-                "2-glasswall_core/artifacts/analysis_report_OOXML",
-                "2-glasswall_core/artifacts/analysis_report_PDF",
-                "2-glasswall_core/artifacts/analysis_report_PNG",
-                "2-glasswall_core/artifacts/analysis_report_WMF",
-                "2-glasswall_core/artifacts/analysis_report",
-                "2-glasswall_core/artifacts/glasswall_xsd",
-                "2-glasswall_core/artifacts/internalGlasswallDLLOverview",
-                "5-development/artifacts/core_definition_of_done",
-                "5-development/artifacts/LearnYAMLInYMinutes",
-                "5-development/artifacts/perl_best_practices_summary",
-            ]
-        },
     {
     "2 1 Glasswall Rebuild":
         [
@@ -38,7 +20,6 @@ module.exports = {
                 "2.1.3.3 Related tools":
                 [
                     "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-related_test_tools/2_1_3_3_1-BindirectoryReaderTestTool",
-
                 ]
             },
             {
@@ -57,7 +38,7 @@ module.exports = {
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_11-office_binary",
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_12-ooxml",
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_13-GlasswallDllCameraRTF",
- ]
+            ]
             },
             {
             "2.1.3.5 Legacy Cameras":
@@ -146,9 +127,7 @@ module.exports = {
                 "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1-editorAPIspecification",
                 "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_2-securitytagging",
             ]
-
-            },
-            
+            },     
             {
             "2.2.6.2 SDK Wrappers":
                 [
@@ -225,11 +204,8 @@ module.exports = {
             [
                 "2-glasswall_core/2_4-glasswall_archive_manager/2_4_6-sdk_api/2_4_6_1-analysis",
                 "2-glasswall_core/2_4-glasswall_archive_manager/2_4_6-sdk_api/2_4_6_2-expected_results"
-
             ]
-
         },
-
         {
         "2.4.7 SDK Wrappers":
             [
@@ -253,8 +229,6 @@ module.exports = {
     "3-guides/3_6-pdf_image_conversion",
     "3-guides/3_7-using_stop",
 ]
-
-
 },
 {
 "4 Testing":
@@ -265,10 +239,7 @@ module.exports = {
         "4-testing/4_2-automated testing/4_2_1-GWRegressionTester",
         "4-testing/4_2-automated testing/4_2_2-AnalysisRepositoryandReportingSystem",
         "4-testing/4_2-automated testing/4_2_3-TestResultsXSD",
-
     ]
-
-
     },
     "4-testing/4_3-manual_testing",
     "4-testing/4_4-testing_guidelines"
@@ -286,7 +257,6 @@ module.exports = {
                 "5-development/5_1-development_process/5_1_4-glasswall_jpeg_2000_compress_filer",
                 "5-development/5_1-development_process/5_1_5-pdf-an-introduction-for-programmers",
                 "5-development/5_1-development_process/5_1_6-core_definiton_of_done",
-
             ]
         },
         {
@@ -369,7 +339,6 @@ module.exports = {
                 "7-tools/7_7-office_binary/7_7_3-GetWordVersion",
                 "7-tools/7_7-office_binary/7_7_4-TestMSOfficeOpen",
                 "7-tools/7_7-office_binary/7_7_5-WordDissection",
-
             ]
         },
         {
@@ -386,7 +355,6 @@ module.exports = {
                 "7-tools/7_9-testing/7_9_3-glasswallregressiontester",
                 "7-tools/7_9-testing/7_9_4-gwdemonstrator_test_tool",
                 "7-tools/7_9-testing/7_9_5-gwfile_process_status_validator",
-
             ]
         },
         {
