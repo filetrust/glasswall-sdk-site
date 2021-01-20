@@ -1,6 +1,6 @@
 ---
-title: 7.13 Command Line Test Tool
-sidebar_label: 7.13 Command Line Test Tool
+title: 7.9.2 Command Line Test Tool
+sidebar_label: 7.9.2 Command Line Test Tool
 ---
 # Command Line Test Tool
 

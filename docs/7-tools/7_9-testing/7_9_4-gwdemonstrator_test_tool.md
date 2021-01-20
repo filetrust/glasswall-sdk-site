@@ -1,6 +1,6 @@
 ---
-title: 7.19 GWDemonstrator Test Tool
-sidebar_label: 7.19 GWDemonstrator Test Tool
+title: 7.9.4 GWDemonstrator Test Tool
+sidebar_label: 7.9.4 GWDemonstrator Test Tool
 ---
 
 <div style={{color: 'red'}}>This document needs to be brought in line with the RFC, see</div>

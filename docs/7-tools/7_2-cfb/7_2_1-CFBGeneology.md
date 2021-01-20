@@ -1,6 +1,6 @@
 ---
-title: 7.4 CFB Geneology
-sidebar_label: 7.4 CFB Geneology
+title: 7.2.1 CFB Geneology
+sidebar_label: 7.2.1 CFB Geneology
 ---
 
 ### **NAME**

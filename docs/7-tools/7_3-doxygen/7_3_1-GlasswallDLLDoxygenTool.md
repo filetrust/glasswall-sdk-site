@@ -1,6 +1,6 @@
 ---
-title: 7.16 Doxygen Documentation Tool
-sidebar_label: 7.16 Doxygen Documentation Tool
+title: 7.3.1 Doxygen Documentation Tool
+sidebar_label: 7.3.1 Doxygen Documentation Tool
 ---
 
 The Doxygen documentation tool is elaborate and as such there is a

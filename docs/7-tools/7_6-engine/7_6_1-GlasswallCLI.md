@@ -1,6 +1,6 @@
 ---
-title: 7.15 Glasswall CLI
-sidebar_label: 7.15 Glasswall CLI
+title: 7.6.1 Glasswall CLI
+sidebar_label: 7.6.1 Glasswall CLI
 ---
 
 ### NAME

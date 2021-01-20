@@ -1,6 +1,6 @@
 ---
-title: 7.7 DVL Checker
-sidebar_label: 7.7 DVL Checker
+title: 7.4.1 DVL Checker
+sidebar_label: 7.4.1 DVL Checker
 ---
 
 ### **NAME**

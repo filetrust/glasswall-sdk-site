@@ -1,6 +1,6 @@
 ---
-title: 7.23  Walk CFB
-sidebar_label: 7.23  Walk CFB
+title: 7.2.4  Walk CFB
+sidebar_label: 7.2.4  Walk CFB
 ---
 
 ### **NAME**

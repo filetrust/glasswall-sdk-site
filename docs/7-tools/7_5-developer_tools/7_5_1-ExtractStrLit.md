@@ -1,6 +1,6 @@
 ---
-title: 7.8 Extract String Literals
-sidebar_label: 7.8 Extract String Literals
+title: 7.5.1 Extract String Literals
+sidebar_label: 7.5.1 Extract String Literals
 ---
 
 ### **NAME**

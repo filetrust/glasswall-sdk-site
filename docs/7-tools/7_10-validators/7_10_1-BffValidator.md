@@ -1,6 +1,6 @@
 ---
-title: 7.2 BFF Validator
-sidebar_label: 7.2 BFF Validator
+title: 7.10.1 BFF Validator
+sidebar_label: 7.10.1 BFF Validator
 ---
 
 \section Author

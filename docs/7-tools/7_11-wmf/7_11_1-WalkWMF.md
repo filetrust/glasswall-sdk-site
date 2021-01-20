@@ -1,6 +1,6 @@
 ---
-title: 7.24 Walk WMF
-sidebar_label: 7.24 Walk WMF
+title: 7.11.1 Walk WMF
+sidebar_label: 7.11.1 Walk WMF
 ---
 
 ### **NAME**

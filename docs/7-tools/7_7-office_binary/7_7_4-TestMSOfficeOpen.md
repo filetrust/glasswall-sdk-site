@@ -1,6 +1,6 @@
 ---
-title: 7.22 Test MSOfficeOpen
-sidebar_label: 7.22 Test MSOfficeOpen
+title: 7.7.4 Test MSOfficeOpen
+sidebar_label: 7.7.4 Test MSOfficeOpen
 ---
 
 ### NAME

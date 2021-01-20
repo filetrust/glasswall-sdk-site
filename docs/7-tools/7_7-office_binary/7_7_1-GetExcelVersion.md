@@ -1,6 +1,6 @@
 ---
-title: 7.10 Get Excel Version
-sidebar_label: 7.10 Get Excel Version
+title: 7.7.1 Get Excel Version
+sidebar_label: 7.7.1 Get Excel Version
 ---
 
 ### **NAME**

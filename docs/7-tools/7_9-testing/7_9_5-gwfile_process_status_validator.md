@@ -1,6 +1,6 @@
 ---
-title: 7.20 GWFile Process Status Validator
-sidebar_label: 7.20 GWFile Process Status Validator
+title: 7.9.5 GWFile Process Status Validator
+sidebar_label: 7.9.5 GWFile Process Status Validator
 ---
 
 <div style={{color: 'red'}}>This document needs to be brought in line with the RFC, see</div>

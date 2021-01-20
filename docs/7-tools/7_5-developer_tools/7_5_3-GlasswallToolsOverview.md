@@ -1,6 +1,6 @@
 ---
-title: 7.18 Glasswall Core Test Tools
-sidebar_label: 7.18 Glasswall Core Test Tools
+title: 7.5.3 Glasswall Core Test Tools
+sidebar_label: 7.5.3 Glasswall Core Test Tools
 ---
 
 \tableofcontents

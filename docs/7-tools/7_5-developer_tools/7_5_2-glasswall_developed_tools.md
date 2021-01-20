@@ -1,6 +1,6 @@
 ---
-title: 7.14 Glasswall Developed Tools
-sidebar_label: 7.14 Glasswall Developed Tools
+title: 7.5.2 Glasswall Developed Tools
+sidebar_label: 7.5.2 Glasswall Developed Tools
 ---
 
 <div style={{color: 'red'}}>It may be better to list the tools in the form of links. Each link refers to a document detailing use of the tool, in the format of</div>

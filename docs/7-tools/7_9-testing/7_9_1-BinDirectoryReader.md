@@ -1,6 +1,6 @@
 ---
-title: 7.3 Binary Directory Reader
-sidebar_label: 7.3 Binary Directory Reader
+title: 7.9.1 Binary Directory Reader
+sidebar_label: 7.9.1 Binary Directory Reader
 ---
 
 ### **NAME**

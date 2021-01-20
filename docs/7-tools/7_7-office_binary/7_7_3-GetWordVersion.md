@@ -1,6 +1,6 @@
 ---
-title: 7.12 Get Word Version
-sidebar_label: 7.12 Get Word Version
+title: 7.7.3 Get Word Version
+sidebar_label: 7.7.3 Get Word Version
 ---
 
 ### **NAME**

@@ -1,6 +1,6 @@
 ---
-title: 7.26 Word Dissection
-sidebar_label: 7.26 Word Dissection
+title: 7.7.5 Word Dissection
+sidebar_label: 7.7.5 Word Dissection
 ---
 
 

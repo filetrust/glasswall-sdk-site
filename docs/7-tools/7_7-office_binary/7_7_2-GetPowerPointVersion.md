@@ -1,6 +1,6 @@
 ---
-title: 7.11 Get PowerPoint Version
-sidebar_label: 7.11 Get PowerPoint Version
+title: 7.7.2 Get PowerPoint Version
+sidebar_label: 7.7.2 Get PowerPoint Version
 ---
 
 ### **NAME**

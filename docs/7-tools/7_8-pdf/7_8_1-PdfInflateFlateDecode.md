@@ -1,6 +1,6 @@
 ---
-title: 7.21  PDF Inflate Flate Encoded Streams
-sidebar_label: 7.21  PDF Inflate Flate Encoded Streams
+title: 7.8.1 PDF Inflate Flate Encoded Streams
+sidebar_label: 7.8.1 PDF Inflate Flate Encoded Streams
 ---
 
 ### **NAME**

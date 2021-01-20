@@ -1,6 +1,6 @@
 ---
-title: 7.5 Check CFB Signature
-sidebar_label: 7.5 Check CFB Signature
+title: 7.2.2 Check CFB Signature
+sidebar_label: 7.2.2 Check CFB Signature
 ---
 
 ### **NAME**

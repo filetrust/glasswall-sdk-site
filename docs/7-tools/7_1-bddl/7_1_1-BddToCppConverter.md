@@ -1,6 +1,6 @@
 ---
-title: 7.1 BDDL to C++ Converter
-sidebar_label: 7.1 BDDL to C++ Converter
+title: 7.1.1 BDDL to C++ Converter
+sidebar_label: 7.1.1 BDDL to C++ Converter
 ---
 ======================
 
