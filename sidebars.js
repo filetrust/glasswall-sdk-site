@@ -17,49 +17,39 @@ module.exports = {
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_1-overview",
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_2-GlasswallCodeGenerators",
             {
-                "2.1.3.3 Related tools":
-                [
-                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-related_test_tools/2_1_3_3_1-BindirectoryReaderTestTool",
-                ]
-            },
-            {
-            "2.1.3.4 Auto Generated Cameras":
+            "2.1.3.3 Auto Generated Cameras":
             [
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_1-bddl",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_2-BDDL_Developers_hints_and_tips",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_3-BDDL_Developer_Guidelines_and_Additions",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_4-dvl",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_5-dvl_guide",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_6-dvl_checker",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_7-GlasswallDllCameraWmf",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_8-GlasswallDllCameraEmf",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_9-GlasswallDllCameraEquationNative",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_10-import_export_process",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_11-office_binary",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_12-ooxml",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Auto_Generated_cameras/2_1_3_4_13-GlasswallDllCameraRTF",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Auto_Generated_cameras/2_1_3_3_1-bddl",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Auto_Generated_cameras/2_1_3_3_2-dvl",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Auto_Generated_cameras/2_1_3_3_3-GlasswallDllCameraWmf",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Auto_Generated_cameras/2_1_3_3_4-GlasswallDllCameraEmf",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Auto_Generated_cameras/2_1_3_3_5-GlasswallDllCameraEquationNative",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Auto_Generated_cameras/2_1_3_3_6-import_export_process",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Auto_Generated_cameras/2_1_3_3_7-office_binary",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Auto_Generated_cameras/2_1_3_3_8-ooxml",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Auto_Generated_cameras/2_1_3_3_9-GlasswallDllCameraRTF",
             ]
             },
             {
-            "2.1.3.5 Legacy Cameras":
+            "2.1.3.4 Legacy Cameras":
             [
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_5-Legacy_Cameras/2_1_3_5_1-GlasswallDllCameraGIF",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_5-Legacy_Cameras/2_1_3_5_2-GlasswallDllCameraJPEG",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_5-Legacy_Cameras/2_1_3_5_3-GlasswallDllCameraPDF",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_5-Legacy_Cameras/2_1_3_5_4-GlasswallDllCameraPNG",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_5-Legacy_Cameras/2_1_3_5_5-data_elements_of_the_pdf_camera",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_5-Legacy_Cameras/2_1_3_5_6-pdf_camera_dataFlow",    
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Legacy_Cameras/2_1_3_4_1-GlasswallDllCameraGIF",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Legacy_Cameras/2_1_3_4_2-GlasswallDllCameraJPEG",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Legacy_Cameras/2_1_3_4_3-GlasswallDllCameraPDF",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Legacy_Cameras/2_1_3_4_4-GlasswallDllCameraPNG",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Legacy_Cameras/2_1_3_4_5-data_elements_of_the_pdf_camera",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-Legacy_Cameras/2_1_3_4_6-pdf_camera_dataFlow",    
             ]
             },
             {
-            "2.1.3.6 Internal API":
+            "2.1.3.5 Internal API":
             [
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_6-internal_api/2_1_3_6_1-analysis_repository",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_6-internal_api/2_1_3_6_2-analysis_report_xsd",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_6-internal_api/2_1_3_6_3-memory_buffers",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_6-internal_api/2_1_3_6_4-configuration_management",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_6-internal_api/2_1_3_6_5-configuration_management_xsd",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_6-internal_api/2_1_3_6_6-structured_storage_api_specification"
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_5-internal_api/2_1_3_5_1-analysis_repository",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_5-internal_api/2_1_3_5_2-analysis_report_xsd",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_5-internal_api/2_1_3_5_3-memory_buffers",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_5-internal_api/2_1_3_5_4-configuration_management",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_5-internal_api/2_1_3_5_5-configuration_management_xsd",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_5-internal_api/2_1_3_5_6-structured_storage_api_specification"
             ]
             }
             ]
@@ -220,7 +210,14 @@ module.exports = {
             ]
         }
         ]
-    }
+    },
+    {
+    "2.5 Common":
+    [
+        "2-glasswall_core/2_4-glasswall_archive_manager/2_4_1-product_description",
+
+    ]
+    },
     ]
 },
 {"3 Guides":
