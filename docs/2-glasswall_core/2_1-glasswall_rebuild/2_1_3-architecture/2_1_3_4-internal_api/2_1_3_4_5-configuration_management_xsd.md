@@ -1,6 +1,6 @@
 ---
-title: 2.1.3.6.5 Configuration Management XSD
-sidebar_label: 2.1.3.6.5 Configuration Management XSD
+title: 2.1.3.4.5 Configuration Management XSD
+sidebar_label: 2.1.3.4.5 Configuration Management XSD
 ---
 
 	<?xml version="1.0" encoding="UTF-8"?>

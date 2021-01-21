@@ -1,6 +1,6 @@
 ---
-title: 2.1.3.6.6 Structured Storage API Specification
-sidebar_label: 2.1.3.6.6 Structured Storage API Specification
+title: 2.1.3.4.6 Structured Storage API Specification
+sidebar_label: 2.1.3.4.6 Structured Storage API Specification
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -22,7 +22,7 @@ mobrien@glasswallsolutions.co.uk<br />
 - [**1 GLOSSARY**](#1-glossary)
 - [**2 INTRODUCTION**](#2-introduction)
   - [**2.1 Objective**](#21-objective)
-  - [## **2.2 Nomenclature**](#h2-id22-nomenclature-150622-nomenclatureh2)
+  - [## **2.2 Nomenclature**](#-22-nomenclature)
   - [**2.3 Structured Storage**](#23-structured-storage)
   - [**2.4 Types**](#24-types)
 - [**3 API Functions**](#3-api-functions)
@@ -31,7 +31,7 @@ mobrien@glasswallsolutions.co.uk<br />
   - [**3.3 The deleteTree Function**](#33-the-deletetree-function)
   - [**3.4 The getCLSID Function**](#34-the-getclsid-function)
   - [**3.5 The getFirstChild Function**](#35-the-getfirstchild-function)
-  - [## **3.6 The getName Function**](#h2-id36-the-getname-function-136636-the-getname-functionh2)
+  - [## **3.6 The getName Function**](#-36-the-getname-function)
   - [**3.7 The getNextChild Function**](#37-the-getnextchild-function)
   - [**3.8 The getObjectRule Function**](#38-the-getobjectrule-function)
   - [**3.9 The getObjectTag Function**](#39-the-getobjecttag-function)

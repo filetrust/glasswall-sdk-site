@@ -1,6 +1,6 @@
 ---
-title: 2.1.4.3 Internal Glasswall DLL Camera PDF
-sidebar_label: 2.1.4.3 Internal Glasswall DLL Camera PDF
+title: 2.1.3.3.3 Internal Glasswall DLL Camera PDF
+sidebar_label: 2.1.3.3.3 Internal Glasswall DLL Camera PDF
 ---
 
 # Overview # 
@@ -20,7 +20,7 @@ View the [PDF Module Architecture Design Document](<PDF Module - Architecture De
 
 # PDF Camera - data elements
 
-To see the PDF camera data elements, view the document [PDF Camera: data elements of the PDF Camera](2_1_3_4_5-data_elements_of_the_pdf_camera.md).
+To see the PDF camera data elements, view the document [PDF Camera: data elements of the PDF Camera](2_1_3_3_5-data_elements_of_the_pdf_camera.md).
 
 
 # Related Documents and Specifications #

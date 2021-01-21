@@ -1,6 +1,6 @@
 ---
-title: 2.1.3.4.1 Binary Data Definition Language (BDDL)
-sidebar_label: 2.1.3.4.1 Binary Data Definition Language (BDDL)
+title: 2.5.1 Binary Data Definition Language (BDDL)
+sidebar_label: 2.5.1 Binary Data Definition Language (BDDL)
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -19,7 +19,7 @@ being converted to a Class in C++ via an internally developed code
 generator. The diagram below shows the various stages involved in the 
 code generation process and where BDDL fits in.
 
-![BDDL Process Diagram](../img/BDDLProcDia.PNG)
+![BDDL Process Diagram](media/BDDLProcDia.PNG)
 
 ## Binary DOM Library and Miraplacid Viewer 
 
@@ -91,12 +91,12 @@ The language also provides various other attributes that aid in the definition o
 ## Example 1
 The diagram below shows an example of a binary data definition in BDDL of two structures from the Microsoft Word Binary MS-DOC specification.
 
-![Alt text](../img/BDDLExample1.PNG)
+![Alt text](media/BDDLExample1.PNG)
 
 ## Example 2
 The diagram below contains an example of a binary data definition in BDDL of a structure along-side the definition in Microsoft Word Binary MS-DOC specification.
 
-![Alt text](../img/BDDLExample2.PNG)
+![Alt text](media/BDDLExample2.PNG)
 
 # Binary Data Definition (BDD) - Verification
 
@@ -114,23 +114,23 @@ This allows a user to load a binary data file and parse it against the correspon
 
 The image below serves as an example of a MS-Word file loaded into the Miraplacid viewer and parsed against the binary data definitions developed by Glasswall.
 
-![Alt text](../img/BDDLExample3.PNG)
+![Alt text](media/BDDLExample3.PNG)
 
 <u>Verification using the Miraplacid DOM library</u>
 
 Miraplacid Binary DOM includes an API (set of classes and interfaces for data loading, validation, manipulation and storing), and utility classes for parsing files and validating them using the binary data definition created in BDDL.
 
-Glasswall has developed a tool called [Bin Directory Reader](../../../../7-tools/7_9-testing/7_9_1-BinDirectoryReader.md) using the Miraplacid Binary DOM SDK. The tool iterates over a directory of files, parsing and validating each file against a single or multiple BDD definitions, reporting the result of every processed file. This enables bulk verification of BDD structure definitions against a large set of files.
+Glasswall has developed a tool called [Bin Directory Reader](../../7-tools/7_9-testing/7_9_1-BinDirectoryReader.md) using the Miraplacid Binary DOM SDK. The tool iterates over a directory of files, parsing and validating each file against a single or multiple BDD definitions, reporting the result of every processed file. This enables bulk verification of BDD structure definitions against a large set of files.
 
 The guide and SDK documentation for Miraplacid Binary DOM library can be found in the document [Binary Viewer](BinaryViewer.chm "BinaryViewer.chm").
 
 # BDDL Developers hints and tips
 
-Glasswall defined hints and tips for BDDL developers can be found in document [BDDL Hints and Tips](../../../../3-guides/3_3-BddlhintsAndTips.md "BddlHintsAndTips.pdf")
+Glasswall defined hints and tips for BDDL developers can be found in document [BDDL Hints and Tips](../../3-guides/3_3-BddlhintsAndTips.md "BddlHintsAndTips.pdf")
 
 # BDDL Developer Guidelines and Additions
 
-Glasswall defined BDDL development guidelines and additions can be found in document [BDDL Developer Guidelines](../../../../3-guides/3_2-BddlDeveloperGuidelines.md "BddlDeveloperGuidelines.pdf").
+Glasswall defined BDDL development guidelines and additions can be found in document [BDDL Developer Guidelines](../../3-guides/3_2-BddlDeveloperGuidelines.md "BddlDeveloperGuidelines.pdf").
 
 # Related Links 
 

@@ -1,6 +1,6 @@
 ---
-title: 2.1.3.6.4 Configuration Management
-sidebar_label: 2.1.3.6.4 Configuration Management
+title: 2.1.3.4.4 Configuration Management
+sidebar_label: 2.1.3.4.4 Configuration Management
 ---
 
 ### Overview

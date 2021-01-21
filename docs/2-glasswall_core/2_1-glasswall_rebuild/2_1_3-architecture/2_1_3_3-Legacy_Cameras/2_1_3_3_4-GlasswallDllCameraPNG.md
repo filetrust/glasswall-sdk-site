@@ -1,6 +1,6 @@
 ---
-title: 2.1.4.4 Portable Network Graphics (PNG) Camera
-sidebar_label: 2.1.4.4 Portable Network Graphics (PNG) Camera
+title: 2.1.3.3.4 Portable Network Graphics (PNG) Camera
+sidebar_label: 2.1.3.3.4 Portable Network Graphics (PNG) Camera
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

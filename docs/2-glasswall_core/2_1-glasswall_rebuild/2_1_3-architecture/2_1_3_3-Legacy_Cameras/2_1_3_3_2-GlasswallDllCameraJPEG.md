@@ -1,6 +1,6 @@
 --- 
-title: 2.1.4.2 JPEG Camera
-sidebar_label: 2.1.4.2 JPEG Camera
+title: 2.1.3.3.2 JPEG Camera
+sidebar_label: 2.1.3.3.2 JPEG Camera
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
