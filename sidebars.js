@@ -93,7 +93,9 @@ module.exports = {
             }
             ]
         },
-        "2-glasswall_core/2_1-glasswall_rebuild/2_1_8-rebuild_cli"
+        "2-glasswall_core/2_1-glasswall_rebuild/2_1_8-rebuild_cli",
+        "2-glasswall_core/2_1-glasswall_rebuild/2_1_9-import_export_system_full_text_support",
+        "2-glasswall_core/2_1-glasswall_rebuild/2_1_10-glasswall_dynamic_configuration",
         ]
     },
     {
@@ -139,7 +141,9 @@ module.exports = {
             }
             ]
         },
-        "2-glasswall_core/2_2-glasswall_editor/2_2_7-editor_cli"
+        "2-glasswall_core/2_2-glasswall_editor/2_2_7-editor_cli",
+        "2-glasswall_core/2_2-glasswall_editor/2_2_8-core2_design_plan",
+        "2-glasswall_core/2_2-glasswall_editor/2_2_9-core2_camera_tree", 
         ]
     },
     {
