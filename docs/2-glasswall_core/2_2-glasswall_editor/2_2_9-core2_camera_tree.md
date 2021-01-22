@@ -5,7 +5,7 @@ sidebar_label: 2.2.9 Core2 Accessing Camera Trees
 #
 
 # Node Functions
-![](media/cameratree.png)
+
 
 
 Steven Warner:
