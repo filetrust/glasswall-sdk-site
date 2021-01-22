@@ -134,7 +134,7 @@ and
 </table>
 
 # Related Links
-- [Glasswall Developed Tools](../../7-tools/7_5-developer_tools/7_5_2-glasswall_developed_tools.md)
+- [Glasswall Developed Tools](../../7-tools/7_5-developer_tools/7_5_2-glasswall_developed_tools)
 
 
 

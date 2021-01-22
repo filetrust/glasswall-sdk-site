@@ -1,6 +1,6 @@
 ---
-title: 2.2.8 Core2 Design Plan
-sidebar_label: 2.2.8 Core2 Design Plan
+title: 2.2.8 Core 2 Design Plan
+sidebar_label: 2.2.8 Core 2 Design Plan
 ---
 <div style={{textAlign: 'center'}}>
 
@@ -12,15 +12,15 @@ sidebar_label: 2.2.8 Core2 Design Plan
 # Steven Warner
 </div>
 
-# Camera Pool
+# 1 Camera Pool
 
 ![](media/designplan1.jpg)
 
-# Export – Import
+# 2 Export/Import
 
-## Version 2 Package
+## 2.1 Version 2 Package
 
-### Interface Object
+### 2.1.1 Interface Object
 
 ![](media/designplan2.jpg)
 
@@ -28,7 +28,7 @@ Notes
 
 entryname of form xxxx\yyyy\zzzz used to insert to specific stream or substream. (I believe underlying quazip/minizip supports this)
 
-### Import / Export procedure
+### 2.1.2 Import/Export procedure
 
 ![](media/designplan3.jpg)
 
@@ -38,9 +38,9 @@ Change Import/Export to use leaves
 
 Change Export/Import to start cameras independent of session manager
 
-# Cameras
+# 3 Cameras
 
-## Structured File Types
+## 3.1 Structured File Types
 
 A common BDDL Based definition is defined to encapsulate the usual elements held in each level of a structured document (OPC and CFB being examples)
 
@@ -52,7 +52,7 @@ Initial Implementation:
 
 For expediency, using generated structure/read/write output as framework seems a suitable starting point.
 
-### OPC
+### 3.1.1 OPC
 
 OPC\_StructuredFile :
 
@@ -66,21 +66,21 @@ Each stream can then be loaded with data from the streams in the zip file.
 
 On write back, the usual checked flag for writing unset will mean skip the stream on regeneration of the zip file.
 
-### CFB
+### 3.1.2 CFB
 
-# Camera interface
+# 4 Camera interface
 
 Ensure easy way to start a camera on a memorybuffer is part of the interface
 
 #
 
-# Reason for New Core2
+# 5 Reason for New Core2
 
-# Structure of platform
+# 6 Structure of platform
 
 ![](media/designplan4.jpg)
 
-# Folder Layout
+# 7 Folder Layout
 
 +--- **buildoutput**
 
@@ -242,25 +242,25 @@ Ensure easy way to start a camera on a memorybuffer is part of the interface
 
 \---qt\_core2\_dataviewerSession use (client view)
 
-# Test Tool GWQtCLI
+# 8 Test Tool GWQtCLI
 
-# CameraBase (aka session) 
+# 9 CameraBase (aka session) 
 ![](media/designplan5.jpg)
 
 #
 
 ![](media/designplan6.jpg)
 
-# Plugin use
+# 10 Plugin use
 
 ![](media/designplan7.jpg)
 
-# &#39;filters&#39; concept
+# 11 &#39;filters&#39; concept
 
-# Plugin interface
+# 12 Plugin interface
 
-# Qt\_core2\_dataviewer
+# 13 Qt\_core2\_dataviewer
 
 When you build the Core2 Project
 
-# Qt Usage
+# 14 Qt Usage
