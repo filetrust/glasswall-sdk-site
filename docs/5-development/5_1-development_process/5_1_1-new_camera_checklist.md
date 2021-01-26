@@ -26,7 +26,7 @@ Using Miraplacid Data Viewer, test and refine the BDD until you are happy you
 are reading the file correctly and collecting all of the required parts into the
 tree structure.
 
-Test your BDD using **bindirectoryreader** on large number of sample files.
+Test your BDD using [Bin Directory Reader](../../7-tools/7_9-testing/7_9_1-BinDirectoryReader) on large number of sample files.
 
 Have the BDD reviewed by more experienced developers.
 

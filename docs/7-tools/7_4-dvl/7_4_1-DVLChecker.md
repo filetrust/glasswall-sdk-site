@@ -14,7 +14,7 @@ dvl_checker checks DVL files for syntax errors.
 
 Here is an overview of its architecture.
 
-![Alt BuildValidationCppFiles](dvlovervoew.jpg) 
+![Alt BuildValidationCppFiles](dvloverview.jpg) 
 
 ### **OPTIONS**
 
