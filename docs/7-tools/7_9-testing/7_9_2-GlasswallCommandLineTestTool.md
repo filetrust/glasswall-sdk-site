@@ -46,51 +46,10 @@ Table 1: Document Change History
 | 25/04/2019 | 2.10 | Removed File to File mode and added File Storage Mode |
 | 13/11/2019 | 2.11 | Updated to reflect policy file (xmlconfig) is a mandatory parameter. |
 
-1.
-# Contents
-
-[1Contents 4](#_Toc530562569)
-
-[2Conventions 5](#_Toc530562570)
-
-[3Usage 5](#_Toc530562571)
-
-[3.1Return values 5](#_Toc530562572)
-
-[4Configuration File Description 5](#_Toc530562573)
-
-[4.1Configuration Format 5](#_Toc530562574)
-
-[4.2Configuration Settings 6](#_Toc530562575)
-
-[4.2.1Section Name: GWConfig 6](#_Toc530562576)
-
-[4.2.2Mapping - CLI Modes To Glasswall API 8](#_Toc530562577)
-
-[5XML Configuration File Description 10](#_Toc530562578)
-
-[5.1Configuration Format 10](#_Toc530562579)
-
-[5.2Configuration Settings 11](#_Toc530562580)
-
-[6Test Tool Log File Format 12](#_Toc530562581)
-
-[6.1Files Log 12](#_Toc530562582)
-
-[6.2Application Log 12](#_Toc530562583)
-
-[6.2.1Header 12](#_Toc530562584)
-
-[6.2.2Configuration 12](#_Toc530562585)
-
-[6.2.3Body 12](#_Toc530562586)
-
-[6.2.4Footer 13](#_Toc530562587)
-
 #
 
-1.
-# Conventions
+
+# 1 Conventions
 
 _Italic_ – This is used to show arguments that must be replaced with user-supplied values.
 
@@ -100,8 +59,8 @@ Constant width — used to show the contents of files or output from commands.
 
 [] — these surround optional elements in a description of syntax. The brackets themselves should not be typed. Where brackets are to be typed literally, they will be in bold and shown in the examples.
 
-1.
-# Usage
+
+# 2 Usage
 
 The Command Line Test Tool should be used in the following manner.
 
@@ -109,8 +68,8 @@ The Command Line Test Tool should be used in the following manner.
 
 The contents of _configFile_ and _xmlConfigFile_ are described in the following sections.
 
-  1.
-## Return values
+
+## 2.1  Return values
 
 | **Name** | **Value** | **Description** |
 | --- | --- | --- |
@@ -121,13 +80,13 @@ The contents of _configFile_ and _xmlConfigFile_ are described in the following 
 | **rcCONFIGLOADFAILURE** | 3 | Problem loading the specified configuration file |
 | **rcPROCESSINGISSUE** | 4 | Problem processing the specified files |
 
-1.
-# Configuration File Description
+
+# 3 Configuration File Description
 
 This is passed to the **commandlinetesttool** executable using the **–config** option.
 
-  1.
-## Configuration Format
+
+## 3.1 Configuration Format
 
 The configuration file is a text file that enables the operation of the test tool to be configured.
 
@@ -183,11 +142,11 @@ logFileProcessTime=1
 
 logProcessStatus=0
 
-  1.
-## Configuration Settings
+  
+## 3.2 Configuration Settings
 
-    1.
-### Section Name: GWConfig
+  
+### 3.2.1 Section Name: GWConfig
 
 All configuration value default to either &#39;0&#39; or an empty string, where appropriate.
 
@@ -218,8 +177,8 @@ Note: The Short form of Report produced has no content items listed; only Saniti
 | **logFileProcessTime** | [0|1] | 1 = Includes the file processing time in the process log |
 | **logProcessStatus** | [0|1] | 1 = Includes the process status information (from GWFileProcessMsg and GWFileProcessStatus) in the process log. This is an optional flag that defaults to 0 to denote no process status logging. |
 
-    1.
-### Mapping - CLI Modes To Glasswall API
+    
+### 3.2.2 Mapping - CLI Modes To Glasswall API
 
 The CLI tool can be used to verify the output of API functions in the Glasswall library. This section contains information on which CLI settings trigger specific API function calls.
 
@@ -300,11 +259,11 @@ The following API functions are called by the CLI tool when generating the Glass
 
 For more information on each API function please refer to the Glasswall SDK documentation.
 
-1.
-# XML Configuration File Description
 
-  1.
-## Configuration Format
+# 4 XML Configuration File Description
+
+  
+## 4.1 Configuration Format
 
 The format configuration within this file is described formally in the XSD located in the glasswall sdk documentation. This configuration is passed unchanged to the GWFileConfigXML function. **An example of a full configuration file is shown below**
 
@@ -396,8 +355,8 @@ The format configuration within this file is described formally in the XSD locat
 
 **Note:** ThexlsConfig, pptConfig, and wordConfig cover both office XML and office binary file types.
 
-  1.
-## Configuration Settings
+
+## 4.2 Configuration Settings
 
 | **Type** | **Value** | **Notes** |
 | --- | --- | --- |
@@ -407,11 +366,11 @@ The format configuration within this file is described formally in the XSD locat
 | disallow | Configures Glasswall to raise an issue if document element types associated with this content management flag are found within any document being processed. |
 | **watermark** | Freeform text, up to 20 characters | Specifying a null element .i.e., \&lt;watermark /\&gt;, results in no watermark being added to documents being processed. |
 
-1.
-# Test Tool Log File Format
 
-  1.
-## Files Log
+# 3 Test Tool Log File Format
+
+
+## 3.2 Files Log
 
 Produced by the test application before the processing of the files is started. Compiled from the specified input location, documenting the complete list of files to be processed.
 
@@ -421,13 +380,13 @@ The format of each line follows the same specification.
 
 One file is listed on each line, where _nnnnn_ is a zero indexed counter that increments by one for each line.
 
-  1.
-## Application Log
+
+## 3.3 Application Log
 
 Produced by the test application recording the results of processing. The file structure is made up of a header, body and footer.
 
-    1.
-### Header
+  
+### 3.3.1 Header
 
 - Line of **\*** characters
 - Time date stamp for start of logging
@@ -444,13 +403,13 @@ SOFTWARE VERSION PLUGIN\_GLASSWALL\_DLL:ANALYSE\_AUDIT.MANAGE.PROTECT.01.01..BUI
 
 \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
-    1.
-### Configuration
+
+### 3.3.2 Configuration
 
 A record of the configuration settings being used by the Glasswall DLL during testing. The information is provided in the XML format used when configuring the test. The configuration is provided by the DLL from the GWFileConfigGetfunction, rather than being a copy of what has been passed into the test tool.
 
-    1.
-### Body
+
+### 3.3.3 Body
 
 Line per file, each line consisting of
 
@@ -467,8 +426,8 @@ Example
 
 Processing Status 96 Processing Message &quot;Remedies Required, Sanitisation Required&quot;
 
-    1.
-### Footer
+
+### 3.3.4 Footer
 
 - Line of **\*** characters
 - Time date stamp for end of logging

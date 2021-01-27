@@ -38,16 +38,7 @@ If there are any questions related to this report, these should be addressed to:
 Glasswall Solutions Limited
 
 e-mail: [support@glasswallsolutions.com](mailto:support%40glasswallsolutions.com)
-
-
-- [1. Introduction](#1-introduction)
-    - [1. 1 Issues to consider during implementation](#11-issues-to-consider-during-implementation)
-- [2. C#](#2-c#)
-    - [2.1 Files provided](#21-files-provided)
-    - [2.2 Framework dependencies](#22-framework-dependencies)
-    - [2.3 Wrapper integration](#23-wrapper-integration)
-    - [2.4 Code example](#24-code-example)
-    - [2.5 Issues to consider](#25-issues-to-consider)
+#
 
 # 1 Introduction
 

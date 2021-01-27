@@ -51,62 +51,6 @@ Glasswall Solutions Limited
 
 e-mail: [shutton@glasswallsolutions.com](mailto:shutton@glasswallsolutions.com)
 
-**Index**
-
-- [1. Introduction](#_Toc450553639)
-
-    - [1.1. Scope](#_Toc450553640)
-
-    - [1.2. Key requirements](#_Toc450553641)
-
-    - [1.3. Reference Documents](#_Toc450553642)
-
-- [2. Features of Existing System](#_Toc450553643)
-
-    - [2.1. Existing Functional Features](#_Toc450553644)
-
-    - [2.2. Existing Internal Mechanism](#_Toc450553645)
-
-    - [2.3. Naming in existing system](#_Toc450553646)
-
-- [3. Features of Proposed Replacement](#_Toc450553647)
-
-    - [3.1. Proposed Functional Features](#_Toc450553648)
-
-    - [3.2. Proposed Internal Mechanism](#_Toc450553649)
-
-    - [3.3. Alternative Behaviour](#_Toc450553649)
-
-- [4. Development Stages](#_Toc450553650)
-
-    - [4.1. Phase 1](#_Toc450553651)
-
-        - [4.1.1 Add Instrumentation code to current analysis API](#_Toc450553652)
-
-        - [4.1.2 Changes to API](#_Toc450553653)
-
-            - [4.1.2.1 Original API](#_Toc450553654)
-
-            - [4.1.2.2 New API](#_Toc450553655)
-
-        - [4.1.3 Create Analysis Repository Module](#_Toc450553656)
-
-            - [4.1.3.1 Repository Structure](#_Toc450553657)
-
-            - [4.1.3.2 XML Report Generator](#_Toc450553659)
-
-        - [4.1.4 Test framework to use sample data from instrumentation to load repository](#_Toc450553662)
-
-        - [4.1.5 Integrate new repository into glasswall dll](#_Toc450553663)
-
-    - [4.2. Phase 2](#_Toc450553664)
-
-        - [4.2.1 Change cameras to use embedded reports](#_Toc450553665)
-
-- [5. Glossary](#_Toc450553666)
-
-[6. Assertions](#_Toc450553667)
-
 
 # 1 Introduction
 
