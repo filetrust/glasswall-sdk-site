@@ -415,12 +415,12 @@ module.exports = {
                 {
                 "8.1.9.5 Analysis Report":
                 [
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_5-analysis_report/8_1_9_5_1-file_specific_analysis",
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_5-analysis_report/8_1_9_5_2-file_specific_analysis_pdf",
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_5-analysis_report/8_1_9_5_3-file_specific_analysis_office_binary",
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_5-analysis_report/8_1_9_5_4-file_specific_analysis_office_open_xml",
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_5-analysis_report/8_1_9_5_5-file_specific_analysis_media",
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_5-analysis_report/8_1_9_5_6-file_specific_analysis_executable_code_formats",
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_5-analysis_report/8_1_9_5_1-file_specific_analysis",
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_5-analysis_report/8_1_9_5_2-file_specific_analysis_pdf",
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_5-analysis_report/8_1_9_5_3-file_specific_analysis_office_binary",
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_5-analysis_report/8_1_9_5_4-file_specific_analysis_office_open_xml",
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_5-analysis_report/8_1_9_5_5-file_specific_analysis_media",
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_5-analysis_report/8_1_9_5_6-file_specific_analysis_executable_code_formats",
                 ]
                 },
                 "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_6-library_modules",
