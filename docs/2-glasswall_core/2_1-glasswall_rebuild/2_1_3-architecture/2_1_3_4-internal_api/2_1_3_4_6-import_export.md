@@ -1,6 +1,6 @@
 ---
-title: 2.1.3.4.6 Structured Storage API Specification
-sidebar_label: 2.1.3.4.6 Structured Storage API Specification
+title: 2.1.3.4.6 Content Import And Export
+sidebar_label: 2.1.3.4.6 Content Import And Export
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

@@ -10,7 +10,6 @@ module.exports = {
     "2 1 Glasswall Rebuild":
         [
         "2-glasswall_core/2_1-glasswall_rebuild/2_1_1-product_description",
-        "2-glasswall_core/2_1-glasswall_rebuild/2_1_2-glasswall_features",
         {
         "2.1.3 Architecture":
             [
@@ -41,12 +40,21 @@ module.exports = {
             {
             "2.1.3.4 Internal API":
             [
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_1-analysis_repository",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_2-analysis_report_xsd",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_1-analysis_mode",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_2-protect_mode",
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_3-memory_buffers",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-configuration_management",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_5-configuration_management_xsd",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_6-structured_storage_api_specification"
+            {
+                "2.1.3.4.4 Configuration Management":
+                [
+                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_1-configurationmanagement",
+                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_2-configManamentPolicies",
+                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_3-configuration_management_xsd",
+                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_4-automatic_corrections",
+                ]
+
+            },
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_5-determine_fileType_format",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_6-import_export",
             ]
             }
             ]
@@ -395,9 +403,33 @@ module.exports = {
         "8-related/8_1-specifications/8_1_4-png",
         "8-related/8_1-specifications/8_1_5-gif",
         "8-related/8_1-specifications/8_1_6-tiff",
-        "8-related/8_1-specifications/8_1_7-jbig2"
+        "8-related/8_1-specifications/8_1_7-jbig2",
+        "8-related/8_1-specifications/8_1_8-structured_storage_api_specification",
+        {
+            "8.1.9 Rebuild API Specification":
+            [
+                "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_1-overview",
+                "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_2-configuration",
+                "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_3-additional_features",
+                "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_4-xml_schema_definitions",
+                {
+                "8.1.9.5 Analysis Report":
+                [
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_5-analysis_report/8_1_9_5_1-file_specific_analysis",
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_5-analysis_report/8_1_9_5_2-file_specific_analysis_pdf",
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_5-analysis_report/8_1_9_5_3-file_specific_analysis_office_binary",
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_5-analysis_report/8_1_9_5_4-file_specific_analysis_office_open_xml",
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_5-analysis_report/8_1_9_5_5-file_specific_analysis_media",
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_5-analysis_report/8_1_9_5_6-file_specific_analysis_executable_code_formats",
+                ]
+                },
+                "8-related/8_1-specifications/8_1_9-rebuild_api_specification/8_1_9_6-library_modules",
+    
+            ]
+            },
         ]
-    }
+        
+    },
     ]
 }
 ]

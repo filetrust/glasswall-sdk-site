@@ -1,9 +1,8 @@
 ---
-title: 2.1.3.4.4 Configuration Management
-sidebar_label: 2.1.3.4.4 Configuration Management
+title: 2.1.3.4.4.2 Overview
+sidebar_label: 2.1.3.4.4.2 Overview
 ---
 
-### Overview
 The various document processing options (document analysis, document processing, process reporting) provided by the Glasswall library are predominantly available through the discrete functions of the API. In addition to these high-level processing options there are a number of additional processing options. These options enable third-party users to fine-tune the operation of the library to their specific needs and are described in the following sections. 
 
 Changes are made to the Glasswall configuration through the [Configuration Management API](#configurationManagementAPI).
