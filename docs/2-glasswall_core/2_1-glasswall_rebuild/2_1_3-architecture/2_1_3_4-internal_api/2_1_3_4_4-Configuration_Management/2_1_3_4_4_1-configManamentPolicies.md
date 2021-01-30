@@ -1,9 +1,9 @@
 ---
-title: 2.1.3.4.4.2 Content Management Policies
-sidebar_label: 2.1.3.4.4.2 Content Management Policies
+title: 2.1.3.4.4.1 Content Management Policies
+sidebar_label: 2.1.3.4.4.1 Content Management Policies
 ---
 
-### 1 Overview
+### Overview
 
 Content Management Policies are used to specify the set of content management switches that should be applied to a particular document type.
 
@@ -19,7 +19,7 @@ The content management setting is used to specify what actions carried out by Gl
 
 If no value is supplied for a switch it is defaulted to Sanitise.
 
-### 2 XML Reports with different Content Management Policies
+### XML Reports with different Content Management Policies
 
 The following sections show how the same item of data that is under control of a content management switch is represented differently in the XML report, depending on the switch setting.
 
@@ -27,55 +27,55 @@ The following sections show how the same item of data that is under control of a
 
 This is an extract from the XML report for a doc file which has metadata inside it with the content management switch for metadata set to Allow.
 ```
-\&lt;gw:Camera cameraName = &quot;wordConfig&quot;\&gt;
- gw:ContentSwitch\&gt;
- \&lt;gw:ContentName\&gt;metadata\&lt;/gw:ContentName\&gt;
- \&lt;gw:ContentValue\&gt;allow\&lt;/gw:ContentValue\&gt;
- \&lt;/gw:ContentSwitch\&gt;
- \&lt;gw:ContentItem\&gt;
- \&lt;gw:TechnicalDescription\&gt;  Metadata detected in #05SummaryInformation\&lt;/gw:TechnicalDescription\&gt;
- \&lt;gw:InstanceCount\&gt;1\&lt;/gw:InstanceCount\&gt;
- \&lt;gw:TotalSizeInBytes\&gt;4096\&lt;/gw:TotalSizeInBytes\&gt;
- \&lt;gw:AverageSizeInBytes\&gt;4096\&lt;/gw:AverageSizeInBytes\&gt;
- \&lt;gw:MinSizeInBytes\&gt;4096\&lt;/gw:MinSizeInBytes\&gt;
- \&lt;gw:MaxSizeInBytes\&gt;4096\&lt;/gw:MaxSizeInBytes\&gt;
- \&lt;/gw:ContentItem\&gt;
+<gw:Camera cameraName = "wordConfig">
+gw:ContentSwitch>
+<gw:ContentName>metadata</gw:ContentName>
+<gw:ContentValue>allow</gw:ContentValue>
+</gw:ContentSwitch>
+<gw:ContentItem>
+<gw:TechnicalDescription>  Metadata detected in #05SummaryInformation</gw:TechnicalDescription>
+<gw:InstanceCount>1</gw:InstanceCount>
+<gw:TotalSizeInBytes>4096</gw:TotalSizeInBytes>
+<gw:AverageSizeInBytes>4096</gw:AverageSizeInBytes>
+<gw:MinSizeInBytes>4096</gw:MinSizeInBytes>
+<gw:MaxSizeInBytes>4096</gw:MaxSizeInBytes>
+</gw:ContentItem>
 ```
 **Disallow**
 
 This is an extract from the XML report for a doc file which has metadata inside it with the content management switch for metadata set to Disallow.  In Protect mode this would cause the file to be Non-conforming.
 ```
-\&lt;gw:Camera cameraName = &quot;wordConfig&quot;\&gt;
- \&lt;gw:ContentSwitch\&gt;
- \&lt;gw:ContentName\&gt;metadata\&lt;/gw:ContentName\&gt;
- \&lt;gw:ContentValue\&gt;disallow\&lt;/gw:ContentValue\&gt;
- \&lt;/gw:ContentSwitch\&gt;
- \&lt;gw:IssueItem\&gt;
- \&lt;gw:TechnicalDescription\&gt;  Metadata detected in  #05SummaryInformation\&lt;/gw:TechnicalDescription\&gt;
- \&lt;gw:IssueId\&gt;96\&lt;/gw:IssueId\&gt;
- \&lt;gw:InstanceCount\&gt;1\&lt;/gw:InstanceCount\&gt;
- \&lt;gw:RiskLevel\&gt;Medium\&lt;/gw:RiskLevel\&gt;
- \&lt;/gw:IssueItem\&gt;
+<gw:Camera cameraName = "wordConfig">
+<gw:ContentSwitch>
+<gw:ContentName>metadata</gw:ContentName>
+<gw:ContentValue>disallow</gw:ContentValue>
+</gw:ContentSwitch>
+<gw:IssueItem>
+<gw:TechnicalDescription>  Metadata detected in  #05SummaryInformation</gw:TechnicalDescription>
+<gw:IssueId>96</gw:IssueId>
+<gw:InstanceCount>1</gw:InstanceCount>
+<gw:RiskLevel>Medium</gw:RiskLevel>
+</gw:IssueItem>
 ```
 **Sanitise**
 
 This is an extract from the XML report for a doc file which has metadata inside it with the content management switch for metadata set to Sanitise.  In Protect mode this would cause the metadata to be removed from the regenerated file.
 ```
-\&lt;gw:Camera cameraName = &quot;wordConfig&quot;\&gt;
- \&lt;gw:ContentSwitch\&gt;
- \&lt;gw:ContentName\&gt;metadata\&lt;/gw:ContentName\&gt;
- \&lt;gw:ContentValue\&gt;sanitise\&lt;/gw:ContentValue\&gt;
- \&lt;/gw:ContentSwitch\&gt;
- \&lt;gw:SanitisationItem\&gt;
- \&lt;gw:TechnicalDescription\&gt;Metadata detected in  #05SummaryInformation\&lt;/gw:TechnicalDescription\&gt;
- \&lt;gw:InstanceCount\&gt;1\&lt;/gw:InstanceCount\&gt;
- \&lt;gw:TotalSizeInBytes\&gt;4096\&lt;/gw:TotalSizeInBytes\&gt;
- \&lt;gw:AverageSizeInBytes\&gt;4096\&lt;/gw:AverageSizeInBytes\&gt;
- \&lt;gw:MinSizeInBytes\&gt;4096\&lt;/gw:MinSizeInBytes\&gt;
- \&lt;gw:MaxSizeInBytes\&gt;4096\&lt;/gw:MaxSizeInBytes\&gt;
- \&lt;/gw:SanitisationItem\&gt;
+<gw:Camera cameraName = "wordConfig">
+<gw:ContentSwitch>
+<gw:ContentName>metadata</gw:ContentName>
+<gw:ContentValue>sanitise</gw:ContentValue>
+</gw:ContentSwitch>
+<gw:SanitisationItem>
+<gw:TechnicalDescription>Metadata detected in  #05SummaryInformation</gw:TechnicalDescription>
+<gw:InstanceCount>1</gw:InstanceCount>
+<gw:TotalSizeInBytes>4096</gw:TotalSizeInBytes>
+<gw:AverageSizeInBytes>4096</gw:AverageSizeInBytes>
+<gw:MinSizeInBytes>4096</gw:MinSizeInBytes>
+<gw:MaxSizeInBytes>4096</gw:MaxSizeInBytes>
+</gw:SanitisationItem>
 ```
-### 3 PDF
+### PDF
 
 The PDF content management switches are shown in the table below:
 
@@ -94,7 +94,7 @@ The PDF content management switches are shown in the table below:
 | **value\_outside\_reasonable\_limits** | [Stream] streams allowed maximum([number]) exceeded   	        Note: It is recommended that you do not adjust the default value. |
 | **retain\_exported\_streams** | Applicable to export mode. If set to allow, streams are retained in the exported document; if set to sanitise, streams are removed from the exported document |
 
-### 4 Images
+### Images
 
 Content management is not configurable on image files, with the exception of tiff, therefore only content items, issues and remedies can appear in an XML report for most image files. Sanitisation items cannot be present in their XML reports. Automatic corrections are applied to a file in order to bring it in line with the manufacturer&#39;s specification and/or remove unrecognised or unwanted data. See section [**Automatic Corrections**](2_1_3_4_4_4-automatic_corrections).
 
@@ -105,7 +105,7 @@ For tiff the following content management switch is available:
 | **geotiff** | GeoTIFF data present in GeoTIFF |
 | --- | --- |
 
-### 5 Binary and XML Office
+### Binary and XML Office
 
 **Common**
 
