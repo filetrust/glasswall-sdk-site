@@ -1,25 +1,24 @@
 ---
-title: 8.1.9.6.1 Overview
+title: 8.1.9.6.1 Glasswall Library - Modules
 sidebar_label: 8.1.9.6.1 Overview
 ---
 
-Glasswall Library - Modules
 
 The interface for the Glasswall API is broken into three main sections covering the principle functionality provided by the library:
 
-• [**Glasswall Configuration Functions**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Configuration%20Functions.htm)
+ - [**Glasswall Configuration Functions**](8_1_9_6_4-configuration_functions.md)
 
-• [**Glasswall Document Processing**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing.htm)
+ - [**Glasswall Document Processing**](8_1_9_6_3-doc_proc/8_1_9_6_3_6_1-overview.md)
 
-• [**Glasswall Resource Management**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Resource%20Management.htm)
+ - [**Glasswall Resource Management**](8_1_9_6_5-resource_management.md)
 
-Functions
+## Functions
 
 wchar\_t \* GWFileVersion (void)
 
-GWFileVersion
+## GWFileVersion
 
-**wchar\_t\* ** [**GWFileVersion**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Library%20-%20Modules.htm#GWFileVe)** ( void )**
+**wchar\_t\* ** [**GWFileVersion**](#gwfileversion)** ( void )**
 
 This function retrieves the version string of the Glasswall Library.
 

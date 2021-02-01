@@ -25,11 +25,11 @@ The active Content Management Policy can be updated on a document by document ba
 
 The Glasswall Configuration Management API provides 3 principle operations:
 
-- Set the configuration ([**GWFileConfigXML**](8_1_9_6-lib_modules/8_1_9_6_4-configuration_functions.md#GWFileConfigXML))
+- Set the configuration ([**GWFileConfigXML**](8_1_9_6-lib_modules/8_1_9_6_4-configuration_functions.md#gwfileconfigxml))
 
-- Retrieve the current configuration ([**GWFileConfigGet **](8_1_9_6-lib_modules/8_1_9_6_4-configuration_functions.md#GWFileConfigGet))
+- Retrieve the current configuration ([**GWFileConfigGet **](8_1_9_6-lib_modules/8_1_9_6_4-configuration_functions.md#gwfileconfigget))
 
-- Reset the current configuration to default settings ([**GWFileConfigRevertToDefaults**](8_1_9_6-lib_modules/8_1_9_6_4-configuration_functions.md#GWFileConfigRevertToDefaults))
+- Reset the current configuration to default settings ([**GWFileConfigRevertToDefaults**](8_1_9_6-lib_modules/8_1_9_6_4-configuration_functions.md#gwfileconfigreverttodefaults))
 
 A Glasswall API function  **GWFileConfigXML**  is provided to enable the Glasswall library to be configured with a greater degree of flexibility. The API takes the required configuration as an XML null terminated string, as defined by the Configuration Management XSD.
 

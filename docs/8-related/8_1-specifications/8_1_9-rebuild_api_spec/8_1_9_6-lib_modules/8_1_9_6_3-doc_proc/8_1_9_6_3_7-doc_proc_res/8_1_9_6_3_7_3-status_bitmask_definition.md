@@ -4,15 +4,15 @@ sidebar_label: 8.1.9.6.3.7.3 Process Status Bitmask Definitions
 ---
 ## Macros
 
-- #define [**GLASSWALL\_PROCESS\_STATUS\_CLEAN**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Process%20Status%20Bitmask%20Definitions.htm#GLASSWAL) ((unsigned int) 0x0000)
+- #define [**GLASSWALL\_PROCESS\_STATUS\_CLEAN**](#glasswall_process_status_clean) ((unsigned int) 0x0000)
 
-- #define [**GLASSWALL\_PROCESS\_STATUS\_NONCONFORMING **](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Process%20Status%20Bitmask%20Definitions.htm#GLASSWAL2)((unsigned int) 0x0080)
+- #define [**GLASSWALL\_PROCESS\_STATUS\_NONCONFORMING **](#glasswall_process_status_nonconforming) ((unsigned int) 0x0080)
 
-- #define [**GLASSWALL\_PROCESS\_STATUS\_REMEDIED**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Process%20Status%20Bitmask%20Definitions.htm#GLASSWAL3) ((unsigned int) 0x0040)
+- #define [**GLASSWALL\_PROCESS\_STATUS\_REMEDIED**](#glasswall_process_status_remedied) ((unsigned int) 0x0040)
 
-- #define [**GLASSWALL\_PROCESS\_STATUS\_SANITISED**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Process%20Status%20Bitmask%20Definitions.htm#GLASSWAL4) ((unsigned int) 0x0020)
+- #define [**GLASSWALL\_PROCESS\_STATUS\_SANITISED**](#glasswall_process_status_sanitised) ((unsigned int) 0x0020)
 
-- #define [**GLASSWALL\_PROCESS\_STATUS\_NOPROCESSFILE**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Process%20Status%20Bitmask%20Definitions.htm#GLASSWAL5) ((unsigned int) 0xffff)
+- #define [**GLASSWALL\_PROCESS\_STATUS\_NOPROCESSFILE**](#glasswall_process_status_noprocessfile) ((unsigned int) 0xffff)
 
 ## Macro Definitions
 

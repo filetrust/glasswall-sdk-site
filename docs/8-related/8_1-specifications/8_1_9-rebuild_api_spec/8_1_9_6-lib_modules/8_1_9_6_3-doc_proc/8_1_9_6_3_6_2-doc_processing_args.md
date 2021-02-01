@@ -154,10 +154,10 @@ The following table is an extension to the table above and indicates issues that
 
 ## Process Return Status
 
-All the processing functions return values as defined in [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS).
+All the processing functions return values as defined in [**eGwFileStatus**](8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus).
 
 | **Status Value** | **Effects** |
 | --- | --- |
 | **eGwFileStatus\_Success** | Managed documents are published to the specified locations<li>For file to memory location, the size of the managed document is reported in the specified argument</li><li>For file to file the specified file location is loaded with the processed document</li> Analysis reports are published to the specified locations, for memory locations the size of the analysis report is reported in the specified argument.Detailed reports are published to the specified locations, for memory locations the size of the detailed report is reported in the specified argument. |
 | **eGwFileStatus\_Error** | Managed documents are not published. Memory location functions return a NULL pointer for  **outputFileBuffer**  and set the  **outputFileBuffer**  to zero. |
-| **other** | The effects of the failure case is described in the notes for [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS) |
+| **other** | The effects of the failure case is described in the notes for [**eGwFileStatus**](8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus) |

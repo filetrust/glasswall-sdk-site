@@ -4,15 +4,15 @@ sidebar_label: 8.1.9.6.4 Configuration Functions
 ---
 ## Functions
 
-- int [**GWFileConfigGet **](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Configuration%20Functions.htm#GWFileCo)(wchar\_t \*\*configurationBuffer, size\_t \*outputLength)
+- int [**GWFileConfigGet **](#gwfileconfigget)(wchar\_t \*\*configurationBuffer, size\_t \*outputLength)
 
-- int [**GWFileConfigRevertToDefaults**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Configuration%20Functions.htm#GWFileCo3) (void)
+- int [**GWFileConfigRevertToDefaults**](#gwfileconfigreverttodefaults)) (void)
 
-- int [**GWFileConfigXML**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Configuration%20Functions.htm#GWFileCo2) (wchar\_t \*xmlstring)
+- int [**GWFileConfigXML**](#gwfileconfigxml) (wchar\_t \*xmlstring)
 
-- int [**GWGetAllIdInfo**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Configuration%20Functions.htm#GWGetAll) (size\_t \*bufferLength, void \*\*outputBuffer)
+- int [**GWGetAllIdInfo**](#gwgetallidinfo) (size\_t \*bufferLength, void \*\*outputBuffer)
 
-- int [**GWGetIdInfo**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Configuration%20Functions.htm#GWGetIdI) (uint32\_t issueId, size\_t \*bufferLength, void \*\*outputBuffer)
+- int [**GWGetIdInfo**](#gwgetidinfo) (uint32\_t issueId, size\_t \*bufferLength, void \*\*outputBuffer)
 
 These functions enable the operation of the Glasswall processing to be configured. Glasswall library Configuration can be updated using **GWFileConfigXML()**.
 
@@ -36,7 +36,7 @@ In the event of an error configurationBuffer will be returned as a NULL pointer 
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS)
+- [**eGwFileStatus**](8_1_9_6_3-doc_proc/8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus)
 
 ## GWFileConfigRevertToDefaults
 
@@ -46,7 +46,7 @@ This function reverts the Glasswall library&#39;s active configuration to the ha
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS)
+- [**eGwFileStatus**](8_1_9_6_3-doc_proc/8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus)
 
 This example code demonstrates the library configuration being reset to default values, which are then retrieved and printed by the client application
 ```
@@ -88,7 +88,7 @@ This function should be called before any documents are processed. If this funct
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS)
+- [**eGwFileStatus**](8_1_9_6_3-doc_proc/8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus)
 
 This example code demonstrates the required library configuration string being collected by the client application and used to configure the Glasswall library prior to processing a PDF document.
 ```
@@ -145,7 +145,7 @@ This function returns a buffer containing an XML file populated with issue ID de
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS) ** / ** [**Process Return Status**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#Process)
+- [**eGwFileStatus**](8_1_9_6_3-doc_proc/8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus) ** / ** [**Process Return Status**](8_1_9_6_3-doc_proc/8_1_9_6_3_6_2-doc_processing_args.md#process-return-status)
 
 ## GWGetIdInfo
 
@@ -162,4 +162,4 @@ This function returns a buffer containing the description for the given issue ID
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS) ** / ** [**Process Return Status**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#Process)
+- [**eGwFileStatus**](8_1_9_6_3-doc_proc/8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus) ** / ** [**Process Return Status**](8_1_9_6_3-doc_proc/8_1_9_6_3_6_2-doc_processing_args.md#process-return-status)

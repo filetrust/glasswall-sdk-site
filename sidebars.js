@@ -425,7 +425,6 @@ module.exports = {
                     "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_5-analysis_report/8_1_9_5_7-file_specific_analysis_executable_code_formats",
                 ]
                 },
-                "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-library_modules",
                 {
                     "8.1.9.6 Modules":
                     [

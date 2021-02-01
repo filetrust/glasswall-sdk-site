@@ -1,34 +1,34 @@
 ---
-title: 8.1.9.6.3.7.1 Overview
+title: 8.1.9.6.3.7.1 Document Process Results
 sidebar_label: 8.1.9.6.3.7.1 Overview
 ---
 Each function returns status information on the last document processed by the library. No historical data is persisted.
 
 These functions may be used once a document has been processed to elicit additional information on what processing was carried out on the document and, in the event of a document being identified as not conforming with its specification, the reason for non-conformance.
 
-The [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS) enumeration is returned from all document processing functions to give an indication of the processing results. From this enumeration it can be established whether the document is &#39;managed&#39; or not. A managed document may still have had changes made to it, the functions  **GWFileProcessMsg**  or [**GWFileProcessStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20Results.htm#GWFilePr) can be used to identify the types of changes, if any, that have been carried out on the document.
+The [**eGwFileStatus**](8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus) enumeration is returned from all document processing functions to give an indication of the processing results. From this enumeration it can be established whether the document is &#39;managed&#39; or not. A managed document may still have had changes made to it, the functions  **GWFileProcessMsg**  or [**GWFileProcessStatus**](#gwfileprocessstatus) can be used to identify the types of changes, if any, that have been carried out on the document.
 
 In the event of a document processing function returning a status value indicating that the document was found to be non-conforming, the function  **GWFileErrorMsg**  can be used to return an explanatory line of text.
 
 ## Modules
 
-- [**Glasswall Return Status Definitions**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm)
+- [**Glasswall Return Status Definitions**](8_1_9_6_3_7_2-ret_stat_def.md)
 
-- [**Process Status Bitmask Definitions**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Process%20Status%20Bitmask%20Definitions.htm)
+- [**Process Status Bitmask Definitions**](8_1_9_6_3_7_3-status_bitmask_definition.md)
 
 ## Functions
 
-- wchar\_t \* [**GWFileProcessMsg**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20Results.htm#GWFilePr2) (void)
+- wchar\_t \* [**GWFileProcessMsg**](#gwfileprocessmsg) (void)
 
-- int [**GWFileProcessStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20Results.htm#GWFilePr) (unsigned int \*glasswallProcessStatus)
+- int [**GWFileProcessStatus**](#gwfileprocessstatus) (unsigned int \*glasswallProcessStatus)
 
-- wchar\_t \* [**GWFileErrorMsg**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20Results.htm#GWFileEr) (void)
+- wchar\_t \* [**GWFileErrorMsg**](#gwfileerrormsg) (void)
 
 ## GWFileProcessMsg
 
 **wchar\_t\* GWFileProcessMsg (void )**
 
-The file process message is a text representation of the status value detailed in [**GWFileProcessStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20Results.htm#GWFilePr).
+The file process message is a text representation of the status value detailed in [**GWFileProcessStatus**](#gwfileprocessstatus).
 
 **Returns**
 

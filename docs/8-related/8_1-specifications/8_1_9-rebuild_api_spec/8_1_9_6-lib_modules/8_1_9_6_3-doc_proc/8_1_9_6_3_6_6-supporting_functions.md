@@ -9,13 +9,13 @@ For every function that relies on an input file, it is the responsibility of the
 
 ## Functions
 
-- int [**GWDetermineFileTypeFromFileInMem**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20-%20Supporting%20Functions.htm#GWDeterm) (void \*inputBuffer, size\_t inputBufferSize)
+- int [**GWDetermineFileTypeFromFileInMem**](#gwdeterminefiletypefromfileinmem) (void \*inputBuffer, size\_t inputBufferSize)
 
-- int [**GWDetermineFileTypeFromFileInMemAndReport**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20-%20Supporting%20Functions.htm#GWDeterm2) (void \*inputBuffer, size\_t inputBufferSize, void \*\*reportFileBuffer, size\_t \*reportFileBufferLength)
+- int [**GWDetermineFileTypeFromFileInMemAndReport**](#gwdeterminefiletypefromfileandreport) (void \*inputBuffer, size\_t inputBufferSize, void \*\*reportFileBuffer, size\_t \*reportFileBufferLength)
 
-- int [**GWDetermineFileTypeFromFile**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20-%20Supporting%20Functions.htm#GWDeterm3) (const wchar\_t \*inputFilePathName)
+- int [**GWDetermineFileTypeFromFile**](#gwdeterminefiletypefromfile) (const wchar\_t \*inputFilePathName)
 
-- int [**GWDetermineFileTypeFromFileAndReport**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20-%20Supporting%20Functions.htm#GWDeterm4) (const wchar\_t \*inputFilePathName, void \*\*reportFileBuffer, size\_t \*reportFileBufferLength)
+- int [**GWDetermineFileTypeFromFileAndReport**](#gwdeterminefiletypefromfileinmemandreport)) (const wchar\_t \*inputFilePathName, void \*\*reportFileBuffer, size\_t \*reportFileBufferLength)
 
 ## GWDetermineFileTypeFromFile
 
@@ -30,7 +30,7 @@ This function determines the file type for a given file provided it is supported
 
 **Returns**
 
-- [**File Type Enumeration**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#File)
+- [**File Type Enumeration**](8_1_9_6_3_6_2-doc_processing_args.md#file-type-enumeration)
 
 **Remarks**
 
@@ -104,7 +104,7 @@ This function determines the file type for a given file provided it is supported
 
 **Returns**
 
-- [**File Type Enumeration**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#File)
+- [**File Type Enumeration**](8_1_9_6_3_6_2-doc_processing_args.md#file-type-enumeration)
 
 **Remarks**
 
@@ -182,8 +182,8 @@ This function determines the file type for a file stored in memory provided that
 
 **Returns**
 
-- [**File Type Enumeration**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#File)
-
+- [**File Type Enumeration**](8_1_9_6_3_6_2-doc_processing_args.md#file-type-enumeration)
+  
 **Remarks**
 
 Glasswall GWDetermineFileTypeFromFileInMem example.
@@ -276,8 +276,8 @@ This function determines the file type for a given file provided it is supported
 
 **Returns**
 
-- [**File Type Enumeration**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#File)
-
+- [**File Type Enumeration**](8_1_9_6_3_6_2-doc_processing_args.md#file-type-enumeration)
+  
 **Remarks**
 
 Glasswall GWDetermineFileTypeFromFileInMemAndReport example.

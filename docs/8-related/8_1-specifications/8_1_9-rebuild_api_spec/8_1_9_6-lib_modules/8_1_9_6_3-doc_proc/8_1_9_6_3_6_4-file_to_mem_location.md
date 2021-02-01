@@ -9,21 +9,21 @@ Parameters of type pointer to pointer are used by Glasswall to allocate memory f
 
 ## Functions
 
-- int [**GWFileAnalysisAudit **](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20-%20File%20to%20Memory%20Location.htm#GWFileAn)(wchar\_t \*inputFilePathName, wchar\_t \*wcType, void\*\*analysisFileBuffer, size\_t \*analysisFileBufferLength)
+- int [**GWFileAnalysisAudit **](#gwfileanalysisaudit)(wchar\_t \*inputFilePathName, wchar\_t \*wcType, void\*\*analysisFileBuffer, size\_t \*analysisFileBufferLength)
 
-- int [**GWFileAnalysisAuditAndReport **](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20-%20File%20to%20Memory%20Location.htm#GWFileAn2)(wchar\_t \*inputFilePathName, wchar\_t \*wcType, void\*\*analysisFileBuffer, size\_t \*analysisFileBufferLength, void \*\*reportFileBuffer, size\_t\*reportFileBufferLength)
+- int [**GWFileAnalysisAuditAndReport **](#gwfileanalysisauditandreport)(wchar\_t \*inputFilePathName, wchar\_t \*wcType, void\*\*analysisFileBuffer, size\_t \*analysisFileBufferLength, void \*\*reportFileBuffer, size\_t\*reportFileBufferLength)
 
-- int [**GWFileProtect**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20-%20File%20to%20Memory%20Location.htm#GWFilePr) (const wchar\_t \*inputFilePathName, const wchar\_t \*wcType, void\*\*outputFileBuffer, size\_t \*outputLength)
+- int [**GWFileProtect**](#gwfileprotect) (const wchar\_t \*inputFilePathName, const wchar\_t \*wcType, void\*\*outputFileBuffer, size\_t \*outputLength)
 
-- int [**GWFileProtectAndReport**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20-%20File%20to%20Memory%20Location.htm#GWFilePr2) (wchar\_t \*inputFilePathName, wchar\_t \*wcType, void\*\*outputFileBuffer, size\_t \*outputLength, void \*\*reportFileBuffer, size\_t\*reportFileBufferLength)
+- int [**GWFileProtectAndReport**](#gwfileanalysisauditandreport) (wchar\_t \*inputFilePathName, wchar\_t \*wcType, void\*\*outputFileBuffer, size\_t \*outputLength, void \*\*reportFileBuffer, size\_t\*reportFileBufferLength)
 
-- int [**GWFileProtectLite**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20-%20File%20to%20Memory%20Location.htm#GWFilePr3) (wchar\_t \*inputFilePathName, wchar\_t \*wcType, void \*\*outputFileBuffer, size\_t \*outputLength)
+- int [**GWFileProtectLite**](#gwfileprotectlite) (wchar\_t \*inputFilePathName, wchar\_t \*wcType, void \*\*outputFileBuffer, size\_t \*outputLength)
 
-- int [**GWFileProtectLiteAndReport**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20-%20File%20to%20Memory%20Location.htm#GWFilePr4) (wchar\_t \*inputFilePathName, wchar\_t \*wcType, void\*\*outputFileBuffer, size\_t \*outputLength, void \*\*reportFileBuffer, size\_t\*reportFileBufferLength)
+- int [**GWFileProtectLiteAndReport**](#gwfileprotectliteandreport) (wchar\_t \*inputFilePathName, wchar\_t \*wcType, void\*\*outputFileBuffer, size\_t \*outputLength, void \*\*reportFileBuffer, size\_t\*reportFileBufferLength)
 
-- int [**GWFileToMemoryAnalysisProtectAndExport**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20-%20File%20to%20Memory%20Location.htm#GWFileTo) (const wchar\_t \*inputFilePathName, void\*\*outputFileBuffer, size\_t \*outputLength)
+- int [**GWFileToMemoryAnalysisProtectAndExport**](#gwfiletomemoryanalysisprotectandexport) (const wchar\_t \*inputFilePathName, void\*\*outputFileBuffer, size\_t \*outputLength)
 
-- int [**GWFileToMemoryProtectAndImport**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20-%20File%20to%20Memory%20Location.htm#GWFileTo2) (const wchar\_t \*inputFilePathName, void\*\*outputFileBuffer, size\_t \*outputLength)
+- int [**GWFileToMemoryProtectAndImport**](#gwfiletomemoryprotectandimport) (const wchar\_t \*inputFilePathName, void\*\*outputFileBuffer, size\_t \*outputLength)
 
 ## GWFileAnalysisAudit
 
@@ -41,7 +41,7 @@ This function carries out an Analysis Audit on the specified file returning the 
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS) ** / ** [**Process Return Status**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#Process)
+- [**eGwFileStatus**](8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus) ** / ** [**Process Return Status**](8_1_9_6_3_6_2-doc_processing_args.md#process-return-status)
 
 **Remarks**
 
@@ -84,7 +84,8 @@ This function carries out an Analysis Audit on the specified file and produces a
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS) ** / ** [**Process Return Status**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#Process)
+- [**eGwFileStatus**](8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus) ** / ** [**Process Return Status**](8_1_9_6_3_6_2-doc_processing_args.md#process-return-status)
+
 
 **Remarks**
 
@@ -133,7 +134,8 @@ This function protects the specified input file, returning the managed version o
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS) ** / ** [**Process Return Status**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#Process)
+- [**eGwFileStatus**](8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus) ** / ** [**Process Return Status**](8_1_9_6_3_6_2-doc_processing_args.md#process-return-status)
+
 
 **Remarks**
 
@@ -181,7 +183,8 @@ This function protects the specified input file, returning the managed version o
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS) ** / ** [**Process Return Status**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#Process)
+- [**eGwFileStatus**](8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus) ** / ** [**Process Return Status**](8_1_9_6_3_6_2-doc_processing_args.md#process-return-status)
+
 
 **Remarks**
 
@@ -234,7 +237,8 @@ This function protects the specified input file, returning the managed version o
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS) ** / ** [**Process Return Status**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#Process)
+- [**eGwFileStatus**](8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus) ** / ** [**Process Return Status**](8_1_9_6_3_6_2-doc_processing_args.md#process-return-status)
+
 
 **Remarks**
 
@@ -284,7 +288,8 @@ This function protects the specified input file, returning the managed version o
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS) ** / ** [**Process Return Status**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#Process)
+- [**eGwFileStatus**](8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus) ** / ** [**Process Return Status**](8_1_9_6_3_6_2-doc_processing_args.md#process-return-status)
+
 
 **Remarks**
 
@@ -341,7 +346,8 @@ The output file will be a zip archive containing the following:
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS) ** / ** [**Process Return Status**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#Process)
+- [**eGwFileStatus**](8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus) ** / ** [**Process Return Status**](8_1_9_6_3_6_2-doc_processing_args.md#process-return-status)
+
 
 **Attention**
 
@@ -391,7 +397,8 @@ This function takes a file in the form of a zip archive originally generated by 
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS) ** / ** [**Process Return Status**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#Process)
+- [**eGwFileStatus**](8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus) ** / ** [**Process Return Status**](8_1_9_6_3_6_2-doc_processing_args.md#process-return-status)
+
 
 **Attention**
 

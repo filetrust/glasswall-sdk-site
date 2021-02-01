@@ -7,7 +7,7 @@ These utilities may be used by the client to release allocated resource once Gla
 
 ## Functions
 
-- int [**GWFileDone**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Resource%20Management.htm#GWFileDo) (void)
+- int [**GWFileDone**](#gwfiledone) (void)
 
 ## GWFileDone
 
@@ -21,7 +21,7 @@ Note that this includes the release of any global buffers which have been alloca
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS)
+- [**eGwFileStatus**](8_1_9_6_3-doc_proc/8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus)
 
 **Remarks**
 

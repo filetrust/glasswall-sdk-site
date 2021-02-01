@@ -5,19 +5,19 @@ sidebar_label: 8.1.9.5.6 File Specific Analysis - Media (Images, Audio and Video
 
 File Specific Analysis- Media (Images, Audio and Video)
 
-- [**File Specific Analysis - GIF**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/File%20Specific%20Analysis%20-%20Media.htm#File)
+- [**File Specific Analysis - GIF**](#file-specific-analysis---gif)
 
-- [**File Specific Analysis - JPEG**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/File%20Specific%20Analysis%20-%20Media.htm#File2)
+- [**File Specific Analysis - JPEG**](#file-specific-analysis---jpeg)
 
-- [**File Specific Analysis - PNG**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/File%20Specific%20Analysis%20-%20Media.htm#File3)
+- [**File Specific Analysis - PNG**](#file-specific-analysis---png)
 
-- [**File Specific Analysis - EMF**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/File%20Specific%20Analysis%20-%20Media.htm#File4)
+- [**File Specific Analysis - EMF**](#file-specific-analysis---emf)
 
-- [**File Specific Analysis - WMF**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/File%20Specific%20Analysis%20-%20Media.htm#File5)
+- [**File Specific Analysis - WMF**](#file-specific-analysis---wmf)
 
-- [**File Specific Analysis - BMP**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/File%20Specific%20Analysis%20-%20Media.htm#File6)
+- [**File Specific Analysis - BMP**](#file-specific-analysis---bmp)
 
-- [**File Specific Analysis - TIFF**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/File%20Specific%20Analysis%20-%20Media.htm#File7)
+- [**File Specific Analysis - TIFF**](#file-specific-analysis---tiff)
 
 ## File Specific Analysis - GIF
 
@@ -63,7 +63,7 @@ File Specific Analysis- Media (Images, Audio and Video)
 
 ## File Specific Analysis - PNG
 
-### w:DocumentSummary
+### gw:DocumentSummary
 
 | **Node** | **Name Description** |
 | --- | --- |

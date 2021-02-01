@@ -8,9 +8,9 @@ Parameters of type pointer to pointer are used by Glasswall to allocate memory f
 
 ## Functions
 
-- int [**GWMemoryToMemoryAnalysisAudit**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20-%20Memory%20to%20Memory%20Location.htm#GWMemory)(void \*inputBuffer, size\_t inputBufferLength, wchar\_t \*wcType, void \*\*analysisFileBuffer, size\_t \*analysisFileBufferLength)
+- int [**GWMemoryToMemoryAnalysisAudit**](#gwmemorytomemoryanalysisaudit))(void \*inputBuffer, size\_t inputBufferLength, wchar\_t \*wcType, void \*\*analysisFileBuffer, size\_t \*analysisFileBufferLength)
 
-- int [**GWMemoryToMemoryProtect**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20-%20Memory%20to%20Memory%20Location.htm#GWMemory2)(void \*inputBuffer, size\_t inputBufferLength, const wchar\_t \*wcType, void \*\*outputFileBuffer, size\_t \*outputLength)
+- int [**GWMemoryToMemoryProtect**](#gwmemorytomemoryprotect)(void \*inputBuffer, size\_t inputBufferLength, const wchar\_t \*wcType, void \*\*outputFileBuffer, size\_t \*outputLength)
 
 ## GWMemoryToMemoryAnalysisAudit
 
@@ -21,13 +21,16 @@ This function protects the specified input file buffer, returning the analysis r
 | in | _inputBuffer_ | Input buffer containing the file to be processed. |
 | --- | --- | --- |
 | in | _inputBufferLength_ | Length of the input buffer containing the file to be processed. |
-| in | _wcType_ | [**wcType**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#wcType) |
-| in,out | _analysisFileBuffer_ | output analysis report buffer from Glasswall processing. See [**outputFileBuffer**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#outputFi). |
-| out | _analysisFileBufferLength_ | length of the outputFileBuffer that has been allocated. See [**outputLength**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#outputLe). |
+| in | _wcType_ | [**wcType**](8_1_9_6_3_6_2-doc_processing_args.md#wctype) |
+| in,out | _analysisFileBuffer_ | output analysis report buffer from Glasswall processing. See [**outputFileBuffer**](8_1_9_6_3_6_2-doc_processing_args.md#outputfilebuffer). |
+| out | _analysisFileBufferLength_ | length of the outputFileBuffer that has been allocated. See [**outputLength**](8_1_9_6_3_6_2-doc_processing_args.md#outputlength). |
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS) ** / ** [**Process Return Status**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#Process)
+- [**eGwFileStatus**](8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus) ** / ** [**Process Return Status**](8_1_9_6_3_6_2-doc_processing_args.md#process-return-status)
+
+
+
 
 **Remarks**
 
@@ -85,13 +88,14 @@ This function protects the specified input file buffer, returning the managed ve
 | in | _inputBuffer_ | Input buffer containing the file to be processed. |
 | --- | --- | --- |
 | in | _inputBufferLength_ | Length of the input buffer containing the file to be processed. |
-| in | _wcType_ | [**wcType**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#wcType) |
-| in,out | _outputFileBuffer_ | output analysis report buffer from Glasswall processing. See [**outputFileBuffer**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#outputFi). |
-| out | _analysisFileBufferLength_ | length of the outputFileBuffer that has been allocated. See [**outputLength**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#outputLe). |
+| in | _wcType_ | [**wcType**](8_1_9_6_3_6_2-doc_processing_args.md#wctype) |
+| in,out | _outputFileBuffer_ | output analysis report buffer from Glasswall processing. See [**outputFileBuffer**](8_1_9_6_3_6_2-doc_processing_args.md#outputfilebuffer). |
+| out | _analysisFileBufferLength_ | length of the outputFileBuffer that has been allocated. See [**outputLength**](8_1_9_6_3_6_2-doc_processing_args.md#outputlength). |
 
 **Returns**
 
-- [**eGwFileStatus**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Return%20Status%20Definitions.htm#eGwFileS) ** / ** [**Process Return Status**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Document%20Processing%20Arguments.htm#Process)
+- [**eGwFileStatus**](8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def.md#egwfilestatus) ** / ** [**Process Return Status**](8_1_9_6_3_6_2-doc_processing_args.md#process-return-status)
+
 
 **Remarks**
 
