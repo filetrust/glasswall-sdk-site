@@ -25,11 +25,11 @@ The active Content Management Policy can be updated on a document by document ba
 
 The Glasswall Configuration Management API provides 3 principle operations:
 
-- Set the configuration ([**GWFileConfigXML**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Configuration%20Functions.htm#GWFileCo2))
+- Set the configuration ([**GWFileConfigXML**](8_1_9_6-lib_modules/8_1_9_6_4-configuration_functions.md#GWFileConfigXML))
 
-- Retrieve the current configuration ([**GWFileConfigGet **](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Configuration%20Functions.htm#GWFileCo))
+- Retrieve the current configuration ([**GWFileConfigGet **](8_1_9_6-lib_modules/8_1_9_6_4-configuration_functions.md#GWFileConfigGet))
 
-- Reset the current configuration to default settings ([**GWFileConfigRevertToDefaults**](https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Configuration%20Functions.htm#GWFileCo3))
+- Reset the current configuration to default settings ([**GWFileConfigRevertToDefaults**](8_1_9_6-lib_modules/8_1_9_6_4-configuration_functions.md#GWFileConfigRevertToDefaults))
 
 A Glasswall API function  **GWFileConfigXML**  is provided to enable the Glasswall library to be configured with a greater degree of flexibility. The API takes the required configuration as an XML null terminated string, as defined by the Configuration Management XSD.
 
@@ -54,7 +54,6 @@ The content management setting is used to specify what actions carried out by th
 | **Switch Setting** | **Description** |
 | --- | --- |
 | **allow** | Glasswall processes any associated document element types and they remain in the managed document |
-| --- | --- |
 | **disallow** | If any of the associated document element types are identified in a document, Glasswall identifies this document as being non-conforming, the presence of this document element type is logged in the Analysis report as an Issue Item. |
 | **sanitise** | If any of the associated document element types are identified in a document, Glasswall removes them from the managed document, the removal is logged in the Analysis report as a Sanitisation Item. |
 

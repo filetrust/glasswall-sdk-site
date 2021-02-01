@@ -426,6 +426,38 @@ module.exports = {
                 ]
                 },
                 "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-library_modules",
+                {
+                    "8.1.9.6 Modules":
+                    [
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_1-overview",
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_2-dependencies",
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_4-configuration_functions",
+                    {
+                        "8.1.9.6.3 Document Processing":
+                        [
+                            "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_1-overview",
+                            "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_2-doc_processing_args",
+                            "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_3-mem_to_mem_location",
+                            "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_4-file_to_mem_location",
+                            "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_5-file_to_file",
+                            "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_6-supporting_functions",
+                            {
+                                "8.1.9.6.3.7 Document Processing Results":
+                                [
+
+                                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_1-overview",
+                                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def",
+                                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_3-status_bitmask_definition", 
+                                ]
+                            }
+                        ]
+                    },
+                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_5-resource_management",
+
+
+                    ]
+
+                }
     
             ]
             },

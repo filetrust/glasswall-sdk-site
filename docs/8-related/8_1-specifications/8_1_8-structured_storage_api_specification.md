@@ -19,40 +19,6 @@ mobrien@glasswallsolutions.co.uk<br />
 
 </div>
 
-- [**1 GLOSSARY**](#1-glossary)
-- [**2 INTRODUCTION**](#2-introduction)
-  - [**2.1 Objective**](#21-objective)
-  - [## **2.2 Nomenclature**](#-22-nomenclature)
-  - [**2.3 Structured Storage**](#23-structured-storage)
-  - [**2.4 Types**](#24-types)
-- [**3 API Functions**](#3-api-functions)
-  - [**3.1 The deleteDescendants Function**](#31-the-deletedescendants-function)
-  - [**3.2 The deleteStream Function**](#32-the-deletestream-function)
-  - [**3.3 The deleteTree Function**](#33-the-deletetree-function)
-  - [**3.4 The getCLSID Function**](#34-the-getclsid-function)
-  - [**3.5 The getFirstChild Function**](#35-the-getfirstchild-function)
-  - [## **3.6 The getName Function**](#-36-the-getname-function)
-  - [**3.7 The getNextChild Function**](#37-the-getnextchild-function)
-  - [**3.8 The getObjectRule Function**](#38-the-getobjectrule-function)
-  - [**3.9 The getObjectTag Function**](#39-the-getobjecttag-function)
-  - [**3.10 The getObjectType Function**](#310-the-getobjecttype-function)
-  - [**3.11 The getStreamPtr Function**](#311-the-getstreamptr-function)
-  - [**3.12 The getStreamSize Function**](#312-the-getstreamsize-function)
-  - [**3.13 The getStructuredStorageSize Function**](#313-the-getstructuredstoragesize-function)
-  - [**3.14 The initialiseAdaptor Function**](#314-the-initialiseadaptor-function)
-  - [**3.15 Function isNextChild**](#315-function-isnextchild)
-  - [**3.16 The isValidObjectType Function**](#316-the-isvalidobjecttype-function)
-  - [**3.17 The loadStream Function**](#317-the-loadstream-function)
-  - [**3.18 The saveDocument Function**](#318-the-savedocument-function)
-  - [**3.19 The setStreamPtr Function**](#319-the-setstreamptr-function)
-  - [**3.20 The setStreamSize Function**](#320-the-setstreamsize-function)
-  - [**3.21 The setObjectRule Function**](#321-the-setobjectrule-function)
-  - [**3.22 The uninitialiseAdaptor Function**](#322-the-uninitialiseadaptor-function)
-- [**4 EXAMPLE USAGE**](#4-example-usage)
-  - [**4.1 Navigating through a tree from root**](#41-navigating-through-a-tree-from-root)
-- [**5 Summary of API Functions**](#5-summary-of-api-functions)
-
-
 # **1 GLOSSARY**
 
 | **Term**                      | > **Description**                   |

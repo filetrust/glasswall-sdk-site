@@ -9,7 +9,7 @@ The Glasswall library provides an API function known as **DetermineFileTypeFromF
 ### **Determine File Type API**
 The following link contains information on the API.
 
-- GWDetermineFileTypeFromFile
+- [GWDetermineFileTypeFromFile](8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_6-supporting_functions.md#GWDetermineFileTypeFromFile)
 
 ### **Glasswall DLL Lite Mode**
 The Glasswall library provides a lightweight version of the manage & protect APIs known as Glasswall DLL Lite. The purpose of Glasswall DLL Lite is to illustrate Glasswall's capability to generate a managed document sanitised of any macros. Glasswall DLL Lite APIs will utilise the configuration management policies that are in place for macros.
@@ -17,10 +17,10 @@ The Glasswall library provides a lightweight version of the manage & protect API
 ### **Glasswall DLL Lite APIs**
 The Glasswall DLL Lite APIs are as follows:
 
-- GWFileProtectLite
-- GWFileProtectLiteAndReport
-- GWFileToFileProtectLite
-- GWFileToFileProtectLiteAndReport
+- [GWFileProtectLite](8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_4-file_to_mem_location.md#GWFileProtectLite)
+- [GWFileProtectLiteAndReport](8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_4-file_to_mem_location.md#GWFileProtectLiteAndReport)
+- [GWFileToFileProtectLite](8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_5-file_to_file.md#GWFileToFileProtectLite)
+- [GWFileToFileProtectLiteAndReport](8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_5-file_to_file.md#GWFileToFileProtectLiteAndReport)
 
 ### **Glasswall DLL Lite Cameras**
 
@@ -36,7 +36,7 @@ The following Glasswall DLL Lite cameras are available:
 The Glasswall library provides facilities for image and text content to be extracted from files during processing for external processing and for image content to be re-inserted in its original location. This allows Glasswall to be used as a component of, or in conjunction with, other parts of a Cross Domain Solution.
 
 ### **Glasswall Content Import/Export APIs** 
-- GWFileToFileAnalysisProtectAndExport
-- GWFileToFileProtectAndImport
-- GWFileToMemoryAnalysisProtectAndExport
-- GWFileToMemoryProtectAndImport
+- [GWFileToFileAnalysisProtectAndExport](8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_5-file_to_file.md#GWFileToFileAnalysisProtectAndExport)
+- [GWFileToFileProtectAndImport](8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_5-file_to_file.md#GWFileToFileProtectAndImport)
+- [GWFileToMemoryAnalysisProtectAndExport](8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_4-file_to_mem_location.md#GWFileToMemoryAnalysisProtectAndExport)
+- [GWFileToMemoryProtectAndImport](8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_4-file_to_mem_location.md#GWFileToMemoryProtectAndImport)
