@@ -1,6 +1,6 @@
 ---
-title: 2.2.2.3 Analysis Repository XSD
-sidebar_label: 2.2.2.3 Analysis Repository XSD
+title: 2.2.2.3.1 Analysis Repository XSD
+sidebar_label: 2.2.2.3.1 Analysis Repository XSD
 ---
 
     <?xml version="1.0" encoding="UTF-8"?>

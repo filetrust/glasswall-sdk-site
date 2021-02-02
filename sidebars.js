@@ -102,9 +102,28 @@ module.exports = {
             [
             "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_1-overview",
             "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_2-auto_generated_cameras",
-            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-analysis_repository",
-            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_4-memory_buffers",
-            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_5-configuration_management"
+            {
+            "2.2.2.3 Internal API":
+            [
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_1-analysis_mode",
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_2-protect_mode",
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_3-determine_file_format",
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_4-issue_id_info_retreival",
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_5-import_export",
+            {
+            "2.2.2.3.6 Configuration Management":
+            [
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_6-config_mgmt/2_2_2_3_6_1-cm_policies",
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_6-config_mgmt/2_2_2_3_6_2-configXSD",
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_6-config_mgmt/2_2_2_3_6_3-automatic_corrections",
+
+            ]
+            },
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_7-memory_buffers",
+            ]
+            },
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_4-fietypes_supported",
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_5-archive_types",
             ]
         },
         "2-glasswall_core/2_2-glasswall_editor/2_2_3-licencing",
@@ -294,9 +313,9 @@ module.exports = {
             ]
         },
         {
-            "7.6 Engine":
+            "7.6 CLI":
             [
-                "7-tools/7_6-engine/7_6_1-GlasswallCLI",
+                "7-tools/7_6-cli/7_6_1-GlasswallCLI",
             ]
         },
         {
@@ -326,21 +345,16 @@ module.exports = {
             ]
         },
         {
-            "7.10 Validators":
+            "7.10 WMF":
             [
+                "7-tools/7_10-wmf/7_10_1-WalkWMF",
             ]
         },
         {
-            "7.11 WMF":
+            "7.11 Zip Archive":
             [
-                "7-tools/7_11-wmf/7_11_1-WalkWMF",
-            ]
-        },
-        {
-            "7.12 Zip Archive":
-            [
-                "7-tools/7_12-zip_archive/7_12_1-CheckZipSignature",
-                "7-tools/7_12-zip_archive/7_12_2-WalkZIP",
+                "7-tools/7_11-zip_archive/7_11_1-CheckZipSignature",
+                "7-tools/7_11-zip_archive/7_11_2-WalkZIP",
             ]
         }, 
     ]
