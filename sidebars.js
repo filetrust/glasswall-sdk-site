@@ -84,7 +84,6 @@ module.exports = {
                 "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_2-sdk_wrappers/2_1_7_2_2-javascript",
                 "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_2-sdk_wrappers/2_1_7_2_3-c_sharp",
                 "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_2-sdk_wrappers/2_1_7_2_4-java",
-                "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_2-sdk_wrappers/2_1_7_2_5-web_api"
                 ]
             }
             ]
@@ -122,8 +121,9 @@ module.exports = {
             [
             {"2.2.6.1 API":
             [
-                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1-editorAPIspecification",
-                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_2-securitytagging",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_1-editorAPIspecification",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_2-securitytagging",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_3-wordsearch",
             ]
             },     
             {
@@ -143,86 +143,49 @@ module.exports = {
         ]
     },
     {
-    "2.3 Glasswall Word Search":
+    "2.3 Glasswall Archive Manager":
         [
-        "2-glasswall_core/2_3-glasswall_word_search/2_3_1-product_description",
-        {
-        "2.3.2 Architecture":
-            [
-            "2-glasswall_core/2_3-glasswall_word_search/2_3_2-architecture/2_3_2_1-overview",
-            "2-glasswall_core/2_3-glasswall_word_search/2_3_2-architecture/2_3_2_2-configuration_management"
-            ]
-        },
-        "2-glasswall_core/2_3-glasswall_word_search/2_3_3-licencing",
-        "2-glasswall_core/2_3-glasswall_word_search/2_3_4-dependencies",
-        {
-        "2.3.5 Build":
-            [
-            "2-glasswall_core/2_3-glasswall_word_search/2_3_5-build/2_3_5_1-building_project",
-            "2-glasswall_core/2_3-glasswall_word_search/2_3_5-build/2_3_5_2-versioning"
-            ]
-        },
-        {
-        "2.3.6. SDK":
-            [
-            "2-glasswall_core/2_3-glasswall_word_search/2_3_6-sdk/2_3_6_1-api",
-            {
-            "2.3.6.2 SDK Wrappers":
-                [
-                "2-glasswall_core/2_3-glasswall_word_search/2_3_6-sdk/2_3_6_2-sdk_wrappers/2_3_6_2_1-python",
-                "2-glasswall_core/2_3-glasswall_word_search/2_3_6-sdk/2_3_6_2-sdk_wrappers/2_3_6_2_2-javascript",
-                "2-glasswall_core/2_3-glasswall_word_search/2_3_6-sdk/2_3_6_2-sdk_wrappers/2_3_6_2_3-c_sharp",
-                "2-glasswall_core/2_3-glasswall_word_search/2_3_6-sdk/2_3_6_2-sdk_wrappers/2_3_6_2_4-java"
-                ]
-            }
-            ]
-        }
-        ]
-    },
-    {
-    "2.4 Glasswall Archive Manager":
-        [
-        "2-glasswall_core/2_4-glasswall_archive_manager/2_4_1-product_description",
+        "2-glasswall_core/2_3-glasswall_archive_manager/2_3_1-product_description",
         {
         "2.4.2 Architecture":
             [
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_2-architecture/2_4_2_1-overview",
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_2-architecture/2_4_2_2-configuration_management"
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_2-architecture/2_3_2_1-overview",
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_2-architecture/2_3_2_2-configuration_management"
             ]
         },
-        "2-glasswall_core/2_4-glasswall_archive_manager/2_4_3-licencing",
-        "2-glasswall_core/2_4-glasswall_archive_manager/2_4_4-dependencies",
+        "2-glasswall_core/2_3-glasswall_archive_manager/2_3_3-licencing",
+        "2-glasswall_core/2_3-glasswall_archive_manager/2_3_4-dependencies",
         {
-        "2.4.5 Build":
+        "2.3.5 Build":
             [
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_5-build/2_4_5_1-building_project",
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_5-build/2_4_5_2-versioning"
-            ]
-        },
-        {
-        "2.4.6 SDK API":
-            [
-                "2-glasswall_core/2_4-glasswall_archive_manager/2_4_6-sdk_api/2_4_6_1-analysis",
-                "2-glasswall_core/2_4-glasswall_archive_manager/2_4_6-sdk_api/2_4_6_2-expected_results"
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_5-build/2_3_5_1-building_project",
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_5-build/2_3_5_2-versioning"
             ]
         },
         {
-        "2.4.7 SDK Wrappers":
+        "2.3.6 SDK API":
             [
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_7-sdk_wrappers/2_4_7_1-python",
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_7-sdk_wrappers/2_4_7_2-javascript",
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_7-sdk_wrappers/2_4_7_3-c_sharp",
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_7-sdk_wrappers/2_4_7_4-java",
+                "2-glasswall_core/2_3-glasswall_archive_manager/2_3_6-sdk_api/2_3_6_1-analysis",
+                "2-glasswall_core/2_3-glasswall_archive_manager/2_3_6-sdk_api/2_3_6_2-expected_results"
+            ]
+        },
+        {
+        "2.3.7 SDK Wrappers":
+            [
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_7-sdk_wrappers/2_3_7_1-python",
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_7-sdk_wrappers/2_3_7_2-javascript",
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_7-sdk_wrappers/2_3_7_3-c_sharp",
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_7-sdk_wrappers/2_3_7_4-java",
             ]
         }
         ]
     },
     {
-    "2.5 Common":
+    "2.4 Common":
     [
-        "2-glasswall_core/2_5-common/2_5_1-bddl",
-        "2-glasswall_core/2_5-common/2_5_2-dvl",
-        "2-glasswall_core/2_5-common/2_5_3-GlasswallCodeGenerators",
+        "2-glasswall_core/2_4-common/2_4_1-bddl",
+        "2-glasswall_core/2_4-common/2_4_2-dvl",
+        "2-glasswall_core/2_4-common/2_4_3-GlasswallCodeGenerators",
     ]
     },
     ]
@@ -245,8 +208,15 @@ module.exports = {
     {"4.2 Automated Testing":
     [
         "4-testing/4_2-automated testing/4_2_1-GWRegressionTester",
-        "4-testing/4_2-automated testing/4_2_2-AnalysisRepositoryandReportingSystem",
-        "4-testing/4_2-automated testing/4_2_3-TestResultsXSD",
+        {
+        "4.2.2 Analysis":
+        [
+        "4-testing/4_2-automated testing/4_2_2-analysistesting/4_2_2_1-AnalysisRepositoryandReportingSystem",
+        "4-testing/4_2-automated testing/4_2_2-analysistesting/4_2_2_2-TestResultsXSD",
+
+        ]
+        }
+        
     ]
     },
     "4-testing/4_3-manual_testing",

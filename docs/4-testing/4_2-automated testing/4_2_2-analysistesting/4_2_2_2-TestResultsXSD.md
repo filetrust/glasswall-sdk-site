@@ -1,6 +1,6 @@
 ---
-title: 4.2.3 XSD Test Results 
-sidebar_label: 4.2.3 XSD Test Results 
+title: 4.2.2.2 XSD Test Results 
+sidebar_label: 4.2.2.2 XSD Test Results 
 ---
 
 ```<?xml version="1.0" encoding="UTF-8"?>

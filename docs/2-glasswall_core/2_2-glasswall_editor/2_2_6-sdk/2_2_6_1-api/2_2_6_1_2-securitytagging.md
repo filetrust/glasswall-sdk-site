@@ -1,6 +1,6 @@
 ---
-title: 2.2.6.2 Security Tagging Documentation SDK
-sidebar_label: 2.2.6.2 Security Tagging Documentation SDK
+title: 2.2.6.1.2 Security Tagging Documentation SDK
+sidebar_label: 2.2.6.1.2 Security Tagging Documentation SDK
 ---
 
 ### Security Tagging

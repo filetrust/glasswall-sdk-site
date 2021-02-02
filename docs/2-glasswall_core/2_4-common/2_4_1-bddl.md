@@ -1,6 +1,6 @@
 ---
-title: 2.5.1 Binary Data Definition Language (BDDL)
-sidebar_label: 2.5.1 Binary Data Definition Language (BDDL)
+title: 2.4.1 Binary Data Definition Language (BDDL)
+sidebar_label: 2.4.1 Binary Data Definition Language (BDDL)
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

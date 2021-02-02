@@ -1,6 +1,6 @@
 ---
-title: 2.4.6.2 Expected Results
-sidebar_label: 2.4.6.2 Expected Results
+title: 2.3.6.2 Expected Results
+sidebar_label: 2.3.6.2 Expected Results
 ---
 
 # **Supported File Types Expected Outcome**

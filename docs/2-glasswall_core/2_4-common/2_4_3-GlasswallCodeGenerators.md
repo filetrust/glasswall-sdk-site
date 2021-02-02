@@ -1,6 +1,6 @@
 ---
-title: 2.5.3 Glasswall C++ Code Generators
-sidebar_label: 2.5.3 Glasswall C++ Code Generators
+title: 2.4.3 Glasswall C++ Code Generators
+sidebar_label: 2.4.3 Glasswall C++ Code Generators
 ---
 
 ### Introduction – the requirement and architecture
