@@ -1,6 +1,6 @@
 ---
-title: 7.12.2 Walk ZIP
-sidebar_label: 7.12.2 Walk ZIP
+title: 7.11.2 Walk ZIP
+sidebar_label: 7.11.2 Walk ZIP
 ---
 
 ### **NAME**

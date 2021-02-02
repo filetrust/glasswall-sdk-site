@@ -1,6 +1,6 @@
 ---
-title: 5.1.2 Core 2 Cameras - Creating and Development Rules 
-sidebar_label: 5.1.2 Core 2 Cameras - Creating and Development Rules  
+title: 3.8 Core 2 Cameras - Creating and Development Rules 
+sidebar_label: 3.8 Core 2 Cameras - Creating and Development Rules  
 ---
 | Steven Warner
  |

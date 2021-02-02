@@ -1,6 +1,6 @@
 ---
-title: 5.1.3 Using Qt in Glasswall 
-sidebar_label: 5.1.3 Using Qt in Glasswall
+title: 3.9 Using Qt in Glasswall 
+sidebar_label: 3.9 Using Qt in Glasswall
 ---
 
 # Using QT

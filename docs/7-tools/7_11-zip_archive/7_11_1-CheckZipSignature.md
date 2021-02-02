@@ -1,6 +1,6 @@
 ---
-title: 7.12.1 check ZIP Signature
-sidebar_label: 7.12.1 check ZIP Signature
+title: 7.11.1 check ZIP Signature
+sidebar_label: 7.11.1 check ZIP Signature
 ---
 
 ### NAME

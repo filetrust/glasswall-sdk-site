@@ -199,6 +199,9 @@ module.exports = {
     "3-guides/3_5-how_to_use_azure_devops_on_linux_vm",
     "3-guides/3_6-pdf_image_conversion",
     "3-guides/3_7-using_stop",
+    "3-guides/3_8-core2-cameras-creating_and_developing_rules",
+    "3-guides/3_9-using_qt_in_glasswall",
+    "3-guides/3_10-learn_yaml_in_y-minutes",
 ]
 },
 {
@@ -227,25 +230,12 @@ module.exports = {
 "5 Development":
     [
         {
-            "5.1 Development Process":
-            [
-                "5-development/5_1-development_process/5_1_1-new_camera_checklist",
-                "5-development/5_1-development_process/5_1_2-core2-cameras-creating_and_developing_rules",
-                "5-development/5_1-development_process/5_1_3-using_qt_in_glasswall",
-                "5-development/5_1-development_process/5_1_4-glasswall_jpeg_2000_compress_filer",
-                "5-development/5_1-development_process/5_1_5-pdf-an-introduction-for-programmers",
-                "5-development/5_1-development_process/5_1_6-core_definiton_of_done",
-            ]
-        },
-        {
             "5.2 Coding Guidlines":
             [
                 "5-development/5_2-coding_guidelines/5_2_1-c++_core_guidlines",
                 "5-development/5_2-coding_guidelines/5_2_2-index_of_python_enhancement_proposals",
                 "5-development/5_2-coding_guidelines/5_2_3-glasswall_c_coding_guidlines",
                 "5-development/5_2-coding_guidelines/5_2_4-pearl_best_practise_summary",
-                "5-development/5_2-coding_guidelines/5_2_5-learn_yaml_in_y-minutes",
-                "5-development/5_2-coding_guidelines/5_2_6-kerninghan_and_ritchies_the_c_programming_learning",
             ]
         },
     
@@ -338,7 +328,6 @@ module.exports = {
         {
             "7.10 Validators":
             [
-                "7-tools/7_10-validators/7_10_1-BffValidator",
             ]
         },
         {
@@ -376,6 +365,8 @@ module.exports = {
         "8-related/8_1-specifications/8_1_6-tiff",
         "8-related/8_1-specifications/8_1_7-jbig2",
         "8-related/8_1-specifications/8_1_8-structured_storage_api_specification",
+        "8-related/8_1-specifications/5_1_4-glasswall_jpeg_2000_compress_filer",
+        
         {
             "8.1.9 Rebuild API Specification":
             [

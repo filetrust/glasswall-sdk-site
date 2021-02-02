@@ -18,14 +18,14 @@ module.exports = {
       items: [
         {
           to: "/Home",
-          label: "Glasswall Documentation",
+          label: "Home",
           position: "left",
         },
 
         {
           to: "docs/1-introduction",
           activeBasePath: "docs",
-          label: "Documents",
+          label: "Glasswall Documentation",
           position: "left",
         },
 
