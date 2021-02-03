@@ -141,20 +141,38 @@ module.exports = {
             {"2.2.6.1 API":
             [
                 "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_1-editorAPIspecification",
-                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_2-securitytagging",
-                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_3-wordsearch",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_2-apifunctions",
+                {"2.2.6.1.3 Security Tagging":
+                [
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_3-securitytagging/2_2_6_1_3-1-introduction",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_3-securitytagging/2_2_6_1_3-2-JavaScript",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_3-securitytagging/2_2_6_1_3-3-Java",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_3-securitytagging/2_2_6_1_3-4-python",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_3-securitytagging/2_2_6_1_3-5-csharp",
+                ]
+                },
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_4-wordsearch",
             ]
             },     
             {
             "2.2.6.2 SDK Wrappers":
                 [
-                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_1-python",
-                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_2-javascript",
-                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_3-c_sharp",
-                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_4-java"
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_1-introduction",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_2-python",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_3-javascript",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_4-c_sharp",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_5-java"
                 ]
             }
             ]
+        },
+        {"2.2.7 Command Line Interface":
+        [
+        "2-glasswall_core/2_2-glasswall_editor/2_2_7-editor_cli/2_2_7_1-introduction",
+        "2-glasswall_core/2_2-glasswall_editor/2_2_7-editor_cli/2_2_7_2-step_by_step",
+        "2-glasswall_core/2_2-glasswall_editor/2_2_7-editor_cli/2_2_7_3-parameters",
+        "2-glasswall_core/2_2-glasswall_editor/2_2_7-editor_cli/2_2_7_4-examples",
+        ]
         },
         "2-glasswall_core/2_2-glasswall_editor/2_2_7-editor_cli",
         "2-glasswall_core/2_2-glasswall_editor/2_2_8-core2_design_plan",

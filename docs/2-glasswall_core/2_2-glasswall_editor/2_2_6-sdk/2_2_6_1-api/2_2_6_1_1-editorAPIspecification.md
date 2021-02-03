@@ -29,6 +29,18 @@ fonts for reading names such as "lInfoFlag1" which is actually
 
 (lowercase L and uppercase i look the same in quite a few fonts).
 
+Code examples are shown in a shaded box. For example:
+```
+#include “glasswall.core2.api.h”
+Session session = GW2OpenSession();
+if (!session)
+/* deal with error */
+else
+/* use session to refer to the session in other API function calls */
+/* later */
+if (GW2CloseSession(session))
+/* error closing session */
+```
 Depending on context, the word *bracket* is used to indicate any of the
 paired delimiters `()`, `{}`, `[]`, although `()`  are sometimes referred to as parentheses, and `{}` are sometimes referred to as braces.
 

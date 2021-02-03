@@ -1,6 +1,6 @@
 ---
-title: 2.2.6.2.2 JavaScript 
-sidebar_label: 2.2.6.2.2 JavaScript 
+title: 2.2.6.2.3 JavaScript 
+sidebar_label: 2.2.6.2.3 JavaScript 
 ---
 
 ![](media/glasswalllogo.jpg)
