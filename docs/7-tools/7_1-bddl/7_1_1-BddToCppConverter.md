@@ -12,12 +12,14 @@ Generates C++ code from BDDL data definition files (.bdd).
 
 # Locations
 
-Version 1 (Perl based) Can be found at the following location in TFS:
-- \\inhouse.tools\\GWPerlScripts\\BDD_to_Cpp_Convertor
+Version 1 (Perl based - Deprecated) Can be found at the following location in:
+- [github.com/filetrust/Glasswall-InhouseTools-Triage/tree/main/GWPerlScripts/BDD_to_Cpp_Convertor](https://github.com/filetrust/Glasswall-InhouseTools-Triage/tree/main/GWPerlScripts/BDD_to_Cpp_Convertor)
 
 
-Version 2 (C# based) Can be found at the following location in Glasswall Internal Network:
-- \\STORAGE-SERVER\\Development Drive\\Development Tools\\UCP_ToolChain\\bdd_to_cpp.exe
+Version 2 (C# based) Can be found at the following location in Glasswall Internal Network: (Install Instructions)
+- [dev.azure.com/glasswall/Glasswall%20Core/_git/ucp.code.generator](https://dev.azure.com/glasswall/Glasswall%20Core/_git/ucp.code.generator)
+
+
 
 
 
@@ -27,7 +29,7 @@ Version 2 (C# based) Can be found at the following location in Glasswall Interna
 
 Converts BDD to C++ Code
 
-DEPRECATED - will be removed in Summer 2018
+DEPRECATED - Applies to Rebuild XLS/DOC/PPT and Editor XLS Only
  
 * Produces "Template Heavy" Code
 * Handles Dataheap / Directory Mechanisms for single level only

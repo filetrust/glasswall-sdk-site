@@ -1,0 +1,9 @@
+---
+title: 2.5.1 File Types Authority Reference
+sidebar_label: 2.5.1 File Types Authority Reference
+---
+
+
+# Definitive List of File Type enums used in all Glasswall Core SDK and Support Products #
+
+This is the location that MUST be kept as the definitive list and all source code must match these names and IDs
