@@ -5,7 +5,7 @@ sidebar_label: 2.2.7.1 Introduction
 
 This document explains how to use the Glasswall CLI using the Windows command prompt or the terminal window for Linux, with an explanation of the parameters and using the configuration files.
 
-For further details regarding Glasswall specific terminology, see the [Core Engine Product Description.](../2_2_1-product_description.md)
+For further details regarding Glasswall specific terminology, see the [***Core Engine Product Description.***](../2_2_1-product_description.md)
 
 ## Purpose
 ### Test and Evaluation

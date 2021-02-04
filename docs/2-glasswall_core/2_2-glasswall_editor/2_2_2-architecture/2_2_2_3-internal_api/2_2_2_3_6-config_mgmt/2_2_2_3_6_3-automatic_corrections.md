@@ -11,6 +11,6 @@ In analysis mode, all automatic corrections made to a file are reported as remed
 ## Remediation
 There are various types of remedies that are performed across all supported file types.
 
-Unrecognised objects that are hidden within the file structure and are not defined in the official specification are removed.
-Where possible, components of a file that deviate from the manufacturers specification are corrected back to the standards set in the specification, otherwise an issue is reported.
-As mentioned in the Configuration Management section, content management is not configurable on image files therefore content such as metadata is removed from images in addition to the points above.
+ - Unrecognised objects that are hidden within the file structure and are not defined in the official specification are removed.
+ - Where possible, components of a file that deviate from the manufacturers specification are corrected back to the standards set in the specification, otherwise an issue is reported.
+ - As mentioned in the [**Configuration Management**](2_2_2_3_6_1-cm_policies.md) section, content management is not configurable on image files therefore content such as metadata is removed from images in addition to the points above.

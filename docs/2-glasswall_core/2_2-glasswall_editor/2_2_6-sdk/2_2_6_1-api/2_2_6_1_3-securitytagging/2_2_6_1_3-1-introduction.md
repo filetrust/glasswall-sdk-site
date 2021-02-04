@@ -4,7 +4,7 @@ sidebar_label: 2.2.6.1.3.1 Introduction
 ---
 The Security Tagging wrappers allow you to call Glasswall Editor Security Tagging APIs from your chosen language. Wrappers are provided for Python, C#, JavaScript and Java.
 
-These wrappers are provided in addition to the wrappers provided for core functionality. See [**Core Wrappers**](https://docs.glasswallsolutions.com/sdk/editor/Content/Wrappers/Core%20Wrappers.htm).
+These wrappers are provided in addition to the wrappers provided for core functionality. See [**Core Wrappers**](../../2_2_6_2-sdk_wrappers/2_2_6_2_1-introduction.md).
 
 Each wrapper consists of:
 

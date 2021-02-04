@@ -10,7 +10,7 @@ Each wrapper consists of:
 
 - A series of supporting files (language dependent).
 
-Note that specific wrappers are provided for Security Tagging functionality. See [**Security Tagging Wrappers**](https://docs.glasswallsolutions.com/sdk/editor/Content/Wrappers/Security%20Tagging%20Wrappers.htm).
+Note that specific wrappers are provided for Security Tagging functionality. See [**Security Tagging Wrappers**](../2_2_6_1-api/2_2_6_1_3-securitytagging/2_2_6_1_3-1-introduction.md).
 
 ## General Requirements
 
