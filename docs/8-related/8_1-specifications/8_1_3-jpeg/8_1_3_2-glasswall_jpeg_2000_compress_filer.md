@@ -1,6 +1,6 @@
 ---
-title: 5.1.4 Glasswall JPEG 2000 Compression Filter
-sidebar_label: 5.1.4 Glasswall JPEG 2000 Compression Filter
+title: 8.1.3.2 Glasswall JPEG 2000 Compression Filter
+sidebar_label: 8.1.3.2 Glasswall JPEG 2000 Compression Filter
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

@@ -29,12 +29,24 @@ module.exports = {
             {
             "2.1.3.3 Legacy Cameras":
             [
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_1-GlasswallDllCameraGIF",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_2-GlasswallDllCameraJPEG",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_3-GlasswallDllCameraPDF",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_4-GlasswallDllCameraPNG",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_5-data_elements_of_the_pdf_camera",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_6-pdf_camera_dataFlow",    
+            {"2.1.3.3.1 PDF":
+                [
+                   "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_1-PDF/2_1_3_3_1_1-GlasswallDllCameraPDF", 
+                   "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_1-PDF/2_1_3_3_1_2-data_elements_of_the_pdf_camera",
+                   "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_1-PDF/2_1_3_3_1_3-pdf_camera_dataFlow",
+                ]
+            },
+            {"2.1.3.3.2 JPEG":
+            [
+                "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_2-JPEG/2_1_3_3_2-GlasswallDllCameraJPEG",
+            ]
+            },
+            {"2.1.3.3.3 GIF":
+            [
+                "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_3-GIF/2_1_3_3_1-GlasswallDllCameraGIF",
+            ]
+            },
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_4-GlasswallDllCameraPNG",    
             ]
             },
             {
@@ -76,7 +88,56 @@ module.exports = {
         {
         "2.1.7 SDK":
             [
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api",
+            {
+                "2.1.7.1 Rebuild API":
+                [
+                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_1-overview",
+                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_2-configuration",
+                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_3-additional_features",
+                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_4-xml_schema_definitions",
+                    {
+                    "2.1.7.1.5 Analysis Report":
+                    [
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_5-analysis_report/2_1_7_1_5_1-overview",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_5-analysis_report/2_1_7_1_5_2-file_specific_analysis",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_5-analysis_report/2_1_7_1_5_3-file_specific_analysis_pdf",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_5-analysis_report/2_1_7_1_5_4-file_specific_analysis_office_binary",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_5-analysis_report/2_1_7_1_5_5-file_specific_analysis_office_open_xml",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_5-analysis_report/2_1_7_1_5_6-file_specific_analysis_media",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_5-analysis_report/2_1_7_1_5_7-file_specific_analysis_executable_code_formats",
+                    ]
+                    },
+                    {
+                        "2.1.7.1.6 Modules":
+                        [
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_1-overview",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_2-dependencies",
+                        {
+                            "2.1.7.1.6.3 Document Processing":
+                            [
+                                "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_1-overview",
+                                "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_2-doc_processing_args",
+                                "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_3-mem_to_mem_location",
+                                "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_4-file_to_mem_location",
+                                "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_5-file_to_file",
+                                "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_6-supporting_functions",
+                                {
+                                    "2.1.7.1.6.3.7 Document Processing Results":
+                                    [
+    
+                                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_7-doc_proc_res/2_1_7_1_6_3_7_1-overview",
+                                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_7-doc_proc_res/2_1_7_1_6_3_7_2-ret_stat_def",
+                                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_7-doc_proc_res/2_1_7_1_6_3_7_3-stat_bmsk_def", 
+                                    ]
+                                },
+                            ]
+                        },
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_4-configuration_functions",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_5-resource_management",
+                        ]
+                    },
+                ]
+            },
             {
             "2.1.7.2 SDK Wrappers":
                 [
@@ -174,7 +235,6 @@ module.exports = {
         "2-glasswall_core/2_2-glasswall_editor/2_2_7-editor_cli/2_2_7_4-examples",
         ]
         },
-        "2-glasswall_core/2_2-glasswall_editor/2_2_7-editor_cli",
         "2-glasswall_core/2_2-glasswall_editor/2_2_8-core2_design_plan",
         "2-glasswall_core/2_2-glasswall_editor/2_2_9-core2_camera_tree", 
         "2-glasswall_core/2_2-glasswall_editor/2_2_10-overviewofoperation",
@@ -394,71 +454,39 @@ module.exports = {
             "8-related/8_1-specifications/8_1_1-ms_office/8_1_1_2-office_binary"
             ]
         },
-        "8-related/8_1-specifications/8_1_2-pdf",
-        "8-related/8_1-specifications/8_1_3-jpeg",
-        "8-related/8_1-specifications/8_1_4-png",
-        "8-related/8_1-specifications/8_1_5-gif",
-        "8-related/8_1-specifications/8_1_6-tiff",
-        "8-related/8_1-specifications/8_1_7-jbig2",
-        "8-related/8_1-specifications/8_1_8-structured_storage_api_specification",
-        "8-related/8_1-specifications/5_1_4-glasswall_jpeg_2000_compress_filer",
-        
-        {
-            "8.1.9 Rebuild API Specification":
+        { "8.1.2 PDF":
             [
-                "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_1-overview",
-                "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_2-configuration",
-                "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_3-additional_features",
-                "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_4-xml_schema_definitions",
-                {
-                "8.1.9.5 Analysis Report":
-                [
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_5-analysis_report/8_1_9_5_1-overview",
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_5-analysis_report/8_1_9_5_2-file_specific_analysis",
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_5-analysis_report/8_1_9_5_3-file_specific_analysis_pdf",
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_5-analysis_report/8_1_9_5_4-file_specific_analysis_office_binary",
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_5-analysis_report/8_1_9_5_5-file_specific_analysis_office_open_xml",
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_5-analysis_report/8_1_9_5_6-file_specific_analysis_media",
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_5-analysis_report/8_1_9_5_7-file_specific_analysis_executable_code_formats",
-                ]
-                },
-                {
-                    "8.1.9.6 Modules":
-                    [
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_1-overview",
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_2-dependencies",
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_4-configuration_functions",
-                    {
-                        "8.1.9.6.3 Document Processing":
-                        [
-                            "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_1-overview",
-                            "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_2-doc_processing_args",
-                            "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_3-mem_to_mem_location",
-                            "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_4-file_to_mem_location",
-                            "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_5-file_to_file",
-                            "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_6_6-supporting_functions",
-                            {
-                                "8.1.9.6.3.7 Document Processing Results":
-                                [
-
-                                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_1-overview",
-                                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_2-ret_stat_def",
-                                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_3-doc_proc/8_1_9_6_3_7-doc_proc_res/8_1_9_6_3_7_3-status_bitmask_definition", 
-                                ]
-                            }
-                        ]
-                    },
-                    "8-related/8_1-specifications/8_1_9-rebuild_api_spec/8_1_9_6-lib_modules/8_1_9_6_5-resource_management",
-
-
-                    ]
-
-                }
-    
+                "8-related/8_1-specifications/8_1_2-pdf/8_1_2-pdf",
             ]
-            },
-        ]
-        
+        },
+        { "8.1.3 JPEG":
+            [
+                "8-related/8_1-specifications/8_1_3-jpeg/8_1_3_1-jpeg",
+                "8-related/8_1-specifications/8_1_3-jpeg/8_1_3_2-glasswall_jpeg_2000_compress_filer",
+            ]
+        },
+        { "8.1.4 PNG":
+            [
+                "8-related/8_1-specifications/8_1_4-png/8_1_4-png",
+            ]
+        },
+        { "8.1.5 GIFF" :
+            [
+                "8-related/8_1-specifications/8_1_5-gif/8_1_5-gif",
+            ]
+        },
+        { "8.1.6 TIFF" :
+            [
+                "8-related/8_1-specifications/8_1_6-tiff/8_1_6-tiff",
+            ]
+        },
+        { "8.1.7 JBIG2" :
+            [
+                "8-related/8_1-specifications/8_1_7-jbig2/8_1_7-jbig2",
+            ]
+        },  
+        "8-related/8_1-specifications/8_1_8-structured_storage_api_specification",
+        ]   
     },
     ]
 }

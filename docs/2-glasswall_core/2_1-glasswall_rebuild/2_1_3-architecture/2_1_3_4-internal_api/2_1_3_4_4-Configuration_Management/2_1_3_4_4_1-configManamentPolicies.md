@@ -96,7 +96,7 @@ The PDF content management switches are shown in the table below:
 
 ### Images
 
-Content management is not configurable on image files, with the exception of tiff, therefore only content items, issues and remedies can appear in an XML report for most image files. Sanitisation items cannot be present in their XML reports. Automatic corrections are applied to a file in order to bring it in line with the manufacturer&#39;s specification and/or remove unrecognised or unwanted data. See section [**Automatic Corrections**](2_1_3_4_4_4-automatic_corrections).
+Content management is not configurable on image files, with the exception of tiff, therefore only content items, issues and remedies can appear in an XML report for most image files. Sanitisation items cannot be present in their XML reports. Automatic corrections are applied to a file in order to bring it in line with the manufacturer&#39;s specification and/or remove unrecognised or unwanted data. See section [**Automatic Corrections**](2_1_3_4_4_3-automatic_corrections.md).
 
 For tiff the following content management switch is available:
 
@@ -129,7 +129,7 @@ The following content management switches are file type specific.
 | **Content Management Flag** | **XML Report Issue Technical Descriptions** | **File Type(s)** |
 | --- | --- | --- |
 | **dynamic\_data\_exchange** | DDE links present in present in [links]Link = [CT\_DdeItems|CT\_CalcChain|CT\_Cell| SupBook|\*] | Excel Binary, Excel XML, Word Binary and Word XML |
-| --- | --- | --- |
+
 
 Note:
 

@@ -1,6 +1,6 @@
 ---
-title: 8.1.6 TIFF
-sidebar_label: 8.1.6 TIFF
+title: 8.1.6.1 TIFF
+sidebar_label: 8.1.6.1 TIFF
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

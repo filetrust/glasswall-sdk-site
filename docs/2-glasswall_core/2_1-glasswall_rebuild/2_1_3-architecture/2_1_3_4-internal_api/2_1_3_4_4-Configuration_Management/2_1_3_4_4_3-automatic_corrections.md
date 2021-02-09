@@ -13,4 +13,4 @@ There are various types of remedies that are performed across all supported file
 
 - Unrecognised objects that are hidden within the file structure and are not defined in the official specification are removed.
 - Where possible, components of a file that deviate from the manufacturers specification are corrected back to the standards set in the specification, otherwise an issue is reported.
-- As mentioned in the [Content Management](2_1_3_4_4_2-configManamentPolicies.md) section, content management is not configurable on image files therefore content such as metadata is removed from images in addition to the points above.
+- As mentioned in the [**Content Management**](2_1_3_4_4_1-configManamentPolicies.md) section, content management is not configurable on image files therefore content such as metadata is removed from images in addition to the points above.
