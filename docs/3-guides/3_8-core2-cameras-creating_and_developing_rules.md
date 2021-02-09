@@ -2,23 +2,21 @@
 title: 3.8 Core 2 Cameras - Creating and Development Rules 
 sidebar_label: 3.8 Core 2 Cameras - Creating and Development Rules  
 ---
-| Steven Warner
- |
-| --- |
+Steven Warner
 
-| Glasswall Solutions Ltd |
-| --- |
-|
+
+Glasswall Solutions Ltd
+
 ### Core2 cameras - Creating and Development Rules
- |
-| How to build and maintain Core2 style cameras |
+
+How to build and maintain Core2 style cameras
 
 
 ## Building a Core2 Camera
 
 ### Check BDD
 
-Confirm &#39;[Naming conventions](#_Naming_conventions)&#39; in &#39;Policies&#39; section adhered to
+Confirm &#39;[Naming conventions](#naming-conventions)&#39; in &#39;Policies&#39; section adhered to
 
 First check is that Miraplacid data viewer works with the BDD and you have run a decent number of test files through BDDLDirectoryReader to confirm the BDD is sound when parsing documents
 
@@ -26,7 +24,7 @@ First check is that Miraplacid data viewer works with the BDD and you have run a
 
 Create a setup\_(cameraname).bat in ..\glasswall.classic\data.definitions.and.rules\BDD\_DVL\_to\_code\_scripts if it does not yet exist
 
-See [sample](#_Setup_Batch_Sample) for expected form
+See [sample](#setup-batch-sample-mp3) for expected form
 
 ### Generation
 

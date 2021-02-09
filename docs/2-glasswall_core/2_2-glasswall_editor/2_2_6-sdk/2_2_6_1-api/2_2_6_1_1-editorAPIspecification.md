@@ -118,7 +118,7 @@ non-persistent storage, or saving non-persistent storage.
 The encapsulation of the processing of each file in a **Session** object
 allows multi-thread processing.
 
-The [API Functions](#api-functions) section provides details of each function, and
+The [API Functions](#32-api-functions) section provides details of each function, and
 examples for their use.
 
 The examples provided conform to the C programming language, as defined by ISO 9899:1990.
@@ -625,7 +625,7 @@ stored in the buffer pointed to by **inputFileBuffer** of size
 For session **session** the **GW2RegisterOutFile** function registers
 the file whose name is the string pointed to by **outputFileBuffer** as
 the destination file for the managed file produced by Glasswall. The
-[base name](#base_name) of the path must be different to the base name registered
+[**base name**](#1-glossary) of the path must be different to the base name registered
 using the **GW2RegisterInputFile** function. Using this function
 activates the Manage & Protect Process Mode for the session.
 

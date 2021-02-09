@@ -106,9 +106,9 @@ so please use newlines and indentations correctly, and avoid tabs as
 they break the configuration files. The fields in the configuration
 files are case sensitive so please bear that in mind when editing them.
 For a quick How To guide on YAML have a look at
-[Learn YAML in Y Minutes](../../5-development/artifacts/LearnYAMLInYMinutes).
+[Learn YAML in Y Minutes](../../3-guides/3_10-learn_yaml_in_y-minutes.md).
 
-Example configuration files can be found at the end of this documentation or you can access them directly by clicking [Example test case](#GwRegressionTesterConfigExample), [Issue ID example test case](#internalGwRegressionTesterGetIssueIdExample), or [Exports example test case](#internalGwRegressionTesterExportTestsExample). It's a good idea to refer to the examples as they will give you a better understanding of how the configuration file fits together.
+Example configuration files can be found at the end of this documentation or you can access them directly by clicking [Example test case](#GwRegressionTesterConfigExample), [Issue ID example test case](#issue-id-example-test-case-), or [Exports example test case](#internalGwRegressionTesterExportTestsExample). It's a good idea to refer to the examples as they will give you a better understanding of how the configuration file fits together.
 
 The `#` character is used to denote comments and the `:` character is used to denote key-value relationships; therefore, these characters need to be escaped when used within the configuration file. For example, <code>\\\\STORAGE-SERVER\\Test-Input-Files\\TestResources\\Z-GeneratedSets\\Bug # 4840</code> will need to be converted to <code>"\\\\STORAGE-SERVER\\Test-Input-Files\\TestResources\\Z-GeneratedSets\\Bug # 4840"</code>, and <code>PDF: files failing with 'Attempted write access beyond end of buffer'</code> will need to be turned into <code>"PDF: files failing with 'Attempted write access beyond end of buffer'"</code>.
 
@@ -469,7 +469,7 @@ This is used to specify the different tests that can be carried out on the outpu
 
 `ValidateZipArchive: <bool>` (Optional) Test to check if the export mode produces a valid zip archive.
 
-# Example test case <a name="internalGwRegressionTesterConfigExample"></a>
+## Example test case <a name="internalGwRegressionTesterConfigExample"></a>
 
 	Bugs:
 	    - BugNumber: 2875
@@ -522,7 +522,7 @@ This is used to specify the different tests that can be carried out on the outpu
 	          Mode: ManageAndProtect
 	          Managed: true
 
-# Issue ID example test case <a name="internalGwRegressionTesterGetIssueIdExample"></a>
+## Issue ID example test case <a name="internalGwRegressionTesterGetIssueIdExample"></a>
 
 	Bugs:
 	    - BugNumber: 2876
@@ -537,7 +537,7 @@ This is used to specify the different tests that can be carried out on the outpu
 	            - !GetAllIssueIDs
 	               XsdPath: C:\Glasswall\inhouse.tools\Features\Task_39728_ExtdRegTestForNewAPIs\GwRegressionTester\bin\Debug\Library\Elvin_allissue\gwAnalysisReport.xsd
 
-# Exports example test case <a name="internalGwRegressionTesterExportTestsExample"></a>
+## Exports example test case <a name="internalGwRegressionTesterExportTestsExample"></a>
 
 	Bugs:
 	    - BugNumber: 1

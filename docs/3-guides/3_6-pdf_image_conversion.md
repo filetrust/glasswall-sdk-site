@@ -163,7 +163,7 @@ using the commandline then we would do the following:
     > python Deflate.py inflate img9-0.unknown img9-0.bin
     > convert -depth 8 -size 1153x768 gray:img9-0.bin img9-0.png
 
-The Deflate.py, which can be found in [**Appendix 3.1**](#deflate.py),
+The Deflate.py, which can be found in [**Appendix 3.1**](#31-deflatepy),
 is a python script that reads a binary file, inflates or deflates that
 file, and writes the output to another file. After inflating the file,
 we use the convert utility to change the image from raw grayscale data
@@ -186,7 +186,7 @@ original format using the following commands:
 
 Afterwards we can create a zip archive and run it through import mode so
 that the modified image is inserted back into the document. The attached
-C++ file, which can be found in [**Appendix 3.2**](#main.cpp),
+C++ file, which can be found in [**Appendix 3.2**](#32-maincpp),
 demonstrates how this can be done in a programmatic fashion. Here are
 screenshots of the images before and after modification:
 
@@ -206,7 +206,6 @@ some metadata will always exist.
  | **Key** | **Type** | **Comment** | **Optional?** |
 | --- | --- | --- | --- |
 | Width | Integer | The width of the image in pixels | Required |
-| --- | --- | --- | --- |
 | Height | Integer | The height of the image in pixels | Required |
 | ColorSpaceFamily | String | The colour space of the image. A full list of the colour spaces can be found in section &quot; **4.5.2 Color Space Families**&quot; on page **237**. Special considerations have to be taken into account when the image is encoded with the JPXDecode filter, which can be found in section &quot; **4.8.4 Image Dictionaries**&quot; on pages **340-349** | Optional for image masks and images with JPXDecode filter |
 | BitsPerComponent | Integer | The number of bits per pixel component | Optional for image masks and images with JPXDecode filter. This value must be 1 when the image is an image mask. This value is ignored for JPXDecode images |

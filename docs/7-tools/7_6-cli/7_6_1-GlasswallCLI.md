@@ -18,7 +18,7 @@ following location in TFS: $/Glasswall/inhouse.tools/GlasswallCommandLineInterfa
 
 ### USAGE
 
-[Glasswall Command Line Test Tool](<Glasswall Command Line Test Tool.pdf> "Glasswall Command Line Test Tool")
+[Glasswall Command Line Test Tool](../7_9-testing/7_9_2-GlasswallCommandLineTestTool.md)
 
 ### AUTHOR
 Various

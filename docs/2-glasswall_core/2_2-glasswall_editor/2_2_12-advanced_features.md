@@ -63,7 +63,7 @@ Memory buffers may be used for input and output. The following example demonstra
 
     3. Glasswall will have processed the data held in the input buffer and output to the output buffer. The program then saves the buffer contents to a new file at the specified location.
 
-    4. Note that as part of the GW2CloseSession() procedure, Glasswall destroys all buffers it has created. Data should be retrieved from these buffers before calling GW2CloseSession(). For more information, see [**GW2RunSession**](https://docs.glasswallsolutions.com/sdk/editor/Content/API/GW2RunSession.htm#GW2RunSe).
+    4. Note that as part of the GW2CloseSession() procedure, Glasswall destroys all buffers it has created. Data should be retrieved from these buffers before calling GW2CloseSession(). For more information, see [**GW2RunSession**](2_2_6-sdk/2_2_6_1-api/2_2_6_1_2-apifunctions.md#gw2runsession).
 
 ## Import and Export Functions
 

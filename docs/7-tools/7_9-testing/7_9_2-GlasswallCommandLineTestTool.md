@@ -26,8 +26,7 @@ Table 1: Document Change History
 | 03/07/2013 | 1.1 | Corrected item names in example config file to be consistent with naming through the document. |
 | 05/09/2013 | 1.2 | Updated to describe the command line return values |
 | 30/09/2013 | 1.3 | Added support for analyse, manage, and protect in single operation modes. |
-| 02/10/2013 | 1.4 | Amended process mode value description to include the Analyse, Manage &amp; Protect option 2.
- Modified the command line description to strike through all options other than -config as they are not yet implemented |
+| 02/10/2013 | 1.4 | Amended process mode value description to include the Analyse, Manage &amp; Protect option 2 Modified the command line description to strike through all options other than -config as they are not yet implemented |
 | 15/10/2013 | 1.5 | INI for our Glasswall CLI tool requires a need to specify the file types that we are processing |
 | 12/11/2013 | 1.6 | Updates to show file to file API calls now possible. |
 | 11/03/2014 | 1.7 | Refinement to description for writeOutput flag. |
@@ -46,10 +45,8 @@ Table 1: Document Change History
 | 25/04/2019 | 2.10 | Removed File to File mode and added File Storage Mode |
 | 13/11/2019 | 2.11 | Updated to reflect policy file (xmlconfig) is a mandatory parameter. |
 
-#
 
-
-# 1 Conventions
+## 1 Conventions
 
 _Italic_ – This is used to show arguments that must be replaced with user-supplied values.
 
@@ -60,7 +57,7 @@ Constant width — used to show the contents of files or output from commands.
 [] — these surround optional elements in a description of syntax. The brackets themselves should not be typed. Where brackets are to be typed literally, they will be in bold and shown in the examples.
 
 
-# 2 Usage
+## 2 Usage
 
 The Command Line Test Tool should be used in the following manner.
 
@@ -69,24 +66,23 @@ The Command Line Test Tool should be used in the following manner.
 The contents of _configFile_ and _xmlConfigFile_ are described in the following sections.
 
 
-## 2.1  Return values
+### 2.1  Return values
 
 | **Name** | **Value** | **Description** |
 | --- | --- | --- |
 | **rcSUCCESS** | 0 | Test completed successfully |
-| --- | --- | --- |
 | **rcINVALIDCOMMANDLINE** | 1 | Command line argument is invalid |
 | **rcDLLLOADFAILURE** | 2 | Problem loading the DLL/Shared library |
 | **rcCONFIGLOADFAILURE** | 3 | Problem loading the specified configuration file |
 | **rcPROCESSINGISSUE** | 4 | Problem processing the specified files |
 
 
-# 3 Configuration File Description
+## 3 Configuration File Description
 
 This is passed to the **commandlinetesttool** executable using the **–config** option.
 
 
-## 3.1 Configuration Format
+### 3.1 Configuration Format
 
 The configuration file is a text file that enables the operation of the test tool to be configured.
 
@@ -143,42 +139,32 @@ logFileProcessTime=1
 logProcessStatus=0
 
   
-## 3.2 Configuration Settings
+### 3.2 Configuration Settings
 
   
-### 3.2.1 Section Name: GWConfig
+#### 3.2.1 Section Name: GWConfig
 
 All configuration value default to either &#39;0&#39; or an empty string, where appropriate.
 
 | **Identifier** | **Value** | **Notes** |
 | --- | --- | --- |
-| **fileType** | [pdf|jpg|png|gif|doc|ppt|xls|docx|pptx|xlsx|emf|wmf|\*] | Type of documents for processing. Specifying the wildcard option &#39;\*&#39; will enable automatic file type detection. Process mode 5 does not support the wildcard option. |
-| --- | --- | --- |
+| **fileType** | [pdf\|jpg\|png\|gif\|doc\|ppt\|xls\|docx\|pptx\|xlsx\|emf\|wmf\|] | Type of documents for processing. Specifying the wildcard option &#39;\*&#39; will enable automatic file type detection. Process mode 5 does not support the wildcard option. |
 | **inputLocation** | [valid path] | Location of documents for processing |
-| **useSubfolders** | [0|1] | 0 = Process documents only in inputLocation1 = Process documents in inputLocation and any subfolders |
-| **processMode** | [0|1|2|3|4|5] | 0 = AnalysisGWFileAnalysisAuditGWFileAnalysisAuditAndReportGWFileToFileAnalysisAuditGWFileToFileAnalysisAuditAndReport
-1 = Manage &amp; ProtectGWFileProtectGWFileProtectAndReportGWFileToFileProtectGWFileToFileProtectAndReport
-2 = Manage &amp; Protect LiteGWFileProtectLiteGWFileProtectLiteAndReportGWFileToFileProtectLiteGWFileToFileProtectLiteAndReport3 = Manage &amp; Protect &amp; ReportGWFileAnalyseProtectReportGWFileToFileAnalyseProtectReport
-4 = Export ModeExport images and text to an Interchange Package in the form of a ZIP archive. reportMode must be set to 0.
-5 = Import ModeImport images from an Interchange Package. The expected format is a ZIP archive. reportMode must be set to 0.
-Note: The Short form of Report produced has no content items listed; only Sanitisations/Issue and Remedies
- |
-| **reportMode** | [0|1] | 1 = Invokes the APIs that also produce a report. For example, GWFileAnalysisAuditAndReport. If **writeOutput** is set to zero, no reports will be produced.
- |
-| **writeOutput** | [0|1] | 0 = No managed document or analysis report is produced1 = Managed document and/or analysis reports are produced where appropriate and if **reportMode** is 1. |
-| **quarantineNonconforming**
- | [0|1] | 1 = copy non-conforming document to quarantine folder. |
+| **useSubfolders** | [0\|1] | 0 = Process documents only in inputLocation1 = Process documents in inputLocation and any subfolders |
+| **processMode** | [0\|1\|2\|3\|4\|5] | 0 = Analysis, GWFileAnalysisAudit, GWFileAnalysisAuditAndReport, GWFileToFileAnalysisAudit, GWFileToFileAnalysisAuditAndReport <br></br>1 = Manage &amp; ProtectGWFileProtect, GWFileProtectAndReport, GWFileToFileProtectGWFileToFileProtectAndReport<br></br>2 = Manage &amp; ProtectLite, GWFileProtectLite, GWFileProtectLiteAndReport, GWFileToFileProtectLite, GWFileToFileProtectLiteAndReport<br></br>3 = Manage &amp; Protect &amp; Report, GWFileAnalyseProtectReport, GWFileToFileAnalyseProtectReport<br></br>4 = Export ModeExport images and text to an Interchange Package in the form of a ZIP archive. reportMode must be set to 0.<br></br>5 = Import ModeImport images from an Interchange Package. The expected format is a ZIP archive. reportMode must be set to 0.<br></br>Note: The Short form of Report produced has no content items listed; only Sanitisations/Issue and Remedies|
+| **reportMode** | [0\|1] | 1 = Invokes the APIs that also produce a report. For example, GWFileAnalysisAuditAndReport. If **writeOutput** is set to zero, no reports will be produced.|
+| **writeOutput** | [0\|1] | 0 = No managed document or analysis report is produced<br></br>1 = Managed document and/or analysis reports are produced where appropriate and if **reportMode** is 1.|
+| **quarantineNonconforming**| [0\|1] | 1 = copy non-conforming document to quarantine folder. |
 | **outputLocation** | [valid path] | Root folder for all processing output. |
-| **createOutputFolders** | [0|1] | Creates output folders if they don&#39;t exist |
+| **createOutputFolders** | [0\|1] | Creates output folders if they don&#39;t exist |
 | **nonconformingDirName** | [valid folder name] | Name of subfolder within **outputLocation** that is the destination for all output from the processing of non-conforming files. |
 | **managedDirName** | [valid folder name] | Name of subfolder within **outputLocation** that is the destination for all output from the processing of managed files. |
-| **fileStorageMode** | [0|1|2] | 0 = File to File1 = File to Memory2 = Memory to Memory |
-| **logFileSize** | [0|1] | 1 = Includes the file size in the process log |
-| **logFileProcessTime** | [0|1] | 1 = Includes the file processing time in the process log |
-| **logProcessStatus** | [0|1] | 1 = Includes the process status information (from GWFileProcessMsg and GWFileProcessStatus) in the process log. This is an optional flag that defaults to 0 to denote no process status logging. |
-
+| **fileStorageMode** | [0\|1\|2] | 0 = File to File1 = File to Memory2 = Memory to Memory |
+| **logFileSize** | [0\|1] | 1 = Includes the file size in the process log |
+| **logFileProcessTime** | [0\|1] | 1 = Includes the file processing time in the process log |
+| **logProcessStatus** | [0\|1] | 1 = Includes the process status information (from GWFileProcessMsg and GWFileProcessStatus) in the process log. This is an optional flag that defaults to 0 to denote no process status logging. |
     
-### 3.2.2 Mapping - CLI Modes To Glasswall API
+#### 3.2.2 Mapping - CLI Modes To Glasswall API
 
 The CLI tool can be used to verify the output of API functions in the Glasswall library. This section contains information on which CLI settings trigger specific API function calls.
 
@@ -186,46 +172,26 @@ The table below displays the API functions that are called under the various CLI
 
 | **API Name** | **Process Mode** | **Report Mode** | **File Storage Mode** |
 | --- | --- | --- | --- |
-| **GWFileAnalysisAudit**
- | 0 | 0 | 0 |
-| **GWFileAnalysisAuditAndReport**
- | 0 | 1 | 0 |
-| **GWFileToFileAnalysisAudit**
- | 0 | 0 | 1 |
-| **GWFileToFileAnalysisAuditAndReport**
- | 0 | 1 | 1 |
-| **GWFileProtect**
- | 1 | 0 | 0 |
-| **GWFileProtectAndReport**
- | 1 | 1 | 0 |
-| **GWFileToFileProtect**
- | 1 | 0 | 1 |
-| **GWFileToFileProtectAndReport**
- | 1 | 1 | 1 |
-| **GWFileProtectLite**
- | 2 | 0 | 0 |
-| **GWFileProtectLiteAndReport**
- | 2 | 1 | 0 |
-| **GWFileToFileProtectLite**
- | 2 | 0 | 1 |
-| **GWFileToFileProtectLiteAndReport**
- | 2 | 1 | 1 |
-| **GWFileAnalysisAndProtectAndReport**
- | 3 | 1 | 0 |
-| **GWFileToFileAnalysisProtectAndReport**
- | 3 | 1 | 1 |
-| **GWFileToFileAnalysisProtectAndExport**
- | 4 | 0 | 1 |
-| **GWFileToMemoryAnalysisProtectAndExport**
- | 4 | 0 | 0 |
-| **GWFileToFileProtectAndImport**
- | 5 | 0 | 1 |
-| **GWFileToMemoryProtectAndImport**
- | 5 | 0 | 0 |
-| **GWMemoryToMemoryProtect**
- | 1 | 0 | 2 |
-| **GWMemoryToMemoryAnalysisAudit**
- | 0 | 0 | 2 |
+| **GWFileAnalysisAudit**| 0 | 0 | 0 |
+| **GWFileAnalysisAuditAndReport**| 0 | 1 | 0 |
+| **GWFileToFileAnalysisAudit**| 0 | 0 | 1 |
+| **GWFileToFileAnalysisAuditAndReport**| 0 | 1 | 1 |
+| **GWFileProtect**| 1 | 0 | 0 |
+| **GWFileProtectAndReport**| 1 | 1 | 0 |
+| **GWFileToFileProtect**| 1 | 0 | 1 |
+| **GWFileToFileProtectAndReport**| 1 | 1 | 1 |
+| **GWFileProtectLite**| 2 | 0 | 0 |
+| **GWFileProtectLiteAndReport**| 2 | 1 | 0 |
+| **GWFileToFileProtectLite**| 2 | 0 | 1 |
+| **GWFileToFileProtectLiteAndReport**| 2 | 1 | 1 |
+| **GWFileAnalysisAndProtectAndReport**| 3 | 1 | 0 |
+| **GWFileToFileAnalysisProtectAndReport**| 3 | 1 | 1 |
+| **GWFileToFileAnalysisProtectAndExport**| 4 | 0 | 1 |
+| **GWFileToMemoryAnalysisProtectAndExport**| 4 | 0 | 0 |
+| **GWFileToFileProtectAndImport**| 5 | 0 | 1 |
+| **GWFileToMemoryProtectAndImport**| 5 | 0 | 0 |
+| **GWMemoryToMemoryProtect**| 1 | 0 | 2 |
+| **GWMemoryToMemoryAnalysisAudit**| 0 | 0 | 2 |
 
 Setting the FileType option to &#39;\*&#39; will enable Glasswalls file type detection capability via a call to the **GWDetermineFileTypeFromFile** APIfunction (See the &#39;Configuration Settings&#39; section). This will enable CLI to automatically determine the file type for each file that is about to be processed.
 
@@ -260,13 +226,13 @@ The following API functions are called by the CLI tool when generating the Glass
 For more information on each API function please refer to the Glasswall SDK documentation.
 
 
-# 4 XML Configuration File Description
+## 4 XML Configuration File Description
 
   
-## 4.1 Configuration Format
+### 4.1 Configuration Format
 
 The format configuration within this file is described formally in the XSD located in the glasswall sdk documentation. This configuration is passed unchanged to the GWFileConfigXML function. **An example of a full configuration file is shown below**
-
+```
 \&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?\&gt;
 
 \&lt;config\&gt;
@@ -352,25 +318,24 @@ The format configuration within this file is described formally in the XSD locat
 \&lt;/xlsConfig\&gt;
 
 \&lt;/config\&gt;
-
+```
 **Note:** ThexlsConfig, pptConfig, and wordConfig cover both office XML and office binary file types.
 
 
-## 4.2 Configuration Settings
+### 4.2 Configuration Settings
 
 | **Type** | **Value** | **Notes** |
 | --- | --- | --- |
 | **contentManagementFlag** | sanitise | Configures Glasswall to remove or clean document element types associated with this content management switch type from any document being processed. This removal will be logged in analysis reports as a &#39;sanitisation item&#39; |
-| --- | --- | --- |
 | allow | Configures Glasswall to leave document element types associated with this content management switch type in any document being processed. |
 | disallow | Configures Glasswall to raise an issue if document element types associated with this content management flag are found within any document being processed. |
 | **watermark** | Freeform text, up to 20 characters | Specifying a null element .i.e., \&lt;watermark /\&gt;, results in no watermark being added to documents being processed. |
 
 
-# 3 Test Tool Log File Format
+## 5 Test Tool Log File Format
 
 
-## 3.2 Files Log
+### 5.2 Files Log
 
 Produced by the test application before the processing of the files is started. Compiled from the specified input location, documenting the complete list of files to be processed.
 
@@ -381,12 +346,11 @@ The format of each line follows the same specification.
 One file is listed on each line, where _nnnnn_ is a zero indexed counter that increments by one for each line.
 
 
-## 3.3 Application Log
+### 5.3 Application Log
 
 Produced by the test application recording the results of processing. The file structure is made up of a header, body and footer.
 
-  
-### 3.3.1 Header
+#### 5.3.1 Header
 
 - Line of **\*** characters
 - Time date stamp for start of logging
@@ -404,12 +368,12 @@ SOFTWARE VERSION PLUGIN\_GLASSWALL\_DLL:ANALYSE\_AUDIT.MANAGE.PROTECT.01.01..BUI
 \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
 
-### 3.3.2 Configuration
+#### 5.3.2 Configuration
 
 A record of the configuration settings being used by the Glasswall DLL during testing. The information is provided in the XML format used when configuring the test. The configuration is provided by the DLL from the GWFileConfigGetfunction, rather than being a copy of what has been passed into the test tool.
 
 
-### 3.3.3 Body
+#### 5.3.3 Body
 
 Line per file, each line consisting of
 
@@ -427,7 +391,7 @@ Example
 Processing Status 96 Processing Message &quot;Remedies Required, Sanitisation Required&quot;
 
 
-### 3.3.4 Footer
+#### 5.3.4 Footer
 
 - Line of **\*** characters
 - Time date stamp for end of logging

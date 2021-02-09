@@ -368,7 +368,7 @@ Guideline: Use 78-column lines.
 These guidelines recommend that code be constrained to a width that
 supports adherence to other guidelines in this document.
 
-See also §[§6.10](#610-vertical-alignment) — 6.13.
+See also [6.10](#610-vertical-alignment) — 6.13.
 
 ### 6.6 Indentation
 Guideline: Use four-column indentation levels.
@@ -714,7 +714,7 @@ or
 
     typedef char Bool;
 
-See also [§7.7.2](#772-use-of-true-and-false); [§8.2](#82-booleans).
+See also [7.7.2](#772-use-of-true-and-false); [8.2](#82-booleans).
 
 #### 7.7.2 Use of TRUE and FALSE
 Guideline: Only assign TRUE and FALSE to a Boolean variable, never use
@@ -737,7 +737,7 @@ risky and likely not to work. The above should be written:
 
     if (a==b)
 
-See also [§7.7.1](#7.7.1); [§8.2](#82-booleans).
+See also [7.7.1](#7.7.1); [8.2](#82-booleans).
 
 ### 7.8 Pointer Declarations
 Guideline: When declaring or defining a pointer variable, always ensure
@@ -1215,7 +1215,7 @@ However, such behaviour should be used only in development code and
 *not* in production code. Some form of error recovery is always
 preferred.
 
-See also [§10.13.3](#10133-abort).
+See also [10.13.3](#10133-abort).
 
 ### 10.2 <ctype.h\>
 
@@ -1786,7 +1786,7 @@ meaning of the numbers:
     /* and later ... */
     printf("%d\n", count * MOLYBDENUM_ATOMIC_NUMBER);
 
-See [§7.7](#77-booleans).
+See [7.7](#77-booleans).
 
 References: Ref. 7, Appendix E; Ref. 2, §1.4.
 

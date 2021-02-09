@@ -106,7 +106,7 @@ The XML config file is used to decide how content is managed within each file ty
 **INI Config File**
 
 The INI config file can be an INI or TXT file, it contains most of the parameters in the terminal, you can set the report mode, storage mode, input location and output location. The only details that are processed by QTCLI are the highlighted lines in the example below. The remainder are there for backwards compatibility with Glasswall Classic CLI.
-
+```
 [GWConfig]
 
 processMode = 8
@@ -134,7 +134,7 @@ writeOutput = 1
 logFileSize = 0
 
 logFileProcessTime = 1
-
+```
 ## Multithreading
 
 ![](media/examples15.png) /  ![](media/examples16.png)

@@ -549,7 +549,7 @@ content items, issues and remedies can appear in an XML report for image
 file. Sanitisation items cannot be present in their XML reports.
 Automatic corrections are applied to a file in order to bring it in line
 with the manufacturer's specification and/or remove unrecognised or
-unwanted data. See section [4.1](#overview-2).
+unwanted data. See section [4.1](#41-overview).
 
 ### **5.5 Binary and Office Open XML**
 

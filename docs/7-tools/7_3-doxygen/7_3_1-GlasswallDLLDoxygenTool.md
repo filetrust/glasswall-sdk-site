@@ -9,8 +9,8 @@ tool.  This section provides a central place to start understanding the
 tool more and how it is presently used by us. 
 
 ## Glasswall Doxygen Documentation
-- \subpage InternalGlasswallDLLDoxygenStructure
-- \subpage InternalGlasswallDLLDoxygenCodeAnnotation
+- InternalGlasswallDLLDoxygenStructure
+- InternalGlasswallDLLDoxygenCodeAnnotation
 
 # Doxygen Tools
 

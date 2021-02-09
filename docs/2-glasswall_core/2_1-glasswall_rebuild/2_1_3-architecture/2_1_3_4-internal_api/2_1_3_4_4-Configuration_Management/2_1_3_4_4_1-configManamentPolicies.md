@@ -82,7 +82,6 @@ The PDF content management switches are shown in the table below:
 | **Content Management Flag** | **XML Report Issue Technical Descriptions** |
 | --- | --- |
 | **watermark** | Adds a watermark (maximum of 20 ASCII characters) to indicate that the document has been processed by Glasswall. The specified text is added to the top right hand corner of each page of the regenerated file. The default watermark is &quot;Glasswall Approved&quot;. |
-| --- | --- |
 | **javascript** | Action of type /JavaScriptJavaScript content  |
 | **acroform** | Interactive form (AcroForm) contentWidget annotation Action of type /SubmitForm Action of type /ResetForm Action of type /ImportData  |
 | **external\_hyperlinks** | Action of type /URI |
@@ -103,7 +102,6 @@ For tiff the following content management switch is available:
 | **Content Management Flag** | **XML Report Issue Technical Descriptions** |
 | --- | --- |
 | **geotiff** | GeoTIFF data present in GeoTIFF |
-| --- | --- |
 
 ### Binary and XML Office
 
@@ -114,7 +112,6 @@ There are a number of content management switches common to each of the Office f
 | **Content Management Flag** | **XML Report Issue Technical Descriptions** |
 | --- | --- |
 | **macros** | Macros present |
-| --- | --- |
 | **external\_hyperlinks** | External Hyperlinks present in [links]links  = [HFD|VtHyperlinks|\*] |
 | **embedded\_files** | Embedded File present in [store]store = [Object pool|Data Stream|\*] |
 | **metadata**   | Metadata detected in [meta type].meta type = [SttbfRMark|Document Summary Stream|Summary Information Stream|\*] |
