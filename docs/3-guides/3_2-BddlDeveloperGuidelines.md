@@ -3,38 +3,6 @@ title: 3.2 BDDL Guidelines
 sidebar_label: 3.2 BDDL Guidelines
 ---
 
-- [1. Introduction](#1-introduction)
-- [2. Combining Fields](#2-combining-fields)
-- [3. Include Statements](#3-include-statements)
-- [4. Naming Bit Fields](#4-naming-bit-fields)
-- [5. AcceptRule](#5-acceptrule)
-  - [5.1 Placement](#51-placement)
-  - [5.2 Enumerations](#52-enumerations)
-  - [5.3 Arrays of Structures](#53-arrays-of-structures)
-  - [5.3 File Validation](#53-file-validation)
-- [6. Pointer Metadata](#6-pointer-metadata)
-- [7. Version Control](#7-version-control)
-- [8. Optional restrictions](#8-optional-restrictions)
-- [9. char and wchar](#9-char-and-wchar)
-- [10. Allowempty](#10-allowempty)
-- [11. Structure Names](#11-structure-names)
-  - [11.1 BDDL File Names](#111-bddl-file-names)
-  - [11.2 MIME Type](#112-mime-type)
-- [12. Precedence and Associativity](#12-precedence-and-associativity)
-- [13. Glasswall Additions](#13-glasswall-additions)
-  - [13.1 Calling legacy or external cameras](#131-calling-legacy-or-external-cameras)
-  - [13.2 Validating Text fields as integers](#132-validating-text-fields-as-integers)
-    - [13.2.1 BDDL](#1321-bddl)
-    - [13.2.2 DVL](#1322-dvl)
-  - [13.3 Guiding code generator](#133-guiding-code-generator)
-    - [13.3.1 Linking Target Objects](#1331-linking-target-objects)
-    - [13.3.2 Marking fields as Tokens](#1332-marking-fields-as-tokens)
-    - [13.3.3 Marking fields as Whitespace](#1333-marking-fields-as-whitespace)
-    - [13.3.5 Changing Filename](#1335-changing-filename)
-- [14. Recommendations](#14-recommendations)
-  - [14.1 Extra Annotations](#141-extra-annotations)
-- [COPYRIGHT](#copyright)
-
 ## 1. Introduction
 
 These guidelines are designed to facilitate a standardised way of

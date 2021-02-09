@@ -49,52 +49,7 @@ Sam Hutton
 Glasswall Solutions Limited
 
 e-mail: [shutton@glasswallsolutions.com](mailto:shutton@glasswallsolutions.com)
-
-**Index**
-
-- [1 Introduction](#1-introduction)
-
-    - [1.1 Glossary](#11-glossary)
-
-    - [1.2 References](#12-references)
-
-    - [1.3 Schematics](#13-schematics)
-
-- [2 Use Cases](#2-use-cases)
-
-    - [2.1 Start-up](#21-start-up)
-
-    - [2.2 Setting Configuration Items](#22-setting-configuration-items)
-
-    - [2.3 Reading Current Configuration](#23-reading-current-configuration)
-
-    - [2.4 Clearing Configuration Updates](#24-clearing-configuration-updates)
-
-- [3 Components](#3-components)
-
-    - [3.1 Overview](#31-overview)
-
-    - [3.2 Glasswall Top Level](#32-glasswall-top-level)
-
-    - [3.3 Utils](#33-utils)
-
-      - [3.3.1 Configuration Repository Module](#331-configuration-repository-module)
-
-      - [3.3.2 Configuration Loader Module](#332-configuration-loader-module)
-
-      - [3.3.3 Configuration Exporter Module](#333-configuration-exporter-module)
-
-      - [3.3.4 GW XML Config Module](#334-gw-xml-config-module)
-
-    - [3.4 Camera Configuration](#34-camera-configuration)
-
-- [4 Key Scenarios](#4-key-scenarios)
-
-    - [4.1 Start-up](#41-start-up)
-
-    - [4.2 Configuration Item Update](#42-configuration-item-update)
-
-    - [4.3 Configuration Export](#43-configuration-export)
+#
 
 # 1 Introduction
 

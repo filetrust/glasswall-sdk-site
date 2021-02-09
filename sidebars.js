@@ -10,7 +10,6 @@ module.exports = {
     "2 1 Glasswall Rebuild":
         [
         "2-glasswall_core/2_1-glasswall_rebuild/2_1_1-product_description",
-        "2-glasswall_core/2_1-glasswall_rebuild/2_1_2-glasswall_features",
         {
         "2.1.3 Architecture":
             [
@@ -30,23 +29,45 @@ module.exports = {
             {
             "2.1.3.3 Legacy Cameras":
             [
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_1-GlasswallDllCameraGIF",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_2-GlasswallDllCameraJPEG",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_3-GlasswallDllCameraPDF",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_4-GlasswallDllCameraPNG",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_5-data_elements_of_the_pdf_camera",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_6-pdf_camera_dataFlow",    
+            {"2.1.3.3.1 PDF":
+                [
+                   "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_1-PDF/2_1_3_3_1_1-GlasswallDllCameraPDF", 
+                   "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_1-PDF/2_1_3_3_1_2-data_elements_of_the_pdf_camera",
+                   "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_1-PDF/2_1_3_3_1_3-pdf_camera_dataFlow",
+                ]
+            },
+            {"2.1.3.3.2 JPEG":
+            [
+                "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_2-JPEG/2_1_3_3_2-GlasswallDllCameraJPEG",
+            ]
+            },
+            {"2.1.3.3.3 GIF":
+            [
+                "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_3-GIF/2_1_3_3_1-GlasswallDllCameraGIF",
+            ]
+            },
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_4-GlasswallDllCameraPNG",    
             ]
             },
             {
             "2.1.3.4 Internal API":
             [
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_1-analysis_repository",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_2-analysis_report_xsd",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_1-analysis_mode",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_2-protect_mode",
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_3-memory_buffers",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-configuration_management",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_5-configuration_management_xsd",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_6-structured_storage_api_specification"
+            {
+                "2.1.3.4.4 Configuration Management":
+                [
+                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_1-configManamentPolicies",
+                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_2-configuration_management_xsd",
+                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_3-automatic_corrections",
+                ]
+
+            },
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_5-determine_file_format",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_6-import_export",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_7-supported_file_type",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_8-issue_id_info_retreival",
             ]
             }
             ]
@@ -67,7 +88,56 @@ module.exports = {
         {
         "2.1.7 SDK":
             [
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api",
+            {
+                "2.1.7.1 Rebuild API":
+                [
+                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_1-overview",
+                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_2-configuration",
+                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_3-additional_features",
+                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_4-xml_schema_definitions",
+                    {
+                    "2.1.7.1.5 Analysis Report":
+                    [
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_5-analysis_report/2_1_7_1_5_1-overview",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_5-analysis_report/2_1_7_1_5_2-file_specific_analysis",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_5-analysis_report/2_1_7_1_5_3-file_specific_analysis_pdf",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_5-analysis_report/2_1_7_1_5_4-file_specific_analysis_office_binary",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_5-analysis_report/2_1_7_1_5_5-file_specific_analysis_office_open_xml",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_5-analysis_report/2_1_7_1_5_6-file_specific_analysis_media",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_5-analysis_report/2_1_7_1_5_7-file_specific_analysis_executable_code_formats",
+                    ]
+                    },
+                    {
+                        "2.1.7.1.6 Modules":
+                        [
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_1-overview",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_2-dependencies",
+                        {
+                            "2.1.7.1.6.3 Document Processing":
+                            [
+                                "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_1-overview",
+                                "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_2-doc_processing_args",
+                                "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_3-mem_to_mem_location",
+                                "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_4-file_to_mem_location",
+                                "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_5-file_to_file",
+                                "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_6-supporting_functions",
+                                {
+                                    "2.1.7.1.6.3.7 Document Processing Results":
+                                    [
+    
+                                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_7-doc_proc_res/2_1_7_1_6_3_7_1-overview",
+                                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_7-doc_proc_res/2_1_7_1_6_3_7_2-ret_stat_def",
+                                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_3-doc_proc/2_1_7_1_6_3_7-doc_proc_res/2_1_7_1_6_3_7_3-stat_bmsk_def", 
+                                    ]
+                                },
+                            ]
+                        },
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_4-configuration_functions",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_1-api/2_1_7_1_6-lib_modules/2_1_7_1_6_5-resource_management",
+                        ]
+                    },
+                ]
+            },
             {
             "2.1.7.2 SDK Wrappers":
                 [
@@ -75,7 +145,6 @@ module.exports = {
                 "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_2-sdk_wrappers/2_1_7_2_2-javascript",
                 "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_2-sdk_wrappers/2_1_7_2_3-c_sharp",
                 "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_2-sdk_wrappers/2_1_7_2_4-java",
-                "2-glasswall_core/2_1-glasswall_rebuild/2_1_7-sdk/2_1_7_2-sdk_wrappers/2_1_7_2_5-web_api"
                 ]
             }
             ]
@@ -94,9 +163,28 @@ module.exports = {
             [
             "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_1-overview",
             "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_2-auto_generated_cameras",
-            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-analysis_repository",
-            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_4-memory_buffers",
-            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_5-configuration_management"
+            {
+            "2.2.2.3 Internal API":
+            [
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_1-analysis_mode",
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_2-protect_mode",
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_3-determine_file_format",
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_4-issue_id_info_retreival",
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_5-import_export",
+            {
+            "2.2.2.3.6 Configuration Management":
+            [
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_6-config_mgmt/2_2_2_3_6_1-cm_policies",
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_6-config_mgmt/2_2_2_3_6_2-configXSD",
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_6-config_mgmt/2_2_2_3_6_3-automatic_corrections",
+
+            ]
+            },
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_3-internal_api/2_2_2_3_7-memory_buffers",
+            ]
+            },
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_4-fietypes_supported",
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_5-archive_types",
             ]
         },
         "2-glasswall_core/2_2-glasswall_editor/2_2_3-licencing",
@@ -113,107 +201,92 @@ module.exports = {
             [
             {"2.2.6.1 API":
             [
-                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1-editorAPIspecification",
-                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_2-securitytagging",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_1-editorAPIspecification",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_2-apifunctions",
+                {"2.2.6.1.3 Security Tagging":
+                [
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_3-securitytagging/2_2_6_1_3-1-introduction",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_3-securitytagging/2_2_6_1_3-2-JavaScript",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_3-securitytagging/2_2_6_1_3-3-Java",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_3-securitytagging/2_2_6_1_3-4-python",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_3-securitytagging/2_2_6_1_3-5-csharp",
+                ]
+                },
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_4-wordsearch",
             ]
             },     
             {
             "2.2.6.2 SDK Wrappers":
                 [
-                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_1-python",
-                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_2-javascript",
-                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_3-c_sharp",
-                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_4-java"
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_1-introduction",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_2-python",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_3-javascript",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_4-c_sharp",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_5-java"
                 ]
             }
             ]
         },
-        "2-glasswall_core/2_2-glasswall_editor/2_2_7-editor_cli",
+        {"2.2.7 Command Line Interface":
+        [
+        "2-glasswall_core/2_2-glasswall_editor/2_2_7-editor_cli/2_2_7_1-introduction",
+        "2-glasswall_core/2_2-glasswall_editor/2_2_7-editor_cli/2_2_7_2-step_by_step",
+        "2-glasswall_core/2_2-glasswall_editor/2_2_7-editor_cli/2_2_7_3-parameters",
+        "2-glasswall_core/2_2-glasswall_editor/2_2_7-editor_cli/2_2_7_4-examples",
+        ]
+        },
         "2-glasswall_core/2_2-glasswall_editor/2_2_8-core2_design_plan",
         "2-glasswall_core/2_2-glasswall_editor/2_2_9-core2_camera_tree", 
+        "2-glasswall_core/2_2-glasswall_editor/2_2_10-overviewofoperation",
+        "2-glasswall_core/2_2-glasswall_editor/2_2_11-basic-features",
+        "2-glasswall_core/2_2-glasswall_editor/2_2_12-advanced_features", 
+        "2-glasswall_core/2_2-glasswall_editor/2_2_13-appendix", 
         ]
     },
     {
-    "2.3 Glasswall Word Search":
+    "2.3 Glasswall Archive Manager":
         [
-        "2-glasswall_core/2_3-glasswall_word_search/2_3_1-product_description",
-        {
-        "2.3.2 Architecture":
-            [
-            "2-glasswall_core/2_3-glasswall_word_search/2_3_2-architecture/2_3_2_1-overview",
-            "2-glasswall_core/2_3-glasswall_word_search/2_3_2-architecture/2_3_2_2-configuration_management"
-            ]
-        },
-        "2-glasswall_core/2_3-glasswall_word_search/2_3_3-licencing",
-        "2-glasswall_core/2_3-glasswall_word_search/2_3_4-dependencies",
-        {
-        "2.3.5 Build":
-            [
-            "2-glasswall_core/2_3-glasswall_word_search/2_3_5-build/2_3_5_1-building_project",
-            "2-glasswall_core/2_3-glasswall_word_search/2_3_5-build/2_3_5_2-versioning"
-            ]
-        },
-        {
-        "2.3.6. SDK":
-            [
-            "2-glasswall_core/2_3-glasswall_word_search/2_3_6-sdk/2_3_6_1-api",
-            {
-            "2.3.6.2 SDK Wrappers":
-                [
-                "2-glasswall_core/2_3-glasswall_word_search/2_3_6-sdk/2_3_6_2-sdk_wrappers/2_3_6_2_1-python",
-                "2-glasswall_core/2_3-glasswall_word_search/2_3_6-sdk/2_3_6_2-sdk_wrappers/2_3_6_2_2-javascript",
-                "2-glasswall_core/2_3-glasswall_word_search/2_3_6-sdk/2_3_6_2-sdk_wrappers/2_3_6_2_3-c_sharp",
-                "2-glasswall_core/2_3-glasswall_word_search/2_3_6-sdk/2_3_6_2-sdk_wrappers/2_3_6_2_4-java"
-                ]
-            }
-            ]
-        }
-        ]
-    },
-    {
-    "2.4 Glasswall Archive Manager":
-        [
-        "2-glasswall_core/2_4-glasswall_archive_manager/2_4_1-product_description",
+        "2-glasswall_core/2_3-glasswall_archive_manager/2_3_1-product_description",
         {
         "2.4.2 Architecture":
             [
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_2-architecture/2_4_2_1-overview",
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_2-architecture/2_4_2_2-configuration_management"
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_2-architecture/2_3_2_1-overview",
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_2-architecture/2_3_2_2-configuration_management"
             ]
         },
-        "2-glasswall_core/2_4-glasswall_archive_manager/2_4_3-licencing",
-        "2-glasswall_core/2_4-glasswall_archive_manager/2_4_4-dependencies",
+        "2-glasswall_core/2_3-glasswall_archive_manager/2_3_3-licencing",
+        "2-glasswall_core/2_3-glasswall_archive_manager/2_3_4-dependencies",
         {
-        "2.4.5 Build":
+        "2.3.5 Build":
             [
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_5-build/2_4_5_1-building_project",
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_5-build/2_4_5_2-versioning"
-            ]
-        },
-        {
-        "2.4.6 SDK API":
-            [
-                "2-glasswall_core/2_4-glasswall_archive_manager/2_4_6-sdk_api/2_4_6_1-analysis",
-                "2-glasswall_core/2_4-glasswall_archive_manager/2_4_6-sdk_api/2_4_6_2-expected_results"
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_5-build/2_3_5_1-building_project",
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_5-build/2_3_5_2-versioning"
             ]
         },
         {
-        "2.4.7 SDK Wrappers":
+        "2.3.6 SDK API":
             [
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_7-sdk_wrappers/2_4_7_1-python",
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_7-sdk_wrappers/2_4_7_2-javascript",
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_7-sdk_wrappers/2_4_7_3-c_sharp",
-            "2-glasswall_core/2_4-glasswall_archive_manager/2_4_7-sdk_wrappers/2_4_7_4-java",
+                "2-glasswall_core/2_3-glasswall_archive_manager/2_3_6-sdk_api/2_3_6_1-analysis",
+                "2-glasswall_core/2_3-glasswall_archive_manager/2_3_6-sdk_api/2_3_6_2-expected_results"
+            ]
+        },
+        {
+        "2.3.7 SDK Wrappers":
+            [
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_7-sdk_wrappers/2_3_7_1-python",
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_7-sdk_wrappers/2_3_7_2-javascript",
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_7-sdk_wrappers/2_3_7_3-c_sharp",
+            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_7-sdk_wrappers/2_3_7_4-java",
             ]
         }
         ]
     },
     {
-    "2.5 Common":
+    "2.4 Common":
     [
-        "2-glasswall_core/2_5-common/2_5_1-bddl",
-        "2-glasswall_core/2_5-common/2_5_2-dvl",
-        "2-glasswall_core/2_5-common/2_5_3-GlasswallCodeGenerators",
+        "2-glasswall_core/2_4-common/2_4_1-bddl",
+        "2-glasswall_core/2_4-common/2_4_2-dvl",
+        "2-glasswall_core/2_4-common/2_4_3-GlasswallCodeGenerators",
     ]
     },
     ]
@@ -227,6 +300,9 @@ module.exports = {
     "3-guides/3_5-how_to_use_azure_devops_on_linux_vm",
     "3-guides/3_6-pdf_image_conversion",
     "3-guides/3_7-using_stop",
+    "3-guides/3_8-core2-cameras-creating_and_developing_rules",
+    "3-guides/3_9-using_qt_in_glasswall",
+    "3-guides/3_10-learn_yaml_in_y-minutes",
 ]
 },
 {
@@ -236,8 +312,15 @@ module.exports = {
     {"4.2 Automated Testing":
     [
         "4-testing/4_2-automated testing/4_2_1-GWRegressionTester",
-        "4-testing/4_2-automated testing/4_2_2-AnalysisRepositoryandReportingSystem",
-        "4-testing/4_2-automated testing/4_2_3-TestResultsXSD",
+        {
+        "4.2.2 Analysis":
+        [
+        "4-testing/4_2-automated testing/4_2_2-analysistesting/4_2_2_1-AnalysisRepositoryandReportingSystem",
+        "4-testing/4_2-automated testing/4_2_2-analysistesting/4_2_2_2-TestResultsXSD",
+
+        ]
+        }
+        
     ]
     },
     "4-testing/4_3-manual_testing",
@@ -248,25 +331,12 @@ module.exports = {
 "5 Development":
     [
         {
-            "5.1 Development Process":
-            [
-                "5-development/5_1-development_process/5_1_1-new_camera_checklist",
-                "5-development/5_1-development_process/5_1_2-core2-cameras-creating_and_developing_rules",
-                "5-development/5_1-development_process/5_1_3-using_qt_in_glasswall",
-                "5-development/5_1-development_process/5_1_4-glasswall_jpeg_2000_compress_filer",
-                "5-development/5_1-development_process/5_1_5-pdf-an-introduction-for-programmers",
-                "5-development/5_1-development_process/5_1_6-core_definiton_of_done",
-            ]
-        },
-        {
             "5.2 Coding Guidlines":
             [
                 "5-development/5_2-coding_guidelines/5_2_1-c++_core_guidlines",
                 "5-development/5_2-coding_guidelines/5_2_2-index_of_python_enhancement_proposals",
                 "5-development/5_2-coding_guidelines/5_2_3-glasswall_c_coding_guidlines",
                 "5-development/5_2-coding_guidelines/5_2_4-pearl_best_practise_summary",
-                "5-development/5_2-coding_guidelines/5_2_5-learn_yaml_in_y-minutes",
-                "5-development/5_2-coding_guidelines/5_2_6-kerninghan_and_ritchies_the_c_programming_learning",
             ]
         },
     
@@ -325,9 +395,9 @@ module.exports = {
             ]
         },
         {
-            "7.6 Engine":
+            "7.6 CLI":
             [
-                "7-tools/7_6-engine/7_6_1-GlasswallCLI",
+                "7-tools/7_6-cli/7_6_1-GlasswallCLI",
             ]
         },
         {
@@ -357,22 +427,16 @@ module.exports = {
             ]
         },
         {
-            "7.10 Validators":
+            "7.10 WMF":
             [
-                "7-tools/7_10-validators/7_10_1-BffValidator",
+                "7-tools/7_10-wmf/7_10_1-WalkWMF",
             ]
         },
         {
-            "7.11 WMF":
+            "7.11 Zip Archive":
             [
-                "7-tools/7_11-wmf/7_11_1-WalkWMF",
-            ]
-        },
-        {
-            "7.12 Zip Archive":
-            [
-                "7-tools/7_12-zip_archive/7_12_1-CheckZipSignature",
-                "7-tools/7_12-zip_archive/7_12_2-WalkZIP",
+                "7-tools/7_11-zip_archive/7_11_1-CheckZipSignature",
+                "7-tools/7_11-zip_archive/7_11_2-WalkZIP",
             ]
         }, 
     ]
@@ -390,14 +454,40 @@ module.exports = {
             "8-related/8_1-specifications/8_1_1-ms_office/8_1_1_2-office_binary"
             ]
         },
-        "8-related/8_1-specifications/8_1_2-pdf",
-        "8-related/8_1-specifications/8_1_3-jpeg",
-        "8-related/8_1-specifications/8_1_4-png",
-        "8-related/8_1-specifications/8_1_5-gif",
-        "8-related/8_1-specifications/8_1_6-tiff",
-        "8-related/8_1-specifications/8_1_7-jbig2"
-        ]
-    }
+        { "8.1.2 PDF":
+            [
+                "8-related/8_1-specifications/8_1_2-pdf/8_1_2-pdf",
+            ]
+        },
+        { "8.1.3 JPEG":
+            [
+                "8-related/8_1-specifications/8_1_3-jpeg/8_1_3_1-jpeg",
+                "8-related/8_1-specifications/8_1_3-jpeg/8_1_3_2-glasswall_jpeg_2000_compress_filer",
+            ]
+        },
+        { "8.1.4 PNG":
+            [
+                "8-related/8_1-specifications/8_1_4-png/8_1_4-png",
+            ]
+        },
+        { "8.1.5 GIFF" :
+            [
+                "8-related/8_1-specifications/8_1_5-gif/8_1_5-gif",
+            ]
+        },
+        { "8.1.6 TIFF" :
+            [
+                "8-related/8_1-specifications/8_1_6-tiff/8_1_6-tiff",
+            ]
+        },
+        { "8.1.7 JBIG2" :
+            [
+                "8-related/8_1-specifications/8_1_7-jbig2/8_1_7-jbig2",
+            ]
+        },  
+        "8-related/8_1-specifications/8_1_8-structured_storage_api_specification",
+        ]   
+    },
     ]
 }
 ]
