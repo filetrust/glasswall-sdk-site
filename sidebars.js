@@ -284,7 +284,12 @@ module.exports = {
     {
     "2.4 Common":
     [
-        "2-glasswall_core/2_4-common/2_4_1-bddl",
+        {"2.4.1 Binary Data Definition Language (BDDL)":
+        [
+            "2-glasswall_core/2_4-common/2_4_1-bddl/2_4_1_1-bddl",
+            "2-glasswall_core/2_4-common/2_4_1-bddl/2_4_1_2-bddl_softlinks",
+        ]
+        },
         "2-glasswall_core/2_4-common/2_4_2-dvl",
         "2-glasswall_core/2_4-common/2_4_3-GlasswallCodeGenerators",
     ]

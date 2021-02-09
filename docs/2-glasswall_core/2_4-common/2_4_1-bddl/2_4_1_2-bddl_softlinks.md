@@ -1,6 +1,6 @@
 ---
-title: 2.4.4 BDDL Soft Links
-sidebar_label: 2.4.4 BDDL Soft Links
+title: 2.4.1.2 BDDL Soft Links
+sidebar_label: 2.4.1.2 BDDL Soft Links
 ---
 
 ## HOW TO CREATE SOFT LINK FOR OFFICE BDDL INCLUDE FILES
