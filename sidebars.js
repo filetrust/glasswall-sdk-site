@@ -340,17 +340,17 @@ module.exports = {
 "5 Development":
     [
         {
-            "5.2 Coding Guidlines":
+            "5.1 Coding Guidlines":
             [
-                "5-development/5_2-coding_guidelines/5_2_1-c++_core_guidlines",
-                "5-development/5_2-coding_guidelines/5_2_2-index_of_python_enhancement_proposals",
-                "5-development/5_2-coding_guidelines/5_2_3-glasswall_c_coding_guidlines",
-                "5-development/5_2-coding_guidelines/5_2_4-pearl_best_practise_summary",
+                "5-development/5_1-coding_guidelines/5_1_1-c++_core_guidlines",
+                "5-development/5_1-coding_guidelines/5_1_2-index_of_python_enhancement_proposals",
+                "5-development/5_1-coding_guidelines/5_1_3-glasswall_c_coding_guidlines",
+                "5-development/5_1-coding_guidelines/5_1_4-pearl_best_practise_summary",
             ]
         },
     
-    "5-development/5_3-branching_strategy",
-    "5-development/5_4-unit_testing"
+    "5-development/5_2-branching_strategy",
+    "5-development/5_3-unit_testing"
     ]
 },
 {
