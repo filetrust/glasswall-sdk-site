@@ -399,8 +399,7 @@ module.exports = {
             "7.5 Developer Tools":
             [
                 "7-tools/7_5-developer_tools/7_5_1-ExtractStrLit",
-                "7-tools/7_5-developer_tools/7_5_2-glasswall_developed_tools",
-                "7-tools/7_5-developer_tools/7_5_3-GlasswallToolsOverview",
+                "7-tools/7_5-developer_tools/7_5_2-GlasswallToolsOverview",
             ]
         },
         {
