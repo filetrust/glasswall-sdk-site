@@ -19,6 +19,14 @@ File Specific Analysis- Media (Images, Audio and Video)
 
 - [**File Specific Analysis - TIFF**](#file-specific-analysis---tiff)
 
+- [**File Specific Analysis - MPG**](#file-specific-analysis---mpg)
+
+- [**File Specific Analysis - WAV**](#file-specific-analysis---wav)
+
+- [**File Specific Analysis - MP3**](#file-specific-analysis---mp3)
+
+- [**File Specific Analysis - MP4**](#file-specific-analysis---mp4)
+
 ## File Specific Analysis - GIF
 
 ### gw:DocumentSummary

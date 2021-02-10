@@ -54,7 +54,7 @@ The **--man**, **--help**, -**-version**, and **--usage** options provide inform
 &emsp;&emsp;&emsp;&emsp;As above, but shows use of `"` when paths contain spaces.
 
 ### **SEE ALSO**
-&nbsp;&nbsp;&nbsp;&nbsp;[checkCFBSignature](CheckCFBSignature), [walkCFB](WalkCFB)
+&nbsp;&nbsp;&nbsp;&nbsp;[checkCFBSignature](7_2_2-CheckCFBSignature.md), [walkCFB](7_2_4-WalkCFB.md)
 
 ### **AUTHOR**
 &nbsp;&nbsp;&nbsp;&nbsp;Martin O'Brien mobrien@glasswallsolutions.com

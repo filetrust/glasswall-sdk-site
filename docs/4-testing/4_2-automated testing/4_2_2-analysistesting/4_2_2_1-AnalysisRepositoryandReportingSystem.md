@@ -119,7 +119,7 @@ Current Analysis is stored in a Strings Database that indexes results by hashes 
 
 This can lead to indexing of similar problems from different cameras being grouped together instead of being kept in the cameras they belong.
 
-Also, the [Analysis Artefacts](#AnalysisArtefacts) are stored together in the Strings Database as all cameras are run. If a sub-camera is called, then its results are merged into the same database. If subsequently, the camera decides that the subcomponent of the file is non-conformant, removal of the file will leave the residual analysis in the Strings Database.
+Also, the [Analysis Artefacts](#all-repository-objects-inherit-from-analysis-artefact) are stored together in the Strings Database as all cameras are run. If a sub-camera is called, then its results are merged into the same database. If subsequently, the camera decides that the subcomponent of the file is non-conformant, removal of the file will leave the residual analysis in the Strings Database.
 
 From &#39;Analysis Repository Proposal&#39;
 
@@ -159,7 +159,7 @@ Under a Group four types of Analysis Artefacts (Items) are stored:
 
 ### Phase 1
 
-Core Function will be the same as the existing database from the perspective of the client in that the analysis data from the file will produce the same XML Analysis report as per [Existing Functional Features](#_Existing_Functional_Features) however using new [Proposed Internal Mechanism](#_Proposed_Internal_Mechanism)
+Core Function will be the same as the existing database from the perspective of the client in that the analysis data from the file will produce the same XML Analysis report as per [**Existing Functional Features**](#21-existing-functional-features) however using new [**Proposed Internal Mechanism**](#32-proposed-internal-mechanism)
 
 ### Phase 2
 
@@ -249,7 +249,7 @@ New api entries and changes to existing. Disused calls and parameters &#39;struc
 
 ~~uint32\_t ucf\_GWToggleGroupingDictionaryUsage(eBoolean bUseGroupDictionaries);~~
 
-A redundant call, this mode was always switched on to create a duplicate list of [#ArtefactsOfConcern](#ArtefactsOfConcern) for identification of issues in the document. If this is still needed in the new repository, we will iterate through the tree looking for them or keep track of a pointer list to those specific objects for the same purpose rather than copying them.
+A redundant call, this mode was always switched on to create a duplicate list of [**ArtefactsOfConcern**](#artefacts-of-concern) for identification of issues in the document. If this is still needed in the new repository, we will iterate through the tree looking for them or keep track of a pointer list to those specific objects for the same purpose rather than copying them.
 
 ~~uint32\_t ucf\_GWAnalyseSchema(ucf\_context\_t \*ctxt, ucfAnalysisStatsID\_t statsID, uint32\_t itemSizeInBytes);~~
 
@@ -349,7 +349,7 @@ iscntrl now used instead of \&lt;0x20
 
 ### 4.1.4 Test framework to use sample data from instrumentation to load repository
 
-The new modules will be built into standalone application that will take the output from the instrumentation code ([Add Instrumentation code to current analysis api](#_toc235))
+The new modules will be built into standalone application that will take the output from the instrumentation code ([**Add Instrumentation code to current analysis api**](#411-add-instrumentation-code-to-current-analysis-api))
 
 This will be tested outside of the glasswall library to speed up development of the repository.
 
@@ -377,18 +377,21 @@ Suggestions: Keep all analysis and also keep the return status of the camera cal
 This aspect of the design will be fleshed out after initial &#39;flat report&#39; has been verified and added to Main.
 
 
-# 5 Glossary
+## 5 Glossary
 
-Analysis Artefacts: Document Summary, Content Items, Remedy Items, Sanitisation Items and Issue Items are all examples of these. They are key components that we identify during analysis.
+### Analysis Artefacts
+Document Summary, Content Items, Remedy Items, Sanitisation Items and Issue Items are all examples of these. They are key components that we identify during analysis.
 
-Alteration Artefacts: Remedy Items and Sanitisation Items are examples of these. They are Analysis Artefacts that relate to things in the document that we have or may have changed after management of the file.
+### Alteration Artefacts
+ Remedy Items and Sanitisation Items are examples of these. They are Analysis Artefacts that relate to things in the document that we have or may have changed after management of the file.
 
-Artefacts of Concern: Remedy Items, Sanitisation Items and Issue Items are examples of these. They are Analysis Artefacts that relate to things in the document that we have or may have changed after management of the file or have caused us to reject the document.
+### Artefacts of Concern
+Remedy Items, Sanitisation Items and Issue Items are examples of these. They are Analysis Artefacts that relate to things in the document that we have or may have changed after management of the file or have caused us to reject the document.
 
 
-# 6 Assertions
+## 6 Assertions
 
-## Automatic Issue/Sanitization &quot;Event&quot; processing
+### Automatic Issue/Sanitization &quot;Event&quot; processing
 
 A suggestion was made that the Repository should include a function for processing the text of an Event as an Issue or a Sanitation automatically.
 

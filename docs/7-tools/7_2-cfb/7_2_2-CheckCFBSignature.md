@@ -57,13 +57,10 @@ Display usage and description of each option and exit.
 &nbsp;&nbsp;&nbsp;&nbsp;Read recursively from directory *c:\TestFiles\CFB* and log in file *cfb_files.txt* a list of the files that have a CFB signature, and copy all files that do not have a CFB signature into directory *non_cfb_files*, creating that directory if it does not exist.
 
 ### **SEE ALSO**
-[cfbGeneology](cfbGeneology), [walkCFB](WalkCFB)
+[cfbGeneology](7_2_1-CFBGeneology.md), [walkCFB](7_2_4-WalkCFB.md), [WordDissection](../7_7-office_binary/7_7_5-WordDissection.md)
 
 ### **AUTHOR**
 Martin O'Brien mobrien@glasswallsolutions.com
 
 ### **COPYRIGHT**
 &copy; 2014 Glasswall Solutions Limited
-
-### **SEE ALSO**
-[cfbGeneology](cfbGeneology), [walkCFB](walkCFB), [WordDissection](WordDissection)

@@ -38,8 +38,8 @@ selected. The user interface is presented as shown below.
 | Executable           | DLLs                 | Purpose              |
 |---|---|---
 |GWDemonstrator.exe |CommandLine.dll<br />GWDemonstratorDataLayer.dll<br />GWDemonstratorShared.dll<br />System.Data.SqlServerCe.dll|Principle application of the suite that drives the scans and stores the results. |
-|GwDemoDBAdministrator.exe|GWDemonstratorDataLayer.dll<br />GWDemonstratorShared.dll |Provides functionality to create and remove analysis database instances on an SQL Server database. | |
-| || |
+|GwDemoDBAdministrator.exe|GWDemonstratorDataLayer.dll<br />GWDemonstratorShared.dll |Provides functionality to create and remove analysis database instances on an SQL Server database. |
+
 |GWDemonstratorClient.exe|glasswall.classic.dll<br />GWDemonstratorShared.dll |Multiple instances of this client application connect to the GWDemonstrator.exe application providing parallel document processing funcionality.  | |
 
 Processing Setup
@@ -136,8 +136,7 @@ user from this table.
 | Menu Item | Purpose                                                 |
 |---|---
 | Summary   | This provides a brief report of the scan results, similar to that displayed on the **Processing Setup** and **Processing Progress** tabs whilst the scan is in progress.|
-| Compare | This is only enabled if two scans are selected. Selecting this menu option displays a form that enables the results of two scans to be displayed. The form has three areas: two areas list the files that are unique to that scan. The third area compares the results of the file processing between the two scans.              |
-| | In order to highlight any differences, a checkbox is provided that, when enabled, filters that comparison area to only show the results that differ between scans |
+| Compare | This is only enabled if two scans are selected. Selecting this menu option displays a form that enables the results of two scans to be displayed. The form has three areas: two areas list the files that are unique to that scan. The third area compares the results of the file processing between the two scans.In order to highlight any differences, a checkbox is provided that, when enabled, filters that comparison area to only show the results that differ between scans |
 | Edit      | Selecting this option enables the user to modify the scan name. |
 | Delete    | Selecting this option enables the scan results to be deleted from the database \[*not yet implemented*\].      |
 

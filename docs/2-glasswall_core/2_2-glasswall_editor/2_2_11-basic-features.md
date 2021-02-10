@@ -4,7 +4,7 @@ sidebar_label: 2.2.11 Basic Glasswall Features
 ---
 The following section introduces the basic features of the Glasswall FileTrust SDK and provides code examples. Ensure that the Glasswall FileTrust SDK has been installed successfully and that your project is correctly linked to the Glasswall FileTrust library before you begin.
 
-The examples have been written in C++. For examples using other languages, please refer to [**Appendix - Languages Other Than C++**](https://docs.glasswallsolutions.com/sdk/editor/Content/Getting%20Started/Appendix%20-%20Other%20Languages.htm) and wrapper documentation, plus the accompanying test applications.
+The examples have been written in C++. For examples using other languages, please refer to [**Appendix - Languages Other Than C++**](2_2_13-appendix.md) and wrapper documentation, plus the accompanying test applications.
 
 ## Processing a file
 
@@ -116,7 +116,7 @@ More than one Glasswall session may be active at the same time. Opening a sessio
 
 Glasswall uses policy files to customise how files should be processed. This example describes how to register a policy file to a session.
 
-  1. Use the following sample code to register an input file and output file to Glasswall. As this configuration file is in the XML format, the third parameter for [**GW2RegisterPoliciesFile**](https://docs.glasswallsolutions.com/sdk/editor/Content/API/GW2RegisterPoliciesFile.htm#GW2Regis) is set to zero.
+  1. Use the following sample code to register an input file and output file to Glasswall. As this configuration file is in the XML format, the third parameter for [**GW2RegisterPoliciesFile**](2_2_6-sdk/2_2_6_1-api/2_2_6_1_2-apifunctions.md#gw2registerpoliciesfile) is set to zero.
 
   ```
   int main ()
@@ -161,7 +161,7 @@ Glasswall uses policy files to customise how files should be processed. This exa
 
 The following code example describes how to generate an analysis file. Report files may also be generated using a similar procedure.
 
-  1. Use the following sample code to register an input file and output file to Glasswall . As the analysis file will be in XML format, the third parameter for [**GW2RegisterAnalysisFile**](https://docs.glasswallsolutions.com/sdk/editor/Content/API/GW2RegisterAnalysisFile.htm#GW2Regis2) is set to zero.
+  1. Use the following sample code to register an input file and output file to Glasswall . As the analysis file will be in XML format, the third parameter for [**GW2RegisterAnalysisFile**]2_2_6-sdk/2_2_6_1-api/2_2_6_1_2-apifunctions.md#gw2registerpoliciesfile) is set to zero.
 
    ```
    int main ()

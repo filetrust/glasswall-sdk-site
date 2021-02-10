@@ -1,228 +1,121 @@
 ---
-title: 2.2.2.3.1 Analysis Repository XSD
-sidebar_label: 2.2.2.3.1 Analysis Repository XSD
+title: 2.2.2.3.1 Analysis Mode
+sidebar_label: 2.2.2.3.1 Analysis Mode
 ---
 
-    <?xml version="1.0" encoding="UTF-8"?>
-        <xs:schema xmlns:mstns="http://glasswall.com/namespace" xmlns="http://glasswall.com/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" targetNamespace="http://glasswall.com/namespace" attributeFormDefault="qualified" elementFormDefault="qualified">
-        <!--  Definition of ContentGroup elements  -->
-            <xs:element name="ContentItem" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="TechnicalDescription" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="InstanceCount" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="TotalSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="AverageSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="MinSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="MaxSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="ContentItems" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element ref="ContentItem" msdata:Prefix="gw" minOccurs="0" maxOccurs="unbounded"/>
-                    </xs:sequence>
-                    <xs:attribute name="itemCount" form="unqualified" type="xs:integer"/>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="SanitisationItem" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="TechnicalDescription" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="SanitisationId" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="InstanceCount" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="TotalSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="AverageSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="MinSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="MaxSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="SanitisationItems" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element ref="SanitisationItem" msdata:Prefix="gw" minOccurs="0" maxOccurs="unbounded"/>
-                    </xs:sequence>
-                    <xs:attribute name="itemCount" form="unqualified" type="xs:integer"/>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="RemedyItem" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="TechnicalDescription" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="InstanceCount" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="RemedyItems" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element ref="RemedyItem" msdata:Prefix="gw" minOccurs="0" maxOccurs="unbounded"/>
-                    </xs:sequence>
-                    <xs:attribute name="itemCount" form="unqualified" type="xs:integer"/>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="IssueItem" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="TechnicalDescription" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="IssueId" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="InstanceCount" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="RiskLevel" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="IssueItems" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element ref="IssueItem" msdata:Prefix="gw" minOccurs="0" maxOccurs="unbounded"/>
-                    </xs:sequence>
-                    <xs:attribute name="itemCount" form="unqualified" type="xs:integer"/>
-                </xs:complexType>
-            </xs:element>
-            <!--  Definition of ContentManagementPolicy elements  -->
-            <xs:element name="ContentSwitch" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="ContentName" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="ContentValue" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="Camera" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element ref="ContentSwitch" msdata:Prefix="gw" minOccurs="1" maxOccurs="100"/>
-                    </xs:sequence>
-                    <xs:attribute name="cameraName" form="unqualified" type="xs:string"/>
-                </xs:complexType>
-            </xs:element>
-            <!--  Definition of ContentGroups elements  -->
-            <xs:element name="ContentGroup" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="BriefDescription" msdata:Prefix="gw" type="xs:string" minOccurs="1"/>
-                        <xs:element ref="ContentItems" msdata:Prefix="gw" minOccurs="0" maxOccurs="1"/>
-                        <xs:element ref="SanitisationItems" msdata:Prefix="gw" minOccurs="0" maxOccurs="1"/>
-                        <xs:element ref="RemedyItems" msdata:Prefix="gw" minOccurs="0" maxOccurs="1"/>
-                        <xs:element ref="IssueItems" msdata:Prefix="gw" minOccurs="0" maxOccurs="1"/>
-                    </xs:sequence>
-                    <xs:attribute name="itemCount" form="unqualified" type="xs:integer"/>
-                </xs:complexType>
-            </xs:element>
-            <!--  Definition of ExternalData elements  -->
-            <xs:element name="Metadata" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="MetadataName" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="MetadataValue" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <!--  Definition of Document Statistics elements  -->
-            <xs:element name="DocumentSummary" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="TotalSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="FileType" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="Version" msdata:Prefix="gw" type="xs:string" minOccurs="0" maxOccurs="1"/>
-                        <xs:element name="FileTypeDetectionMethod" msdata:Prefix="gw" type="xs:string" minOccurs="0" maxOccurs="1"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="ContentManagementPolicy" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element ref="Camera" msdata:Prefix="gw" minOccurs="1" maxOccurs="100"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="ContentGroups" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element ref="ContentGroup" msdata:Prefix="gw" minOccurs="0" maxOccurs="unbounded"/>
-                    </xs:sequence>
-                    <xs:attribute name="groupCount" form="unqualified" type="xs:integer"/>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="ExternalData" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element ref="Metadata" msdata:Prefix="gw" minOccurs="1" maxOccurs="100"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <!--  Definition of GWallInfo elements  -->
-            <xs:element name="DocumentStatistics" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element ref="DocumentSummary" msdata:Prefix="gw" minOccurs="1" maxOccurs="1"/>
-                        <xs:element ref="IssueInformationGroups" msdata:Prefix="gw" minOccurs="0" maxOccurs="1"/>
-                        <xs:element ref="ContentManagementPolicy" msdata:Prefix="gw" minOccurs="0" maxOccurs="1"/>
-                        <xs:element ref="ContentGroups" msdata:Prefix="gw" minOccurs="1" maxOccurs="1"/>
-                        <xs:element ref="ExtractedItems" msdata:Prefix="gw" minOccurs="1" maxOccurs="1"/>
-                        <xs:element ref="ExternalData" msdata:Prefix="gw" minOccurs="0" maxOccurs="1"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <!--  Definition of IssueInformationGroups elements  -->
-            <xs:element name="IssueInformationGroups" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element ref="IssueInformationGroup" minOccurs="1" maxOccurs="unbounded" msdata:Prefix="gw"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <!--  Definition of IssueInformationGroup elements  -->
-            <xs:element name="IssueInformationGroup" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="IssueIDRangeStart" type="xs:integer" msdata:Prefix="gw"/>
-                        <xs:element name="IssueIDRangeEnd" type="xs:integer" msdata:Prefix="gw"/>
-                        <xs:element name="GroupDescription" type="xs:string" msdata:Prefix="gw"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <!--  Definition of ExtractedItems elements  -->
-            <xs:element name="ExtractedItems" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element ref="ExtractedItem" minOccurs="0" maxOccurs="unbounded" msdata:Prefix="gw"/>
-                    </xs:sequence>
-                    <xs:attribute name="itemCount" form="unqualified" type="xs:string"/>
-                </xs:complexType>
-            </xs:element>
-            <!--  Definition of ExtractedItem elements  -->
-            <xs:element name="ExtractedItem" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element ref="ExtractedImage" minOccurs="0" maxOccurs="unbounded" msdata:Prefix="gw"/>
-                    </xs:sequence>
-                    <xs:attribute name="offset" form="unqualified" type="xs:string"/>
-                    <xs:attribute name="itemIndex" form="unqualified" type="xs:string"/>
-                    <xs:attribute name="location" form="unqualified" type="xs:string"/>
-                </xs:complexType>
-            </xs:element>
-            <!--  Definition of ExtractedImage elements  -->
-            <xs:element name="ExtractedImage" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element ref="Meta" minOccurs="0" maxOccurs="unbounded" msdata:Prefix="gw"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <!--  Definition of Meta elements  -->
-            <xs:element name="Meta" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:attribute name="meta" form="unqualified" type="xs:string"/>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="GWallInfo" msdata:IsDataSet="true" msdata:Locale="en-US" msdata:Prefix="gw">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element ref="DocumentStatistics" minOccurs="1" maxOccurs="unbounded" msdata:Prefix="gw"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-        </xs:schema>
+## Overview
+
+In Analysis Mode a file-type agnostic description of the data is logged to an XML report. The structure of the XML report is defined by an Analysis Report XSD designed to make this as easy as possible to parse and process.
+
+The analysis report contains:
+
+- Document Statistics
+
+- Document Summary – file type and size
+
+- Content Groups – the main grouping of content in the document
+
+- Content Items – the low-level structures within the document
+
+- Issue Items – content items that do not match the manufacturer&#39;s specification or matching a &#39;disallow&#39; setting in content management
+
+- Sanitisation Items – the content management items that would be sanitised if the document was processed in Protect Mode
+
+- Remedy Items – automatic corrections applied to the document in order to bring it in line with the manufacturer&#39;s specification
+
+Depending on the configuration management settings applied to the individual content management switches, the content controlled by the switches is reported either as a Sanitisation Item, Issue Item or a Content Item.
+
+## Analysis Process
+
+The Glasswall FileTrust library receives a document through a published API and passes it through a number of process cycles. The output from each cycle becomes the input for the next so maintain a level of separation between processes. Analysis of the document occurs in each of the cycles.  Early cycles elicit the structure of the document and the sizes of its constituent parts. The later cycles are concerned with conducting syntactic and semantic checks which identify possible sources of risk, out-of-range fields or malformed structures.
+
+Where elements of the document are compressed, these are expanded and the results assessed, analysed and verified. This enables the analysis report published at the end of the process to give a thorough assessment of the contents and structure of the document. By stepping through the sanitisation and remedying processes Glasswall FileTrust is able to provide an accurate report of the actions that could be carried out by Glasswall&#39;s regeneration functionality to make the document conformant with the specification.
+
+Where objects or other documents of a type known to Glasswall FileTrust are embedded in files Glasswall FileTrust processes these using that types validation and content management policies.
+
+During each cycle the document being processed is transformed into Glasswall FileTrust&#39;s own internal representation. This simplifies the parsing and traversing processes and helps provide isolation. As the analysis process navigates through the Glasswall structures the detailed checks are not only made on individual components but also at a higher level between the components of the documents. These higher level checks enable the semantic structure and consistency of the document to be properly verified.
+
+The analysis aspects of the Glasswall FileTrust functionality provide two forms of reporting. The principle output of the analysis process is the analysis report. This is an XML document that enables the detailed information generated by Glasswall to be interrogated and interpreted by third party applications. The secondary output provided is an engineering report which is a very technical report providing detailed information of the analysis process in an ASCII log format.
+
+## Sample Analysis Reports
+
+This section contains an abridged Glasswall FileTrust Analysis Report containing all the principle elements of a typical report. This particular example is based on a PDF file.
+
+Each XML report starts with a document summary show below:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<gw:GWallInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://glasswall.com/namespace/GWallInfo.xsd" xmlns:gw="http://glasswall.com/namespace">
+<gw:DocumentStatistics>
+<gw:DocumentSummary>
+<gw:TotalSizeInBytes>2293803</gw:TotalSizeInBytes>
+<gw:FileType>pdf</gw:FileType>
+<gw:Version>PDF-1.4</gw:Version>
+</gw:DocumentSummary>
+```
+The content management policies that were used on the file are then listed, note all policies for all file types are listed in each report. Some of the PDF content management switch settings are shown below:
+```
+<gw:ContentManagementPolicy>
+<gw:Camera cameraName = "pdfConfig">
+<gw:ContentSwitch>
+<gw:ContentName>javascript</gw:ContentName>
+<gw:ContentValue>sanitise</gw:ContentValue>
+</gw:ContentSwitch>
+<gw:ContentSwitch>
+<gw:ContentName>acroform</gw:ContentName>
+<gw:ContentValue>sanitise</gw:ContentValue>
+</gw:ContentSwitch>
+<gw:ContentSwitch>
+<gw:ContentName>embedded_files</gw:ContentName>
+<gw:ContentValue>sanitise</gw:ContentValue>
+</gw:ContentSwitch>
+```
+
+The number of different content groups found in the file (16) along with an example of content item from the first group is shown below:
+```
+<gw:ContentGroups groupCount = "16">
+<gw:ContentGroup>
+<gw:BriefDescription>PDF document has Basic File Section structure instances</gw:BriefDescription>
+<gw:ContentItems itemCount = "5">
+<gw:ContentItem>
+<gw:TechnicalDescription>PDF Header Instances</gw:TechnicalDescription>
+<gw:InstanceCount>1</gw:InstanceCount>
+<gw:TotalSizeInBytes>15</gw:TotalSizeInBytes>
+<gw:AverageSizeInBytes>15</gw:AverageSizeInBytes>
+<gw:MinSizeInBytes>15</gw:MinSizeInBytes>
+<gw:MaxSizeInBytes>15</gw:MaxSizeInBytes>
+</gw:ContentItem>
+```
+
+As the GWFILE\_MANAGE\_REMOVE\_EMBEDDED\_FILES switch has been set to Sanitise a dictionary is shown as tagged for removal. See [**Configuration Management**](2_2_2_3_6-config_mgmt/2_2_2_3_6_1-cm_policies.md) for details on content management switches
+
+\&lt;gw:SanitisationItems itemCount = &quot;1&quot;\&gt;
+\&lt;gw:SanitisationItem\&gt;
+\&lt;gw:TechnicalDescription\&gt;Document information dictionary detected in a document trailer dictionary.\&lt;/gw:TechnicalDescription\&gt;
+\&lt;gw:InstanceCount\&gt;1\&lt;/gw:InstanceCount\&gt;
+\&lt;gw:TotalSizeInBytes\&gt;0\&lt;/gw:TotalSizeInBytes\&gt;
+\&lt;gw:AverageSizeInBytes\&gt;0\&lt;/gw:AverageSizeInBytes\&gt;
+\&lt;gw:MinSizeInBytes\&gt;0\&lt;/gw:MinSizeInBytes\&gt;
+\&lt;gw:MaxSizeInBytes\&gt;0\&lt;/gw:MaxSizeInBytes\&gt;
+\&lt;/gw:SanitisationItem\&gt;
+
+Not all XML reports include Remedies as these are automatic corrections made to bring any regenerated file in line with the file specification and may not be necessary for the file being processed but one is shown in this case.
+
+\&lt;gw:RemedyItems itemCount = &quot;1&quot;\&gt;
+\&lt;gw:RemedyItem\&gt;
+\&lt;gw:TechnicalDescription\&gt;PDF Stream is missing an End-Of-Line before the &amp;apos;EndStream&amp;apos; marker.\&lt;/gw:TechnicalDescription\&gt;
+\&lt;gw:InstanceCount\&gt;7\&lt;/gw:InstanceCount\&gt;
+\&lt;/gw:RemedyItem\&gt;
+
+Very few files have an issue as this means they are not just non-conformant with the file specification but Glasswall FileTrust has been unable to Remedy the issue back to the specification. In Protect Mode a file with an issue can not be regenerated.
+
+\&lt;gw:IssueItems itemCount=&quot;1&quot;\&gt;
+\&lt;gw:IssueItem\&gt;
+\&lt;gw:TechnicalDescription\&gt;/Info dictionary contained an unexpected key (/GTS\_PDFXConformance).\&lt;/gw:TechnicalDescription\&gt;
+\&lt;gw:IssueId\&gt;46\&lt;/gw:IssueId\&gt;
+\&lt;gw:InstanceCount\&gt;1\&lt;/gw:InstanceCount\&gt;
+\&lt;gw:RiskLevel\&gt;Medium\&lt;/gw:RiskLevel\&gt;
+\&lt;/gw:IssueItem\&gt;
+
+Each Sanitisation Item,  Remedy item or  Issue Item has a unique numeric id associated with it that never changes so the item can be uniquely identified by other applications that may wish to process  the XML Reports.
+
+Each Issue and its corresponding numeric id is stored in a database along with a reference to the file specification which, when the file was analysed against it, generated the issue. The file specification can then be searched for more information as to why the file is considered non-conforming.

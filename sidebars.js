@@ -46,7 +46,11 @@ module.exports = {
                 "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_3-GIF/2_1_3_3_1-GlasswallDllCameraGIF",
             ]
             },
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_4-GlasswallDllCameraPNG",    
+            {"2.1.3.3.4 PNG":
+            [
+                "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_4-PNG/2_1_3_3_4_1-GlasswallDllCameraPNG",
+            ]
+            },   
             ]
             },
             {

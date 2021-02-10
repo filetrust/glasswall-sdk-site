@@ -50,5 +50,3 @@ The process is described in this Data Flow Diagram:
 
 ![](media/securitytagging.png)
 
-|   |
-| --- |

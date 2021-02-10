@@ -189,13 +189,13 @@ Office Open XML files are stored as zipped archive files and although the zipped
 
 The following specifications are used to validate Office Open XML (OOXML) Word, Excel, and PowerPoint file types:
 
-- [ECMA-376 4th edition Part 1](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-376,%20Fourth%20Edition,%20Part%201%20-%20Fundamentals%20And%20Markup%20Language%20Reference.zip)
+- [ECMA-376, 1st edition, December 2006](https://www.ecma-international.org/wp-content/uploads/ecma-376_first_edition_december_2006.zip)
 
-- [ECMA-376 4th edition Part 2](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-376,%20Fourth%20Edition,%20Part%202%20-%20Open%20Packaging%20Conventions.zip)
+- [ECMA-376, 2nd edition, December 2008](https://www.ecma-international.org/wp-content/uploads/ecma-376_second_edition_december_2008.zip)
 
-- [ECMA-376 4th edition Part 3](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-376,%20Fourth%20Edition,%20Part%203%20-%20Markup%20Compatibility%20and%20Extensibility.zip)
+- [ECMA-376, 3rd edition, June 2011](https://www.ecma-international.org/wp-content/uploads/ecma-376_third_edition_june_2011.zip)
 
-- [ECMA-376 4th edition Part 4](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-376,%20Fourth%20Edition,%20Part%204%20-%20Transitional%20Migration%20Features.zip)
+- [ECMA-376, 4th edition, December 2012](https://www.ecma-international.org/wp-content/uploads/ecma-376_fourth_edition_december_2012.zip)
 
 #### Office 2013
 

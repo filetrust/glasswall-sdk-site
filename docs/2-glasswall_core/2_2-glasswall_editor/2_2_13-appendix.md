@@ -21,7 +21,7 @@ This section provides example code for the &#39;Hello Glasswall&#39; example in 
 
 ### Test Application Code
 
-The following code tests the wrapper code and runs the [**GW2LibVersion**](https://docs.glasswallsolutions.com/sdk/editor/Content/API/GW2LibVersion.htm#GW2LibVe) function:
+The following code tests the wrapper code and runs the [**GW2LibVersion**](2_2_6-sdk/2_2_6_1-api/2_2_6_1_2-apifunctions.md#gw2libversion) function:
 ```
 let path = require('path');
 
@@ -67,7 +67,7 @@ The following code examples work with 64-bit versions of Python 2.7 and 3.8. The
 
 ### Test Application Code
 
-The following code tests the wrapper code and runs the [**GW2LibVersion**](https://docs.glasswallsolutions.com/sdk/editor/Content/API/GW2LibVersion.htm#GW2LibVe) function:
+The following code tests the wrapper code and runs the [**GW2LibVersion**](2_2_6-sdk/2_2_6_1-api/2_2_6_1_2-apifunctions.md#gw2libversion) function:
 ```
 import sys
 import logging
@@ -110,7 +110,7 @@ If successful, the test will return the following:
 
 ### Test Application Code
 
-The following code tests the wrapper code and runs the [**GW2LibVersion**](https://docs.glasswallsolutions.com/sdk/editor/Content/API/GW2LibVersion.htm#GW2LibVe) function:
+The following code tests the wrapper code and runs the [**GW2LibVersion**](2_2_6-sdk/2_2_6_1-api/2_2_6_1_2-apifunctions.md#gw2libversion) function:
 ```
 import java.io.IOException;
 
@@ -153,7 +153,7 @@ If successful, the test will return the following:
 
 ### Test Application Code
 
-The following code tests the wrapper code and runs the [**GW2LibVersion**](https://docs.glasswallsolutions.com/sdk/editor/Content/API/GW2LibVersion.htm#GW2LibVe) function:
+The following code tests the wrapper code and runs the [**GW2LibVersion**](2_2_6-sdk/2_2_6_1-api/2_2_6_1_2-apifunctions.md#gw2libversion) function:
 ```
 using glasswall.core2.wrapper;
 using system;

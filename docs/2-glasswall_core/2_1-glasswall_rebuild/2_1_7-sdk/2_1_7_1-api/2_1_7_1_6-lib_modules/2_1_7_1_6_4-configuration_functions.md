@@ -6,7 +6,7 @@ sidebar_label: 2.1.7.1.6.4 Configuration Functions
 
 - int [**GWFileConfigGet **](#gwfileconfigget)(wchar\_t \*\*configurationBuffer, size\_t \*outputLength)
 
-- int [**GWFileConfigRevertToDefaults**](#gwfileconfigreverttodefaults)) (void)
+- int [**GWFileConfigRevertToDefaults**](#gwfileconfigreverttodefaults) (void)
 
 - int [**GWFileConfigXML**](#gwfileconfigxml) (wchar\_t \*xmlstring)
 

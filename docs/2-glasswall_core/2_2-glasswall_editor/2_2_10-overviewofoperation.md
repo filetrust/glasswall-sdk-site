@@ -29,7 +29,7 @@ When opened, each session is assigned its own series of memory buffers. These bu
 
 Note that the more sessions that are concurrently open, the larger the overall memory requirements will be.
 
-Certain API calls may be used without a session – a full list of these &#39;session-less&#39; functions can be found in the [**Core API Specification**](https://docs.glasswallsolutions.com/sdk/editor/Content/API/Core%20API%20Specification.htm).
+Certain API calls may be used without a session – a full list of these &#39;session-less&#39; functions can be found in the [**Core API Specification**](2_2_6-sdk/2_2_6_1-api/2_2_6_1_1-editorAPIspecification.md).
 
 ## Policy files
 
@@ -43,7 +43,7 @@ If no policy file is specified, Glasswall is set to sanitise files by default.
 
 Most functions within the Glasswall API return an integer indicating success or failure. A 0 will indicate success, whilst a negative number (-1) indicates failure.
 
-Certain API calls do not follow this pattern; for example, the &#39;create session&#39; function will return either an error (-1) or the ID of the newly-created session (positive integer). Please refer to the [**Core API Specification**](https://docs.glasswallsolutions.com/sdk/editor/Content/API/Core%20API%20Specification.htm) for full details.
+Certain API calls do not follow this pattern; for example, the &#39;create session&#39; function will return either an error (-1) or the ID of the newly-created session (positive integer). Please refer to the [**Core API Specification**](2_2_6-sdk/2_2_6_1-api/2_2_6_1_1-editorAPIspecification.md) for full details.
 
 ## Data Management
 
@@ -73,6 +73,6 @@ This extra layer of abstraction is required as the size of this buffer is not kn
 
 ## Files for testing
 
-For a list of the supported file types, see [**File Types Supported**](https://docs.glasswallsolutions.com/sdk/editor/Content/Product-Description/File%20Types%20Supported.htm). Note that function calls or tests that use unsupported file types will not be processed.
+For a list of the supported file types, see [**File Types Supported**](2_2_2-architecture/2_2_2_4-fietypes_supported.md). Note that function calls or tests that use unsupported file types will not be processed.
 
 The Glasswall FileTrust SDK includes a series of files that may be used for testing. Both valid and invalid files are included in the test set. It is recommended that these files be used for initial testing as they prevent file-based errors causing integration difficulties. The test files cover the entire range of supported file types.
