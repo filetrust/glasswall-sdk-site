@@ -1,6 +1,6 @@
 ---
-title: 5.2.4 Perl Best Practices Summary 
-sidebar_label: 5.2.4 Perl Best Practices Summary 
+title: 5.1.4 Perl Best Practices Summary 
+sidebar_label: 5.1.4 Perl Best Practices Summary 
 ---
 
 A list of the complete set of 256 guidelines presented in *Perl Best

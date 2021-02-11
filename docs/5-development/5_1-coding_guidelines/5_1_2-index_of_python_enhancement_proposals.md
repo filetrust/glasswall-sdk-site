@@ -1,6 +1,6 @@
 ---
-title: 5.2.2 Index of Python Enhancement Proposals
-sidebar_label: 5.2.2 Index of Python Enhancement Proposals
+title: 5.1.2 Index of Python Enhancement Proposals
+sidebar_label: 5.1.2 Index of Python Enhancement Proposals
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
