@@ -1,4 +1,4 @@
 ---
-title: 5.3 Branching Strategy 
-sidebar_label: 5.3 Branching Strategy 
+title: 5.2 Branching Strategy 
+sidebar_label: 5.2 Branching Strategy 
 ---

@@ -1,6 +1,6 @@
 ---
-title: 5.2.3 Glasswall C Coding Guidelines
-sidebar_label: 5.2.3 Glasswall C Coding Guidelines
+title: 5.1.3 Glasswall C Coding Guidelines
+sidebar_label: 5.1.3 Glasswall C Coding Guidelines
 ---
 
 ## 1. THE C PROGRAMMING LANGUAGE

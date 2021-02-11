@@ -1,6 +1,6 @@
 ---
-title: 5.2.1 C++ Core Guidelines
-sidebar_label: 5.2.1 C++ Core Guidelines
+title: 5.1.1 C++ Core Guidelines
+sidebar_label: 5.1.1 C++ Core Guidelines
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
