@@ -1,6 +1,6 @@
 ---
-title: 5.2.5 Learn YAML in Y Minutes
-sidebar_label: 5.2.5 Learn YAML in Y Minutes
+title: 3.10 Learn YAML in Y Minutes
+sidebar_label: 3.10 Learn YAML in Y Minutes
 ---
 This is taken from learnxinyminutes.com
 
