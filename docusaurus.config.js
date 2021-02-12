@@ -2,7 +2,7 @@ module.exports = {
   title: "Glasswall Documentation",
   tagline: "",
   url: "https://filetrust.github.io",
-  baseUrl: "/",
+  baseUrl: "/glasswall-sdk-site/",
   favicon: "img/favicon.ico",
   organizationName: "filetrust", // Usually your GitHub org/user name.
   projectName: "glasswall-sdk-site", // Usually your repo name.
@@ -18,7 +18,7 @@ module.exports = {
       items: [
         {
           to: "/Home",
-          label: "Home Page",
+          label: "Home",
           position: "left",
         },
 
