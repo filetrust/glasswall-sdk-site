@@ -18,7 +18,7 @@ module.exports = {
       items: [
         {
           to: "/Home",
-          label: "Home",
+          label: "Home Page",
           position: "left",
         },
 
