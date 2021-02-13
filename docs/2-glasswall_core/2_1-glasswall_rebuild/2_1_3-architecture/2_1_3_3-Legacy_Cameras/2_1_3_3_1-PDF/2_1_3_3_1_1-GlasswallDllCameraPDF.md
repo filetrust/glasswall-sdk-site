@@ -16,7 +16,7 @@ View the [PDF Module Software Requirement Specification](<PDF Module - Software 
 
 # Design and Architecture #
 
-View the [PDF Module Architecture Design Document](<PDF Module - Architecture Design Document.pdf> "PDF Module - Architecture Design Document").
+View the [PDF Module Architecture Design Document](PDF%20Module%20-%20Architecture%20Design%20Document.doc).
 
 # PDF Camera - data elements
 
