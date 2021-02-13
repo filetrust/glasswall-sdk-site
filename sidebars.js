@@ -33,7 +33,7 @@ module.exports = {
                 [
                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_1-PDF/2_1_3_3_1_1-GlasswallDllCameraPDF", 
                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_1-PDF/2_1_3_3_1_2-data_elements_of_the_pdf_camera",
-                   "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_1-PDF/2_1_3_3_1_3-pdf_camera_dataFlow",
+                   "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_3-Legacy_Cameras/2_1_3_3_1-PDF/2_1_3_3_1_3-PDFModuleArchitectureDesignDoc",
                 ]
             },
             {"2.1.3.3.2 JPEG":
@@ -73,7 +73,13 @@ module.exports = {
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_7-supported_file_type",
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_8-issue_id_info_retreival",
             ]
-            }
+            },
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_5-filetypes_supported",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_6-issueID_retreival",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_7-import_export_system_full_text_support",
+            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_8-glasswall_dynamic_configuration",
+
+
             ]
         },
         {"2.1.4 Licencing":
@@ -154,8 +160,6 @@ module.exports = {
             ]
         },
         "2-glasswall_core/2_1-glasswall_rebuild/2_1_8-rebuild_cli",
-        "2-glasswall_core/2_1-glasswall_rebuild/2_1_9-import_export_system_full_text_support",
-        "2-glasswall_core/2_1-glasswall_rebuild/2_1_10-glasswall_dynamic_configuration",
         ]
     },
     {
@@ -189,6 +193,7 @@ module.exports = {
             },
             "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_4-fietypes_supported",
             "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_5-archive_types",
+            "2-glasswall_core/2_2-glasswall_editor/2_2_2-architecture/2_2_2_6-core2_design_plan",
             ]
         },
         "2-glasswall_core/2_2-glasswall_editor/2_2_3-licencing",
@@ -239,12 +244,6 @@ module.exports = {
         "2-glasswall_core/2_2-glasswall_editor/2_2_7-editor_cli/2_2_7_4-examples",
         ]
         },
-        "2-glasswall_core/2_2-glasswall_editor/2_2_8-core2_design_plan",
-        "2-glasswall_core/2_2-glasswall_editor/2_2_9-core2_camera_tree", 
-        "2-glasswall_core/2_2-glasswall_editor/2_2_10-overviewofoperation",
-        "2-glasswall_core/2_2-glasswall_editor/2_2_11-basic-features",
-        "2-glasswall_core/2_2-glasswall_editor/2_2_12-advanced_features", 
-        "2-glasswall_core/2_2-glasswall_editor/2_2_13-appendix", 
         ]
     },
     {
