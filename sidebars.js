@@ -10,6 +10,7 @@ module.exports = {
     "2 1 Glasswall Rebuild":
         [
         "2-glasswall_core/2_1-glasswall_rebuild/2_1_1-product_description",
+        "2-glasswall_core/2_1-glasswall_rebuild/2_1_2-rebuild_cli",
         {
         "2.1.3 Architecture":
             [
@@ -159,7 +160,6 @@ module.exports = {
             }
             ]
         },
-        "2-glasswall_core/2_1-glasswall_rebuild/2_1_8-rebuild_cli",
         ]
     },
     {
