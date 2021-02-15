@@ -10,7 +10,6 @@ The table below lists the file formats fully supported by Glasswall Rebuild. &#3
 | **File Extension** | **Sub Type(s)** | **Document Type** |
 | --- | --- | --- |
 | **.pdf** |   | PDF documents |
-| --- | --- | --- |
 | **.jpg** |   | JPEG image files |
 | **.gif** |   | GIF image files |
 | **.png** |   | PNG image files |
@@ -30,7 +29,6 @@ The table below lists the file formats partially supported by Glasswall Rebuild.
 | **File Extension** | **Document Type** |
 | --- | --- |
 | **.mp3** | MPEG-1 Audio Layer III (MPEG-2 Audio Layer III) audio files |
-| --- | --- |
 | **.mp4** | Compressed audio and video digital data files |
 | **.mpg** | MPEG-1 and MPEG-2 audio and video compression files |
 | **.wav** | Waveform Audio File Format (WAVE) files |

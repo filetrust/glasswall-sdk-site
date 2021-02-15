@@ -2,21 +2,8 @@
 title: 3.6 PDF Image Conversion
 sidebar_label: 3.6 PDF Image Conversion
 ---
-
-&copy; 2017 Glasswall Solutions Limited<br />
-ALL RIGHTS RESERVED
-
-Information contained herein is the property of Glasswall Limited and is
-proprietary and confidential.
-
 ### **AUTHOR**
 Roman Danilov <rdanilov@glasswallsolutions.com>
-
-### **CREATION DATE**
-25 October 2017
-
-### **VERSION**
-1
 
 ### **DOCUMENT HISTORY**
 
@@ -25,34 +12,6 @@ Table 1: Document Change History
 |Issue Date|Issue Number|Author|Description
 |---|---|---|---
 2017/10/25|1|Roman Danilov|The initial document describing how to convert raw PDF image data into actual images
-                                                          
-
-**DOCUMENT DISTRIBUTION**
-
-Table 2: Document Distribution
-
-|Name|Date|
-|---|---|
-|Forcepoint|2017/11/01|
-               
-**COPYRIGHT AND CONTACT DETAILS**
-
-The copyright in this work is vested in Glasswall Solutions Limited, and the
-document is issued in confidence for the purpose for which it is
-supplied. It must not be reproduced in whole or in part or used for
-tendering or manufacturing purposes except under agreement or with the
-consent in writing of Glasswall Solutions Limited and then only on
-condition that this notice is included in any such reproduction. No
-information as to the contents or subject matter of this document or any
-part thereof arising directly or indirectly there from shall be given
-orally or in writing or communicated in any manner whatsoever to any
-third part being an individual firm or company or any employee thereof
-without the prior consent in writing of Glasswall Solutions Limited.
-
-&copy; 2017 Glasswall Solutions Limited
-
-If there are any questions related to this report, these should be
-addressed to: [Roman Danilov](mailto:rdanilov@glasswallsolutions.com).
 
 ## **1 INTRODUCTION**
 

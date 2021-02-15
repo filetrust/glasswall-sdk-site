@@ -10,6 +10,7 @@ module.exports = {
     "2 1 Glasswall Rebuild":
         [
         "2-glasswall_core/2_1-glasswall_rebuild/2_1_1-product_description",
+        "2-glasswall_core/2_1-glasswall_rebuild/2_1_2-rebuild_cli",
         {
         "2.1.3 Architecture":
             [
@@ -159,7 +160,6 @@ module.exports = {
             }
             ]
         },
-        "2-glasswall_core/2_1-glasswall_rebuild/2_1_8-rebuild_cli",
         ]
     },
     {
@@ -233,7 +233,17 @@ module.exports = {
                 "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_4-c_sharp",
                 "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_5-java"
                 ]
-            }
+            },
+            {
+            "2.2.6.3 Examples":
+            [
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_3-examples/2_2_6_3_1-overviewofoperation",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_3-examples/2_2_6_3_2-basic-features",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_3-examples/2_2_6_3_3-advanced_features",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_3-examples/2_2_6_3_4-appendix",
+
+            ]
+            },
             ]
         },
         {"2.2.7 Command Line Interface":
@@ -349,7 +359,9 @@ module.exports = {
         },
     
     "5-development/5_2-branching_strategy",
-    "5-development/5_3-unit_testing"
+    "5-development/5_3-unit_testing",
+    "5-development/5_4-core_development_process",
+    
     ]
 },
 {
@@ -415,6 +427,7 @@ module.exports = {
                 "7-tools/7_7-office_binary/7_7_3-GetWordVersion",
                 "7-tools/7_7-office_binary/7_7_4-TestMSOfficeOpen",
                 "7-tools/7_7-office_binary/7_7_5-WordDissection",
+                "7-tools/7_7-office_binary/7_7_6-BinaryFileFormat",
             ]
         },
         {

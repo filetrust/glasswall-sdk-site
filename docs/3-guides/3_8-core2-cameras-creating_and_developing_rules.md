@@ -2,10 +2,8 @@
 title: 3.8 Core 2 Cameras - Creating and Development Rules 
 sidebar_label: 3.8 Core 2 Cameras - Creating and Development Rules  
 ---
+### **AUTHOR**
 Steven Warner
-
-
-Glasswall Solutions Ltd
 
 ### Core2 cameras - Creating and Development Rules
 

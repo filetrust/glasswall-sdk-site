@@ -3,23 +3,6 @@ title: 2.1.1 Product Description
 sidebar_label: 2.1.1 Product Description 
 ---
 
-<div style={{textAlign: 'center'}}>
-
-White Paper
-
-&copy; 2019 Glasswall Solutions Ltd
-
-ALL RIGHTS RESERVED
-
-Information contained herein is the property of Glasswall Solutions Limited and is
-proprietary and confidential.
-
-</div>
-
-Creation Date — 28 January 2015
-
-Version 1.8
-
 ## **Document History**
 
 Table 1: Document Change History
@@ -45,26 +28,6 @@ Table 1: Document Change History
 |10/04/2018|       1.7|              Elvin Barreto-White|         Issue ID retrieval information added and updated content management section
 |28/03/2019|       1.8|              Elvin Barreto-White|         Specification version number updates, file size limit updates, supported operating systems added.
 |25/11/2020|1.9|Martin O'Brien|Changes made to convert to markdown format
-
-## **Copyright and Contact Details**
-
-The copyright in this work is vested in Glasswall Solutions Limited, and the
-document is issued in confidence for the purpose for which it is
-supplied. It must not be reproduced in whole or in part or used for
-tendering or manufacturing purposes except under agreement or with the
-consent in writing of Glasswall Solutions Limited and then only on
-condition that this notice is included in any such reproduction. No
-information as to the contents or subject matter of this document or any
-part thereof arising directly or indirectly there from shall be given
-orally or in writing or communicated in any manner whatsoever to any
-third part being an individual firm or company or any employee thereof
-without the prior consent in writing of Glasswall Solutions Limited.
-
-© 2019 Glasswall Solutions Limited
-
-If there are any questions related to this document, these should be
-addressed to [Glasswall Support](mailto:support@glasswallsolutions.com).
-#
 
 ## **1 Introduction**
 
@@ -559,7 +522,7 @@ content items, issues and remedies can appear in an XML report for image
 file. Sanitisation items cannot be present in their XML reports.
 Automatic corrections are applied to a file in order to bring it in line
 with the manufacturer's specification and/or remove unrecognised or
-unwanted data. See [Section 4.1](#4-automatic-corrections).
+unwanted data. See [**Section 4.1**](#4-automatic-corrections).
 
 ### **5.5 Binary and Office Open XML**
 There are a number of content management switches common to each of the
@@ -635,7 +598,7 @@ regenerated file.
 
 #### **6.2.3 Specification Validated Against**
 
-- PDF Reference (third edition) Adobe Portable Document Format Version 1.7. Refer to [PDF Reference](../../8-related/8_1-specifications/8_1_2-pdf) for other versions.
+- PDF Reference (third edition) Adobe Portable Document Format Version 1.7. Refer to [**PDF Reference**](../../8-related/8_1-specifications/8_1_2-pdf/8_1_2-pdf.md) for other versions.
 
 ## **6.3 Images**
 
@@ -653,7 +616,7 @@ specification would result in the original document being quarantined.
 
 -   JPX for ISO/IEC 15444-2 (JPEG 2000)
 
-See [JPEG section](../../8-related/8_1-specifications/8_1_3-jpeg) under *Specifications* for more references.
+See [**JPEG section**](../../8-related/8_1-specifications/8_1_3-jpeg/8_1_3_1-jpeg.md) under *Specifications* for more references.
 
 #### **6.3.2 GIF**
 

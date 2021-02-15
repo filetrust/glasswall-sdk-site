@@ -53,10 +53,15 @@ The diagrams below give an overview of how Glasswall processes a CFB file.
 
 - [Prototype Office Binary Camera](Prototype Office Binary Camera.pdf "Prototype Office Binary Camera")
 
+## CFB Management
+
+![](02_CFBManagement.PNG)
+
+[CFB Management](02_CFBManagement.dia)  <img alt="Dia" src={useBaseUrl('img/dia_icon.png')} />
+
 **UNDER CONSTRUCTION**
 
 # Related Links
 
-- [Specifications](@ref internalFileFormatSpecifications)
+- [**Binary File Format Specifications**](../../../../7-tools/7_7-office_binary/7_7_6-BinaryFileFormat.md)
 
-[CFB Management](02_CFBManagement.dia)  <img alt="Dia" src={useBaseUrl('img/dia_icon.png')} />

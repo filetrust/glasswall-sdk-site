@@ -1,6 +1,6 @@
 ---
 title: 2.1.3.6 Issue ID Information Retreival
-sidebar_label: 2.1.3.6 OIssue ID Information Retreival
+sidebar_label: 2.1.3.6 Issue ID Information Retreival
 ---
 
 There are two API functions responsible for retrieving information related to issue ID’s. Issue IDs are generated when files processed in analysis mode and can be found in the output analysis report. Descriptions of the API functions are as follows:-

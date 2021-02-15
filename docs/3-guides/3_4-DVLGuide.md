@@ -3,26 +3,7 @@ title: 3.4 DVL Developer Guide
 sidebar_label: 3.4 DVL Developer Guide
 ---
 
-<div style={{textAlign: 'center'}}>
-
-
-&copy; 2017 Glasswall Solutions Ltd<br />
-ALL RIGHTS RESERVED
-
-Information contained herein is the property of Glasswall Limited and is
-proprietary and confidential.
-
-Martin O'Brien
-
-Glasswall Solutions Ltd.
-
-</div>
-
-Creation Date -- 25 September 2013
-
-Version -- 1
-
-**Document History**
+## **Document History**
 
 Table 1: Document Change History
 
@@ -30,31 +11,6 @@ Table 1: Document Change History
   |---|---|---|---
   |25 Sep 2013|1.0|Martin O'Brien|Version 1
   |08 Feb 2017|1.1|Elvin Barreto-White|Updated to use latest Glasswall template.
-
-**Document Distribution**
-
-Table 2: Document Distribution
-
-|Name|Position
-|---|---|
-|Sam Hutton|CTO                           
-                                             
-
-**Copyright and Contact Details**
-
-The copyright in this work is vested in Glasswall Solutions Ltd, and the
-document is issued in confidence for the purpose for which it is
-supplied. It must not be reproduced in whole or in part or used for
-tendering or manufacturing purposes except under agreement or with the
-consent in writing of Glasswall Solutions Limited and then only on
-condition that this notice is included in any such reproduction. No
-information as to the contents or subject matter of this document or any
-part thereof arising directly or indirectly there from shall be given
-orally or in writing or communicated in any manner whatsoever to any
-third part being an individual firm or company or any employee thereof
-without the prior consent in writing of Glasswall Solutions Limited.
-
-&copy; 2016 Glasswall Solutions Limited
 
 ## 1. Overview
 
