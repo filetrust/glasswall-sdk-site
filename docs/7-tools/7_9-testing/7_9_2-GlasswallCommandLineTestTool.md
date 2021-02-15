@@ -2,21 +2,8 @@
 title: 7.9.2 Command Line Test Tool
 sidebar_label: 7.9.2 Command Line Test Tool
 ---
-# Command Line Test Tool
 
-© 2019 Glasswall Solutions Ltd ALL RIGHTS RESERVED
-
-Information contained herein is the property of Glasswall Limited and is proprietary and confidential.
-
-_Glasswall Solutions Ltd._
-
-_(e): support@glasswallsolutions.com_
-
-_Creation Date – 21/06/13_
-
-_Version – 2.11_
-
-**Document History**
+# **Document History**
 
 Table 1: Document Change History
 

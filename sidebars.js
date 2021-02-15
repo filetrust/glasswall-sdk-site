@@ -349,7 +349,9 @@ module.exports = {
         },
     
     "5-development/5_2-branching_strategy",
-    "5-development/5_3-unit_testing"
+    "5-development/5_3-unit_testing",
+    "5-development/5_4-core_development_process",
+    
     ]
 },
 {
@@ -415,6 +417,7 @@ module.exports = {
                 "7-tools/7_7-office_binary/7_7_3-GetWordVersion",
                 "7-tools/7_7-office_binary/7_7_4-TestMSOfficeOpen",
                 "7-tools/7_7-office_binary/7_7_5-WordDissection",
+                "7-tools/7_7-office_binary/7_7_6-BinaryFileFormat",
             ]
         },
         {

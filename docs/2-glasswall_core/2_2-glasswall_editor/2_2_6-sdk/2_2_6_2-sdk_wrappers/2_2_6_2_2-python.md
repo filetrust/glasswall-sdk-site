@@ -4,30 +4,6 @@ sidebar_label: 2.2.6.2.2 Python
 ---
 
 
-![](media/glasswalllogo.jpg)
-
-<div style={{textAlign: 'center'}}>
-
-# Glasswall API Language Wrapper Documentation
-# Python
-
-
-&copy; 2020 Glasswall Solutions Ltd ALL RIGHTS RESERVED<br />
-ALL RIGHTS RESERVED
-
-Information contained herein is the property of Glasswall Limited and is proprietary and confidential.
-
-Martin O'Brien
-
-Glasswall Solutions Ltd.
-
-[support@glasswallsolutions.com](mailto:support%40glasswallsolutions.com)
-</div>
-
-_Creation Date – 14 October 2020_
-
-_Version – 1_
-
 ## Purpose
 
 The purpose of the wrappers is to expose the Core 2 SDK functionality through Python, C#, JavaScript and Java.

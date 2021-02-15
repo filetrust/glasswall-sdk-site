@@ -9,5 +9,5 @@ The specifications included here have been useful for dealing with Glasswall's J
 
 ## Specifications
 
-Specification can be found [**here**](../../../../../8-related/8_1-specifications/8_1_3-jpeg/8_1_3_1-jpeg.md)
+See [**JPEG Specification**](../../../../../8-related/8_1-specifications/8_1_3-jpeg/8_1_3_1-jpeg.md)
 

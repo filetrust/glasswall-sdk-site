@@ -2,27 +2,8 @@
 title: 2.2.1 Product Description
 sidebar_label: 2.2.1 Product Description
 ---
-<div style={{textAlign: 'center'}}>
 
-White Paper
-
-© 2019 Glasswall Solutions Limited
-
-ALL RIGHTS RESERVED
-
-Information contained herein is the property of Glasswall Limited and is
-proprietary and confidential.
-
-Email: [Glasswall Support](mailto:support@glasswallsolutions.com)
-
-</div>
-
-
-Creation Date -- 28 January 2015
-
-Version -- 1.8
-
-**Document History**
+# **Document History**
 
 Table 1: Document Change History
 
@@ -47,26 +28,6 @@ Table 1: Document Change History
   |10/04/2018|       1.7|              Elvin Barreto-White|         Issue ID retrieval information added and updated content management section
   |28/03/2019|       1.8|              Elvin Barreto-White|         Specification version number updates, file size limit updates, supported operating systems added.
 
-**Copyright and Contact Details**
-
-The copyright in this work is vested in Glasswall Solutions Limited, and the
-document is issued in confidence for the purpose for which it is
-supplied. It must not be reproduced in whole or in part or used for
-tendering or manufacturing purposes except under agreement or with the
-consent in writing of Glasswall Solutions Limited and then only on
-condition that this notice is included in any such reproduction. No
-information as to the contents or subject matter of this document or any
-part thereof arising directly or indirectly there from shall be given
-orally or in writing or communicated in any manner whatsoever to any
-third part being an individual firm or company or any employee thereof
-without the prior consent in writing of Glasswall Solutions Limited.
-
-&copy; 2019 Glasswall Solutions Limited
-
-If there are any questions related to this document, these should be
-addressed to: [Glasswall Support](mailto:support@glasswallsolutions.com)
-
-**Contents**
 
 ## **1 Introduction**
 

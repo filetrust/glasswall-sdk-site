@@ -2,27 +2,8 @@
 title: 4.2.2.1 XSD Analysis Repository and Reporting System
 sidebar_label: 4.2.2.1 XSD Analysis Repository and Reporting System
 ---
-<div style={{textAlign: 'center'}}>
 
-# _Design Document_
-
-© 2016 Glasswall Solutions Ltd ALL RIGHTS RESERVED
-
-Information contained herein is the property of Glasswall Solutions Limited and is proprietary and confidential.
-
-_Steven Warner_
-
-_Glasswall Solutions Ltd._
-
-_(e): support@glasswallsolutions.com_
-
-</div>
-
-_Creation Date – 19/02/2016_
-
-_Version – 0.3_
-
-**Document History**
+## **Document History**
 
 Table 1: Document Change History
 
@@ -31,26 +12,6 @@ Table 1: Document Change History
 | **14-3-2016** | 0.1 | SWarner | First Basic Draft |
 | **20-4-2016** | 0.2 | SWarner | Further amendments from prototyping |
 | **25-5-2016** | 0.3 | SWarner | Review edits to text and diagrams |
-|
- |
- |
- |
- |
-
-**Copyright and Contact Details**
-
-The copyright in this work is vested in Glasswall Solutions Ltd, and the document is issued in confidence for the purpose for which it is supplied. It must not be reproduced in whole or in part or used for tendering or manufacturing purposes except under agreement or with the consent in writing of Glasswall Solutions Limited and then only on condition that this notice is included in any such reproduction. No information as to the contents or subject matter of this document or any part thereof arising directly or indirectly there from shall be given orally or in writing or communicated in any manner whatsoever to any third part being an individual firm or company or any employee thereof without the prior consent in writing of Glasswall Solutions Limited.
-
-© Glasswall Solutions Limited 2016
-
-If there are any questions related to this report, these should be addressed to:
-
-Sam Hutton
-
-Glasswall Solutions Limited
-
-e-mail: [shutton@glasswallsolutions.com](mailto:shutton@glasswallsolutions.com)
-
 
 # 1 Introduction
 

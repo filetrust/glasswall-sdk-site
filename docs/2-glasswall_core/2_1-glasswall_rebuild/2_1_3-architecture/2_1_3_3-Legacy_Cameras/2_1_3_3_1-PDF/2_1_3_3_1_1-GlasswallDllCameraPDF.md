@@ -10,10 +10,6 @@ The diagram below provides an overview of the PDF camera architecture.
 ![Alt text](../img/PDF_Camera_Dataflow-PREFILTER_CYCLE_0-INITIALISATION.jpeg)
 
 
-# Requirement Specification #
-
-View the [PDF Module Software Requirement Specification](<PDF Module - Software Requirement Specification.pdf> "PDF Module - Software Requirement Specification").
-
 # Design and Architecture #
 
 View the [PDF Module Architecture Design Document](PDF%20Module%20-%20Architecture%20Design%20Document.doc).

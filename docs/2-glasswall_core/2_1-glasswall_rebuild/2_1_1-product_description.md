@@ -3,23 +3,6 @@ title: 2.1.1 Product Description
 sidebar_label: 2.1.1 Product Description 
 ---
 
-<div style={{textAlign: 'center'}}>
-
-White Paper
-
-&copy; 2019 Glasswall Solutions Ltd
-
-ALL RIGHTS RESERVED
-
-Information contained herein is the property of Glasswall Solutions Limited and is
-proprietary and confidential.
-
-</div>
-
-Creation Date — 28 January 2015
-
-Version 1.8
-
 ## **Document History**
 
 Table 1: Document Change History

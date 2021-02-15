@@ -2,22 +2,7 @@
 title: 2.1.3.8 Glasswall Dynamic Configuration
 sidebar_label: 2.1.3.8 Glasswall Dynamic Configuration
 ---
-<div style={{textAlign: 'center'}}>
-© 2014 Glasswall Solutions Ltd ALL RIGHTS RESERVED
-
-Information contained herein is the property of Glasswall Limited and is proprietary and confidential.
-
-_Paul Gerard_
-
-*Glasswall Solutions Ltd.*<br />
-*email: [Glasswall Support](support@glasswallsolutions.com)*<br />
-</div>
-
-_Creation Date – 08/05/2014_
-
-_Version – A_
-
-**Document History**
+#**Document History**
 
 Table 1: Document Change History
 
@@ -25,31 +10,6 @@ Table 1: Document Change History
 | --- | --- | --- | --- |
 | **08/05/2014** | A | PFG | Initial version for review |
 | | | |  |
-
-**Document Distribution**
-
-Table 2: Document Distribution
-
-| **_Name_** | **_Position_** | **_Date_** | **_Signature_** |
-| --- | --- | --- | --- |
-| **Glasswall Development Team** |
-| | . |
-
-
-**Copyright and Contact Details**
-
-The copyright in this work is vested in Glasswall Solutions Ltd, and the document is issued in confidence for the purpose for which it is supplied. It must not be reproduced in whole or in part or used for tendering or manufacturing purposes except under agreement or with the consent in writing of Glasswall Solutions Limited and then only on condition that this notice is included in any such reproduction. No information as to the contents or subject matter of this document or any part thereof arising directly or indirectly there from shall be given orally or in writing or communicated in any manner whatsoever to any third part being an individual firm or company or any employee thereof without the prior consent in writing of Glasswall Solutions Limited.
-
-© Glasswall Solutions Limited 2014
-
-If there are any questions related to this report, these should be addressed to:
-
-Sam Hutton
-
-Glasswall Solutions Limited
-
-e-mail: [shutton@glasswallsolutions.com](mailto:shutton@glasswallsolutions.com)
-#
 
 # 1 Introduction
 
