@@ -233,7 +233,17 @@ module.exports = {
                 "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_4-c_sharp",
                 "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_2-sdk_wrappers/2_2_6_2_5-java"
                 ]
-            }
+            },
+            {
+            "2.2.6.3 Examples":
+            [
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_3-examples/2_2_6_3_1-overviewofoperation",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_3-examples/2_2_6_3_2-basic-features",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_3-examples/2_2_6_3_3-advanced_features",
+                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_3-examples/2_2_6_3_4-appendix",
+
+            ]
+            },
             ]
         },
         {"2.2.7 Command Line Interface":
