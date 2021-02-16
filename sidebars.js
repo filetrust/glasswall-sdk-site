@@ -482,7 +482,6 @@ module.exports = {
         { "8.1.3 JPEG":
             [
                 "8-related/8_1-specifications/8_1_3-jpeg/8_1_3_1-jpeg",
-                "8-related/8_1-specifications/8_1_3-jpeg/8_1_3_2-glasswall_jpeg_2000_compress_filer",
             ]
         },
         { "8.1.4 PNG":
