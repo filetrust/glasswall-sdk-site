@@ -221,7 +221,23 @@ module.exports = {
                 "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_3-securitytagging/2_2_6_1_3-5-csharp",
                 ]
                 },
-                "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_4-wordsearch",
+                { "2.2.6.4 Word Search":
+                [
+                    "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_4-wordsearch/2_2_6_1_4_1-wordsearch",
+                    "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_4-wordsearch/2_2_6_1_4_2-wordsearchConfig",
+                    "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_4-wordsearch/2_2_6_1_4_3-wordsearchXSD",
+                    "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_4-wordsearch/2_2_6_1_4_4-exampleuseage",
+                ]
+                },
+                {"2.2.6.5 Archive Manager":
+                [
+                    "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_5-archivemanager/2_2_6_1_5_1-archive-manager",
+                    "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_5-archivemanager/2_2_6_1_5_2-config",
+                    "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_5-archivemanager/2_2_6_1_5_3-example",
+                    "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_5-archivemanager/2_2_6_1_5_4-analysis",
+                    "2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_5-archivemanager/2_2_6_1_5_5-expected_results",
+                ]
+                },
             ]
             },     
             {
@@ -256,55 +272,18 @@ module.exports = {
         },
         ]
     },
+    
     {
-    "2.3 Glasswall Archive Manager":
-        [
-        "2-glasswall_core/2_3-glasswall_archive_manager/2_3_1-product_description",
-        {
-        "2.4.2 Architecture":
-            [
-            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_2-architecture/2_3_2_1-overview",
-            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_2-architecture/2_3_2_2-configuration_management"
-            ]
-        },
-        "2-glasswall_core/2_3-glasswall_archive_manager/2_3_3-licencing",
-        "2-glasswall_core/2_3-glasswall_archive_manager/2_3_4-dependencies",
-        {
-        "2.3.5 Build":
-            [
-            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_5-build/2_3_5_1-building_project",
-            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_5-build/2_3_5_2-versioning"
-            ]
-        },
-        {
-        "2.3.6 SDK API":
-            [
-                "2-glasswall_core/2_3-glasswall_archive_manager/2_3_6-sdk_api/2_3_6_1-analysis",
-                "2-glasswall_core/2_3-glasswall_archive_manager/2_3_6-sdk_api/2_3_6_2-expected_results"
-            ]
-        },
-        {
-        "2.3.7 SDK Wrappers":
-            [
-            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_7-sdk_wrappers/2_3_7_1-python",
-            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_7-sdk_wrappers/2_3_7_2-javascript",
-            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_7-sdk_wrappers/2_3_7_3-c_sharp",
-            "2-glasswall_core/2_3-glasswall_archive_manager/2_3_7-sdk_wrappers/2_3_7_4-java",
-            ]
-        }
-        ]
-    },
-    {
-    "2.4 Common":
+    "2.3 Common":
     [
-        {"2.4.1 Binary Data Definition Language (BDDL)":
+        {"2.3.1 Binary Data Definition Language (BDDL)":
         [
-            "2-glasswall_core/2_4-common/2_4_1-bddl/2_4_1_1-bddl",
-            "2-glasswall_core/2_4-common/2_4_1-bddl/2_4_1_2-bddl_softlinks",
+            "2-glasswall_core/2_3-common/2_3_1-bddl/2_3_1_1-bddl",
+            "2-glasswall_core/2_3-common/2_3_1-bddl/2_3_1_2-bddl_softlinks",
         ]
         },
-        "2-glasswall_core/2_4-common/2_4_2-dvl",
-        "2-glasswall_core/2_4-common/2_4_3-GlasswallCodeGenerators",
+        "2-glasswall_core/2_3-common/2_3_2-dvl",
+        "2-glasswall_core/2_3-common/2_3_3-GlasswallCodeGenerators",
     ]
     },
     ]
@@ -360,8 +339,12 @@ module.exports = {
     
     "5-development/5_2-branching_strategy",
     "5-development/5_3-unit_testing",
-    "5-development/5_4-core_development_process",
-    
+    { "5.4 Core Development Process":
+    [
+        "5-development/5_4-development_process/5_4_1-core_development_process",
+        "5-development/5_4-development_process/5_4_2-delivery_manager",
+    ]
+    },
     ]
 },
 {
