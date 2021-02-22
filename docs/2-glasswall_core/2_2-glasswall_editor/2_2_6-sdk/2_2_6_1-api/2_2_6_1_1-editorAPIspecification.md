@@ -1,6 +1,6 @@
 ---
-title: 2.2.6.1.1  Core2 API Specification
-sidebar_label: 2.2.6.1.1 Core2 API Specification
+title: 2.2.6.1.1  Editor API Specification
+sidebar_label: 2.2.6.1.1 Editor API Specification
 ---
 
  

@@ -74,7 +74,7 @@ Ensure easy way to start a camera on a memorybuffer is part of the interface
 
 #
 
-# 5 Reason for New Core2
+# 5 Reason for Editor
 
 # 6 Structure of platform
 
