@@ -5,10 +5,8 @@ sidebar_label: 2.1.1 Product Description
 
 ## **Document History**
 
-Table 1: Document Change History
-
 |Issue Date|Issue Number|Author|Description
-|---|---|---|---|---
+|---|---|---|---|
 |28/01/2015|       0.1|              John Hartwell|         Initial Draft
 |04/02/2015|       0.2|              John Hartwell|         Initial review comments
 |12/02/2015|       0.3|              John Hartwell|         SH review comments
@@ -64,7 +62,7 @@ The API provides the following functionality:
 
 ### **1.1 Supported Operating Systems**
 
-**1.1.1 Windows**
+#### **1.1.1 Windows**
 
 The application has been successfully tested on the following Windows
 versions:
@@ -80,7 +78,7 @@ versions:
 Note: The C++ 2017 Redistributable Package (x64) must be installed on
 each system.
 
-### **1.1.2 Linux**
+#### **1.1.2 Linux**
 
 The application has been successfully tested on the following GNU/Linux
 distributions:
