@@ -30,9 +30,10 @@ function HomePage() {
           <Container>
             <div className={classnames('row', styles.responsiveCentered)}>
               <div className="col col--6 col--offset-3">
-                <img className="homeImage" src={imgUrl}/>
-                <h3 className="">Glasswall Documentation</h3>
-                <p>A resource for Glasswall documentation</p>
+                <a href = {useBaseUrl('docs/1-introduction')}>
+                  <img className="homeImage" src={imgUrl}/>
+                  <p>A resource for Glasswall documentation</p>
+                </a>
               </div>
             </div> 
           </Container>
