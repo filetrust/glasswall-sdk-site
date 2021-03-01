@@ -8,6 +8,7 @@ module.exports = {
   projectName: "glasswall-sdk-site", // Usually your repo name.
   onBrokenLinks: 'log',
   themeConfig: {
+    hideableSidebar: true,
     navbar: {
       
       logo: { 
