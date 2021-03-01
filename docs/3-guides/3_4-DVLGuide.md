@@ -660,7 +660,7 @@ named files. The syntax is:
 
 // TODO Provide valid links to items referenced below
 
-This assumes a softlink has been created. See the document [How to Create Soft Link for Office BDDL Include Files](../2-glasswall_core/2_4-common/2_4_1-bddl/2_4_1_2-bddl_softlinks.md), but change the name of the soft link you create
+This assumes a softlink has been created. See the document [How to Create Soft Link for Office BDDL Include Files](../2-glasswall_core/2_3-common/2_3_1-bddl/2_3_1_2-bddl_softlinks.md), but change the name of the soft link you create
 to `office_dvl` and the target directory to *your_workspace_directory_
 path*`\glasswall.classic\data.definitions.and.rules\MSOffice\validation\`.
 

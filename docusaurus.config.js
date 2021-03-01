@@ -12,7 +12,7 @@ module.exports = {
       
       logo: { 
         alt: "Glasswall Logo",
-        src: "img/glasswall_logo_blue.png",
+        src: "img/logo.svg",
         href: "https://glasswallsolutions.com/",
       },
       items: [
