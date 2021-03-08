@@ -11,7 +11,7 @@ import {Container, Row} from 'react-bootstrap'
 function HomePage() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
-  const imgUrl = useBaseUrl('img/use-cases-illustration-03.png')
+  const imgUrl = useBaseUrl('img/icon-documentation.png')
   return (
     
     <Layout
