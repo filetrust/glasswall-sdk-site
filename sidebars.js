@@ -57,22 +57,23 @@ module.exports = {
             {
             "2.1.3.4 Internal API":
             [
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_1-analysis_mode",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_2-protect_mode",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_3-memory_buffers",
-            {
-                "2.1.3.4.4 Configuration Management":
-                [
-                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_1-configManamentPolicies",
-                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_2-configuration_management_xsd",
-                    "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_3-automatic_corrections",
-                ]
+                "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_1-analysis_mode",
+                "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_2-protect_mode",
+                "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_3-memory_buffers",
+                {
+                    "2.1.3.4.4 Configuration Management":
+                    [
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_1-configManamentPolicies",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_2-configuration_management_xsd",
+                        "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_3-automatic_corrections",
+                    ]
 
-            },
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_5-determine_file_format",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_6-import_export",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_7-supported_file_type",
-            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_8-issue_id_info_retreival",
+                },
+                "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_5-determine_file_format",
+                "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_6-import_export",
+                "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_7-supported_file_type",
+                "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_8-issue_id_info_retreival",
+                "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_9-lite_mode"
             ]
             },
             "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_5-filetypes_supported",

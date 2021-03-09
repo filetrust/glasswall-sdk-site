@@ -26,6 +26,7 @@ sidebar_label: 2.1.1 Product Description
 |10/04/2018|       1.7|              Elvin Barreto-White|         Issue ID retrieval information added and updated content management section
 |28/03/2019|       1.8|              Elvin Barreto-White|         Specification version number updates, file size limit updates, supported operating systems added.
 |25/11/2020|1.9|Martin O'Brien|Changes made to convert to markdown format
+|09/03/2021|2.0|Tomas Pilvelis|Addition of Lite Mode
 
 ## **1 Introduction**
 
@@ -860,3 +861,19 @@ Import Mode.
     -   EMF
 
     -   WMF
+
+## **10 Lite Processing Mode**
+
+Glasswall has an additional processing mode known as Lite. This allows Glasswall Rebuild to be more lenient in the interrogation of the input file manufacturer specification, whilst still providing the same high standard protection of sanitising content items regular protect mode processing provides. 
+
+The table below lists the document types that are supported for lite processing.  
+
+|File Extension|Sub Type(s)|Document Type
+|---|---|---
+|pdf| |                                           Portable Document Format
+|doc|             dot|                            Word Binary
+|xls|             xlt|                            Excel Binary
+|ppt|             pot|                            PowerPoint Binary
+|docx|            docm, dotx, dotm|               Office Open XML Document
+|xlsx|            xlsm, xltx, xltm|               Office Open XML Workbook
+|pptx|            pptm, ppsx, ppam, potm, ppsm|   Office Open XML Presentation

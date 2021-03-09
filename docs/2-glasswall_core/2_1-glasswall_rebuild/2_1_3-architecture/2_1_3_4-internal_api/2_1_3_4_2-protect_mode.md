@@ -5,7 +5,7 @@ sidebar_label: 2.1.3.4.2 Protect Mode
 ### Overview
 In Protect Mode Content Management Policies allow control of various document element types such as file attachments, executable code, interactive form content and a number of actions (e.g. external links or the execution of Javascripts). These document element types are known to be common attack vectors and when they are encountered within a document the Content Management Policy will define how Glasswall Rebuild should process them. Each document type has its own Content Management Policy.
 
-The active Content Management Policy can be updated on a document by document basis, but it must be set prior to Glasswall Rebuild being able to process any document. In the event of the Content Management Policy not being set before processing documents, GlasswallRebuild defaults content management settings to allow.
+The active Content Management Policy can be updated on a document by document basis, but it must be set prior to Glasswall Rebuild being able to process any document. In the event of the Content Management Policy not being set before processing documents, Glasswall Rebuild defaults content management settings to allow.
 
 ### Protect Process
 In Protect mode (as per in Analysis mode) an input file is read in and the manufacturer’s specification is used to validate each byte as it is processed. This allows all the data structures (content items) within the file to be syntactically validated and if they pass syntax validation they are subjected to further semantic checks. Those data structures that have passed both syntax and semantic validation are then written out to the new version of the input file that is regenerated on a data structure by data structure basis.
