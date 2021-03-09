@@ -1,6 +1,6 @@
 ---
-title: 7.9.2 Command Line Test Tool
-sidebar_label: 7.9.2 Command Line Test Tool
+title: 7.9.2 Rebuild Command Line Tool
+sidebar_label: 7.9.2 Rebuild Command Line Tool
 ---
 
 # **Document History**

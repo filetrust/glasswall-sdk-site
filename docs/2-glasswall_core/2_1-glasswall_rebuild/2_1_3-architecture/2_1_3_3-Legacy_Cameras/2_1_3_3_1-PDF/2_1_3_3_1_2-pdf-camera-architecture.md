@@ -1,6 +1,6 @@
 ---
-title: 2.1.3.3.1.3 Architecture Design Document
-sidebar_label: 2.1.3.3.1.3 Architecture Design Document
+title: 2.1.3.3.1.2 Architecture Design Document
+sidebar_label: 2.1.3.3.1.2 Architecture Design Document
 ---
 # Document History
 
