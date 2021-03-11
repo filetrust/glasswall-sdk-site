@@ -122,9 +122,16 @@ html[data-theme='dark'] {
   color: green;
 }
 
+H1.hero__title
+{
+
+  font-family:  'Lato', sans-serif;
+  font-size: 3rem; 
+}
+
 h1{
   color: #11497C;
-  font-family: Lato semibold;
+  font-family: 'Lato', sans-serif;
   font-size: 3rem;
 }
 
@@ -186,4 +193,15 @@ thead {
 
 .navbar {
   background: #003154;
+}
+
+.homeImage{
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.homeParagraph{
+  padding-bottom: 25px;
+  font-weight: bold;
+  font-size: 1rem;
 }
