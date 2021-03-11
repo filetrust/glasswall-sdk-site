@@ -32,7 +32,7 @@ function HomePage() {
               <div className="col col--6 col--offset-3">
                 <a href = {useBaseUrl('docs/1-introduction')}>
                   <img className="homeImage" src={imgUrl}/>
-                  <p>A resource for Glasswall documentation</p>
+                  <p className="homeParagraph">Get Started</p>
                 </a>
               </div>
             </div> 
