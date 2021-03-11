@@ -1,6 +1,6 @@
 ---
-title: 8.1.8 Structured Storage API Specification
-sidebar_label: 8.1.8 Structured Storage API Specification
+title: 8.1.9 Structured Storage API Specification
+sidebar_label: 8.1.9 Structured Storage API Specification
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
