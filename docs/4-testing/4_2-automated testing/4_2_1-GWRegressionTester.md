@@ -15,17 +15,6 @@ The regression tester consists of two applications: `GwRegressionTester.exe` and
 
 If the tool is working on Windows, but not on Linux, or vice versa, then please raise a bug as ideally it should be running identically on both platforms.
 
-# Locations
-
-The source code is stored on TFS in the location:
-
-- [Regression Tester source code]($/Glasswall/inhouse.tools/GwRegressionTester/GwRegressionTester)
-
-The latest executables can be found at:
-
-- [Latest Regression Tester executables](\\STORAGE-SERVER\Test-Input-Files\BuildDropBox\GwRegressionTester\Latest)
-
-
 # Architecture
 
 ### Language and Runtime requirements
@@ -108,7 +97,7 @@ files are case sensitive so please bear that in mind when editing them.
 For a quick How To guide on YAML have a look at
 [Learn YAML in Y Minutes](../../3-guides/3_10-learn_yaml_in_y-minutes.md).
 
-Example configuration files can be found at the end of this documentation or you can access them directly by clicking [Example test case](#GwRegressionTesterConfigExample), [Issue ID example test case](#issue-id-example-test-case-), or [Exports example test case](#internalGwRegressionTesterExportTestsExample). It's a good idea to refer to the examples as they will give you a better understanding of how the configuration file fits together.
+Example configuration files can be found at the end of this documentation or you can access them directly by clicking [Example test case](#example-test-case), [Issue ID example test case](#issue-id-example-test-case), or [Exports example test case](#exports-example-test-case). It's a good idea to refer to the examples as they will give you a better understanding of how the configuration file fits together.
 
 The `#` character is used to denote comments and the `:` character is used to denote key-value relationships; therefore, these characters need to be escaped when used within the configuration file. For example, <code>\\\\STORAGE-SERVER\\Test-Input-Files\\TestResources\\Z-GeneratedSets\\Bug # 4840</code> will need to be converted to <code>"\\\\STORAGE-SERVER\\Test-Input-Files\\TestResources\\Z-GeneratedSets\\Bug # 4840"</code>, and <code>PDF: files failing with 'Attempted write access beyond end of buffer'</code> will need to be turned into <code>"PDF: files failing with 'Attempted write access beyond end of buffer'"</code>.
 
@@ -116,7 +105,7 @@ The `#` character is used to denote comments and the `:` character is used to de
 
 The "root" element of the configuration file is `Bugs:`, which is defined as follows:
 
-`Bugs: List<TestCase>` (Required) This contains a list of [Test Case elements](#internalGwRegressionTesterTestCase) that will be processed.
+`Bugs: List<TestCase>` (Required) This contains a list of [Test Case elements](#test-case-element) that will be processed.
 
 ## <a name="internalGwRegressionTesterTestCase"></a> Test Case element
 
@@ -130,11 +119,11 @@ This is used to specify the details of each test case that needs to be processed
 
 `FileType: <string>` (Optional) This specifies the type of file that we are testing. For example, `pdf` or `doc`. This can be left out or set to `null` at which point the file extension will be used as the file type.
 
-`Input: List<FileLocation>` (Optional) This specifies a list of [File Location](#internalGwRegressionTesterFileLocation) elements, which contain the details of the files or folders that need to be tested. This is optional as not all tests require files that need to be processed.
+`Input: List<FileLocation>` (Optional) This specifies a list of [File Location](#file-location) elements, which contain the details of the files or folders that need to be tested. This is optional as not all tests require files that need to be processed.
 
-`ContentManagementSwitches: List<ContentManagementSwitch>` (Optional) This is a list of [Content Management Switch](#internalGwRegressionTesterContentManagementSwitch) elements, which contain the details of the content management switches and their flags that will be used to configure the Glasswall library. If this is not specified then the default content management switches will be used.
+`ContentManagementSwitches: List<ContentManagementSwitch>` (Optional) This is a list of [Content Management Switch](#content-management) elements, which contain the details of the content management switches and their flags that will be used to configure the Glasswall library. If this is not specified then the default content management switches will be used.
 
-`Tests: List<TestMode>` (Required) This specifies a list of [Test Mode](#internalGwRegressionTesterTestMode) elements, which specify different ways that tests are executed.
+`Tests: List<TestMode>` (Required) This specifies a list of [Test Mode](#test-mode) elements, which specify different ways that tests are executed.
 
 ## File Location <a name="internalGwRegressionTesterFileLocation"></a>
 
@@ -183,13 +172,13 @@ A Content Management Policy defines the set of Content Management Switches for a
 
 This is used to specify the different test modes where each test mode interacts differently with the output from the Glasswall library. For example, one test mode uses the output and executes tests on it while another test mode writes the output to a directory. When writing the test modes, please make sure that you include the `!` before the test mode otherwise the configuration file is invalid. For example, `!IndependentTestMode` is valid while `IndependentTestMode` is not. The exclamation mark is required for the deserialization process where the configuration file is translated into concrete objects within the program. The following test modes are available:
 
-- [!IndependentTestMode](#internalGwRegressionTesterIndependentTestMode)
-- [!ConsecutiveTestMode](#internalGwRegressionTesterConsecutiveTestMode)
-- [!OneAgainstAnotherTestMode](#internalGwRegressionTesterOneAgainstAnotherTestMode)
-- [!WriteOutputMode](#internalGwRegressionTesterWriteOutputMode)
-- [!SimpleTestMode](#internalGwRegressionTesterSimpleTestMode)
-- [!GetIssueIDTestMode](#internalGwRegressionTesterGetIssueIDTestMode)
-- [!ExportImportTestMode](#internalGwRegressionTesterExportImportTestMode)
+- [!IndependentTestMode](#independenttestmode)
+- [!ConsecutiveTestMode](#consecutivetestmode)
+- [!OneAgainstAnotherTestMode](#oneagainstanothertestmode)
+- [!WriteOutputMode](#writeoutputmode)
+- [!SimpleTestMode](#simpletestmode)
+- [!GetIssueIDTestMode](#getissueidtestmode)
+- [!ExportImportTestMode](#exportimporttestmode)
 
 
 
@@ -197,14 +186,14 @@ This is used to specify the different test modes where each test mode interacts 
 
 This test mode is used for executing independent tests on the files where each file is run through Glasswall, and the output is used for the tests. This test mode has the following fields:
 
-`AnalysisTests: <List<AnalysisTest>>` (Optional) This is a list of [Analysis Tests](#internalGwRegressionTesterAnalysisTests) that will be performed on the Analysis reports.
+`AnalysisTests: <List<AnalysisTest>>` (Optional) This is a list of [Analysis Tests](#analysis-tests) that will be performed on the Analysis reports.
 
-`APIsToTest: <Set<TestableAPI>>` (Optional) This is a set of [TestableAPI](#internalGwRegressionTesterTestableAPI) elements that specify the Glasswall API that will be used when executing the Glasswall library.
+`APIsToTest: <Set<TestableAPI>>` (Optional) This is a set of [TestableAPI](#testableapi) elements that specify the Glasswall API that will be used when executing the Glasswall library.
 
 
-`ManageAndProtectTests: <List<ManageAndProtectTest>>` (Optional) This is a list of [Manage and Protect Tests](#internalGwRegressionTesterManageAndProtectTests) that will be performed on the managed file.
+`ManageAndProtectTests: <List<ManageAndProtectTest>>` (Optional) This is a list of [Manage and Protect Tests](#manage-and-protect-tests) that will be performed on the managed file.
 
-`ManageAndProtectLiteTests: <List<ManageAndProtectTest>>` (Optional) This is a list of [Manage and Protect Tests](#internalGwRegressionTesterManageAndProtectTests) that will be performed on the lite managed file. Manage and Protect Lite is not available for the Combined API so those tests will be flagged as failures.
+`ManageAndProtectLiteTests: <List<ManageAndProtectTest>>` (Optional) This is a list of [Manage and Protect Tests](#manage-and-protect-tests) that will be performed on the lite managed file. Manage and Protect Lite is not available for the Combined API so those tests will be flagged as failures.
 
 `Managed: <bool>` (Optional) This specifies whether the files should be managed or non-conforming. If this field is not specified then only issues such as timeouts or crashes will be treated as test failures.
 
@@ -213,13 +202,13 @@ This test mode is used for executing independent tests on the files where each f
 
 This test mode is similar to the Independent test mode where independent tests are carried out on the files, but the difference is that the tests are carried out on the managed managed files. In Consecutive test mode the program runs the files through Manage and Protect, writes the results to temporary files, runs the temporary files through Manage and Protect, and then executes the tests on the resulting files. This is very useful for finding issues such as remedy items being reported in files that have already been managed. This test mode has the following fields:
 
-`AnalysisTests: <List<AnalysisTest>>` (Optional) This is a list of [Analysis Tests](#internalGwRegressionTesterAnalysisTests) that will be performed on the Analysis reports.
+`AnalysisTests: <List<AnalysisTest>>` (Optional) This is a list of [Analysis Tests](#analysis-tests) that will be performed on the Analysis reports.
 
-`APIsToTest: <Set<TestableAPI>>` (Optional) This is a set of [TestableAPI](#internalGwRegressionTesterTestableAPI) elements that specify the Glasswall API that will be used when executing the Glasswall library.
+`APIsToTest: <Set<TestableAPI>>` (Optional) This is a set of [TestableAPI](#testableapi) elements that specify the Glasswall API that will be used when executing the Glasswall library.
 
-`ManageAndProtectLiteTests: <List<ManageAndProtectTest>>` (Optional) This is a list of [Manage and Protect Tests](#internalGwRegressionTesterManageAndProtectTests) that will be performed on the lite managed file. Manage and Protect Lite is not available for the Combined API so those tests will be flagged as failures.
+`ManageAndProtectLiteTests: <List<ManageAndProtectTest>>` (Optional) This is a list of [Manage and Protect Tests](#manage-and-protect-tests) that will be performed on the lite managed file. Manage and Protect Lite is not available for the Combined API so those tests will be flagged as failures.
 
-`ManageAndProtectTests: <List<ManageAndProtectTest>>` (Optional) This is a list of [Manage and Protect Tests](#internalGwRegressionTesterManageAndProtectTests) that will be performed on the managed file.
+`ManageAndProtectTests: <List<ManageAndProtectTest>>` (Optional) This is a list of [Manage and Protect Tests](#manage-and-protect-tests) that will be performed on the managed file.
 
 `Managed: <bool>` (Optional) This specifies whether the files should be managed or non-conforming. If this field is not specified then only issues such as timeouts or crashes will be treated as test failures. This field is applied only to the managed files.
 
@@ -231,7 +220,7 @@ This test mode is used for comparing one Glasswall mode against another. Each of
 
 `AnalysisAgainstProtect: <bool>` (Optional) This is used to specify whether to compare the results from Analysis mode against the results from Manage and Protect mode. If the results are different, for example Analysis is non-conforming while Manage and Protect is managed, then this will result in a test failure.
 
-`APIsToTest: <Set<TestableAPI>>` (Optional) This is a set of [TestableAPI](#internalGwRegressionTesterTestableAPI) elements that specify the Glasswall API that will be used when executing the Glasswall library.
+`APIsToTest: <Set<TestableAPI>>` (Optional) This is a set of [TestableAPI](#testableapi) elements that specify the Glasswall API that will be used when executing the Glasswall library.
 
 `CombinedAgainstSeparateApi: <bool>` (Optional) This is used to specify whether to compare the results from the Separate API against the results from the Combined API. If the results are different, for example the Separate API is non-conforming and the Combined API is managed, then that will result in a test failure. This test is very similar to the `AnalysisAgainstProtect` one, but with the addition of Combined API comparison.
 
@@ -269,9 +258,9 @@ This mode is used to return information for a given Issue Id or a list of Issue 
 ### !ExportImportTestMode <a name="internalGwRegressionTesterExportImportTestMode"></a>
 Mode used to test the export and import APIs. It performs the various export and import tests.
 
-`APIsToTest: <Set<TestableAPI>>` (Optional) This is a set of [TestableAPI](#internalGwRegressionTesterTestableAPI) elements that specify whether "File to File" or "File to Memory" test modes are used. If not specified `FileToMemory` test mode is set.  `MemoryToMemory` is not supported.
+`APIsToTest: <Set<TestableAPI>>` (Optional) This is a set of [TestableAPI](#testableapi) elements that specify whether "File to File" or "File to Memory" test modes are used. If not specified `FileToMemory` test mode is set.  `MemoryToMemory` is not supported.
 
-`ExportTests: <List<ExportTests>>` (Optional) A list of tests carried out on the export APIs as listed in  [Export Tests](#internalGwRegressionTesterExportTests)
+`ExportTests: <List<ExportTests>>` (Optional) A list of tests carried out on the export APIs as listed in  [Export Tests](#export-tests)
 
 ### TestableAPI <a name="internalGwRegressionTesterTestableAPI"></a>
 
@@ -300,17 +289,17 @@ This specifies the Glasswall mode that will be used for executing. This can be o
 
 This is used to specify the different tests that can be carried out on the Analysis report. The following tests are available:
 
-- [!ContentItemDescription](#internalGwRegressionTesterContentItemDescription)
-- [!IssueItemDescription](#internalGwRegressionTesterIssueItemDescription)
-- [!IssueItemId](#internalGwRegressionTesterIssueItemId)
-- [!IssueItem](#internalGwRegressionTesterIssueItem)
-- [!RemedyItemDescription](#internalGwRegressionTesterRemedyItemDescription)
-- [!RemedyItem](#internalGwRegressionTesterRemedyItem)
-- [!SanitisationItemDescription](#internalGwRegressionTesterSanitisationItemDescription)
-- [!SanitisationItemId](#internalGwRegressionTesterSanitisationItemId)
-- [!SanitisationItem](#internalGwRegressionTesterSanitisationItem)
-- [!AnalysisStringSearch](#internalGwRegressionTesterAnalysisStringSearch)
-- [!ValidateXmlAgainstXsd](#internalGwRegressionTesterValidateXmlAgainstXsd)
+- [!ContentItemDescription](#contentitemdescription)
+- [!IssueItemDescription](#issueitemdescription)
+- [!IssueItemId](#issueitemid)
+- [!IssueItem](#issueitem)
+- [!RemedyItemDescription](#remedyitemdescription)
+- [!RemedyItem](#remedyitem)
+- [!SanitisationItemDescription](#sanitisationitemdescription)
+- [!SanitisationItemId](#sanitisationitemid)
+- [!SanitisationItem](#sanitisationitem)
+- [!AnalysisStringSearch](#analysisstringsearch)
+- [!ValidateXmlAgainstXsd](#validatexmlagainstxsd)
 
 ### !ContentItemDescription <a name="internalGwRegressionTesterContentItemDescription"></a>
 
@@ -426,8 +415,8 @@ This test is used to validate the Analysis report against the specified XSD. It 
 
 This is used to test the GetIssueID and GetAllIssueID API's. The following tests are available:
 
-- [!GetIssueID](#internalGwRegressionTesterGetIssueID)
-- [!GetAllIssueIDs](#internalGwRegressionTesterGetAllIssueID)
+- [!GetIssueID](#getissueid)
+- [!GetAllIssueIDs](#getallissueids)
 
 ### !GetIssueID <a name="internalGwRegressionTesterGetIssueID"></a>
 
@@ -449,7 +438,7 @@ This test is used to validate the Issue IDs XML against the specified XSD. It ha
 
 This is used to specify the different tests that can be carried out on the managed document. The following tests are available:
 
-- [!ManagedBinarySearch](#internalGwRegressionTesterManagedBinarySearch)
+- [!ManagedBinarySearch](#managedbinarysearch)
 
 ### !ManagedBinarySearch <a name="internalGwRegressionTesterManagedBinarySearch"></a>
 
