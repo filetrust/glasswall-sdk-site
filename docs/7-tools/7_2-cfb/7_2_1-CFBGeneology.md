@@ -61,6 +61,3 @@ The **--man**, **--help**, -**-version**, and **--usage** options provide inform
 
 ### **COPYRIGHT**
 &nbsp;&nbsp;&nbsp;&nbsp;&copy; Glasswall Solutions Limited.
-
-### **SEE ALSO**
-[walkCFB](walkCFB), [checkCFBSignature](checkCFBSignature), [WordDissection](WordDissection)

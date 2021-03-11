@@ -12,7 +12,7 @@ The diagram below provides an overview of the PDF camera architecture.
 
 # Design and Architecture #
 
-View the [PDF Module Architecture Design Document](PDF%20Module%20-%20Architecture%20Design%20Document.doc).
+View the [PDF Module Architecture Design Document](2_1_3_3_1_3-PDFModuleArchitectureDesignDoc.md).
 
 # PDF Camera - data elements
 
