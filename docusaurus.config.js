@@ -56,7 +56,7 @@ module.exports = {
           items: [
             {
               label: "Getting Started",
-              to: "docs/products/cloud-sdk/rebuild/rebuild-quickstart",
+              to: "docs/1-introduction",
             },
           ],
         },

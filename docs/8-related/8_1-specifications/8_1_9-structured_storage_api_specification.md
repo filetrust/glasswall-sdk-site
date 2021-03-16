@@ -1,6 +1,6 @@
 ---
-title: 8.1.8 Structured Storage API Specification
-sidebar_label: 8.1.8 Structured Storage API Specification
+title: 8.1.9 Structured Storage API Specification
+sidebar_label: 8.1.9 Structured Storage API Specification
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -21,7 +21,7 @@ mobrien@glasswallsolutions.co.uk<br />
 
 # **1 GLOSSARY**
 
-| **Term**                      | > **Description**                   |
+| **Term**                      |  **Description**                   |
 |-------------------------------|-------------------------------------|
 | Child                         | This refers to the child of a particular storage object or root object. Only one child is stored in a storage or root object; other children are linked by the sibling connection of that child and the sibling connections of those siblings.                  
 | Children                      | The children of the root object or any storage object are determined by the single child link of that root or storage object, and all the storages and  streams are linked together in the sibling list.                 |
