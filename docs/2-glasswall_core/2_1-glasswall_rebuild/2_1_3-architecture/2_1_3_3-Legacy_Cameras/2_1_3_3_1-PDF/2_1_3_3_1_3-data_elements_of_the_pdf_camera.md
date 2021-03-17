@@ -1,6 +1,6 @@
 ---
-title: 2.1.3.3.1.2 Data Elements of the PDF Camera
-sidebar_label: 2.1.3.3.1.2 Data Elements of the PDF Camera
+title: 2.1.3.3.1.3 Data Elements of the PDF Camera
+sidebar_label: 2.1.3.3.1.3 Data Elements of the PDF Camera
 ---
 
 <div style={{color: 'red'}}>Introductory section describing the document would be nice. Numbering the sections would be useful.</div>

@@ -3,11 +3,6 @@ title: 2.1.7.2.3 C#
 sidebar_label: 2.1.7.2.3 C#
 ---
 
-<div style={{textAlign: 'center'}}>
-
-# Glasswall API Language Wrapper Documentation
-# C#
-</div>
 
 # 1 Introduction
 
