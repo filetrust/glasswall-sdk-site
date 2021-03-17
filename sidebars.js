@@ -474,7 +474,7 @@ module.exports = {
                                                 ]
                                         },
                                         {
-                                            "8.1.5 GIFF":
+                                            "8.1.5 GIF":
                                                 [
                                                     "8-related/8_1-specifications/8_1_5-gif/8_1_5-gif",
                                                 ]
@@ -491,7 +491,12 @@ module.exports = {
                                                     "8-related/8_1-specifications/8_1_7-jbig2/8_1_7-jbig2",
                                                 ]
                                         },
-                                        "8-related/8_1-specifications/8_1_8-structured_storage_api_specification",
+                                        { "8.1.8 MACH-O":
+                                                [
+                                                    "8-related/8_1-specifications/8_1_8-mach-o/8_1_8_1-mach-o",
+                                                ]
+                                        },
+                                        "8-related/8_1-specifications/8_1_9-structured_storage_api_specification",
                                     ]
                             },
                         ]

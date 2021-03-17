@@ -32,6 +32,34 @@ See diagram below.
 |     Analysis               |     Produces a detailed report highlighting content that is contained within a file and the actions that the Glasswall engine carries out during the regeneration process    |
 |     Import & Export        |     Export and import content items from PDF and MS-Office documents                                                                                                         |
 |     Determine File Type    |     Identify the file type of a provided file                                                                                                                                |
+|     Protect Lite           |     A light weight version of protect mode, whereby the file is analysed and cleaned based on policy settings and a safer substitute copy is produced                                                                          |
+|     Analysis Lite          |     A light weight version of analysis mode containing a detailed report highlighting content the actions that the Glasswall engine carries out during the regeneration process    |
+
+#### Lite Mode
+
+Glasswall has an additional processing mode known as Lite. This allows Glasswall Rebuild to be more lenient in the 
+interrogation of the input file manufacturer specification, whilst still providing the same high standard protection of 
+sanitising content items regular protect mode processing provides. 
+
+| Protect Mode | Lite Mode |
+| --- | --- |
+| Full Content Management Usage | Full Content Management Usage |
+| Full Specification Validation | Minimal Validation |
+| Full Specification Remediation | No Remediation |
+
+The table below lists the document types that are supported for lite processing.  
+
+|File Extension|Sub Type(s)|Document Type
+|---|---|---
+|pdf| |                                           Portable Document Format
+|doc|             dot|                            Word Binary
+|xls|             xlt|                            Excel Binary
+|ppt|             pot|                            PowerPoint Binary
+|docx|            docm, dotx, dotm|               Office Open XML Document
+
+|xlsx|            xlsm, xltx, xltm|               Office Open XML Workbook
+|pptx|            pptm, ppsx, ppam, potm, ppsm|   Office Open XML Presentation
+
 
 ## Architecture Overview
 
