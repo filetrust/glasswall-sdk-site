@@ -3,12 +3,6 @@ title: 2.1.7.2.2 JavaScript
 sidebar_label: 2.1.7.2.2 JavaScript 
 ---
 
-<div style={{textAlign: 'center'}}>
-
-# Glasswall API Language Wrapper Documentation
-# JavaScript
-</div>
-
 # 1 Introduction
 
 This is an introductory guide on how to use the language wrappers for the Glasswall API.

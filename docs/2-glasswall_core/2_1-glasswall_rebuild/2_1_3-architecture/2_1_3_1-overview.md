@@ -88,7 +88,7 @@ providing extensibility, flexibility, and isolation of features and customs proc
 
 Excluding the cameras created during early development (referred to as legacy cameras), most existing cameras are 
 created using automatic code generation via an inhouse developed toolchain called UCP (Universal Camera Platform). 
-See [Auto-Generated Cameras](/) and [Legacy Cameras](/).
+See [Auto-Generated Cameras](2_1_3_2-Auto_Generated_cameras/2_1_3_2_1-code-generation-overview.md) and [Legacy Cameras](/).
 
 The diagram below provides a simplistic view of the architecture.
 
@@ -97,5 +97,5 @@ The diagram below provides a simplistic view of the architecture.
 ![](./img/architecture_overview/architecture_overview.png)
 
 ## Related Links
-- [Auto-Generated Cameras](/)
+- [Auto-Generated Cameras](2_1_3_2-Auto_Generated_cameras/2_1_3_2_1-code-generation-overview.md)
 - [Legacy Cameras](/)
