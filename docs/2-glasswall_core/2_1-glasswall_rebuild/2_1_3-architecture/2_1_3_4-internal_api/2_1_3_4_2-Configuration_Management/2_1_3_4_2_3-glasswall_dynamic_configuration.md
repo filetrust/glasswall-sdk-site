@@ -1,6 +1,6 @@
 ---
-title: 2.1.3.4.4.3 Glasswall Dynamic Configuration
-sidebar_label: 2.1.3.4.4.3 Glasswall Dynamic Configuration
+title: 2.1.3.4.2.3 Glasswall Dynamic Configuration
+sidebar_label: 2.1.3.4.2.3 Glasswall Dynamic Configuration
 ---
 #**Document History**
 

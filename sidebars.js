@@ -58,13 +58,13 @@ module.exports = {
                                                     {
                                                         "2.1.3.4 Internal API":
                                                             [
-                                                                "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_3-memory_buffers",
+                                                                "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_1-memory_buffers",
                                                                 {
-                                                                    "2.1.3.4.4 Configuration Management":
+                                                                    "2.1.3.4.2 Configuration Management":
                                                                         [
-                                                                            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_1-configManamentPolicies",
-                                                                            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_2-configuration_management_xsd",
-                                                                            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_4-Configuration_Management/2_1_3_4_4_3-glasswall_dynamic_configuration",
+                                                                            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_2-Configuration_Management/2_1_3_4_2_1-configManamentPolicies",
+                                                                            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_2-Configuration_Management/2_1_3_4_2_2-configuration_management_xsd",
+                                                                            "2-glasswall_core/2_1-glasswall_rebuild/2_1_3-architecture/2_1_3_4-internal_api/2_1_3_4_2-Configuration_Management/2_1_3_4_2_3-glasswall_dynamic_configuration",
                                                                         ]
                                                                 },
                                                             ]
