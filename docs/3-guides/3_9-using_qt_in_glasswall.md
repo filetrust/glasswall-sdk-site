@@ -37,7 +37,7 @@ Then click &#39;Install&#39; on next screen (8)
 
 Installation will take some time (300mb+ install)
 
-# Installing Windows Debug Support
+## Installing Windows Debug Support
 
 This install of QT Creator is primarily built to use CDB debug (WinDbg) to debug on Windows.
 
@@ -62,7 +62,7 @@ On screen (4) installation occurs – fairly quick.
 And your done 
 
 
-# Installing Visual Studio Support
+## Installing Visual Studio Support
 
 You can get support for bulding Qt Pro projects in Visual Studio
 
@@ -72,11 +72,11 @@ Run &#39;qt-vsaddin-msvc2017-2.2.1\_48f558a.vsix&#39;
 
 It will install the Qt Support Tools into Visual Studio for MSVC 2017
 
-## Setup
+### Setup
 
-### Configure Debug
+#### Configure Debug
 
-#### Hook CDB debug
+##### Hook CDB debug
 
 QT Creator may not spot the debugger path immediately
 
@@ -88,11 +88,9 @@ Goto Tools\Options\Build&amp;Run\Debuggers and check you have this setup
 
 ![](img/qtscreenshot6.png)
 
-#### Symbols (full symbol support TBD)
+## Add Qt Debug files 
 
-##
-
-## z:\Storage-Server-DevTools\Development Tools\QT Framework\Offline Installers\Windows Host\qt-opensource-windows-x86-pdb-files-desktop-5.9.6.7z
+z:\Storage-Server-DevTools\Development Tools\QT Framework\Offline Installers\Windows Host\qt-opensource-windows-x86-pdb-files-desktop-5.9.6.7z
 
 Contains the PDB files for the 5.9.6 version of Qt
 
@@ -108,7 +106,7 @@ Suggestion been made that switching off Python Dumper can help debugging.
 
 ![](img/qtscreenshot8.png)
 
-# Debugging in Visual Studio
+## Debugging in Visual Studio
 
 When all else fails: Try debugging in Visual Studio
 
@@ -128,7 +126,7 @@ Find file in QtCreator where you want the breakpoint and grab the full path to i
 
 Now you can place a breakpoint in the file window in VS and run in debug mode on VS
 
-# Beautifiying Code
+## Beautifiying Code
 Using the code layout tools to keep the source tidy
 ## Installing clang format
 Goto https://releases.llvm.org/download.html
