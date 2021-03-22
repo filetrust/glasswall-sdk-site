@@ -128,7 +128,7 @@ Now you can place a breakpoint in the file window in VS and run in debug mode on
 
 ## Beautifiying Code
 Using the code layout tools to keep the source tidy
-## Installing clang format
+### Installing clang format
 Goto https://releases.llvm.org/download.html
 
 Install for Windows - Choose
