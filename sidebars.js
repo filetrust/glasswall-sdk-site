@@ -296,6 +296,15 @@ module.exports = {
                             "3-guides/3_8-core2-cameras-creating_and_developing_rules",
                             "3-guides/3_9-using_qt_in_glasswall",
                             "3-guides/3_10-learn_yaml_in_y-minutes",
+                            {
+                                "3.11 Clone, Build, Debug Guides":
+                                [
+                                    "3-guides/3_11-clone_build_debug_engines/3_11_1-editor_linux",
+                                    "3-guides/3_11-clone_build_debug_engines/3_11_2-editor_windows",
+                                    "3-guides/3_11-clone_build_debug_engines/3_11_3-rebuild_linux",
+                                    "3-guides/3_11-clone_build_debug_engines/3_11_4-rebuild_windows",
+                                ]
+                            }
                         ]
                 },
                 {
