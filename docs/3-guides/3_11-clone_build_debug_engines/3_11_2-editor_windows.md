@@ -1,3 +1,8 @@
+---
+title: 3.11.2 Clone, Rebuild and Debug Editor in Windows
+sidebar_label: 3.11.2 Clone, Rebuild and Debug Editor in Windows
+---
+
 ```
 ------------------------------------------------------------------------
 FILE NAME: editor_windows.md

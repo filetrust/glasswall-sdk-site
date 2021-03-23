@@ -1,3 +1,8 @@
+---
+title: 3.11.3 Clone, Rebuild and Debug Rebuild in Linux
+sidebar_label: 3.11.3 Clone, Rebuild and Debug Rebuild in Linux
+---
+
 ```
 ------------------------------------------------------------------------
 FILE NAME: rebuild_linux.md

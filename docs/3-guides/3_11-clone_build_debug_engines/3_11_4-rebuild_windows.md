@@ -1,3 +1,8 @@
+---
+title: 3.11.4 Clone, Rebuild and Debug Rebuild in Windows
+sidebar_label: 3.11.4 Clone, Rebuild and Debug Rebuild in Windows
+---
+
 ```
 ------------------------------------------------------------------------
 FILE NAME: rebuild_windows.md

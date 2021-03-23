@@ -1,3 +1,8 @@
+---
+title: 3.11.1 Clone, Rebuild and Debug Editor in Linux
+sidebar_label: 3.11.1 Clone, Rebuild and Debug Editor in Linux
+---
+
 ```
 ------------------------------------------------------------------------
 FILE NAME: editor_linux.md
