@@ -46,10 +46,43 @@ Files are processed as follows in this mode:
 - The input archive is decompressed
 - Each export package within the archive is passed to the Glasswall engine for processing in import mode, the resulting generated files are repackaged in a new archive while preserving the original directory structure. 
 
-## Examples
+## Configuration Example
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <wordConfig>
+        <embedded_files>sanitise</embedded_files>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+        <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <review_comments>sanitise</review_comments>
+    </wordConfig>
+    <archiveConfig libVersion="core2" defaultCompression="zip">
+        <doc>process</doc>
+        <docx>discard</docx>
+        <pdf>no_action</pdf>
+        <jpeg>process</jpeg>
+        <elf>discard</elf>
+        <obj>process</obj>
+    </archiveConfig>
+</config>
+```
 
- - [Config Example](2_2_6_1_5_2-config.md)
- - [Usage Example](2_2_6_1_5_3-example.md)
+- The word config section of the XML is the configuration that is passed down to the Glasswall engine. See the SDK documentation for more information.
+- The archiveConfig section contains the settings for the Glasswall archive manager. Each element within this section is a file type, and the corresponding value is the action that must be performed when a file of this type is encountered when processing an archive. There are three possible actions:
+    - **process** - Hand the file to the Glasswall CDR (Content Disarm and Reconstruction) engine for processing.
+    - **discard** - The file will be removed from the resulting archive.
+    - **no_action** - The file will be copied (unprocessed) to the resulting archive.
+    
+  The following attributes are required:
+    - **libVersion** specifies the Glasswall Engine that should be used, the possible values are:
+        - **Classic** – Glasswall Rebuild Engine which can be found [here](https://github.com/filetrust/sdk-rebuild-eval)
+        - **Core2** – Glasswall Editor Engine which can be found [here](https://github.com/filetrust/sdk-editor-eval)
+    - **defaultCompression** is the fallback archive format that should be used if unable to compress back to the original format (This applies to file types such as RAR where only decompression support is available)
+    
+    The following attributes are optional:
+    - **recursionDepth** can be used to specify the permitted depth of nested subfolders within the archives being processed. Archives exceeding this depth will be blocked and will not be regenerated. If this setting is not specified, the default depth is set to 2 levels. The maximum permitted depth is currently 100 (This is likely to change with future releases).
 
 ## API
 Each of the APIs returns a `Status` type, which is defined as follows:
@@ -120,7 +153,7 @@ status_t GwFileAnalysisArchive(
 
 ### GwFileExportArchive
 
-This is used to call the archive manager, process the specified input archive and produce **export** packages containing the internals of a each file within the archive. 
+This is used to call the archive manager, process the specified input archive and produce **export** packages containing the internals of a each file within the archive, as well as a general report for the input archive.
 
 ```
 status_t GwFileExportArchive(
@@ -148,7 +181,7 @@ status_t GwFileExportArchive(
 
 ### GwFileImportArchive
 
-This is used to call the archive manager, process each **export package** (containing internals of each file) and regenerate output archive containing reconstructed files.
+This is used to call the archive manager, process each **export package** (containing internals of each file) and regenerate output archive containing reconstructed files, as well as a general report for the input archive.
 
 ```
 status_t GwFileImportArchive(
@@ -158,7 +191,8 @@ status_t GwFileImportArchive(
     size_t *outputFileBufferLength, 
     void **outputReportBuffer, 
     size_t *outputReportBufferLength, 
-    const char *xmlConfigString
+    const char *xmlConfigString,
+	int includeAnalysisReports
     )
 ```
 
@@ -171,6 +205,7 @@ status_t GwFileImportArchive(
 | outputReportBuffer       | `void **`      | Out       | A pointer to a pointer to a buffer that will be populated with the archive manager report buffer. This buffer is allocated by the archive manager|
 | outputReportBufferLength | `size_t *`     | Out       | A pointer to the size of the archive manager report. This will be set by the archive manager                                                     |
 | xmlConfigString          | `const char *` | In        | A pointer to the buffer containing the content management XML file. This buffer needs to be null terminated                                      |
+| includeAnalysisReports   | `int`          | In        | A switch to enable an Editor XML analysis report for each imported file.                                                                         |                           
 
 ### GwArchiveDone
 
@@ -179,3 +214,6 @@ This is used to release any resources that have been allocated by the archive ma
 ```
 void GwArchiveDone()
 ```
+
+## Example 
+**TBD**
