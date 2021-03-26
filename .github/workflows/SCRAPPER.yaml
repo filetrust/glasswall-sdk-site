@@ -2,7 +2,7 @@ name: scraper
 
 on:
     push:
-        branchest: master
+        branches: master
         
     workflow_dispatch:
     
