@@ -1,0 +1,23 @@
+name: scraper
+
+on:
+    push:
+        branchest: master
+        
+    workflow_dispatch:
+    
+jobs:
+  crawl-site:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install JQ Json Parser
+      run: sudo apt-get install jq
+      
+    - name: Download and run algolia search nindexer via docker
+      env:
+          json_data: ${{ secrets.ALGOLIA_CONFIG }}
+          algolia_env: ${{ secrets.ALGOLIA_ENV }}
+      run:  |
+        echo "$algolia_env" > env
+        echo "$json_data" | jq '.' > config.json
+        docker run -i --env-file=env -e "CONFIG=$(cat config.json | jq -r tostring)" algolia/docsearch-scraper
