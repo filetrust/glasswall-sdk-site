@@ -15,7 +15,7 @@ jobs:
         cp "docs/2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_5-archivemanager/2_2_6_1_5_1-archive-manager.md" "files-to-copy/archive.manager/README.md"
         
         mkdir -p files-to-copy/word.search
-        cp "docs/2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_4-wordsearch/2_2_6_1_4_1-wordsearch.md" "files-to-copy/word.search/READMETEST.md"
+        cp "docs/2-glasswall_core/2_2-glasswall_editor/2_2_6-sdk/2_2_6_1-api/2_2_6_1_4-wordsearch/2_2_6_1_4_1-wordsearch.md" "files-to-copy/word.search/README.md"
         
         cd files-to-copy
         ls -R
@@ -47,7 +47,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.DOCUMENTATION_API_KEY }}
       with:
-        source_file: 'files-to-copy/word.search/READMETEST.md'
+        source_file: 'files-to-copy/word.search/README.md'
         destination_repo: 'filetrust/sdk-editor'
         destination_folder: 'libs/extensions/word.search'
         user_email: "bkubheka@glasswallsolutions.com"
