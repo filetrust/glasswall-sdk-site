@@ -3,6 +3,8 @@ title: 3.1 Adding OOXML Support to Beyond Compare
 sidebar_label: 3.1 Adding OOXML Support to Beyond Compare
 ---
 
+demo changes
+
 Make visible the internal content of files with file extensions .docx, .docm, .xlsx, .pptx, .pptm, and .xlsm using Beyond Compare 3.
 
 ## 1 Change the Folder Compare Settings
