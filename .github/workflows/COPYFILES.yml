@@ -1,7 +1,8 @@
 name: PushFile
 
-on: push
-
+on:
+  push:
+    branches: master
 jobs:
   copy-file:
     runs-on: ubuntu-latest
