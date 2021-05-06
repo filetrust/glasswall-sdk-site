@@ -5,7 +5,14 @@ sidebar_label: 4.2.1 GW Regression Tester
 
 ## Authors
 
-Roman Danilov
+## **Document History**
+
+Table 1: Document Change History
+
+|Issue Date|Issue Number|Author|Description
+  |---|---|---|---
+  | - |1.0|Roman Danilov|Version 1
+  |06 May 2021|1.1|Tomas Pilvelis|Updated to use Visual Comparison Tool.
 
 # Description
 
@@ -190,6 +197,7 @@ This is used to specify the different test modes where each test mode interacts 
 - [!SimpleTestMode](#internalGwRegressionTesterSimpleTestMode)
 - [!GetIssueIDTestMode](#internalGwRegressionTesterGetIssueIDTestMode)
 - [!ExportImportTestMode](#internalGwRegressionTesterExportImportTestMode)
+- [!VisualComparisonTestMode](#internalGwRegressionTesterVisualComparisonTestMode)
 
 
 
@@ -268,6 +276,16 @@ This mode is used to return information for a given Issue Id or a list of Issue 
 
 ### !ExportImportTestMode <a name="internalGwRegressionTesterExportImportTestMode"></a>
 Mode used to test the export and import APIs. It performs the various export and import tests.
+
+### !VisualComparisonTestMode <a name="internalGwRegressionTesterVisualComparisonTestMode"></a>
+Mode used to test if two files, an original file, and a Glasswall processed file visually match or missmatch.
+
+`Mode: <GlasswallMode>` (Required) This specifies the Glasswall mode that should be used to process the files. Limited currently to only `ManageAndProtect`
+
+`VisualComparisonReturnStatus: <int>` (Required) This specifies whether the files should be visually identical, missmatched, or other return status's that may occour such as not supported filetype.
+- `0` : Visually Identical
+- `1` : Visually Different
+
 
 `APIsToTest: <Set<TestableAPI>>` (Optional) This is a set of [TestableAPI](#internalGwRegressionTesterTestableAPI) elements that specify whether "File to File" or "File to Memory" test modes are used. If not specified `FileToMemory` test mode is set.  `MemoryToMemory` is not supported.
 
@@ -562,4 +580,26 @@ This is used to specify the different tests that can be carried out on the outpu
 	            TestExportedImagesMatch: true
 	            TestExportedTextMatch: true
 
+## Visual comparison example test case <a name="internalGwRegressionTesterExportTestsExample"></a>
 
+	Bugs:
+		- BugNumber: 0
+		Name: Visual Comparison First Example Test
+		Description: Visual Comparison First Example Test
+		FileType: doc
+		Input:
+			- Path: ..\Files\Doc\1\0000106.doc
+			Recurse: true
+		ContentManagementSwitches:
+			- ConfigSwitch: wordConfig
+			ContentManagementFlags:
+				metadata: sanitise
+				embedded_files: sanitise
+				internal_hyperlinks: sanitise
+				external_hyperlinks: sanitise
+				macros: sanitise
+				review_comments: sanitise
+		Tests:
+			- !VisualComparisonTestMode
+			Mode: ManageAndProtect
+			VisualComparisonReturnStatus: 0
